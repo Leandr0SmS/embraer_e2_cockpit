@@ -1,7 +1,7 @@
 import { useState, memo } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import Modal from './components/Modal';
-import initialManualData from './data/manual.json';
+import manualData from './data/manual.json';
 import painelSvgRaw from '../painel_svg.svg?raw';
 import './App.css';
 
@@ -17,8 +17,7 @@ const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
 });
 
 export default function App() {
-  const [manualEntries, setManualEntries] = useState(initialManualData);
-  const [activeId, setActiveId] = useState(null);
+  const [activeSystem, setActiveSystem] = useState(null);
 
   // Event delegation: listens to clicks on any element with class="clickable" inside the SVG
   const handleSvgClick = (e) => {
@@ -26,10 +25,10 @@ export default function App() {
 
     if (clickedTarget) {
       const elementId = clickedTarget.id;
-      const systemData = manualEntries[elementId];
+      const systemData = manualData[elementId];
 
       if (systemData) {
-        setActiveId(elementId);
+        setActiveSystem(systemData);
       } else {
         console.warn(`No manual data found for ID: ${elementId}`);
       }
@@ -37,40 +36,8 @@ export default function App() {
   };
 
   const closeModal = () => {
-    setActiveId(null);
+    setActiveSystem(null);
   };
-
-  const handleSaveEntry = async (id, updatedFields) => {
-    // Update local React state immediately
-    setManualEntries((prev) => ({
-      ...prev,
-      [id]: updatedFields,
-    }));
-
-    // Also update the SVG <title> tooltip inside the DOM if present
-    const svgGroup = document.getElementById(id);
-    if (svgGroup) {
-      const titleEl = svgGroup.querySelector('title');
-      if (titleEl && updatedFields.title) {
-        titleEl.textContent = updatedFields.title;
-      }
-    }
-
-    // Persist directly to src/data/manual.json via Vite dev server middleware
-    const response = await fetch('/api/save-manual', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id, ...updatedFields }),
-    });
-
-    if (!response.ok) {
-      throw new Error('Failed to save to src/data/manual.json');
-    }
-  };
-
-  const activeSystem = activeId
-    ? { id: activeId, ...manualEntries[activeId] }
-    : null;
 
   return (
     <div className="app-container">
@@ -89,14 +56,8 @@ export default function App() {
         </TransformComponent>
       </TransformWrapper>
 
-      {/* System Details & In-App Editor Modal */}
-      {activeSystem && (
-        <Modal
-          data={activeSystem}
-          onClose={closeModal}
-          onSave={handleSaveEntry}
-        />
-      )}
+      {/* System Details Modal */}
+      {activeSystem && <Modal data={activeSystem} onClose={closeModal} />}
     </div>
   );
 }
