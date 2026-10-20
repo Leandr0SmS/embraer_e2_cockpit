@@ -32,7 +32,8 @@ dist-ssr
 .env.*
 !.env.example
 
-# Python cache (for helper scripts)
+# Python cache & local helper scripts
+scripts/
 __pycache__/
 *.py[cod]
 *$py.class
