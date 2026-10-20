@@ -1,22 +1,22 @@
 {
   "pfd-left": {
     "title": "Left Primary Flight Display (PFD 1)",
-    "system": "Avionics / Displays",
-    "description": "Displays Captain primary flight instruments: Attitude Director Indicator (ADI), airspeed/Mach tape, altitude tape, vertical speed indicator, Horizontal Situation Indicator (HSI), and Flight Mode Annunciations (FMA)."
+    "system": "Airplane General",
+    "description": "Primary Flight Display provides airspeed, attitude, altitude, vertical speed, flight modes, and course deviation information. In addition to the flight instruments, flight plan, navigation, communication, terrain, traffic, and weather information are also presented on the PFD."
   },
   "mfd-left": {
-    "title": "Left Multi-Function Display (MFD 1)",
-    "system": "Avionics / Displays",
-    "description": "Displays interactive lateral/vertical navigation map, system synoptics (Electrical, Hydraulic, Fuel, ECS, Flight Controls, Brakes), electronic checklists, and flight plan pages for the Captain."
+    "title": "Left Multi-Function Display (MFD 1) (STATUS / EICAS)",
+    "system": "Airplane General",
+    "description": "The EICAS displays engine and system parameters such as flap, gear, spoilers and trim positions, total fuel quantity, APU, and environmental information.\nThe EICAS also displays crew awareness messages.\nSTATUS PAGE:\nA dedicated page on MFD is available for the crew to achieve status information about:\n-Flight\n-Battery\n-Engine Oil Level\n-Brake\n-Crew Oxygen\n-Doors."
   },
   "mfd-right": {
-    "title": "Right Multi-Function Display (MFD 2 / EICAS)",
-    "system": "Avionics / Displays",
-    "description": "Displays EICAS primary engine indications (N1, ITT, N2, FF, Oil), Crew Alerting System (CAS) messages, flap/gear/trim status, and system synoptic pages for the First Officer."
+    "title": "Right Multi-Function Display (MFD 2)",
+    "system": "Airplane General",
+    "description": "The Multi Function Display (MFD) contains menu softkeys, on the top and bottom of the screen, used to select formats and control various systems. The upper menu bar has three menu title buttons to select synoptics, map, and plan navigation formats. The synoptic formats selectable by the flight crew are displayed in the upper area of the screen. The lower menu bar has three menu title buttons to select TCAS zoom, weather virtual controller and electronic checklist in the lower area of the screen. If nothing has been selected for display in the lower area, it remains blank."
   },
   "pfd-right": {
     "title": "Right Primary Flight Display (PFD 2)",
-    "system": "Avionics / Displays",
+    "system": "Airplane General",
     "description": "Displays First Officer primary flight instruments: attitude, airspeed, barometric altitude, vertical speed, heading/HSI, and AFCS Flight Mode Annunciations (FMA)."
   },
   "isis-screen": {
@@ -565,9 +565,9 @@
     "description": "Top guarded button (DN LCK REL) mechanically overrides the landing gear lever downlock actuator. Bottom guarded switch controls Nosewheel Steering engagement."
   },
   "clock-right-btn": {
-    "title": "First Officer GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button",
-    "system": "Warning & Terrain Awareness (EGPWS)",
-    "description": "Allows the First Officer to manually inhibit below-glideslope (G/S) alerts or acknowledge/test Ground Proximity Warning System (GPWS) alerts."
+    "title": "ADS HEATER BUTTON",
+    "system": "Ice and Rain Protection",
+    "description": "PUSH IN: Activates the ADS probes heater. A striped bar illuminates in the button.\nPUSH OUT: The ADS probes heater operates in AUTO mode."
   },
   "reversionary-right-knobs": {
     "title": "First Officer Reversionary & Display Brightness Panel (PFD / MFD / ADS / IRS)",
