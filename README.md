@@ -91,12 +91,3 @@ All control titles, system categories, and descriptions are stored in [`src/data
 ```
 
 ---
-
-## Deployment (GitHub Pages)
-
-This repository includes a GitHub Actions workflow ([`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)) that automatically builds and deploys the app to **GitHub Pages** on every push to `main`.
-
-1. Push the repository to GitHub.
-2. Go to **Settings → Pages** in your GitHub repository.
-3. Under **Build and deployment → Source**, select **GitHub Actions**.
-
