@@ -549,10 +549,15 @@
     "system": "Landing Gear",
     "description": "Three-position landing gear selector lever (UP, OFF, DN) with downlock release button."
   },
-  "autobrake-knob": {
-    "title": "Autobrake Selector Knob (RTO / OFF / LO / MED / HI)",
+  "autobrake-panel": {
+    "title": "AUTOBRAKE Selector Knob (RTO / OFF / LO / MED / HI)",
     "system": "Landing Gear & Brakes",
     "description": "Selects automatic wheel braking deceleration level for landing (LO, MED, HI) or Rejected Takeoff (RTO) maximum braking."
+  },
+  "eicas-full-panel": {
+    "title": "EICAS / Display Brightness & Control Panel",
+    "system": "Avionics / Displays",
+    "description": "Controls EICAS display reversion and auxiliary center panel brightness/functions."
   },
   "gear-ovrd-btn": {
     "title": "Landing Gear Downlock Override & Alternate Gear Button",
@@ -568,6 +573,11 @@
     "title": "Right Reversionary & Display Dimming Knobs",
     "system": "Main Instrument Panel",
     "description": "Contains ADS/IRS sensor reversion buttons and individual brightness knobs for MFD 2 and PFD 2."
+  },
+  "flight-control-mode": {
+    "title": "FLIGHT CONTROL MODE Panel (ELEVATOR / AILERON / RUDDER)",
+    "system": "Flight Controls",
+    "description": "Contains guarded mode switches for the Fly-By-Wire Elevator, Aileron, and Rudder actuators, allowing crew override or direct mode selection."
   },
   "mcdu-left-keys": {
     "title": "Left MCDU Keypad & Function Buttons",
@@ -598,6 +608,11 @@
     "title": "Engine 2 Start / Stop Selector Knob (STOP / RUN / START)",
     "system": "Engine Start / Ignition Panel",
     "description": "Guarded rotary selector for Engine 2 automatic starting (START), normal operation (RUN), and shutdown (STOP)."
+  },
+  "to-config-btn": {
+    "title": "T/O CONFIG (Takeoff Configuration Test) Pushbutton",
+    "system": "Warning & Takeoff Configuration",
+    "description": "Pressing tests whether the aircraft is properly configured for takeoff (flaps, trims, speedbrake, parking brake). Announces 'TAKEOFF OK' or triggers a configuration warning."
   },
   "ccd-pedestal-left": {
     "title": "Left Cursor Control Device (CCD 1 Touchpad & Keys)",
@@ -648,6 +663,11 @@
     "title": "Weather Radar & TCAS Control Knobs",
     "system": "Surveillance / Avionics",
     "description": "Controls Weather Radar tilt/gain and TCAS mode (STBY / TA ONLY / TA/RA)."
+  },
+  "cockpit-printer": {
+    "title": "Cockpit Thermal Printer",
+    "system": "Communications / Datalink (ACARS)",
+    "description": "Prints ACARS datalink messages, weather reports (METAR/TAF), ATIS, clearances, flight plans, and maintenance reports. Includes PAPER, SLEW, and TEST/ERROR controls."
   },
   "alt-gear-lever": {
     "title": "Alternate Landing Gear Free-Fall Lever",
