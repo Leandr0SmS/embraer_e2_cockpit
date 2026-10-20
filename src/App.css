@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  overflow: hidden; /* Prevents native page scrolling */
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Full-screen SVG container inside TransformComponent */
+.svg-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Interactive clickable buttons, switches, knobs, and screens */
+.clickable {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.clickable .hotspot-rect {
+  fill: rgba(97, 218, 251, 0.02);
+  stroke: rgba(97, 218, 251, 0.35);
+  stroke-width: 16px;
+  pointer-events: all;
+  transition: fill 0.15s ease, stroke 0.15s ease, stroke-width 0.15s ease;
+}
+
+.clickable:hover .hotspot-rect {
+  fill: rgba(97, 218, 251, 0.28);
+  stroke: #61dafb;
+  stroke-width: 28px;
+}
+
+.clickable:hover {
+  opacity: 0.9;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 460px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid #3d3d3d;
+}
+
+.modal-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(97, 218, 251, 0.15);
+  color: #61dafb;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.modal-content h2 {
+  margin-bottom: 12px;
+  color: #61dafb;
+  font-size: 1.25rem;
+}
+
+.modal-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+.close-btn {
+  background: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+}

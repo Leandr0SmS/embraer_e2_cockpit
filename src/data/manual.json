@@ -1,0 +1,662 @@
+{
+  "pfd-left": {
+    "title": "Left Primary Flight Display (PFD 1)",
+    "system": "Avionics / Displays",
+    "description": "Displays Captain primary flight instruments: Attitude Director Indicator (ADI), airspeed/Mach tape, altitude tape, vertical speed indicator, Horizontal Situation Indicator (HSI), and Flight Mode Annunciations (FMA)."
+  },
+  "mfd-left": {
+    "title": "Left Multi-Function Display (MFD 1)",
+    "system": "Avionics / Displays",
+    "description": "Displays interactive lateral/vertical navigation map, system synoptics (Electrical, Hydraulic, Fuel, ECS, Flight Controls, Brakes), electronic checklists, and flight plan pages for the Captain."
+  },
+  "mfd-right": {
+    "title": "Right Multi-Function Display (MFD 2 / EICAS)",
+    "system": "Avionics / Displays",
+    "description": "Displays EICAS primary engine indications (N1, ITT, N2, FF, Oil), Crew Alerting System (CAS) messages, flap/gear/trim status, and system synoptic pages for the First Officer."
+  },
+  "pfd-right": {
+    "title": "Right Primary Flight Display (PFD 2)",
+    "system": "Avionics / Displays",
+    "description": "Displays First Officer primary flight instruments: attitude, airspeed, barometric altitude, vertical speed, heading/HSI, and AFCS Flight Mode Annunciations (FMA)."
+  },
+  "isis-screen": {
+    "title": "ISIS Display Screen (Standby Instrument)",
+    "system": "Standby Flight Instruments",
+    "description": "Integrated Standby Instrument System LCD screen providing independent attitude, airspeed, altitude, and heading/ILS indications in case of primary display failure."
+  },
+  "mcdu-left-screen": {
+    "title": "Left MCDU Display Screen (MCDU 1)",
+    "system": "Flight Management System (FMS)",
+    "description": "Multifunction Control Display Unit 1 screen displaying FMS flight plan, performance, navigation, radio management, and datalink pages."
+  },
+  "mcdu-right-screen": {
+    "title": "Right MCDU Display Screen (MCDU 2)",
+    "system": "Flight Management System (FMS)",
+    "description": "Multifunction Control Display Unit 2 screen displaying independent FMS, radio tuning, and datalink pages for the First Officer."
+  },
+  "dvdr-test-btn": {
+    "title": "CVR / DVDR Test Pushbutton",
+    "system": "DVDR Control Panel",
+    "description": "Initiates a built-in test of the Digital Voice and Data Recorder (Cockpit Voice Recorder & Flight Data Recorder)."
+  },
+  "dvdr-erase-btn": {
+    "title": "CVR / DVDR Erase Pushbutton",
+    "system": "DVDR Control Panel",
+    "description": "Erases cockpit voice recordings when the aircraft is on the ground and the parking brake is applied."
+  },
+  "elt-switch": {
+    "title": "ELT Selector Switch (ARM / ON)",
+    "system": "DVDR Control Panel",
+    "description": "Controls the Emergency Locator Transmitter. ARM: Automatically transmits on impact. ON: Manually activates emergency transmission."
+  },
+  "elec-idg1-knob": {
+    "title": "IDG 1 Selector Knob (DISC / OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Controls Integrated Drive Generator 1. AUTO: Connects IDG 1 to AC Bus 1. OFF: Opens generator line contactor. DISC (guarded): Mechanically disconnects IDG 1 from Engine 1 gearbox."
+  },
+  "elec-idg2-knob": {
+    "title": "IDG 2 Selector Knob (DISC / OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Controls Integrated Drive Generator 2. AUTO: Connects IDG 2 to AC Bus 2. OFF: Opens generator line contactor. DISC (guarded): Mechanically disconnects IDG 2 from Engine 2 gearbox."
+  },
+  "elec-apu-gen-btn": {
+    "title": "APU GEN Pushbutton",
+    "system": "Electrical System",
+    "description": "Connects or disconnects the Auxiliary Power Unit (APU) starter-generator to/from the AC electrical network."
+  },
+  "elec-gpu-btn": {
+    "title": "AC GPU Pushbutton",
+    "system": "Electrical System",
+    "description": "Connects external AC Ground Power Unit to the aircraft electrical buses when AVAIL is illuminated."
+  },
+  "elec-ac-bus-ties-knob": {
+    "title": "AC Bus Ties Selector Knob",
+    "system": "Electrical System",
+    "description": "Controls AC Bus Tie Contactors (BTC 1 & 2). AUTO: Automatic power transfer between AC Bus 1 and AC Bus 2. 1 OPEN / 2 OPEN: Isolates the respective AC bus."
+  },
+  "elec-tru1-knob": {
+    "title": "TRU 1 Selector Knob (OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Controls Transformer Rectifier Unit 1, which converts 115V AC to 28V DC for DC Bus 1."
+  },
+  "elec-tru-ess-knob": {
+    "title": "TRU ESS Selector Knob (OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Controls the Essential Transformer Rectifier Unit supplying DC Essential Bus power."
+  },
+  "elec-tru2-knob": {
+    "title": "TRU 2 Selector Knob (OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Controls Transformer Rectifier Unit 2, which converts 115V AC to 28V DC for DC Bus 2."
+  },
+  "elec-batt1-knob": {
+    "title": "BATT 1 Selector Knob (OFF / ON)",
+    "system": "Electrical System",
+    "description": "Connects or disconnects Battery 1 (24V Ni-Cd) to/from the DC electrical system."
+  },
+  "elec-batt2-knob": {
+    "title": "BATT 2 Selector Knob (OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Connects Battery 2 to the automatic battery bus and essential power network in AUTO mode."
+  },
+  "elec-dc-bus-ties-knob": {
+    "title": "DC Bus Ties Selector Knob (OFF / AUTO)",
+    "system": "Electrical System",
+    "description": "Controls DC Bus Tie contactors allowing automatic cross-tie between DC Bus 1, DC Bus 2, and DC ESS Bus."
+  },
+  "ckpt-ovhd-lt-knob": {
+    "title": "Overhead Panel Backlighting Knob",
+    "system": "Cockpit Lights",
+    "description": "Adjusts the integral backlighting intensity of the overhead panel."
+  },
+  "ckpt-main-lt-knob": {
+    "title": "Main Panel Backlighting Knob",
+    "system": "Cockpit Lights",
+    "description": "Adjusts the integral backlighting intensity of the main instrument panel and glareshield."
+  },
+  "ckpt-ped-lt-knob": {
+    "title": "Pedestal Backlighting Knob",
+    "system": "Cockpit Lights",
+    "description": "Adjusts the integral backlighting intensity of the control pedestal."
+  },
+  "ckpt-dome-btn": {
+    "title": "Cockpit Dome Light Switch",
+    "system": "Cockpit Lights",
+    "description": "Turns the overhead cockpit flood/dome illumination ON or OFF."
+  },
+  "ckpt-annun-test-sw": {
+    "title": "Annunciator Test / Storm Light Switch",
+    "system": "Cockpit Lights",
+    "description": "Tests all cockpit annunciator lights when held to TEST, or sets maximum cockpit flood lighting in STORM position."
+  },
+  "fire-eng1-handle": {
+    "title": "Engine 1 Fire Extinguisher Handle",
+    "system": "Fire Protection",
+    "description": "Pulling the handle closes Engine 1 fuel, hydraulic, and bleed air shutoff valves, trips IDG 1, and arms the fire extinguishing bottles. Rotating LEFT (A) or RIGHT (B) discharges the respective Halon bottle."
+  },
+  "fire-cargo-fwd-btn": {
+    "title": "Forward Cargo Smoke / Extinguisher Pushbutton",
+    "system": "Fire Protection",
+    "description": "Illuminates when smoke is detected in the forward cargo compartment. Pressing arms and discharges the high-rate/low-rate cargo fire extinguishing bottles."
+  },
+  "fire-cargo-aft-btn": {
+    "title": "Aft Cargo Smoke / Extinguisher Pushbutton",
+    "system": "Fire Protection",
+    "description": "Illuminates when smoke is detected in the aft cargo compartment. Pressing arms and discharges the cargo fire extinguishing agent."
+  },
+  "fire-apu-extg-btn": {
+    "title": "APU Fire Extinguisher Pushbutton",
+    "system": "Fire Protection",
+    "description": "Discharges the APU fire extinguisher bottle into the APU compartment when armed by the APU Fire Emergency Stop button."
+  },
+  "fire-apu-emer-btn": {
+    "title": "APU Fire Emergency Stop Guarded Button",
+    "system": "Fire Protection",
+    "description": "Illuminates red during an APU fire condition. Pressing shuts down the APU, closes the APU fuel shutoff valve, trips the APU generator, and arms the APU extinguisher bottle."
+  },
+  "fire-eng2-handle": {
+    "title": "Engine 2 Fire Extinguisher Handle",
+    "system": "Fire Protection",
+    "description": "Pulling the handle isolates Engine 2 fuel, hydraulics, bleed air, and electrical generation, and arms the fire extinguishing bottles. Rotating LEFT (A) or RIGHT (B) discharges the bottle."
+  },
+  "fuel-xfeed-knob": {
+    "title": "Fuel Crossfeed Selector Knob (LOW 1 / OFF / LOW 2)",
+    "system": "Fuel System",
+    "description": "Controls fuel balance between left and right wing tanks. LOW 1: Opens crossfeed valve and turns off Tank 1 pump so Tank 2 feeds both engines. LOW 2: Tank 1 feeds both engines."
+  },
+  "fuel-ac-pump1-btn": {
+    "title": "AC Fuel Pump 1 Selector Knob (OFF / AUTO / ON)",
+    "system": "Fuel System",
+    "description": "Controls Left Wing Tank main AC-powered ejector/boost fuel pump."
+  },
+  "fuel-ac-pump2-btn": {
+    "title": "AC Fuel Pump 2 Selector Knob (OFF / AUTO / ON)",
+    "system": "Fuel System",
+    "description": "Controls Right Wing Tank main AC-powered ejector/boost fuel pump."
+  },
+  "fuel-dc-pump-btn": {
+    "title": "DC Fuel Pump Selector Knob (OFF / AUTO / ON)",
+    "system": "Fuel System",
+    "description": "Controls the DC-powered fuel pump located in the right wing collector tank for APU starting and backup engine fuel feed when AC power is unavailable."
+  },
+  "pax-emer-lt-knob": {
+    "title": "Emergency Lights Selector Knob (OFF / ARM / ON)",
+    "system": "Passenger Signs & Emergency Lighting",
+    "description": "Controls cabin and exterior emergency escape path lighting. ARM: Automatically illuminates emergency lights if aircraft DC/AC power fails."
+  },
+  "pax-sterile-btn": {
+    "title": "Sterile Cockpit Light Pushbutton",
+    "system": "Passenger Signs & Emergency Lighting",
+    "description": "Illuminates the sterile cockpit indicator in the forward cabin to notify flight attendants that the flight crew is in a critical phase of flight."
+  },
+  "pax-no-smk-sw": {
+    "title": "No Smoking Sign Switch (OFF / AUTO / ON)",
+    "system": "Passenger Signs & Emergency Lighting",
+    "description": "Controls the cabin No Smoking / Electronic Devices signs and chime."
+  },
+  "pax-fstn-belts-sw": {
+    "title": "Fasten Seat Belts Sign Switch (OFF / ON)",
+    "system": "Passenger Signs & Emergency Lighting",
+    "description": "Illuminates cabin Fasten Seat Belts signs and sounds the cabin chime."
+  },
+  "pax-cabin-lt-sw": {
+    "title": "Cabin Lights Override Switch",
+    "system": "Passenger Signs & Emergency Lighting",
+    "description": "Allows cockpit control of cabin lighting when required."
+  },
+  "apu-fuel-shutoff-btn": {
+    "title": "APU Fuel Shutoff Guarded Pushbutton",
+    "system": "APU Control",
+    "description": "Closes the APU fuel shutoff valve to isolate fuel supply to the Auxiliary Power Unit."
+  },
+  "apu-emer-stop-btn": {
+    "title": "APU Emergency Stop Pushbutton",
+    "system": "APU Control",
+    "description": "Immediately shuts down the APU without the normal cooldown cycle and closes the APU fuel shutoff valve."
+  },
+  "apu-master": {
+    "title": "APU Master Selector Knob (OFF / ON / START)",
+    "system": "APU Control",
+    "description": "Controls the Auxiliary Power Unit. OFF: Initiates normal cooldown and shutdown. ON: Powers APU FADEC and opens fuel valve. START: Momentary position that initiates the automatic APU start sequence."
+  },
+  "wiper-left-knob": {
+    "title": "Windshield Wiper 1 (Captain) Knob",
+    "system": "Ice & Rain Protection",
+    "description": "Controls the Captain windshield wiper speed: OFF, TIMER (intermittent), LOW, or HIGH."
+  },
+  "wiper-right-knob": {
+    "title": "Windshield Wiper 2 (First Officer) Knob",
+    "system": "Ice & Rain Protection",
+    "description": "Controls the First Officer windshield wiper speed: OFF, TIMER (intermittent), LOW, or HIGH."
+  },
+  "ext-nav-sw": {
+    "title": "NAV Lights Switch",
+    "system": "External Lights",
+    "description": "Turns the red/green wingtip and white tail position/navigation lights ON or OFF."
+  },
+  "ext-strobe-sw": {
+    "title": "STROBE Lights Switch",
+    "system": "External Lights",
+    "description": "Turns the high-intensity white wingtip and tail anti-collision strobe lights ON or OFF."
+  },
+  "ext-bcn-sw": {
+    "title": "RED BEACON Switch",
+    "system": "External Lights",
+    "description": "Turns upper and lower fuselage red anti-collision beacon lights ON or OFF (turned ON prior to engine start)."
+  },
+  "ext-logo-sw": {
+    "title": "LOGO Lights Switch",
+    "system": "External Lights",
+    "description": "Illuminates the vertical stabilizer emblem for night operations."
+  },
+  "ext-insp-sw": {
+    "title": "INSP (Wing Inspection) Lights Switch",
+    "system": "External Lights",
+    "description": "Illuminates the wing leading edges to visually check for ice accumulation at night."
+  },
+  "ext-taxi-nose-sw": {
+    "title": "TAXI Nose Light Switch",
+    "system": "External Lights",
+    "description": "Turns the nose-gear-mounted taxi light ON or OFF (automatically extinguishes when nose gear retracts)."
+  },
+  "ext-taxi-side-sw": {
+    "title": "TAXI Side / Turnoff Lights Switch",
+    "system": "External Lights",
+    "description": "Turns the wide-beam runway turnoff / side taxi lights ON or OFF."
+  },
+  "ext-ldg-left-sw": {
+    "title": "Left Landing Light Switch",
+    "system": "External Lights",
+    "description": "Controls the left wing root high-intensity landing light."
+  },
+  "ext-ldg-nose-sw": {
+    "title": "Nose Landing Light Switch",
+    "system": "External Lights",
+    "description": "Controls the nose-gear high-intensity landing light."
+  },
+  "ext-ldg-right-sw": {
+    "title": "Right Landing Light Switch",
+    "system": "External Lights",
+    "description": "Controls the right wing root high-intensity landing light."
+  },
+  "hyd-sys1-shutoff-btn": {
+    "title": "Hydraulic System 1 Engine Pump Shutoff Button",
+    "system": "Hydraulic System",
+    "description": "Guarded pushbutton that closes the Hydraulic System 1 engine-driven pump (EDP 1) supply shutoff valve."
+  },
+  "hyd-ptu-knob": {
+    "title": "PTU (Power Transfer Unit) Selector Knob",
+    "system": "Hydraulic System",
+    "description": "Controls the mechanical Power Transfer Unit between Hydraulic Systems 1 and 2 (OFF / AUTO / ON) to assist landing gear retraction/extension if an engine fails."
+  },
+  "hyd-sys2-shutoff-btn": {
+    "title": "Hydraulic System 2 Engine Pump Shutoff Button",
+    "system": "Hydraulic System",
+    "description": "Guarded pushbutton that closes the Hydraulic System 2 engine-driven pump (EDP 2) supply shutoff valve."
+  },
+  "hyd-sys1-elec-pump-knob": {
+    "title": "Hydraulic System 1 Electric Pump Knob (OFF / AUTO / ON)",
+    "system": "Hydraulic System",
+    "description": "Controls AC Motor Pump 1 (ACMP 1) providing backup and ground hydraulic pressure for System 1."
+  },
+  "hyd-sys2-elec-pump-knob": {
+    "title": "Hydraulic System 2 Electric Pump Knob (OFF / AUTO / ON)",
+    "system": "Hydraulic System",
+    "description": "Controls AC Motor Pump 2 (ACMP 2) providing backup and ground hydraulic pressure for System 2."
+  },
+  "hyd-sys3a-elec-pump-knob": {
+    "title": "Hydraulic System 3 Electric Pump A Knob (OFF / ON)",
+    "system": "Hydraulic System",
+    "description": "Controls primary AC Motor Pump 3A (ACMP 3A) pressurizing Hydraulic System 3 for flight controls."
+  },
+  "hyd-sys3b-elec-pump-knob": {
+    "title": "Hydraulic System 3 Electric Pump B Knob (OFF / AUTO / ON)",
+    "system": "Hydraulic System",
+    "description": "Controls backup AC Motor Pump 3B (ACMP 3B) for Hydraulic System 3."
+  },
+  "press-cabin-alt-knob": {
+    "title": "Manual Cabin Altitude / Outflow Valve Switch (UP / DN)",
+    "system": "Cabin Pressurization",
+    "description": "Spring-loaded rotary switch used in MAN mode to manually open (UP) or close (DN) the cabin outflow valve."
+  },
+  "press-mode-knob": {
+    "title": "Pressurization Mode Selector Knob (AUTO / LFE CTRL / MAN)",
+    "system": "Cabin Pressurization",
+    "description": "Selects automatic FMS/CPCS cabin pressurization control (AUTO), manual landing field elevation entry (LFE CTRL), or direct manual outflow valve control (MAN)."
+  },
+  "press-dump-btn": {
+    "title": "Cabin Dump Guarded Pushbutton",
+    "system": "Cabin Pressurization",
+    "description": "Emergency guarded button that turns off both air conditioning packs and commands the outflow valve fully open for rapid cabin depressurization / smoke removal."
+  },
+  "press-lfe-knob": {
+    "title": "LFE (Landing Field Elevation) Selector Knob",
+    "system": "Cabin Pressurization",
+    "description": "Adjusts the target Landing Field Elevation on EICAS when the Pressurization Mode knob is set to LFE CTRL."
+  },
+  "ice-wshld1-btn": {
+    "title": "Windshield 1 Heating Pushbutton",
+    "system": "Ice & Rain Protection",
+    "description": "Activates electrical anti-ice and anti-fog heating for the Captain windshield."
+  },
+  "ice-wshld2-btn": {
+    "title": "Windshield 2 Heating Pushbutton",
+    "system": "Ice & Rain Protection",
+    "description": "Activates electrical anti-ice and anti-fog heating for the First Officer windshield."
+  },
+  "ice-wing-btn": {
+    "title": "Wing Anti-Ice Pushbutton",
+    "system": "Ice & Rain Protection",
+    "description": "Commands the wing anti-ice valves open to supply hot bleed air to the wing leading edge slats."
+  },
+  "ice-mode-knob": {
+    "title": "Ice Protection Mode Selector Knob (AUTO / ON)",
+    "system": "Ice & Rain Protection",
+    "description": "Selects automatic ice detector control (AUTO) or continuous manual activation (ON) of the engine and wing anti-ice systems."
+  },
+  "ice-test-knob": {
+    "title": "Ice Detection Test Selector Knob (ENG / OFF / WING)",
+    "system": "Ice & Rain Protection",
+    "description": "Performs a built-in functional test of the engine and wing ice protection systems."
+  },
+  "pneu-ckpt-temp-knob": {
+    "title": "Cockpit Temperature Selector Knob",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Adjusts the target temperature for the cockpit zone (18\u00b0C to 30\u00b0C)."
+  },
+  "pneu-recirc-btn": {
+    "title": "Cabin Recirculation Fan Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Controls the cabin air recirculation fans to reduce bleed air demand."
+  },
+  "pneu-pax-temp-knob": {
+    "title": "Cabin Temperature Selector Knob",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Adjusts the target temperature for the passenger cabin zone."
+  },
+  "pneu-pack1-btn": {
+    "title": "Pack 1 Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Opens or closes Air Conditioning Pack 1 flow control valve."
+  },
+  "pneu-pack2-btn": {
+    "title": "Pack 2 Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Opens or closes Air Conditioning Pack 2 flow control valve."
+  },
+  "pneu-xbleed-btn": {
+    "title": "Crossbleed Valve Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Controls the pneumatic crossbleed valve connecting the left and right pneumatic manifolds for engine starting, anti-ice, or single-bleed pack operation."
+  },
+  "pneu-bleed1-btn": {
+    "title": "Engine 1 Bleed Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Opens or closes Engine 1 bleed air pressure regulating and shutoff valve."
+  },
+  "pneu-apu-bleed-btn": {
+    "title": "APU Bleed Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Opens or closes the APU bleed air valve to supply pneumatic air for air conditioning packs and engine starting."
+  },
+  "pneu-bleed2-btn": {
+    "title": "Engine 2 Bleed Pushbutton",
+    "system": "Air Conditioning & Pneumatics",
+    "description": "Opens or closes Engine 2 bleed air pressure regulating and shutoff valve."
+  },
+  "oxy-mask-knob": {
+    "title": "Passenger Oxygen Mask Deployment Knob (AUTO / OVRD)",
+    "system": "Oxygen System",
+    "description": "AUTO: Deploys cabin oxygen masks automatically if cabin altitude exceeds ~14,000 ft. OVRD: Manually deploys cabin oxygen masks."
+  },
+  "oxy-supply-btn": {
+    "title": "Passenger Oxygen Supply Pushbutton",
+    "system": "Oxygen System",
+    "description": "Controls oxygen flow to the deployed passenger cabin masks."
+  },
+  "master-warn-left": {
+    "title": "Left Master Warning (WARN) Pushbutton",
+    "system": "Glareshield / Crew Alerting",
+    "description": "Flashes red and sounds a triple chime when a Level 3 Warning CAS message occurs. Pressing extinguishes the flash and silences the aural warning."
+  },
+  "master-caut-left": {
+    "title": "Left Master Caution (CAUT) Pushbutton",
+    "system": "Glareshield / Crew Alerting",
+    "description": "Illuminates amber and sounds a single chime when a Level 2 Caution CAS message occurs. Pressing resets the caution light."
+  },
+  "master-caut-right": {
+    "title": "Right Master Caution (CAUT) Pushbutton",
+    "system": "Glareshield / Crew Alerting",
+    "description": "First Officer amber Master Caution reset pushbutton."
+  },
+  "master-warn-right": {
+    "title": "Right Master Warning (WARN) Pushbutton",
+    "system": "Glareshield / Crew Alerting",
+    "description": "First Officer red Master Warning reset pushbutton."
+  },
+  "dcu1-baro-knob": {
+    "title": "Left Barometric Altimeter Knob (BARO / STD)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Sets the Captain barometric pressure reference (inHg or hPa). Pushing the center button toggles STD (29.92 inHg / 1013 hPa)."
+  },
+  "dcu1-buttons": {
+    "title": "Left Display Controller Pushbuttons (HSI / WX / TFC / FPV)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Toggles PFD 1 Flight Path Vector (FPV), HSI format (ARC/COMP), BRG pointers, Weather Radar overlay (WX), and TCAS Traffic overlay (TFC)."
+  },
+  "dcu1-mins-knob": {
+    "title": "Left Minimums Selector Knob (RA / BARO)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Selects Radio Altimeter (RA) or Barometric (BARO) decision height/altitude bug on PFD 1."
+  },
+  "fgp-fd1-btn": {
+    "title": "Left Flight Director (FD 1) Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Toggles the Captain Flight Director command bars on PFD 1."
+  },
+  "fgp-crs1-knob": {
+    "title": "Left Course (CRS 1) Selector Knob",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Sets the selected VOR/LOC course pointer for the Captain HSI. Pushing centers the course deviation needle."
+  },
+  "fgp-at-btn": {
+    "title": "Autothrottle (A/T) Engage Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Arms or engages the Automatic Throttle system."
+  },
+  "fgp-spd-knob": {
+    "title": "Airspeed / Mach Selector Knob (FMS / MAN)",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Outer ring selects FMS-computed speed or Manual speed control. Inner knob sets target IAS/Mach; pushing toggles IAS/Mach mode."
+  },
+  "fgp-nav-btn": {
+    "title": "LNAV / Lateral Navigation (NAV) Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Arms or engages lateral navigation mode (FMS LNAV or VOR/LOC capture)."
+  },
+  "fgp-hdg-knob": {
+    "title": "Heading (HDG) Selector & Sync Knob",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Rotates to set the selected heading bug on the PFD/MFD. Pushing syncs the heading bug to the current aircraft heading."
+  },
+  "fgp-appr-btn": {
+    "title": "Approach (APPR) Mode Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Arms lateral and vertical approach guidance (ILS LOC/GS or RNAV RNP/LPV approach)."
+  },
+  "fgp-bank-btn": {
+    "title": "Half Bank Limit (BANK) Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Limits Flight Director / Autopilot roll bank angle to 17\u00b0 in HDG mode."
+  },
+  "fgp-ap-btn": {
+    "title": "Autopilot (AP) Engage Pushbutton",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages or disengages the Automatic Flight Control System Autopilot."
+  },
+  "fgp-yd-src-btns": {
+    "title": "Yaw Damper (YD) & Navigation Source (SRC) Buttons",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "YD engages/disengages the Yaw Damper; SRC switches the active Flight Director master side (Captain / First Officer)."
+  },
+  "fgp-vnav-flch-btns": {
+    "title": "VNAV & Flight Level Change (FLCH) Buttons",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages FMS Vertical Navigation (VNAV) profile guidance or Flight Level Change (FLCH) airspeed-on-pitch climb/descent."
+  },
+  "fgp-vs-wheel": {
+    "title": "Vertical Speed / FPA Pitch Wheel & Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages Vertical Speed (VS) or Flight Path Angle (FPA) mode; thumbwheel adjusts the target rate of climb/descent or flight path angle."
+  },
+  "fgp-alt-knob": {
+    "title": "Altitude Selector Knob (ALT)",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Sets the preselected altitude on the PFD (outer ring 1000 ft, inner knob 100 ft)."
+  },
+  "fgp-fd2-crs2": {
+    "title": "Right Flight Director (FD 2) & Course 2 (CRS 2) Knob",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Controls the First Officer Flight Director bars and VOR/LOC Course 2 pointer."
+  },
+  "dcu2-mins-knob": {
+    "title": "Right Minimums Selector Knob (RA / BARO)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Selects Radio Altimeter (RA) or Barometric (BARO) minimums bug on PFD 2."
+  },
+  "dcu2-buttons": {
+    "title": "Right Display Controller Pushbuttons (HSI / WX / TFC / FPV)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Toggles PFD 2 Flight Path Vector (FPV), HSI format, bearing pointers, Weather Radar overlay, and TCAS Traffic overlay."
+  },
+  "dcu2-baro-knob": {
+    "title": "Right Barometric Altimeter Knob (BARO / STD)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Sets the First Officer barometric pressure reference (inHg or hPa) or toggles STD."
+  },
+  "clock-left-btn": {
+    "title": "Captain Digital Clock & Chronometer Controls",
+    "system": "Main Instrument Panel",
+    "description": "Controls UTC time display, elapsed flight time (ET), and stopwatch chronometer (CHR)."
+  },
+  "reversionary-left-knobs": {
+    "title": "Left Reversionary & Display Dimming Knobs",
+    "system": "Main Instrument Panel",
+    "description": "Contains ADS/IRS sensor reversion buttons and individual brightness knobs for PFD 1 and MFD 1."
+  },
+  "ldg-gear-lever": {
+    "title": "Landing Gear Control Lever (UP / OFF / DN)",
+    "system": "Landing Gear",
+    "description": "Three-position landing gear selector lever (UP, OFF, DN) with downlock release button."
+  },
+  "autobrake-knob": {
+    "title": "Autobrake Selector Knob (RTO / OFF / LO / MED / HI)",
+    "system": "Landing Gear & Brakes",
+    "description": "Selects automatic wheel braking deceleration level for landing (LO, MED, HI) or Rejected Takeoff (RTO) maximum braking."
+  },
+  "gear-ovrd-btn": {
+    "title": "Landing Gear Downlock Override & Alternate Gear Button",
+    "system": "Landing Gear",
+    "description": "Allows overriding the landing gear lever mechanical lock or silencing landing gear aural warnings."
+  },
+  "clock-right-btn": {
+    "title": "First Officer Digital Clock & Chronometer Controls",
+    "system": "Main Instrument Panel",
+    "description": "Controls UTC time display, elapsed flight time (ET), and stopwatch chronometer (CHR) for the First Officer."
+  },
+  "reversionary-right-knobs": {
+    "title": "Right Reversionary & Display Dimming Knobs",
+    "system": "Main Instrument Panel",
+    "description": "Contains ADS/IRS sensor reversion buttons and individual brightness knobs for MFD 2 and PFD 2."
+  },
+  "mcdu-left-keys": {
+    "title": "Left MCDU Keypad & Function Buttons",
+    "system": "Flight Management System (FMS)",
+    "description": "Alphanumeric keypad and mode keys (RTE, FPL, PERF, NAV, PROG, MENU, RADIO, DLK) for MCDU 1."
+  },
+  "mcdu-right-keys": {
+    "title": "Right MCDU Keypad & Function Buttons",
+    "system": "Flight Management System (FMS)",
+    "description": "Alphanumeric keypad and mode keys (RTE, FPL, PERF, NAV, PROG, MENU, RADIO, DLK) for MCDU 2."
+  },
+  "eng1-ign-knob": {
+    "title": "Engine 1 Ignition Selector Knob (OFF / AUTO / OVRD)",
+    "system": "Engine Start / Ignition Panel",
+    "description": "Controls Engine 1 igniters. AUTO: FADEC automatically controls ignition. OVRD: Continuous ignition on both igniters. OFF: Inhibits ignition for dry motoring."
+  },
+  "eng2-ign-knob": {
+    "title": "Engine 2 Ignition Selector Knob (OFF / AUTO / OVRD)",
+    "system": "Engine Start / Ignition Panel",
+    "description": "Controls Engine 2 igniters (OFF / AUTO / OVRD)."
+  },
+  "eng1-start-knob": {
+    "title": "Engine 1 Start / Stop Selector Knob (STOP / RUN / START)",
+    "system": "Engine Start / Ignition Panel",
+    "description": "Guarded rotary selector. RUN: Normal operating position. START: Momentary position initiating FADEC automatic start sequence. STOP: Shuts down Engine 1."
+  },
+  "eng2-start-knob": {
+    "title": "Engine 2 Start / Stop Selector Knob (STOP / RUN / START)",
+    "system": "Engine Start / Ignition Panel",
+    "description": "Guarded rotary selector for Engine 2 automatic starting (START), normal operation (RUN), and shutdown (STOP)."
+  },
+  "ccd-pedestal-left": {
+    "title": "Left Cursor Control Device (CCD 1 Touchpad & Keys)",
+    "system": "Control Pedestal / Avionics",
+    "description": "Touchpad, Enter keys, and display selection buttons allowing the Captain to move the cursor across PFD 1, MFD 1, and MCDU 1."
+  },
+  "ccd-pedestal-right": {
+    "title": "Right Cursor Control Device (CCD 2 Touchpad & Keys)",
+    "system": "Control Pedestal / Avionics",
+    "description": "Touchpad, Enter keys, and display selection buttons allowing the First Officer to move the cursor across MFD 2, PFD 2, and MCDU 2."
+  },
+  "speedbrake-lever": {
+    "title": "Speedbrake Lever (CLOSE / OPEN)",
+    "system": "Flight Controls",
+    "description": "Controls deployment of the wing multifunction spoilers as speedbrakes in flight."
+  },
+  "thrust-levers": {
+    "title": "Engine 1 & 2 Thrust Levers (MAX / TOGA / MCT / IDLE / REV)",
+    "system": "Powerplant Controls",
+    "description": "Forward thrust and thrust-reverser levers with TO/GA (Takeoff/Go-Around) buttons and A/T quick-disconnect switches."
+  },
+  "flap-lever": {
+    "title": "Flap Selector Lever (0 / 1 / 2 / 3 / 4 / 5 / FULL)",
+    "system": "Flight Controls",
+    "description": "Selects wing trailing-edge flap and leading-edge slat positions for takeoff, approach, and landing."
+  },
+  "parking-brake": {
+    "title": "Parking / Emergency Brake Handle",
+    "system": "Landing Gear & Brakes",
+    "description": "Pulling and rotating applies hydraulic parking brake pressure; also provides proportional emergency brake application."
+  },
+  "pitch-trim-sw": {
+    "title": "Pitch & Roll Trim Control Switches",
+    "system": "Flight Controls",
+    "description": "Backup pitch trim (NOSE UP / NOSE DN) and roll trim (LWD / RWD) switches with trim cutout pushbuttons."
+  },
+  "yaw-trim-sw": {
+    "title": "Yaw Trim & Flight Control Mode Switches",
+    "system": "Flight Controls",
+    "description": "Backup yaw trim switch and Flight Control (FCM) reset/mode switches."
+  },
+  "acp-left-knobs": {
+    "title": "Left Audio Control Panel (ACP 1) Buttons & Volume Knobs",
+    "system": "Communications",
+    "description": "Selects transmission and reception channels for VHF 1/2/3, HF, SATCOM, PA, Interphone, and navigation audio identifiers."
+  },
+  "wx-tcas-knobs": {
+    "title": "Weather Radar & TCAS Control Knobs",
+    "system": "Surveillance / Avionics",
+    "description": "Controls Weather Radar tilt/gain and TCAS mode (STBY / TA ONLY / TA/RA)."
+  },
+  "alt-gear-lever": {
+    "title": "Alternate Landing Gear Free-Fall Lever",
+    "system": "Landing Gear",
+    "description": "Mechanically releases landing gear uplocks and vents hydraulic pressure to allow gravity free-fall extension of the landing gear."
+  },
+  "rat-deploy-handle": {
+    "title": "RAT (Ram Air Turbine) Manual Deploy Handle",
+    "system": "Electrical / Emergency Power",
+    "description": "Manually deploys the Ram Air Turbine to provide emergency AC/DC electrical power."
+  }
+}
