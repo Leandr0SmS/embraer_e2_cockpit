@@ -1,11 +1,11 @@
 import { useState, memo } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import Modal from './components/Modal';
-import manualData from './data/manual.json';
+import initialManualData from './data/manual.json';
 import painelSvgRaw from '../painel_svg.svg?raw';
 import './App.css';
 
-// Memoized so opening/closing the modal does not re-parse the large inline SVG
+// Memoized so opening/closing the modal does not re-parse the inline SVG
 const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
   return (
     <div
@@ -17,18 +17,19 @@ const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
 });
 
 export default function App() {
-  const [activeSystem, setActiveSystem] = useState(null);
+  const [manualEntries, setManualEntries] = useState(initialManualData);
+  const [activeId, setActiveId] = useState(null);
 
-  // Event delegation handler on the SVG wrapper
+  // Event delegation: listens to clicks on any element with class="clickable" inside the SVG
   const handleSvgClick = (e) => {
     const clickedTarget = e.target.closest('.clickable');
 
     if (clickedTarget) {
       const elementId = clickedTarget.id;
-      const systemData = manualData[elementId];
+      const systemData = manualEntries[elementId];
 
       if (systemData) {
-        setActiveSystem(systemData);
+        setActiveId(elementId);
       } else {
         console.warn(`No manual data found for ID: ${elementId}`);
       }
@@ -36,8 +37,40 @@ export default function App() {
   };
 
   const closeModal = () => {
-    setActiveSystem(null);
+    setActiveId(null);
   };
+
+  const handleSaveEntry = async (id, updatedFields) => {
+    // Update local React state immediately
+    setManualEntries((prev) => ({
+      ...prev,
+      [id]: updatedFields,
+    }));
+
+    // Also update the SVG <title> tooltip inside the DOM if present
+    const svgGroup = document.getElementById(id);
+    if (svgGroup) {
+      const titleEl = svgGroup.querySelector('title');
+      if (titleEl && updatedFields.title) {
+        titleEl.textContent = updatedFields.title;
+      }
+    }
+
+    // Persist directly to src/data/manual.json via Vite dev server middleware
+    const response = await fetch('/api/save-manual', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, ...updatedFields }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to save to src/data/manual.json');
+    }
+  };
+
+  const activeSystem = activeId
+    ? { id: activeId, ...manualEntries[activeId] }
+    : null;
 
   return (
     <div className="app-container">
@@ -56,8 +89,14 @@ export default function App() {
         </TransformComponent>
       </TransformWrapper>
 
-      {/* System Details Modal */}
-      {activeSystem && <Modal data={activeSystem} onClose={closeModal} />}
+      {/* System Details & In-App Editor Modal */}
+      {activeSystem && (
+        <Modal
+          data={activeSystem}
+          onClose={closeModal}
+          onSave={handleSaveEntry}
+        />
+      )}
     </div>
   );
 }
