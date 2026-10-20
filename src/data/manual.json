@@ -654,9 +654,34 @@
     "system": "Landing Gear",
     "description": "Mechanically releases landing gear uplocks and vents hydraulic pressure to allow gravity free-fall extension of the landing gear."
   },
-  "rat-deploy-handle": {
-    "title": "RAT (Ram Air Turbine) Manual Deploy Handle",
-    "system": "Electrical / Emergency Power",
-    "description": "Manually deploys the Ram Air Turbine to provide emergency AC/DC electrical power."
+  "pa-btn-left": {
+    "title": "Captain PA (Passenger Address) Handset / Button",
+    "system": "Communications",
+    "description": "Captain Passenger Address handset socket and push-to-talk button located below the Parking / Emergency Brake handle for making cabin announcements."
+  },
+  "pa-btn-right": {
+    "title": "First Officer PA (Passenger Address) Handset / Button",
+    "system": "Communications",
+    "description": "First Officer Passenger Address handset socket and push-to-talk button located below the Alternate Landing Gear Free-Fall lever."
+  },
+  "elevator-disc-handle": {
+    "title": "ELEVATOR DISC (Elevator Disconnect) Handle",
+    "system": "Flight Controls",
+    "description": "Pulling the T-handle mechanically disconnects the left and right elevator control systems in the event of a jammed elevator."
+  },
+  "aileron-disc-handle": {
+    "title": "AILERON DISC (Aileron Disconnect) Handle",
+    "system": "Flight Controls",
+    "description": "Pulling the T-handle mechanically disconnects the left and right aileron control systems in the event of a jammed aileron."
+  },
+  "lgwrn-gnd-prox-inhibits": {
+    "title": "LG WRN / GROUND PROX INHIBITS Panel & Buttons",
+    "system": "Warning & Terrain Awareness (EGPWS)",
+    "description": "Contains guarded pushbuttons for Landing Gear Warning Inhibit (LG WRN INHB), Glideslope Inhibit (G/S INHB), Flap Override (FLAP OVRD), and Terrain Inhibit (TERR INHB)."
+  },
+  "cabin-non-essential": {
+    "title": "CABIN NON ESSENTIAL Power / Smoke Switch",
+    "system": "Electrical / Cabin Systems",
+    "description": "Guarded pushbutton that sheds non-essential cabin electrical power (galley, in-flight entertainment, cabin outlets) in case of cabin smoke or electrical overload."
   }
 }

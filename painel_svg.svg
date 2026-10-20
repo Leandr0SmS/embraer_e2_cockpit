@@ -109850,42 +109850,47 @@
   <g id="fgp-at-btn" class="clickable"><title>Autothrottle (A/T) Engage Button</title><rect class="hotspot-rect" x="9531" y="15199" width="164" height="97" rx="15" /></g>
   <g id="fgp-spd-knob" class="clickable"><title>Airspeed / Mach Selector Knob (FMS / MAN)</title><rect class="hotspot-rect" x="9504" y="15413" width="225" height="222" rx="40" /></g>
   <g id="fgp-nav-btn" class="clickable"><title>LNAV / Lateral Navigation (NAV) Button</title><rect class="hotspot-rect" x="10196" y="15194" width="167" height="97" rx="15" /></g>
-  <g id="fgp-hdg-knob" class="clickable"><title>Heading (HDG) Selector & Sync Knob</title><rect class="hotspot-rect" x="10182" y="15391" width="194" height="208" rx="40" /></g>
+  <g id="fgp-hdg-knob" class="clickable"><title>Heading (HDG) Selector &amp; Sync Knob</title><rect class="hotspot-rect" x="10182" y="15391" width="194" height="208" rx="40" /></g>
   <g id="fgp-appr-btn" class="clickable"><title>Approach (APPR) Mode Button</title><rect class="hotspot-rect" x="9901" y="15645" width="168" height="101" rx="15" /></g>
   <g id="fgp-bank-btn" class="clickable"><title>Half Bank Limit (BANK) Button</title><rect class="hotspot-rect" x="10190" y="15689" width="164" height="97" rx="15" /></g>
   <g id="fgp-ap-btn" class="clickable"><title>Autopilot (AP) Engage Pushbutton</title><rect class="hotspot-rect" x="10556" y="15194" width="257" height="110" rx="15" /></g>
-  <g id="fgp-yd-src-btns" class="clickable"><title>Yaw Damper (YD) & Navigation Source (SRC) Buttons</title><rect class="hotspot-rect" x="10590" y="15440" width="180" height="350" rx="20" /></g>
-  <g id="fgp-vnav-flch-btns" class="clickable"><title>VNAV & Flight Level Change (FLCH) Buttons</title><rect class="hotspot-rect" x="10975" y="15204" width="168" height="180" rx="15" /></g>
-  <g id="fgp-vs-wheel" class="clickable"><title>Vertical Speed / FPA Pitch Wheel & Button</title><rect class="hotspot-rect" x="10975" y="15410" width="168" height="380" rx="20" /></g>
+  <g id="fgp-yd-src-btns" class="clickable"><title>Yaw Damper (YD) &amp; Navigation Source (SRC) Buttons</title><rect class="hotspot-rect" x="10590" y="15440" width="180" height="350" rx="20" /></g>
+  <g id="fgp-vnav-flch-btns" class="clickable"><title>VNAV &amp; Flight Level Change (FLCH) Buttons</title><rect class="hotspot-rect" x="10975" y="15204" width="168" height="180" rx="15" /></g>
+  <g id="fgp-vs-wheel" class="clickable"><title>Vertical Speed / FPA Pitch Wheel &amp; Button</title><rect class="hotspot-rect" x="10975" y="15410" width="168" height="380" rx="20" /></g>
   <g id="fgp-alt-knob" class="clickable"><title>Altitude Selector Knob (ALT)</title><rect class="hotspot-rect" x="11400" y="15380" width="320" height="280" rx="40" /></g>
-  <g id="fgp-fd2-crs2" class="clickable"><title>Right Flight Director (FD 2) & Course 2 (CRS 2) Knob</title><rect class="hotspot-rect" x="11786" y="15204" width="495" height="520" rx="25" /></g>
+  <g id="fgp-fd2-crs2" class="clickable"><title>Right Flight Director (FD 2) &amp; Course 2 (CRS 2) Knob</title><rect class="hotspot-rect" x="11786" y="15204" width="495" height="520" rx="25" /></g>
   <g id="dcu2-mins-knob" class="clickable"><title>Right Minimums Selector Knob (RA / BARO)</title><rect class="hotspot-rect" x="12441" y="15359" width="235" height="234" rx="40" /></g>
   <g id="dcu2-buttons" class="clickable"><title>Right Display Controller Pushbuttons (HSI / WX / TFC / FPV)</title><rect class="hotspot-rect" x="12762" y="15240" width="542" height="475" rx="25" /></g>
   <g id="dcu2-baro-knob" class="clickable"><title>Right Barometric Altimeter Knob (BARO / STD)</title><rect class="hotspot-rect" x="13354" y="15365" width="233" height="233" rx="40" /></g>
-  <g id="clock-left-btn" class="clickable"><title>Captain Digital Clock & Chronometer Controls</title><rect class="hotspot-rect" x="2181" y="17282" width="1054" height="421" rx="25" /></g>
-  <g id="reversionary-left-knobs" class="clickable"><title>Left Reversionary & Display Dimming Knobs</title><rect class="hotspot-rect" x="2185" y="17816" width="1055" height="903" rx="25" /></g>
+  <g id="clock-left-btn" class="clickable"><title>Captain Digital Clock &amp; Chronometer Controls</title><rect class="hotspot-rect" x="2181" y="17282" width="1054" height="421" rx="25" /></g>
+  <g id="reversionary-left-knobs" class="clickable"><title>Left Reversionary &amp; Display Dimming Knobs</title><rect class="hotspot-rect" x="2185" y="17816" width="1055" height="903" rx="25" /></g>
   <g id="ldg-gear-lever" class="clickable"><title>Landing Gear Control Lever (UP / OFF / DN)</title><rect class="hotspot-rect" x="10961" y="17387" width="360" height="537" rx="30" /></g>
   <g id="autobrake-knob" class="clickable"><title>Autobrake Selector Knob (RTO / OFF / LO / MED / HI)</title><rect class="hotspot-rect" x="10040" y="18230" width="627" height="706" rx="30" /></g>
-  <g id="gear-ovrd-btn" class="clickable"><title>Landing Gear Downlock Override & Alternate Gear Button</title><rect class="hotspot-rect" x="10730" y="18106" width="613" height="920" rx="25" /></g>
-  <g id="clock-right-btn" class="clickable"><title>First Officer Digital Clock & Chronometer Controls</title><rect class="hotspot-rect" x="18139" y="17291" width="1054" height="421" rx="25" /></g>
-  <g id="reversionary-right-knobs" class="clickable"><title>Right Reversionary & Display Dimming Knobs</title><rect class="hotspot-rect" x="18139" y="17816" width="1054" height="903" rx="25" /></g>
-  <g id="mcdu-left-keys" class="clickable"><title>Left MCDU Keypad & Function Buttons</title><rect class="hotspot-rect" x="8390" y="20398" width="1492" height="990" rx="25" /></g>
-  <g id="mcdu-right-keys" class="clickable"><title>Right MCDU Keypad & Function Buttons</title><rect class="hotspot-rect" x="11487" y="20398" width="1492" height="990" rx="25" /></g>
+  <g id="gear-ovrd-btn" class="clickable"><title>Landing Gear Downlock Override &amp; Alternate Gear Button</title><rect class="hotspot-rect" x="10730" y="18106" width="613" height="920" rx="25" /></g>
+  <g id="clock-right-btn" class="clickable"><title>First Officer Digital Clock &amp; Chronometer Controls</title><rect class="hotspot-rect" x="18139" y="17291" width="1054" height="421" rx="25" /></g>
+  <g id="reversionary-right-knobs" class="clickable"><title>Right Reversionary &amp; Display Dimming Knobs</title><rect class="hotspot-rect" x="18139" y="17816" width="1054" height="903" rx="25" /></g>
+  <g id="mcdu-left-keys" class="clickable"><title>Left MCDU Keypad &amp; Function Buttons</title><rect class="hotspot-rect" x="8390" y="20398" width="1492" height="990" rx="25" /></g>
+  <g id="mcdu-right-keys" class="clickable"><title>Right MCDU Keypad &amp; Function Buttons</title><rect class="hotspot-rect" x="11487" y="20398" width="1492" height="990" rx="25" /></g>
   <g id="eng1-ign-knob" class="clickable"><title>Engine 1 Ignition Selector Knob (OFF / AUTO / OVRD)</title><rect class="hotspot-rect" x="10190" y="20470" width="262" height="226" rx="40" /></g>
   <g id="eng2-ign-knob" class="clickable"><title>Engine 2 Ignition Selector Knob (OFF / AUTO / OVRD)</title><rect class="hotspot-rect" x="10925" y="20470" width="262" height="226" rx="40" /></g>
   <g id="eng1-start-knob" class="clickable"><title>Engine 1 Start / Stop Selector Knob (STOP / RUN / START)</title><rect class="hotspot-rect" x="10190" y="21053" width="266" height="271" rx="40" /></g>
   <g id="eng2-start-knob" class="clickable"><title>Engine 2 Start / Stop Selector Knob (STOP / RUN / START)</title><rect class="hotspot-rect" x="10921" y="21053" width="271" height="271" rx="40" /></g>
-  <g id="ccd-pedestal-left" class="clickable"><title>Left Cursor Control Device (CCD 1 Touchpad & Keys)</title><rect class="hotspot-rect" x="8475" y="21580" width="997" height="2025" rx="30" /></g>
-  <g id="ccd-pedestal-right" class="clickable"><title>Right Cursor Control Device (CCD 2 Touchpad & Keys)</title><rect class="hotspot-rect" x="11897" y="21580" width="997" height="2025" rx="30" /></g>
+  <g id="ccd-pedestal-left" class="clickable"><title>Left Cursor Control Device (CCD 1 Touchpad &amp; Keys)</title><rect class="hotspot-rect" x="8475" y="21580" width="997" height="2025" rx="30" /></g>
+  <g id="ccd-pedestal-right" class="clickable"><title>Right Cursor Control Device (CCD 2 Touchpad &amp; Keys)</title><rect class="hotspot-rect" x="11897" y="21580" width="997" height="2025" rx="30" /></g>
   <g id="speedbrake-lever" class="clickable"><title>Speedbrake Lever (CLOSE / OPEN)</title><rect class="hotspot-rect" x="9530" y="22332" width="610" height="1525" rx="30" /></g>
-  <g id="thrust-levers" class="clickable"><title>Engine 1 & 2 Thrust Levers (MAX / TOGA / MCT / IDLE / REV)</title><rect class="hotspot-rect" x="10168" y="21775" width="1040" height="2080" rx="30" /></g>
+  <g id="thrust-levers" class="clickable"><title>Engine 1 &amp; 2 Thrust Levers (MAX / TOGA / MCT / IDLE / REV)</title><rect class="hotspot-rect" x="10168" y="21775" width="1040" height="2080" rx="30" /></g>
   <g id="flap-lever" class="clickable"><title>Flap Selector Lever (0 / 1 / 2 / 3 / 4 / 5 / FULL)</title><rect class="hotspot-rect" x="11189" y="22288" width="559" height="1569" rx="30" /></g>
   <g id="parking-brake" class="clickable"><title>Parking / Emergency Brake Handle</title><rect class="hotspot-rect" x="8246" y="23427" width="880" height="2436" rx="30" /></g>
-  <g id="pitch-trim-sw" class="clickable"><title>Pitch & Roll Trim Control Switches</title><rect class="hotspot-rect" x="9300" y="24000" width="1300" height="840" rx="25" /></g>
-  <g id="yaw-trim-sw" class="clickable"><title>Yaw Trim & Flight Control Mode Switches</title><rect class="hotspot-rect" x="10733" y="24000" width="1480" height="840" rx="25" /></g>
-  <g id="acp-left-knobs" class="clickable"><title>Left Audio Control Panel (ACP 1) Buttons & Volume Knobs</title><rect class="hotspot-rect" x="9149" y="24896" width="1526" height="1284" rx="25" /></g>
-  <g id="wx-tcas-knobs" class="clickable"><title>Weather Radar & TCAS Control Knobs</title><rect class="hotspot-rect" x="10703" y="24896" width="1526" height="657" rx="25" /></g>
+  <g id="pitch-trim-sw" class="clickable"><title>Pitch &amp; Roll Trim Control Switches</title><rect class="hotspot-rect" x="9300" y="24000" width="1300" height="840" rx="25" /></g>
+  <g id="yaw-trim-sw" class="clickable"><title>Yaw Trim &amp; Flight Control Mode Switches</title><rect class="hotspot-rect" x="10733" y="24000" width="1480" height="840" rx="25" /></g>
+  <g id="acp-left-knobs" class="clickable"><title>Left Audio Control Panel (ACP 1) Buttons &amp; Volume Knobs</title><rect class="hotspot-rect" x="9149" y="24896" width="1526" height="1284" rx="25" /></g>
+  <g id="wx-tcas-knobs" class="clickable"><title>Weather Radar &amp; TCAS Control Knobs</title><rect class="hotspot-rect" x="10703" y="24896" width="1526" height="657" rx="25" /></g>
   <g id="alt-gear-lever" class="clickable"><title>Alternate Landing Gear Free-Fall Lever</title><rect class="hotspot-rect" x="12365" y="24290" width="577" height="1587" rx="30" /></g>
-  <g id="rat-deploy-handle" class="clickable"><title>RAT (Ram Air Turbine) Manual Deploy Handle</title><rect class="hotspot-rect" x="12522" y="26413" width="595" height="435" rx="25" /></g>
+  <g id="pa-btn-left" class="clickable"><title>Captain PA (Passenger Address) Handset / Button</title><rect class="hotspot-rect" x="8252" y="25914" width="872" height="400" rx="25" /></g>
+  <g id="pa-btn-right" class="clickable"><title>First Officer PA (Passenger Address) Handset / Button</title><rect class="hotspot-rect" x="12249" y="25914" width="872" height="400" rx="25" /></g>
+  <g id="elevator-disc-handle" class="clickable"><title>ELEVATOR DISC (Elevator Disconnect) Handle</title><rect class="hotspot-rect" x="8248" y="26387" width="738" height="500" rx="25" /></g>
+  <g id="aileron-disc-handle" class="clickable"><title>AILERON DISC (Aileron Disconnect) Handle</title><rect class="hotspot-rect" x="12388" y="26387" width="739" height="500" rx="25" /></g>
+  <g id="lgwrn-gnd-prox-inhibits" class="clickable"><title>LG WRN / GROUND PROX INHIBITS Panel &amp; Buttons</title><rect class="hotspot-rect" x="9149" y="26221" width="1526" height="657" rx="25" /></g>
+  <g id="cabin-non-essential" class="clickable"><title>CABIN NON ESSENTIAL Power / Smoke Switch</title><rect class="hotspot-rect" x="9149" y="26916" width="1526" height="661" rx="25" /></g>
  </g>
 </svg>
