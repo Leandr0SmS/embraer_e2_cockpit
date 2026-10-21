@@ -145,14 +145,14 @@
     "description": "ILLUMINATED: Red striped bar indicates fire detection in the respective cargo compartment AFT.\nPUSH: discharges the high and then the low-rate cargo extinguisher bottles of the associated cargo compartment when the red striped bar is illuminated.\nMANUAL: Pressing the AFT button, when it is not illuminated, arms the associated extinguisher bottle and illuminates the button in red."
   },
   "fire-apu-extg-btn": {
-    "title": " FIRE EXTINGUISHER APU Button (Guarded)",
+    "title": "Fire Extinguisher TEST Button",
     "system": "Fire Protection",
-    "description": "PUSH: Closes the APU fuel shutoff valve and discharges the APU fire extinguisher bottle."
+    "description": "PRESS: Initiates the test of cargo smoke, EBAY smoke, engine and APU fire detection systems. If the fire extinguisher TEST button is pressed for more than 10 seconds, the APU automatically shuts-down.\nCAUTION:PRESSING THE FIRE DETECTION TEST BUTTON FOR MORE THAN 10 SECONDS SHUTS DOWN THE APU."
   },
   "fire-apu-emer-btn": {
-    "title": "APU EMER STOP Button (Guarded)",
-    "system": "Auxiliary Power Unit",
-    "description": "PUSH IN: closes the shutoff valve at fuel line that feeds the APU, shutting down the APU with no cooldown period. A white striped bar illuminates on the lower half of the button.\nPUSH OUT: normal position, with the fuel shutoff valve open.\nNOTE: When an APU fire is detected, a red striped bar illuminates on the upper half of the button."
+    "title": "FIRE EXTINGUISHER APU Button (Guarded)",
+    "system": "Fire Protection",
+    "description": "PUSH: Closes the APU fuel shutoff valve and discharges the APU fire extinguisher bottle."
   },
   "fire-eng2-handle": {
     "title": "Engine 2 Fire Extinguisher Handle",
@@ -175,14 +175,14 @@
     "description": "OFF: Deactivates the AC fuel pump 2.\nAUTO: Automatically operates the AC fuel pump 2.\nON: Activates the AC fuel pump 2."
   },
   "fuel-dc-pump-btn": {
-    "title": " FUEL DC PUMP Knob",
+    "title": "FUEL TRANSFER Knob",
     "system": "Fuel",
     "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
   },
   "pax-emer-lt-knob": {
     "title": "EMER LT Selector",
     "system": "Airplane General",
-    "description": "OFF: if airplane electrical power is turned off or fails, prevents all emergency lights from illuminating.\nARMED: if DC buses lose electrical power or if airplane electrical power is turned off, automatically illuminates all emergency lights.\nON: turns on all emergency lights."
+    "description": "OFF: Deactivates the AC fuel pumps in central tank and fuel transferring.\nAUTO: automatically operates the AC fuel pumps, transferring fuel from central tank to wing tanks.\nON: activates the AC fuel pumps in central tank, transferring fuel from central tank to wing tanks."
   },
   "pax-sterile-btn": {
     "title": "ATTND CALL Button",
@@ -215,9 +215,9 @@
     "description": "PUSH IN: closes the shutoff valve at fuel line that feeds the APU, shutting down the APU with no cooldown period. A white striped bar illuminates on the lower half of the button.\nPUSH OUT: normal position, with the fuel shutoff valve open.\nNOTE: When an APU fire is detected, a red striped bar illuminates on the upper half of the button."
   },
   "apu-master": {
-    "title": "APU Master Selector Knob (OFF / ON / START)",
-    "system": "APU Control",
-    "description": "Controls the Auxiliary Power Unit. OFF: Initiates normal cooldown and shutdown. ON: Powers APU FADEC and opens fuel valve. START: Momentary position that initiates the automatic APU start sequence."
+    "title": " FUEL DC PUMP Knob",
+    "system": "Auxiliary Power Unit",
+    "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
   },
   "wiper-left-knob": {
     "title": "Windshield Wiper 1 (Captain) Knob (OFF / TIMER / LOW / HI)",
