@@ -205,14 +205,14 @@
     "description": "Turns on and off the FASTEN BELTS signs."
   },
   "apu-fuel-shutoff-btn": {
-    "title": "APU Fuel Shutoff Guarded Pushbutton",
-    "system": "APU Control",
-    "description": "Closes the APU fuel shutoff valve to isolate fuel supply to the Auxiliary Power Unit."
+    "title": "APU MASTER Selector",
+    "system": "Auxiliary Power Unit",
+    "description": "OFF: Initiates normal shutdown of APU.\nON: Normal position when the APU is running.\nSTART: (momentary action) initiates the start cycle of APU. When released, the switch moves to the ON position."
   },
   "apu-emer-stop-btn": {
-    "title": "APU Emergency Stop Pushbutton",
-    "system": "APU Control",
-    "description": "Immediately shuts down the APU without the normal cooldown cycle and closes the APU fuel shutoff valve."
+    "title": "APU EMER STOP Button (Guarded)",
+    "system": "Auxiliary Power Unit",
+    "description": "PUSH IN: closes the shutoff valve at fuel line that feeds the APU, shutting down the APU with no cooldown period. A white striped bar illuminates on the lower half of the button.\nPUSH OUT: normal position, with the fuel shutoff valve open.\nNOTE: When an APU fire is detected, a red striped bar illuminates on the upper half of the button."
   },
   "apu-master": {
     "title": "APU Master Selector Knob (OFF / ON / START)",
