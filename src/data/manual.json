@@ -132,32 +132,32 @@
   "fire-eng1-handle": {
     "title": "Engine 1 Fire Extinguisher Handle",
     "system": "Fire Protection",
-    "description": "Pulling the handle closes Engine 1 fuel, hydraulic, and bleed air shutoff valves, trips IDG 1, and arms the fire extinguishing bottles. Rotating LEFT (A) or RIGHT (B) discharges the respective Halon bottle."
+    "description": "ILLUMINATED: Indicates fire in the associated engine.\nPULL: Closes the associated engine bleed air, fuel, hydraulic and crossbleed shutoff valves.\nROTATE (left or right): Discharges fire extinguisher bottles into the associated engine."
   },
   "fire-cargo-fwd-btn": {
-    "title": "FWD CARGO Fire / Smoke Extinguisher Button",
+    "title": "CARGO SMOKE FWD Button (Guarded)",
     "system": "Fire Protection",
-    "description": "Illuminates when smoke is detected in the forward cargo compartment. Pressing arms and discharges the high-rate/low-rate cargo fire extinguishing bottles."
+    "description": "ILLUMINATED: Red striped bar indicates fire detection in the respective cargo compartment FWD.\nPUSH: discharges the high and then the low-rate cargo extinguisher bottles of the associated cargo compartment when the red striped bar is illuminated.\nMANUAL: Pressing the FWD button, when it is not illuminated, arms the associated extinguisher bottle and illuminates the button in red."
   },
   "fire-cargo-aft-btn": {
-    "title": "AFT CARGO Fire / Smoke Extinguisher Button",
+    "title": "CARGO SMOKE AFT Button (Guarded)",
     "system": "Fire Protection",
-    "description": "Illuminates when smoke is detected in the aft cargo compartment. Pressing arms and discharges the cargo fire extinguishing agent."
+    "description": "ILLUMINATED: Red striped bar indicates fire detection in the respective cargo compartment AFT.\nPUSH: discharges the high and then the low-rate cargo extinguisher bottles of the associated cargo compartment when the red striped bar is illuminated.\nMANUAL: Pressing the AFT button, when it is not illuminated, arms the associated extinguisher bottle and illuminates the button in red."
   },
   "fire-apu-extg-btn": {
-    "title": "APU Fire Extinguisher (EXTG) Pushbutton",
+    "title": " FIRE EXTINGUISHER APU Button (Guarded)",
     "system": "Fire Protection",
-    "description": "Discharges the APU fire extinguisher bottle into the APU compartment when armed by the APU Fire Emergency Stop button."
+    "description": "PUSH: Closes the APU fuel shutoff valve and discharges the APU fire extinguisher bottle."
   },
   "fire-apu-emer-btn": {
-    "title": "APU Fire Emergency Stop Guarded Button",
-    "system": "Fire Protection",
-    "description": "Illuminates red during an APU fire condition. Pressing shuts down the APU, closes the APU fuel shutoff valve, trips the APU generator, and arms the APU extinguisher bottle."
+    "title": "APU EMER STOP Button (Guarded)",
+    "system": "Auxiliary Power Unit",
+    "description": "PUSH IN: closes the shutoff valve at fuel line that feeds the APU, shutting down the APU with no cooldown period. A white striped bar illuminates on the lower half of the button.\nPUSH OUT: normal position, with the fuel shutoff valve open.\nNOTE: When an APU fire is detected, a red striped bar illuminates on the upper half of the button."
   },
   "fire-eng2-handle": {
     "title": "Engine 2 Fire Extinguisher Handle",
     "system": "Fire Protection",
-    "description": "Pulling the handle isolates Engine 2 fuel, hydraulics, bleed air, and electrical generation, and arms the fire extinguishing bottles. Rotating LEFT (A) or RIGHT (B) discharges the bottle."
+    "description": "ILLUMINATED: Indicates fire in the associated engine.\nPULL: Closes the associated engine bleed air, fuel, hydraulic and crossbleed shutoff valves.\nROTATE (left or right): Discharges fire extinguisher bottles into the associated engine."
   },
   "fuel-xfeed-knob": {
     "title": "Fuel Crossfeed (XFEED) Knob (LOW 1 / OFF / LOW 2)",
