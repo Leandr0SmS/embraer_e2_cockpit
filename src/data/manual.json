@@ -22,17 +22,17 @@
   "isis-screen": {
     "title": "Integrated eletronic Stanby System (IESS)",
     "system": "Flight Instruments",
-    "description": "NORMAL OPERATION During normal operation, the IESS computes and displays attitude, slip-skid indication, altitude (baro corrected), airspeed, vertical speed, Mach number and IESS. The buttons functionalities are:\n- CAGE pushbutton: if depressed, the standby performs a CAGE in the internal gyros to cancel the accumulated drift. User: vlmorei0f - Printed by TechPubs - Aug 03/26 - 19:22:41\n- ILS button: if pressed, glideslope and localizer deviations is displayed.\n- STD button: if pressed, STD baro is set. To adjust baro, rotate the knob.\n- '+' and '-' buttons: controls display brightness.\n- 'Push FT-M' in the Guidance Panel: automatically displays altitude in meters.\n- 'MAIN PNL' in the Overhead Panel: controls IESI bezel illumination.\nThe IESS is powered as soon as the airplane battery 1 is selected to ON and airplane battery 2 is selected to AUTO. Then, the IESS starts its alignment phase. The initial IESS alignment takes about 90 seconds to be completed and can be identified on the screen by the 'INIT 90 s' flag.\nNOTE: The airplane must not be moved during the first 90 seconds after power-up, while the IESS is undergoing alignment. Moving the airplane during this period can cause in-flight attitude indication errors that may not be noticeable on ground."
+    "description": "NORMAL OPERATION\nDuring normal operation, the IESS computes and displays attitude, slip-skid indication, altitude (baro corrected), airspeed, vertical speed, Mach number and IESS. The buttons functionalities are:\n- CAGE pushbutton: if depressed, the standby performs a CAGE in the internal gyros to cancel the accumulated drift. User: vlmorei0f - Printed by TechPubs - Aug 03/26 - 19:22:41\n- ILS button: if pressed, glideslope and localizer deviations is displayed.\n- STD button: if pressed, STD baro is set. To adjust baro, rotate the knob.\n- '+' and '-' buttons: controls display brightness.\n- 'Push FT-M' in the Guidance Panel: automatically displays altitude in meters.\n- 'MAIN PNL' in the Overhead Panel: controls IESI bezel illumination.\nThe IESS is powered as soon as the airplane battery 1 is selected to ON and airplane battery 2 is selected to AUTO. Then, the IESS starts its alignment phase. The initial IESS alignment takes about 90 seconds to be completed and can be identified on the screen by the 'INIT 90 s' flag.\nNOTE: The airplane must not be moved during the first 90 seconds after power-up, while the IESS is undergoing alignment. Moving the airplane during this period can cause in-flight attitude indication errors that may not be noticeable on ground."
   },
   "mcdu-left-screen": {
-    "title": "Left MCDU Display Screen (MCDU 1)",
+    "title": "Left Multifunction Control Display Unit (MCDU 1)",
     "system": "Flight Management System (FMS)",
-    "description": "Multifunction Control Display Unit 1 screen displaying FMS flight plan, performance, navigation, radio management, and datalink pages."
+    "description": "The MCDU allows radio tuning, PFD radio display setup, manual TRS, engine takeoff set, avionics display setup and test, performance initialization, flight planning, access to electronics CBs, and others."
   },
   "mcdu-right-screen": {
-    "title": "Right MCDU Display Screen (MCDU 2)",
+    "title": "Right Multifunction Control Display Unit (MCDU 2)",
     "system": "Flight Management System (FMS)",
-    "description": "Multifunction Control Display Unit 2 screen displaying independent FMS, radio tuning, and datalink pages for the First Officer."
+    "description": "The MCDU allows radio tuning, PFD radio display setup, manual TRS, engine takeoff set, avionics display setup and test, performance initialization, flight planning, access to electronics CBs, and others."
   },
   "dvdr-test-btn": {
     "title": "CVR / DVDR Test Pushbutton",
