@@ -529,10 +529,15 @@
     "system": "Flight Guidance Panel (AFCS)",
     "description": "Engages or disengages the Automatic Flight Control System Autopilot."
   },
-  "fgp-yd-src-btns": {
-    "title": "Yaw Damper (YD) & Navigation Source (SRC) Buttons",
+  "fgp-src-btn": {
+    "title": "Navigation Source (SRC) Button",
     "system": "Flight Guidance Panel (AFCS)",
-    "description": "YD engages/disengages the Yaw Damper; SRC switches the active Flight Director master side (Captain / First Officer)."
+    "description": "Switches the active Flight Director / Autopilot master navigation side between Captain (Left) and First Officer (Right). Side white arrows indicate the active master side."
+  },
+  "fgp-appr2-btn": {
+    "title": "Approach (APPR) Mode Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Arms or engages lateral and vertical approach guidance (ILS LOC/GS or RNAV RNP/LPV approach)."
   },
   "fgp-vnav-flch-btns": {
     "title": "VNAV & Flight Level Change (FLCH) Buttons",
@@ -544,15 +549,35 @@
     "system": "Flight Guidance Panel (AFCS)",
     "description": "Sets the preselected altitude on the PFD (outer ring 1000 ft, inner knob 100 ft)."
   },
-  "fgp-vs-wheel": {
-    "title": "Vertical Speed (VS) / FPA Pitch Wheel & Button",
+  "fgp-alt-btn": {
+    "title": "Altitude Hold (ALT) Mode Button",
     "system": "Flight Guidance Panel (AFCS)",
-    "description": "Engages Vertical Speed (VS) or Flight Path Angle (FPA) mode; thumbwheel adjusts the target rate of climb/descent or flight path angle."
+    "description": "Engages Altitude Hold (ALT) mode, leveling the aircraft off and maintaining the current barometric altitude."
   },
-  "fgp-fd2-crs2": {
-    "title": "Right Flight Director (FD 2) & Course 2 (CRS 2) Knob",
+  "fgp-vs-wheel": {
+    "title": "Pitch Wheel (DN / UP)",
     "system": "Flight Guidance Panel (AFCS)",
-    "description": "Controls the First Officer Flight Director bars and VOR/LOC Course 2 pointer."
+    "description": "Thumbwheel that adjusts the vertical speed (VS) target rate of climb/descent or the flight path angle (FPA) reference."
+  },
+  "fgp-vs-btn": {
+    "title": "Vertical Speed (VS) Mode Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages or disengages Vertical Speed (VS) vertical flight director/autopilot mode."
+  },
+  "fgp-fpa-btn": {
+    "title": "Flight Path Angle (FPA) Mode Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages or disengages Flight Path Angle (FPA) vertical flight director/autopilot mode."
+  },
+  "fgp-fd2-btn": {
+    "title": "Right Flight Director (FD 2) Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Toggles the First Officer Flight Director command bars on PFD 2."
+  },
+  "fgp-crs2-knob": {
+    "title": "Right Course (CRS 2) Selector Knob (PUSH DIR)",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Sets the selected VOR/LOC course pointer for the First Officer HSI. Pushing the knob (PUSH DIR) centers the course deviation needle directly to the station."
   },
   "dcu2-mins-knob": {
     "title": "Right Minimums Selector Knob (RA / BARO)",
