@@ -360,49 +360,49 @@
     "description": "ENG: Initiates the engine anti-ice system test.\nOFF: Spring-loaded position.\nWING: Provides a test for the wing anti-ice and ice detection systems.\nNOTE: The Ice Protection TEST controller is used only by maintenance."
   },
   "pneu-ckpt-temp-knob": {
-    "title": "CKPT (Cockpit Temperature) Selector Knob",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Adjusts the target temperature for the cockpit zone (18°C to 30°C)."
+    "title": "CKPT Controler",
+    "system": "Air Management System",
+    "description": "Controls cockpit temperature relative to the controller position.\nThe 12 o'clock position refers to the temperature of 24°C."
   },
   "pneu-recirc-btn": {
-    "title": "RECIRC (Cabin Recirculation Fan) Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Controls the cabin air recirculation fans to reduce bleed air demand."
+    "title": "RECIRC Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: allows automatic operation by the AMS. This position turns on both recirculation fans.\nPUSH OUT: manually turns off both recirculation fans."
   },
   "pneu-pax-temp-knob": {
-    "title": "PAX (Cabin Temperature) Selector Knob",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Adjusts the target temperature for the passenger cabin zone."
+    "title": " PAX CABIN Controller",
+    "system": "Air Management System",
+    "description": "Controls passenger cabin temperature relative to the controller position.\nThe 12 o'clock position refers to the temperature of 24°C.\nRotating the controller to the ATTND position allows the cabin temperature control through the control panel of the flight attendant."
   },
   "pneu-pack1-btn": {
-    "title": "PACK 1 Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Opens or closes Air Conditioning Pack 1 flow control valve."
+    "title": " PACK 1 Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: activation of the Pack is subject to normal system control laws. This position opens the respective pack flow control valve.\nPUSH OUT: manually closes the respective pack flow control valve."
   },
   "pneu-pack2-btn": {
-    "title": "PACK 2 Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Opens or closes Air Conditioning Pack 2 flow control valve."
+    "title": " PACK  Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: activation of the Pack is subject to normal system control laws. This position opens the respective pack flow control valve.\nPUSH OUT: manually closes the respective pack flow control valve."
   },
   "pneu-xbleed-btn": {
-    "title": "XBLEED (Crossbleed Valve) Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Controls the pneumatic crossbleed valve connecting the left and right pneumatic manifolds for engine starting, anti-ice, or single-bleed pack operation."
+    "title": "XBLEED Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: allows automatic operation by the AMS. This position opens the crossbleed valve.\nPUSH OUT: manually closes the crossbleed valve."
   },
   "pneu-bleed1-btn": {
-    "title": "BLEED 1 (Engine 1 Bleed) Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Opens or closes Engine 1 bleed air pressure regulating and shutoff valve."
+    "title": "BLEED 1 Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: allows automatic operation by the AMS. This position commands the respective engine bleed valves.\nPUSH OUT: manually closes the engine bleed valves.\nNOTE: When leak is detected, the button amber striped bar is illuminated."
   },
   "pneu-apu-bleed-btn": {
-    "title": "APU BLEED Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Opens or closes the APU bleed air valve to supply pneumatic air for air conditioning packs and engine starting."
+    "title": "APU BLEED Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: allows automatic operation by the AMS. This position commands the APU bleed valve according to system logic.\nPUSH OUT: manually closes the APU bleed valve.\nNOTE: When leak is detected, the button amber striped bar is illuminated."
   },
   "pneu-bleed2-btn": {
-    "title": "BLEED 2 (Engine 2 Bleed) Pushbutton",
-    "system": "Air Conditioning & Pneumatics",
-    "description": "Opens or closes Engine 2 bleed air pressure regulating and shutoff valve."
+    "title": "BLEED 2 Button",
+    "system": "Air Management System",
+    "description": "PUSH IN: allows automatic operation by the AMS. This position commands the respective engine bleed valves.\nPUSH OUT: manually closes the engine bleed valves.\nNOTE: When leak is detected, the button amber striped bar is illuminated."
   },
   "oxy-mask-knob": {
     "title": "MASKS Deployment Selector Knob (AUTO / OVRD)",
