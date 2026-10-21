@@ -160,24 +160,24 @@
     "description": "ILLUMINATED: Indicates fire in the associated engine.\nPULL: Closes the associated engine bleed air, fuel, hydraulic and crossbleed shutoff valves.\nROTATE (left or right): Discharges fire extinguisher bottles into the associated engine."
   },
   "fuel-xfeed-knob": {
-    "title": "Fuel Crossfeed (XFEED) Knob (LOW 1 / OFF / LOW 2)",
-    "system": "Fuel System",
-    "description": "Controls fuel balance between left and right wing tanks. LOW 1: Opens crossfeed valve and turns off Tank 1 pump so Tank 2 feeds both engines. LOW 2: Tank 1 feeds both engines."
+    "title": "Fuel XFEED Selector",
+    "system": "Fuel",
+    "description": "LOW 1: opens the crossfeed valve and automatically activates the right AC fuel pump (AC PUMP 2), supplying fuel to both engines from the right wing tank.\nOFF: closes the crossfeed valve.\nLOW 2: opens the crossfeed valve and automatically activates the left AC fuel pump (AC PUMP 1), supplying fuel to both engines from the left wing tank."
   },
   "fuel-ac-pump1-btn": {
-    "title": "AC Fuel Pump 1 Selector Knob (OFF / AUTO / ON)",
-    "system": "Fuel System",
-    "description": "Controls Left Wing Tank main AC-powered boost fuel pump."
+    "title": "Fuel AC PUMP 1 Knob",
+    "system": "Fuel",
+    "description": "OFF: Deactivates the AC fuel pump 1.\nAUTO: Automatically operates the AC fuel pump 1.\nON: Activates the AC fuel pump 1."
   },
   "fuel-ac-pump2-btn": {
-    "title": "AC Fuel Pump 2 Selector Knob (OFF / AUTO / ON)",
-    "system": "Fuel System",
-    "description": "Controls Right Wing Tank main AC-powered boost fuel pump."
+    "title": "Fuel AC PUMP 2 Knob",
+    "system": "Fuel",
+    "description": "OFF: Deactivates the AC fuel pump 2.\nAUTO: Automatically operates the AC fuel pump 2.\nON: Activates the AC fuel pump 2."
   },
   "fuel-dc-pump-btn": {
-    "title": "DC Fuel Pump Selector Knob (OFF / AUTO / ON)",
-    "system": "Fuel System",
-    "description": "Controls the DC-powered fuel pump located in the right wing collector tank for APU starting and backup engine fuel feed when AC power is unavailable."
+    "title": " FUEL DC PUMP Knob",
+    "system": "Fuel",
+    "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
   },
   "pax-emer-lt-knob": {
     "title": "EMER LT (Emergency Lights) Knob (OFF / ARM / ON)",
