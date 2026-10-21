@@ -35,99 +35,99 @@
     "description": "The MCDU allows radio tuning, PFD radio display setup, manual TRS, engine takeoff set, avionics display setup and test, performance initialization, flight planning, access to electronics CBs, and others."
   },
   "dvdr-test-btn": {
-    "title": "CVR / DVDR Test Pushbutton",
-    "system": "DVDR Control Panel",
-    "description": "Initiates a built-in test of the Digital Voice and Data Recorder (Cockpit Voice Recorder & Flight Data Recorder)."
+    "title": "DVDR Test Button",
+    "system": "Flight Instruments/COMM/NAV/FMS",
+    "description": "Simultaneously tests all CVR and FDR functions on both DVDR."
   },
   "dvdr-erase-btn": {
-    "title": "CVR / DVDR Erase Pushbutton",
-    "system": "DVDR Control Panel",
-    "description": "Erases cockpit voice recordings when the aircraft is on the ground and the parking brake is applied."
+    "title": "CVR Erase Button",
+    "system": "Flight Instruments/COMM/NAV/FMS",
+    "description": " Erases the recorded audio information, provided that the airplane is on the ground and Emergency/Parking Brake is applied."
   },
   "elt-switch": {
     "title": "ELT Selector Switch (ARM / ON)",
-    "system": "DVDR Control Panel",
-    "description": "Controls the Emergency Locator Transmitter. ARM: Automatically transmits on impact. ON: Manually activates emergency transmission."
+    "system": "ELT",
+    "description": "Controls the Emergency Locator Transmitter.\nARM: Automatically transmits on impact.\nON: Manually activates emergency transmission."
   },
   "elec-idg1-knob": {
-    "title": "IDG 1 Selector Knob (DISC / OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Controls Integrated Drive Generator 1. AUTO: Connects IDG 1 to AC Bus 1. OFF: Opens generator line contactor. DISC (guarded): Mechanically disconnects IDG 1 from Engine 1 gearbox."
+    "title": "IDG 1 Selector Knob",
+    "system": "Electrical",
+    "description": "Controls Integrated Drive Generator 1.\nAUTO: Automatic operation of the electrical main generation system.\nOFF:  opens the IDG contactor isolating the IDG from the respective AC BUS. \nDISC: If held in this position for at least 1 second, mechanically disconnects the IDG.\n IDG FAULT INDICATION LED\nThe IDG fault indication LED illuminates indicating which IDG must be disconnected in case the EICAS message IDG 1 (2) OIL is displayed. The LED extinguishes after IDG disconnection."
   },
   "elec-idg2-knob": {
-    "title": "IDG 2 Selector Knob (DISC / OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Controls Integrated Drive Generator 2. AUTO: Connects IDG 2 to AC Bus 2. OFF: Opens generator line contactor. DISC (guarded): Mechanically disconnects IDG 2 from Engine 2 gearbox."
+    "title": "IDG 2 Selector Knob",
+    "system": "Electrical",
+    "description": "Controls Integrated Drive Generator 1.\nAUTO: Automatic operation of the electrical main generation system.\nOFF:  opens the IDG contactor isolating the IDG from the respective AC BUS. \nDISC: If held in this position for at least 1 second, mechanically disconnects the IDG.\n IDG FAULT INDICATION LED\nThe IDG fault indication LED illuminates indicating which IDG must be disconnected in case the EICAS message IDG 1 (2) OIL is displayed. The LED extinguishes after IDG disconnection."
   },
   "elec-apu-gen-btn": {
-    "title": "APU GEN Pushbutton",
-    "system": "Electrical System",
-    "description": "Connects or disconnects the Auxiliary Power Unit (APU) starter-generator to/from the AC electrical network."
+    "title": "APU GEN Button",
+    "system": "Electrical",
+    "description": "PUSH IN: allows automatic operation of the electrical auxiliary generation system. \nPUSH OUT: opens the APU generator line contactor and isolates the APU generator from the AC BUS TIE"
   },
   "elec-gpu-btn": {
-    "title": "AC GPU Pushbutton",
-    "system": "Electrical System",
-    "description": "Connects external AC Ground Power Unit to the aircraft electrical buses when AVAIL is illuminated."
+    "title": "Ground Power Unit (GPU) Button",
+    "system": "Electrical",
+    "description": "PUSH IN: allows the AC GPU to connect in the AC system, according to the source priority.\nPUSH OUT: Isolates the AC GPU from the system.\nAVAIL: Illuminates inside the button when the AC GPU is connected to the airplane and AC power quality requirements are satisfied.\nIN USE: Illuminates inside the button when the AC GPU is powering the airplane AC electrical system."
   },
   "elec-ac-bus-ties-knob": {
-    "title": "AC Bus Ties Selector Knob (1 OPEN / AUTO / 2 OPEN)",
-    "system": "Electrical System",
-    "description": "Controls AC Bus Tie Contactors (BTC 1 & 2). AUTO: Automatic power transfer between AC Bus 1 and AC Bus 2. 1 OPEN / 2 OPEN: Isolates the respective AC bus."
+    "title": "AC BUS TIES Selector Knob",
+    "system": "Electrical",
+    "description": "Controls AC Bus Tie Contactors (BTC 1 & 2).\n1 OPEN: opens the Bus Tie Contactor (BTC) 1, while (BTC) 2 is automatically operated.\nAUTO: allows automatic operation of the electrical system.\n2 OPEN: opens the Bus Tie Contactor (BTC) 2, while (BTC) 1 is automatically operated."
   },
   "elec-tru1-knob": {
-    "title": "TRU 1 Selector Knob (OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Controls Transformer Rectifier Unit 1, which converts 115V AC to 28V DC for DC Bus 1."
+    "title": "TRU 1 Selector Switch",
+    "system": "Electrical",
+    "description": "AUTO: Allows automatic operation of the electrical system.\nOFF: Isolates the TRU 1 from the respective DC BUS."
   },
   "elec-tru-ess-knob": {
-    "title": "TRU ESS Selector Knob (OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Controls the Essential Transformer Rectifier Unit supplying DC Essential Bus power."
+    "title": "TRU ESS Selector Switch",
+    "system": "Electrical",
+    "description": "AUTO: Allows automatic operation of the electrical system.\nOFF: Isolates the TRU ESS from the DC ESS BUS 3."
   },
   "elec-tru2-knob": {
-    "title": "TRU 2 Selector Knob (OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Controls Transformer Rectifier Unit 2, which converts 115V AC to 28V DC for DC Bus 2."
+    "title": "TRU 2 SelectorSwitch",
+    "system": "Electrical",
+    "description": "AUTO: Allows automatic operation of the electrical system.\nOFF: Isolates the TRU 2 from the respective DC BUS."
   },
   "elec-batt1-knob": {
-    "title": "BATT 1 Selector Knob (OFF / ON)",
-    "system": "Electrical System",
-    "description": "Connects or disconnects Battery 1 (24V Ni-Cd) to/from the DC electrical system."
+    "title": "BATT 1 Knob",
+    "system": "Electrical",
+    "description": "Battery (24V Ni-Cd)\nON: Allows automatic operation of the electrical system. \nOFF: The battery supplies power to the HOT BATT BUS 1 only and is no longer connected to the airplane electrical system.\nPower Up: Each battery voltage must be at least 22v"
   },
   "elec-batt2-knob": {
-    "title": "BATT 2 Selector Knob (OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Connects Battery 2 to the automatic battery bus and essential power network in AUTO mode."
+    "title": "BATT 2 Knob",
+    "system": "Electrical",
+    "description": "Battery (24V Ni-Cd)\nON: Allows automatic operation of the electrical system. \nAUTO: Allows automatic operation of the electrical system. OFF: The battery supplies power to the HOT BATT BUS 2 only and is no longer connected to the airplane electrical system.\nPower Up: Each battery voltage must be at least 22v"
   },
   "elec-dc-bus-ties-knob": {
-    "title": "DC Bus Ties Selector Knob (OFF / AUTO)",
-    "system": "Electrical System",
-    "description": "Controls DC Bus Tie contactors allowing automatic cross-tie between DC Bus 1, DC Bus 2, and DC ESS Bus."
+    "title": "DC Bus Ties Selector Knob",
+    "system": "Electrical",
+    "description": "AUTO: allows automatic operation of the electrical system.\nOFF: Precludes the closure of both essential tie contactors (ETCs) and the DC tie contactor (DCTC)."
   },
   "ckpt-ovhd-lt-knob": {
-    "title": "OVHD PNL (Overhead Panel Backlighting) Knob",
-    "system": "Cockpit Lights",
-    "description": "Adjusts the integral backlighting intensity of the overhead panel."
+    "title": "OVHD PNL Controller",
+    "system": "Airplane General",
+    "description": "Turns on and off and regulates the brightness of the overhead panel lighting."
   },
   "ckpt-main-lt-knob": {
-    "title": "MAIN PNL (Main Panel Backlighting) Knob",
-    "system": "Cockpit Lights",
-    "description": "Adjusts the integral backlighting intensity of the main instrument panel and glareshield."
+    "title": "MAIN PNL Controller",
+    "system": "Airplane General",
+    "description": "Turns on and off and regulates the lighting brightness of the main panel."
   },
   "ckpt-ped-lt-knob": {
-    "title": "PEDESTAL (Pedestal Backlighting) Knob",
-    "system": "Cockpit Lights",
-    "description": "Adjusts the integral backlighting intensity of the control pedestal."
+    "title": "PEDESTAL Controller",
+    "system": "Airplane General",
+    "description": "Turns on and off and regulates the lighting brightness of the pedestal panel."
   },
   "ckpt-annun-test-btn": {
-    "title": "ANNUNCIATOR TEST Pushbutton",
-    "system": "Cockpit Lights",
-    "description": "Illuminates all cockpit panel annunciator lights and displays test patterns while held pressed to verify bulb/LED integrity."
+    "title": "ANNUNCIATOR TEST Button",
+    "system": "Airplane General",
+    "description": "PUSH: when maintained pushed in all the striped bars and caption indications turn on to verify their integrity.\nNOTE: The Cockpit Lights ANNUNCIATORS TEST Button does not check the GPU button light, the EMER/PRKG BRAKE light and the Fire Extinguisher Cargo Smoke FWD and AFT buttons lights."
   },
   "ckpt-dome-sw": {
-    "title": "DOME Light Switch (OFF / ON)",
-    "system": "Cockpit Lights",
-    "description": "Turns the overhead cockpit flood/dome illumination ON or OFF."
+    "title": "DOME Switch",
+    "system": "Airplane General",
+    "description": "Turns the cockpit dome lights on and off."
   },
   "fire-eng1-handle": {
     "title": "Engine 1 Fire Extinguisher Handle",
