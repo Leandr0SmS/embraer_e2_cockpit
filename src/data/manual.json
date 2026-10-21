@@ -220,63 +220,63 @@
     "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
   },
   "wiper-left-knob": {
-    "title": "Windshield Wiper 1 (Captain) Knob (OFF / TIMER / LOW / HI)",
-    "system": "Ice & Rain Protection",
-    "description": "Controls the Captain windshield wiper speed: OFF, TIMER (intermittent), LOW, or HIGH."
+    "title": " WINDSHIELD WIPER 1 Knob",
+    "system": "Ice and Rain Protection",
+    "description": "TIMER: Eight-seconds intermittent operation.\nOFF: Stops windshield wipers in the stowed position.\nLOW: windshield wipers operate at low speed.\nHIGH: Windshield wipers operate at high speed."
   },
   "wiper-right-knob": {
-    "title": "Windshield Wiper 2 (First Officer) Knob (OFF / TIMER / LOW / HI)",
-    "system": "Ice & Rain Protection",
-    "description": "Controls the First Officer windshield wiper speed: OFF, TIMER (intermittent), LOW, or HIGH."
+    "title": " WINDSHIELD WIPER 2 Knob",
+    "system": "Ice and Rain Protection",
+    "description": "TIMER: Eight-seconds intermittent operation.\nOFF: Stops windshield wipers in the stowed position.\nLOW: windshield wipers operate at low speed.\nHIGH: Windshield wipers operate at high speed."
   },
   "ext-nav-sw": {
-    "title": "NAV Lights Switch (OFF / ON)",
-    "system": "External Lights",
-    "description": "Turns the red/green wingtip and white tail position/navigation lights ON or OFF."
+    "title": "NAV Light Switch",
+    "system": "Airplane General",
+    "description": "Turns ON/OFF the navigations lights."
   },
   "ext-strobe-sw": {
-    "title": "STROBE Lights Switch (OFF / ON)",
-    "system": "External Lights",
-    "description": "Turns the high-intensity white wingtip and tail anti-collision strobe lights ON or OFF."
+    "title": "STROBE Light Switch",
+    "system": "Airplane General",
+    "description": "Turns ON/OFF the strobes lights."
   },
   "ext-bcn-sw": {
-    "title": "RED BCN (Anti-Collision Beacon) Switch",
-    "system": "External Lights",
-    "description": "Turns upper and lower fuselage red anti-collision beacon lights ON or OFF (turned ON prior to engine start)."
+    "title": "RED BCN Light Switch",
+    "system": "Airplane General",
+    "description": "Turns ON/OFF the Beacon lights."
   },
   "ext-logo-sw": {
     "title": "LOGO Lights Switch (OFF / ON)",
-    "system": "External Lights",
-    "description": "Illuminates the vertical stabilizer emblem for night operations."
+    "system": "Airplane General",
+    "description": "Turns on and off the logotype lights."
   },
   "ext-taxi-nose-sw": {
-    "title": "TAXI NOSE Light Switch (OFF / ON)",
-    "system": "External Lights",
+    "title": "TAXI NOSE Light Switch",
+    "system": "Airplane General",
     "description": "Turns the nose-gear-mounted taxi light ON or OFF (automatically extinguishes when nose gear retracts)."
   },
   "ext-taxi-side-sw": {
     "title": "TAXI SIDE (Runway Turnoff) Lights Switch",
-    "system": "External Lights",
-    "description": "Turns the wide-beam side taxi / runway turnoff lights ON or OFF."
+    "system": "Airplane General",
+    "description": "Turns the wide-beam side taxi lights ON or OFF."
   },
   "ext-insp-sw": {
     "title": "INSP (Wing Inspection) Lights Switch",
-    "system": "External Lights",
+    "system": "Airplane General",
     "description": "Illuminates the wing leading edges to visually check for ice accumulation at night."
   },
   "ext-ldg-left-sw": {
     "title": "Left LANDING Light Switch (OFF / ON)",
-    "system": "External Lights",
+    "system": "Airplane General",
     "description": "Controls the left wing root high-intensity landing light."
   },
   "ext-ldg-nose-sw": {
     "title": "Nose LANDING Light Switch (OFF / ON)",
-    "system": "External Lights",
+    "system": "Airplane General",
     "description": "Controls the nose-gear high-intensity landing light."
   },
   "ext-ldg-right-sw": {
     "title": "Right LANDING Light Switch (OFF / ON)",
-    "system": "External Lights",
+    "system": "Airplane General",
     "description": "Controls the right wing root high-intensity landing light."
   },
   "hyd-sys1-shutoff-btn": {
