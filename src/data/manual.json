@@ -315,24 +315,24 @@
     "description": "OFF: turns the electrical pump off. \nAUTO: Allows  the  electrical  pump to operate automatically. In flight, it turns on the electric pump 3B whenever the electric pump 3A fails.\nON: Operates the electrical pump continuously, overriding the system logic."
   },
   "press-cabin-alt-knob": {
-    "title": "CABIN ALT Manual Control Switch (DN / UP)",
-    "system": "Cabin Pressurization",
-    "description": "Spring-loaded rotary switch used in MAN mode to manually open (UP) or close (DN) the cabin outflow valve."
+    "title": "CABIN ALT Controller",
+    "system": "Air Management System",
+    "description": "DOWN: (momentary action) manually closes the outflow valve.\nSTOP: normal operation position.\nUP:  (momentary action) manually opens the outflow valve.\nNOTE: Manual actuation of the outflow valve is possible only with the PRESSURIZATION MODE SELECTOR set to MAN position. If the command is maintained for less than 2 seconds, the OFV speed is controlled at 0.5°/second. If the command is maintained for more than 2 seconds, the OFV speed is controlled at 2°/second."
   },
   "press-mode-knob": {
-    "title": "Pressurization MODE Selector Knob (AUTO / LFE CTRL / MAN)",
-    "system": "Cabin Pressurization",
-    "description": "Selects automatic FMS/CPCS cabin pressurization control (AUTO), manual landing field elevation entry (LFE CTRL), or direct manual outflow valve control (MAN)."
+    "title": " PRESSURIZATION MODE Selector",
+    "system": "Air Management System",
+    "description": "MAN: Allows manual control of the outflow valve.\nAUTO: Allows automatic operation of the pressurization system.\nLFE CTRL: allows manual input of landing field elevation, although the pressurization system remains in automatic mode."
   },
   "press-dump-btn": {
-    "title": "Cabin DUMP Guarded Pushbutton",
-    "system": "Cabin Pressurization",
-    "description": "Emergency guarded button that turns off both air conditioning packs and commands the outflow valve fully open for rapid cabin depressurization / smoke removal."
+    "title": "DUMP Button (Guarded)",
+    "system": "Air Management System",
+    "description": "PUSH IN: The DUMP Button activates emergency depressurization. A guard is installed over the switch to prevent inadvertent actuation. A white striped bar illuminates on the button. When pressed second time, the system returns to normal."
   },
   "press-lfe-knob": {
-    "title": "LFE (Landing Field Elevation) Selector Knob (DN / UP)",
-    "system": "Cabin Pressurization",
-    "description": "Adjusts the target Landing Field Elevation on EICAS when the Pressurization Mode knob is set to LFE CTRL."
+    "title": " LFE CTRL",
+    "system": "Air Management System",
+    "description": "DOWN: (momentary action) decreases the LFE in 100 ft increments.\nSTOP: Normal operation position. \nUP: (momentary action) increases the LFE in 100 ft increments.\nNOTE: Manual input of the LFE is possible only with the PRESSURIZATION MODE SELECTOR set to LFE CTRL position."
   },
   "ice-wshld1-btn": {
     "title": "WINDSHIELD 1 Heating Pushbutton",
