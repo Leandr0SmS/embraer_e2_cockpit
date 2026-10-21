@@ -335,29 +335,29 @@
     "description": "DOWN: (momentary action) decreases the LFE in 100 ft increments.\nSTOP: Normal operation position. \nUP: (momentary action) increases the LFE in 100 ft increments.\nNOTE: Manual input of the LFE is possible only with the PRESSURIZATION MODE SELECTOR set to LFE CTRL position."
   },
   "ice-wshld1-btn": {
-    "title": "WINDSHIELD 1 Heating Pushbutton",
-    "system": "Ice & Rain Protection",
-    "description": "Activates electrical anti-ice and anti-fog heating for the Captain windshield."
+    "title": "WINDSHIELD HEATING 1 Button",
+    "system": "Ice and Rain Protection",
+    "description": "PUSH IN: windshield heating system operation in automatic mode.\nPUSH OUT: deactivates the associated windshield heating system."
   },
   "ice-wshld2-btn": {
-    "title": "WINDSHIELD 2 Heating Pushbutton",
-    "system": "Ice & Rain Protection",
-    "description": "Activates electrical anti-ice and anti-fog heating for the First Officer windshield."
+    "title": "WINDSHIELD HEATING 2 Button",
+    "system": "Ice and Rain Protection",
+    "description": "PUSH IN: windshield heating system operation in automatic mode.\nPUSH OUT: deactivates the associated windshield heating system."
   },
   "ice-wing-btn": {
-    "title": "WING Anti-Ice Pushbutton",
-    "system": "Ice & Rain Protection",
-    "description": "Commands the wing anti-ice valves open to supply hot bleed air to the wing leading-edge slats."
+    "title": "WING Anti-Ice Button",
+    "system": "Ice and Rain Protection",
+    "description": "PUSH IN: automatic operation of the wing anti-ice system.\nPUSH OUT: deactivates the wing anti-ice system.\nNOTE: The Ice Protection MODE selector, even in ON position, does not bypass the WING button."
   },
   "ice-mode-knob": {
-    "title": "ICE PROTECTION MODE Knob (OFF / AUTO / ON)",
-    "system": "Ice & Rain Protection",
-    "description": "Selects automatic ice detector control (AUTO) or continuous manual activation (ON) of the engine and wing anti-ice systems."
+    "title": "ICE PROTECTION MODE Selector",
+    "system": "Ice and Rain Protection",
+    "description": "ICE SPEED RESET: the system is reset to no-ice condition, allowing the stall warning system return to the normal operating speeds.\nAUTO: automatic operation of the wing and engine anti-ice systems.\nON: activates the anti-ice system regardless of icing condition. The anti-ice system restrictions related to ground operation are still applicable."
   },
   "ice-test-knob": {
-    "title": "Ice Detection TEST Selector Knob (ENG / OFF / WING)",
-    "system": "Ice & Rain Protection",
-    "description": "Performs a built-in functional test of the engine and wing ice protection systems."
+    "title": "Ice Detection TEST Controller",
+    "system": "Ice and Rain Protection",
+    "description": "ENG: Initiates the engine anti-ice system test.\nOFF: Spring-loaded position.\nWING: Provides a test for the wing anti-ice and ice detection systems.\nNOTE: The Ice Protection TEST controller is used only by maintenance."
   },
   "pneu-ckpt-temp-knob": {
     "title": "CKPT (Cockpit Temperature) Selector Knob",
