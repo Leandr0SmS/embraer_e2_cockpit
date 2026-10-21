@@ -700,9 +700,9 @@
     "description": "Guarded rotary selector for Engine 2 automatic starting (START), normal operation (RUN), and shutdown (STOP)."
   },
   "to-config-btn": {
-    "title": "T/O CONFIG (Takeoff Configuration Test) Pushbutton",
-    "system": "Warning & Takeoff Configuration",
-    "description": "Pressing tests whether the aircraft is properly configured for takeoff (flaps, trims, speedbrake, parking brake). Announces 'TAKEOFF OK' or triggers a configuration warning."
+    "title": "T/O CONFIG Check Button",
+    "system": "Warning System",
+    "description": "Test button is provided to allow checking the takeoff configuration by simulating power levers in the advanced position. If the airplane is in takeoff configuration, the voice message 'TAKEOFF OK' is generated. If the airplane is not set to takeoff configuration, the aural warning referred to the associated takeoff configuration deviation is generated.\n\n The aural warning is activated whenever the airplane is on the ground, thrust is applied, and at least one of the following conditions is met:\n- Flaps are not in takeoff position ('NO TAKEOFF FLAPS').\n- Flaps position is not in agreement with the Flaps position selected in the FMS Takeoff page 2/2. ('NO TAKEOFF FLAPS').\n- The Emergency/Parking Brake is applied ('NO TAKEOFF BRAKES').\n- Pitch trim is out of green range ('NO TAKEOFF TRIM').\n- Any spoiler panel is deployed ('NO TAKEOFF SPOILER')."
   },
   "ccd-pedestal-left": {
     "title": "Left Cursor Control Device (CCD 1 Touchpad & Keys)",
