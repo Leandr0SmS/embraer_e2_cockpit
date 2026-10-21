@@ -280,39 +280,39 @@
     "description": "Controls the right wing root high-intensity landing light."
   },
   "hyd-sys1-shutoff-btn": {
-    "title": "Hydraulic System 1 Engine Pump Shutoff Button",
-    "system": "Hydraulic System",
-    "description": "Guarded pushbutton that closes the Hydraulic System 1 engine-driven pump (EDP 1) supply shutoff valve."
+    "title": "Hydraulic System 1 ENG PUMP SHUTOFF Shutoff Button",
+    "system": "Hydraulic",
+    "description": "PUSH IN: Closes the hydraulic shutoff valve (SOV), isolating the suction line of the respective engine driven pump (EDP) from the associated hydraulic system."
   },
   "hyd-ptu-knob": {
-    "title": "PTU (Power Transfer Unit) Selector Knob (OFF / AUTO / ON)",
-    "system": "Hydraulic System",
-    "description": "Controls the mechanical Power Transfer Unit between Hydraulic Systems 1 and 2 to assist landing gear retraction/extension if an engine fails."
+    "title": "PTU (Power Transfer Unit) Knob",
+    "system": "Hydraulic",
+    "description": "OFF: turns the PTU off.\nAUTO: allows the PTU to operate automatically. During takeoff and landing, the hydraulic system logic activates the PTU if the engine 2 or EDP 2 fails.\nON: operates the PTU continuously, overriding the hydraulic system logic."
   },
   "hyd-sys2-shutoff-btn": {
-    "title": "Hydraulic System 2 Engine Pump Shutoff Button",
-    "system": "Hydraulic System",
-    "description": "Guarded pushbutton that closes the Hydraulic System 2 engine-driven pump (EDP 2) supply shutoff valve."
+    "title": "Hydraulic System 2 ENG PUMP SHUTOFF Shutoff Button",
+    "system": "Hydraulic",
+    "description": "PUSH IN: Closes the hydraulic shutoff valve (SOV), isolating the suction line of the respective engine driven pump (EDP) from the associated hydraulic system."
   },
   "hyd-sys1-elec-pump-knob": {
-    "title": "Hydraulic System 1 Electric Pump Knob (OFF / AUTO / ON)",
-    "system": "Hydraulic System",
-    "description": "Controls AC Motor Pump 1 (ACMP 1) providing backup and ground hydraulic pressure for System 1."
+    "title": "Hydraulic System 1 ELEC PUMP Knob",
+    "system": "Hydraulic",
+    "description": "OFF: Turns the associated electrical pump off.\nAUTO:allows the associated electrical pump to operate automatically. In flight, it activates the electric pump in case of EDP or engine fail. On ground, it  is activated when the opposite engine is running (N2 higher than 54%) and Emergency/ Parking Brake is released, or during the PBIT of the respective ACMP.\nON: Operates the associated electrical pump continuously, overriding the system logic."
   },
   "hyd-sys2-elec-pump-knob": {
-    "title": "Hydraulic System 2 Electric Pump Knob (OFF / AUTO / ON)",
-    "system": "Hydraulic System",
+    "title": "Hydraulic System 2 ELEC PUMP Knob",
+    "system": "Hydraulic",
     "description": "Controls AC Motor Pump 2 (ACMP 2) providing backup and ground hydraulic pressure for System 2."
   },
   "hyd-sys3a-elec-pump-knob": {
-    "title": "Hydraulic System 3 Electric Pump A Knob (OFF / ON)",
-    "system": "Hydraulic System",
-    "description": "Controls primary AC Motor Pump 3A (ACMP 3A) pressurizing Hydraulic System 3 for flight controls."
+    "title": "SYS 3 ELEC PUMP A Knob",
+    "system": "Hydraulic",
+    "description": "OFF: Turns the electrical pump off.\nON: Turns the electrical pump on."
   },
   "hyd-sys3b-elec-pump-knob": {
-    "title": "Hydraulic System 3 Electric Pump B Knob (OFF / AUTO / ON)",
-    "system": "Hydraulic System",
-    "description": "Controls backup AC Motor Pump 3B (ACMP 3B) for Hydraulic System 3."
+    "title": "SYS 3 ELEC PUMP B Knob",
+    "system": "Hydraulic",
+    "description": "OFF: turns the electrical pump off. \nAUTO: Allows  the  electrical  pump to operate automatically. In flight, it turns on the electric pump 3B whenever the electric pump 3A fails.\nON: Operates the electrical pump continuously, overriding the system logic."
   },
   "press-cabin-alt-knob": {
     "title": "CABIN ALT Manual Control Switch (DN / UP)",
