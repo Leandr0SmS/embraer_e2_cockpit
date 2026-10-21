@@ -180,29 +180,29 @@
     "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
   },
   "pax-emer-lt-knob": {
-    "title": "EMER LT (Emergency Lights) Knob (OFF / ARM / ON)",
-    "system": "Passenger Signs & Emergency Lighting",
-    "description": "Controls cabin and exterior emergency escape path lighting. ARM: Automatically illuminates emergency lights if aircraft DC/AC power fails."
+    "title": "EMER LT Selector",
+    "system": "Airplane General",
+    "description": "OFF: if airplane electrical power is turned off or fails, prevents all emergency lights from illuminating.\nARMED: if DC buses lose electrical power or if airplane electrical power is turned off, automatically illuminates all emergency lights.\nON: turns on all emergency lights."
   },
   "pax-sterile-btn": {
-    "title": "ATTND CALL (Flight Attendant Call) Pushbutton",
-    "system": "Passenger Signs & Emergency Lighting",
-    "description": "Calls the cabin flight attendant station and illuminates when the cabin crew calls the cockpit."
+    "title": "ATTND CALL Button",
+    "system": "Airplane General",
+    "description": "The attendant call sounds as a single hi/lo tone chime in the passenger cabin. \nNOTE: This button is not associated with the rainbow lights in the cabin."
   },
   "pax-no-smk-sw": {
-    "title": "STERILE Cockpit Light Switch (OFF / ON)",
-    "system": "Passenger Signs & Emergency Lighting",
-    "description": "Illuminates the sterile cockpit indicator light in the cabin to notify flight attendants that the flight crew is in a critical phase of flight (below 10,000 ft)."
+    "title": "STERILE Switch",
+    "system": "Airplane General",
+    "description": "Turns on and off the sterile lights located in the rainbow lights."
   },
   "pax-fstn-belts-sw": {
-    "title": "NO SMKG / BELTS Sign Switch (OFF / ON)",
-    "system": "Passenger Signs & Emergency Lighting",
-    "description": "Controls the cabin No Smoking and Fasten Seat Belts signs and associated cabin chime."
+    "title": "NO ELEC DEVICES Switch",
+    "system": "Airplane General",
+    "description": "Turns on and off the NO ELEC DEVICES signs."
   },
   "pax-cabin-lt-sw": {
-    "title": "FASTEN BELTS Sign Switch (OFF / ON)",
-    "system": "Passenger Signs & Emergency Lighting",
-    "description": "Illuminates cabin Fasten Seat Belts signs and sounds the cabin chime."
+    "title": "FSTN BELTS Switch",
+    "system": "Airplane General",
+    "description": "Turns on and off the FASTEN BELTS signs."
   },
   "apu-fuel-shutoff-btn": {
     "title": "APU Fuel Shutoff Guarded Pushbutton",
