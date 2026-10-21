@@ -109756,48 +109756,48 @@
  </g>
  <g id="interactive-hotspots">
   <g id="pfd-left" class="clickable"><title>Left Primary Flight Display (PFD 1)</title><rect class="hotspot-rect" x="3545" y="16286" width="2989" height="2262" rx="40" /></g>
-  <g id="mfd-left" class="clickable"><title>Left Multi-Function Display (MFD 1)</title><rect class="hotspot-rect" x="6848" y="16286" width="2994" height="2262" rx="40" /></g>
-  <g id="mfd-right" class="clickable"><title>Right Multi-Function Display (MFD 2 / EICAS)</title><rect class="hotspot-rect" x="11590" y="16286" width="2989" height="2262" rx="40" /></g>
+  <g id="mfd-left" class="clickable"><title>Left Multi-Function Display (MFD 1) (STATUS / EICAS)</title><rect class="hotspot-rect" x="6848" y="16286" width="2994" height="2262" rx="40" /></g>
+  <g id="mfd-right" class="clickable"><title>Right Multi-Function Display (MFD 2)</title><rect class="hotspot-rect" x="11590" y="16286" width="2989" height="2262" rx="40" /></g>
   <g id="pfd-right" class="clickable"><title>Right Primary Flight Display (PFD 2)</title><rect class="hotspot-rect" x="14901" y="16286" width="2990" height="2262" rx="40" /></g>
-  <g id="isis-screen" class="clickable"><title>ISIS Display Screen (Standby Instrument)</title><rect class="hotspot-rect" x="10377" y="16456" width="627" height="636" rx="30" /></g>
-  <g id="mcdu-left-screen" class="clickable"><title>Left MCDU Display Screen (MCDU 1)</title><rect class="hotspot-rect" x="8588" y="19449" width="1098" height="893" rx="25" /></g>
-  <g id="mcdu-right-screen" class="clickable"><title>Right MCDU Display Screen (MCDU 2)</title><rect class="hotspot-rect" x="11687" y="19449" width="1095" height="893" rx="25" /></g>
-  <g id="dvdr-test-btn" class="clickable"><title>CVR / DVDR Test Pushbutton</title><rect class="hotspot-rect" x="5528" y="9251" width="193" height="144" rx="20" /></g>
-  <g id="dvdr-erase-btn" class="clickable"><title>CVR / DVDR Erase Pushbutton</title><rect class="hotspot-rect" x="5871" y="9251" width="193" height="144" rx="20" /></g>
+  <g id="isis-screen" class="clickable"><title>Integrated eletronic Stanby System (IESS)</title><rect class="hotspot-rect" x="10377" y="16456" width="627" height="636" rx="30" /></g>
+  <g id="mcdu-left-screen" class="clickable"><title>Left Multifunction Control Display Unit (MCDU 1)</title><rect class="hotspot-rect" x="8588" y="19449" width="1098" height="893" rx="25" /></g>
+  <g id="mcdu-right-screen" class="clickable"><title>Right Multifunction Control Display Unit (MCDU 2)</title><rect class="hotspot-rect" x="11687" y="19449" width="1095" height="893" rx="25" /></g>
+  <g id="dvdr-test-btn" class="clickable"><title>DVDR Test Button</title><rect class="hotspot-rect" x="5528" y="9251" width="193" height="144" rx="20" /></g>
+  <g id="dvdr-erase-btn" class="clickable"><title>CVR Erase Button</title><rect class="hotspot-rect" x="5871" y="9251" width="193" height="144" rx="20" /></g>
   <g id="elt-switch" class="clickable"><title>ELT Selector Switch (ARM / ON)</title><rect class="hotspot-rect" x="6340" y="9185" width="257" height="190" rx="25" /></g>
-  <g id="elec-idg1-knob" class="clickable"><title>IDG 1 Selector Knob (DISC / OFF / AUTO)</title><rect class="hotspot-rect" x="5224" y="10011" width="393" height="327" rx="40" /></g>
-  <g id="elec-idg2-knob" class="clickable"><title>IDG 2 Selector Knob (DISC / OFF / AUTO)</title><rect class="hotspot-rect" x="6105" y="10011" width="394" height="327" rx="40" /></g>
-  <g id="elec-apu-gen-btn" class="clickable"><title>APU GEN Pushbutton</title><rect class="hotspot-rect" x="4918" y="10774" width="361" height="265" rx="25" /></g>
-  <g id="elec-gpu-btn" class="clickable"><title>AC GPU Pushbutton</title><rect class="hotspot-rect" x="5666" y="10842" width="393" height="288" rx="25" /></g>
-  <g id="elec-ac-bus-ties-knob" class="clickable"><title>AC Bus Ties Selector Knob (1 OPEN / AUTO / 2 OPEN)</title><rect class="hotspot-rect" x="6447" y="10774" width="358" height="265" rx="40" /></g>
-  <g id="elec-tru1-knob" class="clickable"><title>TRU 1 Selector Knob (OFF / AUTO)</title><rect class="hotspot-rect" x="5003" y="11305" width="329" height="285" rx="40" /></g>
-  <g id="elec-tru-ess-knob" class="clickable"><title>TRU ESS Selector Knob (OFF / AUTO)</title><rect class="hotspot-rect" x="5698" y="11305" width="327" height="285" rx="40" /></g>
-  <g id="elec-tru2-knob" class="clickable"><title>TRU 2 Selector Knob (OFF / AUTO)</title><rect class="hotspot-rect" x="6393" y="11305" width="327" height="285" rx="40" /></g>
-  <g id="elec-batt1-knob" class="clickable"><title>BATT 1 Selector Knob (OFF / ON)</title><rect class="hotspot-rect" x="4971" y="12082" width="393" height="325" rx="40" /></g>
-  <g id="elec-batt2-knob" class="clickable"><title>BATT 2 Selector Knob (OFF / AUTO)</title><rect class="hotspot-rect" x="5698" y="12063" width="327" height="283" rx="40" /></g>
-  <g id="elec-dc-bus-ties-knob" class="clickable"><title>DC Bus Ties Selector Knob (OFF / AUTO)</title><rect class="hotspot-rect" x="6358" y="12082" width="393" height="325" rx="40" /></g>
-  <g id="ckpt-ovhd-lt-knob" class="clickable"><title>OVHD PNL (Overhead Panel Backlighting) Knob</title><rect class="hotspot-rect" x="4985" y="12811" width="341" height="224" rx="40" /></g>
-  <g id="ckpt-main-lt-knob" class="clickable"><title>MAIN PNL (Main Panel Backlighting) Knob</title><rect class="hotspot-rect" x="5690" y="12811" width="342" height="224" rx="40" /></g>
-  <g id="ckpt-ped-lt-knob" class="clickable"><title>PEDESTAL (Pedestal Backlighting) Knob</title><rect class="hotspot-rect" x="6394" y="12811" width="341" height="224" rx="40" /></g>
-  <g id="ckpt-annun-test-btn" class="clickable"><title>ANNUNCIATOR TEST Pushbutton</title><rect class="hotspot-rect" x="5203" y="13326" width="270" height="198" rx="25" /></g>
-  <g id="ckpt-dome-sw" class="clickable"><title>DOME Light Switch (OFF / ON)</title><rect class="hotspot-rect" x="6178" y="13322" width="261" height="224" rx="25" /></g>
+  <g id="elec-idg1-knob" class="clickable"><title>IDG 1 Selector Knob</title><rect class="hotspot-rect" x="5224" y="10011" width="393" height="327" rx="40" /></g>
+  <g id="elec-idg2-knob" class="clickable"><title>IDG 2 Selector Knob</title><rect class="hotspot-rect" x="6105" y="10011" width="394" height="327" rx="40" /></g>
+  <g id="elec-apu-gen-btn" class="clickable"><title>APU GEN Button</title><rect class="hotspot-rect" x="4918" y="10774" width="361" height="265" rx="25" /></g>
+  <g id="elec-gpu-btn" class="clickable"><title>Ground Power Unit (GPU) Button</title><rect class="hotspot-rect" x="5666" y="10842" width="393" height="288" rx="25" /></g>
+  <g id="elec-ac-bus-ties-knob" class="clickable"><title>AC BUS TIES Selector Knob</title><rect class="hotspot-rect" x="6447" y="10774" width="358" height="265" rx="40" /></g>
+  <g id="elec-tru1-knob" class="clickable"><title>TRU 1 Selector Switch</title><rect class="hotspot-rect" x="5003" y="11305" width="329" height="285" rx="40" /></g>
+  <g id="elec-tru-ess-knob" class="clickable"><title>TRU ESS Selector Switch</title><rect class="hotspot-rect" x="5698" y="11305" width="327" height="285" rx="40" /></g>
+  <g id="elec-tru2-knob" class="clickable"><title>TRU 2 SelectorSwitch</title><rect class="hotspot-rect" x="6393" y="11305" width="327" height="285" rx="40" /></g>
+  <g id="elec-batt1-knob" class="clickable"><title>BATT 1 Knob</title><rect class="hotspot-rect" x="4971" y="12082" width="393" height="325" rx="40" /></g>
+  <g id="elec-batt2-knob" class="clickable"><title>BATT 2 Knob</title><rect class="hotspot-rect" x="5698" y="12063" width="327" height="283" rx="40" /></g>
+  <g id="elec-dc-bus-ties-knob" class="clickable"><title>DC Bus Ties Selector Knob</title><rect class="hotspot-rect" x="6358" y="12082" width="393" height="325" rx="40" /></g>
+  <g id="ckpt-ovhd-lt-knob" class="clickable"><title>OVHD PNL Controller</title><rect class="hotspot-rect" x="4985" y="12811" width="341" height="224" rx="40" /></g>
+  <g id="ckpt-main-lt-knob" class="clickable"><title>MAIN PNL Controller</title><rect class="hotspot-rect" x="5690" y="12811" width="342" height="224" rx="40" /></g>
+  <g id="ckpt-ped-lt-knob" class="clickable"><title>PEDESTAL Controller</title><rect class="hotspot-rect" x="6394" y="12811" width="341" height="224" rx="40" /></g>
+  <g id="ckpt-annun-test-btn" class="clickable"><title>ANNUNCIATOR TEST Button</title><rect class="hotspot-rect" x="5203" y="13326" width="270" height="198" rx="25" /></g>
+  <g id="ckpt-dome-sw" class="clickable"><title>DOME Switch</title><rect class="hotspot-rect" x="6178" y="13322" width="261" height="224" rx="25" /></g>
   <g id="fire-eng1-handle" class="clickable"><title>Engine 1 Fire Extinguisher Handle</title><path class="hotspot-rect" d="M 7571,9385 L 9067,9385 Q 9126,9385 9126,9428 L 9126,9604 Q 9126,9648 9067,9648 L 8471,9648 L 8471,10299 C 8471,10362 8404,10412 8319,10412 C 8234,10412 8164,10362 8164,10299 L 8164,9648 L 7571,9648 Q 7512,9648 7512,9604 L 7512,9428 Q 7512,9385 7571,9385 Z" /></g>
-  <g id="fire-cargo-fwd-btn" class="clickable"><title>FWD CARGO Fire / Smoke Extinguisher Button</title><rect class="hotspot-rect" x="9991" y="9218" width="393" height="288" rx="25" /></g>
-  <g id="fire-cargo-aft-btn" class="clickable"><title>AFT CARGO Fire / Smoke Extinguisher Button</title><rect class="hotspot-rect" x="11163" y="9218" width="393" height="288" rx="25" /></g>
-  <g id="fire-apu-extg-btn" class="clickable"><title>APU Fire Extinguisher (EXTG) Pushbutton</title><rect class="hotspot-rect" x="10052" y="9769" width="273" height="198" rx="25" /></g>
-  <g id="fire-apu-emer-btn" class="clickable"><title>APU Fire Emergency Stop Guarded Button</title><rect class="hotspot-rect" x="11163" y="9720" width="393" height="288" rx="25" /></g>
+  <g id="fire-cargo-fwd-btn" class="clickable"><title>CARGO SMOKE FWD Button (Guarded)</title><rect class="hotspot-rect" x="9991" y="9218" width="393" height="288" rx="25" /></g>
+  <g id="fire-cargo-aft-btn" class="clickable"><title>CARGO SMOKE AFT Button (Guarded)</title><rect class="hotspot-rect" x="11163" y="9218" width="393" height="288" rx="25" /></g>
+  <g id="fire-apu-extg-btn" class="clickable"><title> FIRE EXTINGUISHER APU Button (Guarded)</title><rect class="hotspot-rect" x="10052" y="9769" width="273" height="198" rx="25" /></g>
+  <g id="fire-apu-emer-btn" class="clickable"><title>APU EMER STOP Button (Guarded)</title><rect class="hotspot-rect" x="11163" y="9720" width="393" height="288" rx="25" /></g>
   <g id="fire-eng2-handle" class="clickable"><title>Engine 2 Fire Extinguisher Handle</title><path class="hotspot-rect" d="M 12483,9385 L 13980,9385 Q 14039,9385 14039,9428 L 14039,9604 Q 14039,9648 13980,9648 L 13387,9648 L 13387,10299 C 13387,10362 13318,10412 13232,10412 C 13148,10412 13081,10362 13081,10299 L 13081,9648 L 12483,9648 Q 12425,9648 12425,9604 L 12425,9428 Q 12425,9385 12483,9385 Z" /></g>
-  <g id="fuel-xfeed-knob" class="clickable"><title>Fuel Crossfeed (XFEED) Knob (LOW 1 / OFF / LOW 2)</title><rect class="hotspot-rect" x="8121" y="10947" width="394" height="326" rx="40" /></g>
-  <g id="fuel-ac-pump1-btn" class="clickable"><title>AC Fuel Pump 1 Selector Knob (OFF / AUTO / ON)</title><rect class="hotspot-rect" x="7478" y="11418" width="432" height="319" rx="30" /></g>
-  <g id="fuel-ac-pump2-btn" class="clickable"><title>AC Fuel Pump 2 Selector Knob (OFF / AUTO / ON)</title><rect class="hotspot-rect" x="8726" y="11418" width="435" height="319" rx="30" /></g>
-  <g id="fuel-dc-pump-btn" class="clickable"><title>DC Fuel Pump Selector Knob (OFF / AUTO / ON)</title><rect class="hotspot-rect" x="8100" y="12086" width="436" height="319" rx="30" /></g>
-  <g id="pax-emer-lt-knob" class="clickable"><title>EMER LT (Emergency Lights) Knob (OFF / ARM / ON)</title><rect class="hotspot-rect" x="7661" y="12833" width="395" height="326" rx="40" /></g>
-  <g id="pax-sterile-btn" class="clickable"><title>ATTND CALL (Flight Attendant Call) Pushbutton</title><rect class="hotspot-rect" x="8622" y="12846" width="273" height="199" rx="25" /></g>
-  <g id="pax-no-smk-sw" class="clickable"><title>STERILE Cockpit Light Switch (OFF / ON)</title><rect class="hotspot-rect" x="7602" y="13322" width="261" height="226" rx="25" /></g>
-  <g id="pax-fstn-belts-sw" class="clickable"><title>NO SMKG / BELTS Sign Switch (OFF / ON)</title><rect class="hotspot-rect" x="8188" y="13322" width="260" height="226" rx="25" /></g>
-  <g id="pax-cabin-lt-sw" class="clickable"><title>FASTEN BELTS Sign Switch (OFF / ON)</title><rect class="hotspot-rect" x="8774" y="13322" width="262" height="226" rx="25" /></g>
-  <g id="apu-fuel-shutoff-btn" class="clickable"><title>APU Fuel Shutoff Guarded Pushbutton</title><rect class="hotspot-rect" x="9786" y="10483" width="393" height="325" rx="25" /></g>
-  <g id="apu-emer-stop-btn" class="clickable"><title>APU Emergency Stop Pushbutton</title><rect class="hotspot-rect" x="10718" y="10551" width="393" height="288" rx="25" /></g>
+  <g id="fuel-xfeed-knob" class="clickable"><title>Fuel XFEED Selector</title><rect class="hotspot-rect" x="8121" y="10947" width="394" height="326" rx="40" /></g>
+  <g id="fuel-ac-pump1-btn" class="clickable"><title>Fuel AC PUMP 1 Knob</title><rect class="hotspot-rect" x="7478" y="11418" width="432" height="319" rx="30" /></g>
+  <g id="fuel-ac-pump2-btn" class="clickable"><title>Fuel AC PUMP 2 Knob</title><rect class="hotspot-rect" x="8726" y="11418" width="435" height="319" rx="30" /></g>
+  <g id="fuel-dc-pump-btn" class="clickable"><title> FUEL DC PUMP Knob</title><rect class="hotspot-rect" x="8100" y="12086" width="436" height="319" rx="30" /></g>
+  <g id="pax-emer-lt-knob" class="clickable"><title>EMER LT Selector</title><rect class="hotspot-rect" x="7661" y="12833" width="395" height="326" rx="40" /></g>
+  <g id="pax-sterile-btn" class="clickable"><title>ATTND CALL Button</title><rect class="hotspot-rect" x="8622" y="12846" width="273" height="199" rx="25" /></g>
+  <g id="pax-no-smk-sw" class="clickable"><title>STERILE Switch</title><rect class="hotspot-rect" x="7602" y="13322" width="261" height="226" rx="25" /></g>
+  <g id="pax-fstn-belts-sw" class="clickable"><title>NO ELEC DEVICES Switch</title><rect class="hotspot-rect" x="8188" y="13322" width="260" height="226" rx="25" /></g>
+  <g id="pax-cabin-lt-sw" class="clickable"><title>FSTN BELTS Switch</title><rect class="hotspot-rect" x="8774" y="13322" width="262" height="226" rx="25" /></g>
+  <g id="apu-fuel-shutoff-btn" class="clickable"><title>APU MASTER Selector</title><rect class="hotspot-rect" x="9786" y="10483" width="393" height="325" rx="25" /></g>
+  <g id="apu-emer-stop-btn" class="clickable"><title>APU EMER STOP Button (Guarded)</title><rect class="hotspot-rect" x="10718" y="10551" width="393" height="288" rx="25" /></g>
   <g id="apu-master" class="clickable"><title>APU Master Selector Knob (OFF / ON / START)</title><rect class="hotspot-rect" x="11463" y="10518" width="324" height="243" rx="40" /></g>
   <g id="wiper-left-knob" class="clickable"><title>Windshield Wiper 1 (Captain) Knob (OFF / TIMER / LOW / HI)</title><rect class="hotspot-rect" x="9999" y="11259" width="433" height="319" rx="40" /></g>
   <g id="wiper-right-knob" class="clickable"><title>Windshield Wiper 2 (First Officer) Knob (OFF / TIMER / LOW / HI)</title><rect class="hotspot-rect" x="11107" y="11259" width="433" height="319" rx="40" /></g>
@@ -109863,15 +109863,15 @@
   <g id="fgp-ap-btn" class="clickable"><title>Autopilot (AP) Engage Pushbutton</title><rect class="hotspot-rect" x="10556" y="15194" width="257" height="110" rx="15" /></g>
   <g id="fgp-src-btn" class="clickable"><title>Navigation Source (SRC) Button</title><rect class="hotspot-rect" x="10600" y="15445" width="164" height="97" rx="15" /></g>
   <g id="fgp-appr2-btn" class="clickable"><title>Approach (APPR) Mode Button</title><rect class="hotspot-rect" x="10601" y="15689" width="168" height="97" rx="15" /></g>
-  <g id="fgp-vnav-btn" class="clickable"><title>VNAV (Vertical Navigation) Button</title><rect class="hotspot-rect" x="10974" y="15202" width="168" height="97" rx="15" /></g>
+  <g id="fgp-vnav-btn" class="clickable"><title>Vertical Navigation (VNAV) Button</title><rect class="hotspot-rect" x="10974" y="15202" width="168" height="97" rx="15" /></g>
   <g id="fgp-alt-knob" class="clickable"><title>Altitude Selector Knob (ALT SEL / PUSH FT-M)</title><rect class="hotspot-rect" x="10985" y="15419" width="156" height="157" rx="40" /></g>
-  <g id="fgp-flch-btn" class="clickable"><title>FLCH (Flight Level Change) Button</title><rect class="hotspot-rect" x="10979" y="15689" width="164" height="97" rx="15" /></g>
+  <g id="fgp-flch-btn" class="clickable"><title>Flight Level Change (FLCH) Button</title><rect class="hotspot-rect" x="10979" y="15689" width="164" height="97" rx="15" /></g>
   <g id="fgp-alt-btn" class="clickable"><title>Altitude Hold (ALT) Mode Button</title><rect class="hotspot-rect" x="11256" y="15640" width="168" height="97" rx="15" /></g>
   <g id="fgp-vs-wheel" class="clickable"><title>Pitch Wheel (DN / UP)</title><rect class="hotspot-rect" x="11508" y="15316" width="146" height="365" rx="15" /></g>
   <g id="fgp-vs-btn" class="clickable"><title>Vertical Speed (VS) Mode Button</title><rect class="hotspot-rect" x="11786" y="15248" width="164" height="97" rx="15" /></g>
   <g id="fgp-fpa-btn" class="clickable"><title>Flight Path Angle (FPA) Mode Button</title><rect class="hotspot-rect" x="11791" y="15626" width="163" height="97" rx="15" /></g>
   <g id="fgp-fd2-btn" class="clickable"><title>Right Flight Director (FD 2) Button</title><rect class="hotspot-rect" x="12094" y="15204" width="168" height="101" rx="15" /></g>
-  <g id="fgp-crs2-knob" class="clickable"><title>Right Course (CRS 2) Selector Knob</title><rect class="hotspot-rect" x="12083" y="15411" width="194" height="196" rx="40" /></g>
+  <g id="fgp-crs2-knob" class="clickable"><title>Right Course (CRS 2) Selector Knob (PUSH DIR)</title><rect class="hotspot-rect" x="12083" y="15411" width="194" height="196" rx="40" /></g>
   <g id="dcu2-mins-knob" class="clickable"><title>Right Minimums Selector Knob (RA / BARO)</title><rect class="hotspot-rect" x="12441" y="15359" width="235" height="234" rx="40" /></g>
   <g id="dcu2-hsi-btn" class="clickable"><title>Right HSI Format Pushbutton (HSI)</title><rect class="hotspot-rect" x="12762" y="15240" width="168" height="101" rx="15" /></g>
   <g id="dcu2-wx-btn" class="clickable"><title>Right Weather Radar Overlay Pushbutton (WX)</title><rect class="hotspot-rect" x="12954" y="15240" width="163" height="101" rx="15" /></g>
@@ -109899,9 +109899,9 @@
   <g id="reversionary-left-knobs" class="clickable"><title>Captain Reversionary &amp; Display Brightness Panel (PFD / MFD / ADS / IRS)</title><rect class="hotspot-rect" x="2185" y="17816" width="1055" height="903" rx="25" /></g>
   <g id="autobrake-panel" class="clickable"><title>AUTOBRAKE Selector Knob (RTO / OFF / LO / MED / HI)</title><rect class="hotspot-rect" x="10040" y="17233" width="822" height="858" rx="30" /></g>
   <g id="ldg-gear-lever" class="clickable"><title>Landing Gear Control Lever (UP / OFF / DN)</title><rect class="hotspot-rect" x="10961" y="17387" width="360" height="537" rx="30" /></g>
-  <g id="eicas-full-panel" class="clickable"><title>EMER / PRKG BRK (Emergency / Parking Brake) Indicator Light</title><rect class="hotspot-rect" x="10040" y="18230" width="627" height="706" rx="30" /></g>
+  <g id="eicas-full-panel" class="clickable"><title>EMER/PARKING BRAKE</title><rect class="hotspot-rect" x="10040" y="18230" width="627" height="706" rx="30" /></g>
   <g id="gear-ovrd-btn" class="clickable"><title>DN LCK REL (Downlock Release) Button &amp; NOSEWHEEL STEERING Switch</title><rect class="hotspot-rect" x="10730" y="18106" width="613" height="920" rx="25" /></g>
-  <g id="clock-right-btn" class="clickable"><title>First Officer GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button</title><rect class="hotspot-rect" x="18139" y="17291" width="1054" height="421" rx="25" /></g>
+  <g id="clock-right-btn" class="clickable"><title>ADS HEATER BUTTON</title><rect class="hotspot-rect" x="18139" y="17291" width="1054" height="421" rx="25" /></g>
   <g id="reversionary-right-knobs" class="clickable"><title>First Officer Reversionary &amp; Display Brightness Panel (PFD / MFD / ADS / IRS)</title><rect class="hotspot-rect" x="18139" y="17816" width="1054" height="903" rx="25" /></g>
   <g id="flight-control-mode" class="clickable"><title>FLIGHT CONTROL MODE Panel (ELEVATOR / AILERON / RUDDER)</title><rect class="hotspot-rect" x="9924" y="19325" width="1530" height="879" rx="25" /></g>
   <g id="mcdu-left-keys" class="clickable"><title>Left MCDU Keypad &amp; Function Buttons (MCDU 1)</title><rect class="hotspot-rect" x="8390" y="20398" width="1492" height="990" rx="25" /></g>
@@ -109928,7 +109928,7 @@
   <g id="pa-btn-right" class="clickable"><title>First Officer PA (Passenger Address) Handset / Button</title><rect class="hotspot-rect" x="12249" y="25914" width="872" height="400" rx="25" /></g>
   <g id="elevator-disc-handle" class="clickable"><title>ELEVATOR DISC (Elevator Disconnect) Handle</title><rect class="hotspot-rect" x="8248" y="26387" width="738" height="500" rx="25" /></g>
   <g id="rat-manual-deploy" class="clickable"><title>AILERON DISC (Aileron Disconnect) Handle</title><rect class="hotspot-rect" x="12388" y="26387" width="739" height="500" rx="25" /></g>
-  <g id="lower-pedestal-panel" class="clickable"><title>Alternate Landing Gear / Lower Pedestal Panel</title><rect class="hotspot-rect" x="9145" y="27609" width="1526" height="657" rx="25" /></g>
+  <g id="lower-pedestal-panel" class="clickable"><title>Cockpit Voice Recorder / Maintenance Test Panel</title><rect class="hotspot-rect" x="9145" y="27609" width="1526" height="657" rx="25" /></g>
   <g id="lgwrn-gnd-prox-inhibits" class="clickable"><title>LG WRN / GROUND PROX INHIBITS Panel (LG WRN / TERR / FLAP OVRD)</title><rect class="hotspot-rect" x="9149" y="26221" width="1526" height="657" rx="25" /></g>
   <g id="cabin-non-essential" class="clickable"><title>CABIN NON ESSENTIAL Power Switch</title><rect class="hotspot-rect" x="9149" y="26916" width="1526" height="661" rx="25" /></g>
  </g>

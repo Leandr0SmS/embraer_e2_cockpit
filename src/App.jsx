@@ -7,10 +7,29 @@ import './App.css';
 
 // Memoized so opening/closing the modal does not re-parse the inline SVG
 const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
+  // Sync title dynamically on hover so tooltip always strictly matches manual.json
+  const handleSvgMouseOver = (e) => {
+    const target = e.target.closest('.clickable');
+    if (target && target.id) {
+      const systemData = manualData[target.id];
+      if (systemData && systemData.title) {
+        let titleEl = target.querySelector('title');
+        if (!titleEl) {
+          titleEl = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+          target.insertBefore(titleEl, target.firstChild);
+        }
+        if (titleEl.textContent !== systemData.title) {
+          titleEl.textContent = systemData.title;
+        }
+      }
+    }
+  };
+
   return (
     <div
       className="svg-wrapper"
       onClick={onSvgClick}
+      onMouseOver={handleSvgMouseOver}
       dangerouslySetInnerHTML={{ __html: painelSvgRaw }}
     />
   );
