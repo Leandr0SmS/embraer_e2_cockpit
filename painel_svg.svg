@@ -109882,6 +109882,19 @@
   <g id="dcu2-brg2-btn" class="clickable"><title>Right Diamond Bearing Pointer Pushbutton (BRG ◇)</title><rect class="hotspot-rect" x="12762" y="15618" width="168" height="97" rx="15" /></g>
   <g id="dcu2-fpr-btn" class="clickable"><title>Right Flight Path Reference Pushbutton (FPR)</title><rect class="hotspot-rect" x="12954" y="15618" width="163" height="97" rx="15" /></g>
   <g id="dcu2-baro-knob" class="clickable"><title>Right Barometric Altimeter Knob (BARO / STD)</title><rect class="hotspot-rect" x="13354" y="15365" width="233" height="233" rx="40" /></g>
+  <!-- Captain Glareshield Lighting Panel -->
+  <g id="ptt-capt-btn" class="clickable"><title>Captain PTT / Boom Mic Jack</title><rect class="hotspot-rect" x="2650" y="15795" width="210" height="210" rx="30" /></g>
+  <g id="chart-light-capt-knob" class="clickable"><title>Captain CHART Light Knob (OFF / BRT)</title><rect class="hotspot-rect" x="2960" y="15735" width="220" height="210" rx="30" /></g>
+  <g id="flood-storm-capt-knob" class="clickable"><title>Captain FLOOD / STORM Light Knob (OFF / BRT)</title><rect class="hotspot-rect" x="3275" y="15675" width="220" height="210" rx="30" /></g>
+  <g id="pfd-light-capt-knob" class="clickable"><title>Captain PFD Brightness Control Knob (DIM / BRT)</title><rect class="hotspot-rect" x="3590" y="15620" width="220" height="210" rx="30" /></g>
+  <g id="mfd-light-capt-knob" class="clickable"><title>Captain MFD Brightness Control Knob (DIM / BRT)</title><rect class="hotspot-rect" x="3905" y="15565" width="220" height="210" rx="30" /></g>
+  <!-- First Officer Glareshield Lighting Panel -->
+  <g id="compass-light-fo-knob" class="clickable"><title>COMPASS / Glareshield Light Knob (DIM / BRT)</title><rect class="hotspot-rect" x="17115" y="15545" width="220" height="220" rx="30" /></g>
+  <g id="mfd-light-fo-knob" class="clickable"><title>First Officer MFD Brightness Control Knob (DIM / BRT)</title><rect class="hotspot-rect" x="17435" y="15600" width="220" height="220" rx="30" /></g>
+  <g id="pfd-light-fo-knob" class="clickable"><title>First Officer PFD Brightness Control Knob (DIM / BRT)</title><rect class="hotspot-rect" x="17755" y="15655" width="220" height="220" rx="30" /></g>
+  <g id="flood-storm-fo-knob" class="clickable"><title>First Officer FLOOD / STORM Light Knob (OFF / BRT)</title><rect class="hotspot-rect" x="18075" y="15710" width="220" height="220" rx="30" /></g>
+  <g id="chart-light-fo-knob" class="clickable"><title>First Officer CHART Light Knob (OFF / BRT)</title><rect class="hotspot-rect" x="18395" y="15770" width="220" height="220" rx="30" /></g>
+  <g id="ptt-fo-btn" class="clickable"><title>First Officer PTT / Boom Mic Jack</title><rect class="hotspot-rect" x="18695" y="15825" width="210" height="210" rx="30" /></g>
   <g id="clock-left-btn" class="clickable"><title>Captain GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button</title><rect class="hotspot-rect" x="2181" y="17282" width="1054" height="421" rx="25" /></g>
   <g id="reversionary-left-knobs" class="clickable"><title>Captain Reversionary &amp; Display Brightness Panel (PFD / MFD / ADS / IRS)</title><rect class="hotspot-rect" x="2185" y="17816" width="1055" height="903" rx="25" /></g>
   <g id="autobrake-panel" class="clickable"><title>AUTOBRAKE Selector Knob (RTO / OFF / LO / MED / HI)</title><rect class="hotspot-rect" x="10040" y="17233" width="822" height="858" rx="30" /></g>
