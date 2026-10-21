@@ -109863,8 +109863,9 @@
   <g id="fgp-ap-btn" class="clickable"><title>Autopilot (AP) Engage Pushbutton</title><rect class="hotspot-rect" x="10556" y="15194" width="257" height="110" rx="15" /></g>
   <g id="fgp-src-btn" class="clickable"><title>Navigation Source (SRC) Button</title><rect class="hotspot-rect" x="10600" y="15445" width="164" height="97" rx="15" /></g>
   <g id="fgp-appr2-btn" class="clickable"><title>Approach (APPR) Mode Button</title><rect class="hotspot-rect" x="10601" y="15689" width="168" height="97" rx="15" /></g>
-  <g id="fgp-vnav-flch-btns" class="clickable"><title>VNAV &amp; Flight Level Change (FLCH) Buttons</title><rect class="hotspot-rect" x="10975" y="15204" width="168" height="180" rx="15" /></g>
-  <g id="fgp-alt-knob" class="clickable"><title>Altitude Selector Knob (ALT)</title><rect class="hotspot-rect" x="10945" y="15400" width="230" height="380" rx="40" /></g>
+  <g id="fgp-vnav-btn" class="clickable"><title>VNAV (Vertical Navigation) Button</title><rect class="hotspot-rect" x="10974" y="15202" width="168" height="97" rx="15" /></g>
+  <g id="fgp-alt-knob" class="clickable"><title>Altitude Selector Knob (ALT SEL / PUSH FT-M)</title><rect class="hotspot-rect" x="10985" y="15419" width="156" height="157" rx="40" /></g>
+  <g id="fgp-flch-btn" class="clickable"><title>FLCH (Flight Level Change) Button</title><rect class="hotspot-rect" x="10979" y="15689" width="164" height="97" rx="15" /></g>
   <g id="fgp-alt-btn" class="clickable"><title>Altitude Hold (ALT) Mode Button</title><rect class="hotspot-rect" x="11256" y="15640" width="168" height="97" rx="15" /></g>
   <g id="fgp-vs-wheel" class="clickable"><title>Pitch Wheel (DN / UP)</title><rect class="hotspot-rect" x="11508" y="15316" width="146" height="365" rx="15" /></g>
   <g id="fgp-vs-btn" class="clickable"><title>Vertical Speed (VS) Mode Button</title><rect class="hotspot-rect" x="11786" y="15248" width="164" height="97" rx="15" /></g>

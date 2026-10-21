@@ -539,15 +539,10 @@
     "system": "Flight Guidance Panel (AFCS)",
     "description": "Arms or engages lateral and vertical approach guidance (ILS LOC/GS or RNAV RNP/LPV approach)."
   },
-  "fgp-vnav-flch-btns": {
-    "title": "VNAV & Flight Level Change (FLCH) Buttons",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Engages FMS Vertical Navigation (VNAV) profile guidance or Flight Level Change (FLCH) airspeed-on-pitch climb/descent."
-  },
   "fgp-alt-knob": {
-    "title": "Altitude Selector Knob (ALT)",
+    "title": "Altitude Selector Knob (ALT SEL / PUSH FT-M)",
     "system": "Flight Guidance Panel (AFCS)",
-    "description": "Sets the preselected altitude on the PFD (outer ring 1000 ft, inner knob 100 ft)."
+    "description": "Sets the preselected altitude bug on the PFD (outer ring sets 1000 ft increments, inner knob sets 100 ft). Pushing toggles display units between feet and meters."
   },
   "fgp-alt-btn": {
     "title": "Altitude Hold (ALT) Mode Button",
@@ -808,5 +803,15 @@
     "title": "Cockpit Voice Recorder / Maintenance Test Panel",
     "system": "Control Pedestal",
     "description": "Lower pedestal panel located directly below the CABIN NON ESSENTIAL switch."
+  },
+  "fgp-vnav-btn": {
+    "title": "Vertical Navigation (VNAV) Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages or arms FMS Vertical Navigation (VNAV) profile guidance, following pre-programmed vertical waypoints, altitude constraints, and speeds."
+  },
+  "fgp-flch-btn": {
+    "title": "Flight Level Change (FLCH) Button",
+    "system": "Flight Guidance Panel (AFCS)",
+    "description": "Engages Flight Level Change (FLCH) mode. The AFCS commands pitch to maintain the selected airspeed while throttles deliver climb or idle descent thrust."
   }
 }
