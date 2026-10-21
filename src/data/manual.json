@@ -439,10 +439,45 @@
     "system": "Display Controller Unit (DCU 1)",
     "description": "Sets the Captain barometric pressure reference (inHg or hPa). Pushing the center button toggles STD (29.92 inHg / 1013 hPa)."
   },
-  "dcu1-buttons": {
-    "title": "Left Display Controller Pushbuttons (HSI / WX / TFC / FPV)",
+  "dcu1-hsi-btn": {
+    "title": "Left HSI Format Pushbutton (HSI)",
     "system": "Display Controller Unit (DCU 1)",
-    "description": "Toggles PFD 1 Flight Path Vector (FPV), HSI format (ARC/COMP), BRG pointers, Weather Radar overlay (WX), and TCAS Traffic overlay (TFC)."
+    "description": "Toggles the Captain Primary Flight Display (PFD 1) Horizontal Situation Indicator (HSI) format between 360° Compass Rose and Expanded Arc views."
+  },
+  "dcu1-wx-btn": {
+    "title": "Left Weather Radar Overlay Pushbutton (WX)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Toggles the Weather Radar (WX) precipitation returns overlay on the Captain HSI (Arc mode)."
+  },
+  "dcu1-fms-btn": {
+    "title": "Left FMS Navigation Source Pushbutton (FMS)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Selects the Flight Management System (FMS) as the primary navigation source displayed on PFD 1."
+  },
+  "dcu1-brg1-btn": {
+    "title": "Left Circle Bearing Pointer Pushbutton (BRG O)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Cycles the Circle (O) Bearing Pointer on PFD 1 through available navigation sources (VOR 1, ADF 1, FMS 1, or OFF)."
+  },
+  "dcu1-prev-btn": {
+    "title": "Left Navigation Preview Pushbutton (PREV)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Displays or hides the cyan Navigation Preview (PREV) course pointer and deviation indicator on PFD 1 for Vor/LOC transition from FMS."
+  },
+  "dcu1-nav-btn": {
+    "title": "Left Short-Range Navigation Source Pushbutton (NAV)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Selects short-range radio navigation (VOR/LOC 1 or VOR/LOC 2) as the active navigation source on PFD 1. Pressing repeatedly toggles between on-side and cross-side sensors."
+  },
+  "dcu1-brg2-btn": {
+    "title": "Left Diamond Bearing Pointer Pushbutton (BRG ◇)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Cycles the Diamond (◇) Bearing Pointer on PFD 1 through available navigation sources (VOR 2, ADF 2, FMS 2, or OFF)."
+  },
+  "dcu1-fpr-btn": {
+    "title": "Left Flight Path Reference Pushbutton (FPR)",
+    "system": "Display Controller Unit (DCU 1)",
+    "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the Captain Primary Flight Display (PFD 1)."
   },
   "dcu1-mins-knob": {
     "title": "Left Minimums Selector Knob (RA / BARO)",
@@ -524,10 +559,45 @@
     "system": "Display Controller Unit (DCU 2)",
     "description": "Selects Radio Altimeter (RA) or Barometric (BARO) minimums bug on PFD 2."
   },
-  "dcu2-buttons": {
-    "title": "Right Display Controller Pushbuttons (HSI / WX / TFC / FPV)",
+  "dcu2-hsi-btn": {
+    "title": "Right HSI Format Pushbutton (HSI)",
     "system": "Display Controller Unit (DCU 2)",
-    "description": "Toggles PFD 2 Flight Path Vector (FPV), HSI format, bearing pointers, Weather Radar overlay, and TCAS Traffic overlay."
+    "description": "Toggles the First Officer Primary Flight Display (PFD 2) Horizontal Situation Indicator (HSI) format between 360° Compass Rose and Expanded Arc views."
+  },
+  "dcu2-wx-btn": {
+    "title": "Right Weather Radar Overlay Pushbutton (WX)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Toggles the Weather Radar (WX) precipitation returns overlay on the First Officer HSI (Arc mode)."
+  },
+  "dcu2-fms-btn": {
+    "title": "Right FMS Navigation Source Pushbutton (FMS)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Selects the Flight Management System (FMS) as the primary navigation source displayed on PFD 2."
+  },
+  "dcu2-brg1-btn": {
+    "title": "Right Circle Bearing Pointer Pushbutton (BRG O)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Cycles the Circle (O) Bearing Pointer on PFD 2 through available navigation sources (VOR 1, ADF 1, FMS 1, or OFF)."
+  },
+  "dcu2-prev-btn": {
+    "title": "Right Navigation Preview Pushbutton (PREV)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Displays or hides the cyan Navigation Preview (PREV) course pointer and deviation indicator on PFD 2 for VOR/LOC transition from FMS."
+  },
+  "dcu2-nav-btn": {
+    "title": "Right Short-Range Navigation Source Pushbutton (NAV)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Selects short-range radio navigation (VOR/LOC 2 or VOR/LOC 1) as the active navigation source on PFD 2. Pressing repeatedly toggles between on-side and cross-side sensors."
+  },
+  "dcu2-brg2-btn": {
+    "title": "Right Diamond Bearing Pointer Pushbutton (BRG ◇)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Cycles the Diamond (◇) Bearing Pointer on PFD 2 through available navigation sources (VOR 2, ADF 2, FMS 2, or OFF)."
+  },
+  "dcu2-fpr-btn": {
+    "title": "Right Flight Path Reference Pushbutton (FPR)",
+    "system": "Display Controller Unit (DCU 2)",
+    "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the First Officer Primary Flight Display (PFD 2)."
   },
   "dcu2-baro-knob": {
     "title": "Right Barometric Altimeter Knob (BARO / STD)",

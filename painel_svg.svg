@@ -109843,7 +109843,14 @@
   <g id="master-caut-right" class="clickable"><title>Right Master Caution (CAUT) Pushbutton</title><rect class="hotspot-rect" x="16033" y="15529" width="194" height="195" rx="20" /></g>
   <g id="master-warn-right" class="clickable"><title>Right Master Warning (WARN) Pushbutton</title><rect class="hotspot-rect" x="16474" y="15529" width="194" height="195" rx="20" /></g>
   <g id="dcu1-baro-knob" class="clickable"><title>Left Barometric Altimeter Knob (BARO / STD)</title><rect class="hotspot-rect" x="7788" y="15359" width="234" height="234" rx="40" /></g>
-  <g id="dcu1-buttons" class="clickable"><title>Left Display Controller Pushbuttons (HSI / WX / TFC / FPV)</title><rect class="hotspot-rect" x="8109" y="15235" width="542" height="476" rx="25" /></g>
+  <g id="dcu1-hsi-btn" class="clickable"><title>Left HSI Format Pushbutton (HSI)</title><rect class="hotspot-rect" x="8109" y="15235" width="168" height="101" rx="15" /></g>
+  <g id="dcu1-wx-btn" class="clickable"><title>Left Weather Radar Overlay Pushbutton (WX)</title><rect class="hotspot-rect" x="8300" y="15240" width="164" height="97" rx="15" /></g>
+  <g id="dcu1-fms-btn" class="clickable"><title>Left FMS Navigation Source Pushbutton (FMS)</title><rect class="hotspot-rect" x="8487" y="15240" width="164" height="97" rx="15" /></g>
+  <g id="dcu1-brg1-btn" class="clickable"><title>Left Circle Bearing Pointer Pushbutton (BRG O)</title><rect class="hotspot-rect" x="8109" y="15427" width="168" height="97" rx="15" /></g>
+  <g id="dcu1-prev-btn" class="clickable"><title>Left Navigation Preview Pushbutton (PREV)</title><rect class="hotspot-rect" x="8300" y="15427" width="164" height="97" rx="15" /></g>
+  <g id="dcu1-nav-btn" class="clickable"><title>Left Short-Range Navigation Source Pushbutton (NAV)</title><rect class="hotspot-rect" x="8487" y="15427" width="164" height="97" rx="15" /></g>
+  <g id="dcu1-brg2-btn" class="clickable"><title>Left Diamond Bearing Pointer Pushbutton (BRG ◇)</title><rect class="hotspot-rect" x="8109" y="15613" width="168" height="98" rx="15" /></g>
+  <g id="dcu1-fpr-btn" class="clickable"><title>Left Flight Path Reference Pushbutton (FPR)</title><rect class="hotspot-rect" x="8300" y="15614" width="164" height="97" rx="15" /></g>
   <g id="dcu1-mins-knob" class="clickable"><title>Left Minimums Selector Knob (RA / BARO)</title><rect class="hotspot-rect" x="8701" y="15363" width="235" height="233" rx="40" /></g>
   <g id="fgp-fd1-btn" class="clickable"><title>Left Flight Director (FD 1) Button</title><rect class="hotspot-rect" x="9098" y="15199" width="164" height="97" rx="15" /></g>
   <g id="fgp-crs1-knob" class="clickable"><title>Left Course (CRS 1) Selector Knob</title><rect class="hotspot-rect" x="9081" y="15404" width="194" height="192" rx="40" /></g>
@@ -109860,7 +109867,14 @@
   <g id="fgp-vs-wheel" class="clickable"><title>Vertical Speed (VS) / FPA Pitch Wheel &amp; Button</title><rect class="hotspot-rect" x="11380" y="15320" width="350" height="460" rx="25" /></g>
   <g id="fgp-fd2-crs2" class="clickable"><title>Right Flight Director (FD 2) &amp; Course 2 (CRS 2) Knob</title><rect class="hotspot-rect" x="11786" y="15204" width="495" height="520" rx="25" /></g>
   <g id="dcu2-mins-knob" class="clickable"><title>Right Minimums Selector Knob (RA / BARO)</title><rect class="hotspot-rect" x="12441" y="15359" width="235" height="234" rx="40" /></g>
-  <g id="dcu2-buttons" class="clickable"><title>Right Display Controller Pushbuttons (HSI / WX / TFC / FPV)</title><rect class="hotspot-rect" x="12762" y="15240" width="542" height="475" rx="25" /></g>
+  <g id="dcu2-hsi-btn" class="clickable"><title>Right HSI Format Pushbutton (HSI)</title><rect class="hotspot-rect" x="12762" y="15240" width="168" height="101" rx="15" /></g>
+  <g id="dcu2-wx-btn" class="clickable"><title>Right Weather Radar Overlay Pushbutton (WX)</title><rect class="hotspot-rect" x="12954" y="15240" width="163" height="101" rx="15" /></g>
+  <g id="dcu2-fms-btn" class="clickable"><title>Right FMS Navigation Source Pushbutton (FMS)</title><rect class="hotspot-rect" x="13141" y="15240" width="163" height="101" rx="15" /></g>
+  <g id="dcu2-brg1-btn" class="clickable"><title>Right Circle Bearing Pointer Pushbutton (BRG O)</title><rect class="hotspot-rect" x="12762" y="15431" width="168" height="97" rx="15" /></g>
+  <g id="dcu2-prev-btn" class="clickable"><title>Right Navigation Preview Pushbutton (PREV)</title><rect class="hotspot-rect" x="12954" y="15429" width="163" height="97" rx="15" /></g>
+  <g id="dcu2-nav-btn" class="clickable"><title>Right Short-Range Navigation Source Pushbutton (NAV)</title><rect class="hotspot-rect" x="13141" y="15431" width="163" height="97" rx="15" /></g>
+  <g id="dcu2-brg2-btn" class="clickable"><title>Right Diamond Bearing Pointer Pushbutton (BRG ◇)</title><rect class="hotspot-rect" x="12762" y="15618" width="168" height="97" rx="15" /></g>
+  <g id="dcu2-fpr-btn" class="clickable"><title>Right Flight Path Reference Pushbutton (FPR)</title><rect class="hotspot-rect" x="12954" y="15618" width="163" height="97" rx="15" /></g>
   <g id="dcu2-baro-knob" class="clickable"><title>Right Barometric Altimeter Knob (BARO / STD)</title><rect class="hotspot-rect" x="13354" y="15365" width="233" height="233" rx="40" /></g>
   <g id="clock-left-btn" class="clickable"><title>Captain GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button</title><rect class="hotspot-rect" x="2181" y="17282" width="1054" height="421" rx="25" /></g>
   <g id="reversionary-left-knobs" class="clickable"><title>Captain Reversionary &amp; Display Brightness Panel (PFD / MFD / ADS / IRS)</title><rect class="hotspot-rect" x="2185" y="17816" width="1055" height="903" rx="25" /></g>
