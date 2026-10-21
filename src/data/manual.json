@@ -405,34 +405,34 @@
     "description": "PUSH IN: allows automatic operation by the AMS. This position commands the respective engine bleed valves.\nPUSH OUT: manually closes the engine bleed valves.\nNOTE: When leak is detected, the button amber striped bar is illuminated."
   },
   "oxy-mask-knob": {
-    "title": "MASKS Deployment Selector Knob (AUTO / OVRD)",
-    "system": "Oxygen System",
-    "description": "AUTO: Deploys cabin oxygen masks automatically if cabin altitude exceeds ~14,000 ft. OVRD: Manually deploys cabin oxygen masks."
+    "title": "MASKS DEPLOY Selector",
+    "system": "Oxygen",
+    "description": "OFF: disables automatic deployment of passenger oxygen masks.\nAUTO: enables automatic deployment of passenger oxygen masks when cabin pressure altitude is above 14000 ft.\nOVRD: deploys the passenger oxygen masks regardless of cabin altitude."
   },
   "oxy-supply-btn": {
-    "title": "Passenger Oxygen SUPPLY Pushbutton",
-    "system": "Oxygen System",
-    "description": "Controls oxygen flow to the deployed passenger cabin masks."
+    "title": " MASKS DEPLOYED Indicator",
+    "system": "Oxygen",
+    "description": "An ON light illuminates, indicating that the passenger and the oxygen masks for the flight attendants have been deployed."
   },
   "master-warn-left": {
-    "title": "Left Master Warning (WARN) Pushbutton",
-    "system": "Glareshield / Crew Alerting",
-    "description": "Flashes red and sounds a triple chime when a Level 3 Warning CAS message occurs. Pressing extinguishes the flash and silences the aural warning."
+    "title": "Master Warning (WARN) Button Left",
+    "system": "Warning System",
+    "description": "The Master Warning (WARN button) is installed on the glareshield panel and its red light blinks when a warning CAS message (red messages) comes on the EICAS. A specific aural tone is triggered together with the master warning red light. The red light stops to blink and the aural tone to sound when the WARN button is pressed (message acknowledge) or when the failure condition no longer exists, but the warning CAS message on the EICAS stays as long as the failure condition exists."
   },
   "master-caut-left": {
-    "title": "Left Master Caution (CAUT) Pushbutton",
-    "system": "Glareshield / Crew Alerting",
-    "description": "Illuminates amber and sounds a single chime when a Level 2 Caution CAS message occurs. Pressing resets the caution light."
+    "title": "Master Caution (CAUT) Button Left",
+    "system": "Warning System",
+    "description": "The Master Caution (CAUT button) is installed on the glareshield panel and its amber light blinks when a caution CAS message (amber message) comes on the EICAS. A specific aural tone is triggered together with the master caution amber light. The amber light stops to blink and the aural tone to sound when the CAUT button is pressed (message acknowledge) or when the failure condition no longer exists, but the caution CAS message on the EICAS stays as long as the failure condition exists."
   },
   "master-caut-right": {
-    "title": "Right Master Caution (CAUT) Pushbutton",
-    "system": "Glareshield / Crew Alerting",
-    "description": "First Officer amber Master Caution reset pushbutton."
+    "title": "Master Caution (CAUT) Button Right",
+    "system": "Warning System",
+    "description": "The Master Caution (CAUT button) is installed on the glareshield panel and its amber light blinks when a caution CAS message (amber message) comes on the EICAS. A specific aural tone is triggered together with the master caution amber light. The amber light stops to blink and the aural tone to sound when the CAUT button is pressed (message acknowledge) or when the failure condition no longer exists, but the caution CAS message on the EICAS stays as long as the failure condition exists."
   },
   "master-warn-right": {
-    "title": "Right Master Warning (WARN) Pushbutton",
-    "system": "Glareshield / Crew Alerting",
-    "description": "First Officer red Master Warning reset pushbutton."
+    "title": "Master Warning (WARN) Button Right",
+    "system": "Warning System",
+    "description": "The Master Warning (WARN button) is installed on the glareshield panel and its red light blinks when a warning CAS message (red messages) comes on the EICAS. A specific aural tone is triggered together with the master warning red light. The red light stops to blink and the aural tone to sound when the WARN button is pressed (message acknowledge) or when the failure condition no longer exists, but the warning CAS message on the EICAS stays as long as the failure condition exists."
   },
   "dcu1-baro-knob": {
     "title": "Left Barometric Altimeter Knob (BARO / STD)",
