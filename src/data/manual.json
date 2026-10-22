@@ -635,24 +635,24 @@
     "description": "DISPLAYS Mode Knob\nLEFT: DU 1 right half displays DU 2 information.\nAUTO: automatic reversion between DU 1 and DU 2 in case of display failure.\nRIGHT: DU 2 left half displays DU 1 information.\n\nIRS BUTTON\nPUSH: reverts the IRS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated IRS source indication is displayed on the PFD after a reversion takes place.\n\nADS BUTTON \nPUSH: reverts the ADS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated ADS source indication is displayed on the PFD after a reversion takes place."
   },
   "autobrake-panel": {
-    "title": "AUTOBRAKE Selector Knob (RTO / OFF / LO / MED / HI)",
+    "title": "AUTOBRAKE Selector Knob",
     "system": "Landing Gear & Brakes",
-    "description": "Selects automatic wheel braking deceleration level for landing (LO, MED, HI) or Rejected Takeoff (RTO) maximum braking."
+    "description": " AUTOBRAKE SELECTOR KNOB (ROTARY ACTION)\n- RTO: selects RTO deceleration mode.\n- OFF: deactivates the autobrake.\n- LO: selects the low deceleration rate.\n- MED: selects the medium deceleration rate.\n- HI: selects the high deceleration rate."
   },
   "ldg-gear-lever": {
-    "title": "Landing Gear Control Lever (UP / OFF / DN)",
-    "system": "Landing Gear",
-    "description": "Three-position landing gear selector lever (UP, OFF, DN) with electronic proximity sensing."
+    "title": "ELT",
+    "system": "Airplane General",
+    "description": "ARM: ELT is armed"
   },
   "eicas-full-panel": {
-    "title": "EMER/PARKING BRAKE",
-    "system": "Main Instrument Panel / Instruments",
-    "description": "Illuminates and parking brake is on"
+    "title": "EMER/PARKING BRAKE Light",
+    "system": "Landing Gear & Brakes",
+    "description": " ON: the indicator illuminates when the a minimum pressure is identified.\nThe indicator does not provide advice to prevent locked wheel and skid conditions."
   },
   "gear-ovrd-btn": {
-    "title": "DN LCK REL (Downlock Release) Button & NOSEWHEEL STEERING Switch",
-    "system": "Landing Gear",
-    "description": "Top guarded button (DN LCK REL) mechanically overrides the landing gear lever downlock actuator. Bottom guarded switch controls Nosewheel Steering engagement."
+    "title": "Landing Gear Control Lever (UP/DN)",
+    "system": "Landing Gear & Brakes",
+    "description": "UP: Retracts the landing gear.\nDOWN: Extends the landing gear.\n\nDN LOCK REL: Downlock Release Button (Momentary Action) Manually releases the LG lever lock."
   },
   "clock-right-btn": {
     "title": "ADS HEATER BUTTON",
