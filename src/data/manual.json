@@ -625,14 +625,14 @@
     "description": "INNER:\n  - Rotating the knob: sets the barometric altimeter correction.\n  - Pushing the button: if there is a preselected barometric altitude value selected, activates the preselected value. Without having a preselected barometric altitude value displayed, push the button to set the barometric value to the standard values. Depending on the Baro Set Knob (IN/hPa), the standard value is 29.92 in or 1013 hPa.\nOUTER:\n  IN: Sets barometric correction format to inches of mercury.\n  hPa: Sets barometric correction format to hecto Pascal."
   },
   "clock-left-btn": {
-    "title": "Captain GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button",
-    "system": "Warning & Terrain Awareness (EGPWS)",
-    "description": "Allows the Captain to manually inhibit below-glideslope (G/S) alerts or acknowledge/test Ground Proximity Warning System (GPWS) alerts."
+    "title": "Cabin Surveillance System (CSS) Button",
+    "system": "Cabin Surveillance",
+    "description": "PUSH IN: Normal position.\nPUSH OUT: Disables the CSS system by removing the power. A white striped bar illuminates on the button."
   },
   "reversionary-left-knobs": {
-    "title": "Captain Reversionary & Display Brightness Panel (PFD / MFD / ADS / IRS)",
-    "system": "Main Instrument Panel",
-    "description": "Contains DISPLAY CONTROLLER (PFD / AUTO / MFD) reversion knob, DISPLAY BRIGHTNESS knobs (PFD 1 & MFD 1), and ADS / IRS sensor reversion pushbuttons."
+    "title": "Reversionary Panel",
+    "system": "Airplane General",
+    "description": "DISPLAYS Mode Knob\nLEFT: DU 1 right half displays DU 2 information.\nAUTO: automatic reversion between DU 1 and DU 2 in case of display failure.\nRIGHT: DU 2 left half displays DU 1 information.\n\nIRS BUTTON\nPUSH: reverts the IRS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated IRS source indication is displayed on the PFD after a reversion takes place.\n\nADS BUTTON \nPUSH: reverts the ADS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated ADS source indication is displayed on the PFD after a reversion takes place."
   },
   "autobrake-panel": {
     "title": "AUTOBRAKE Selector Knob (RTO / OFF / LO / MED / HI)",
@@ -659,10 +659,10 @@
     "system": "Ice and Rain Protection",
     "description": "PUSH IN: Activates the ADS probes heater. A striped bar illuminates in the button.\nPUSH OUT: The ADS probes heater operates in AUTO mode."
   },
-  "reversionary-right-knobs": {
-    "title": "First Officer Reversionary & Display Brightness Panel (PFD / MFD / ADS / IRS)",
-    "system": "Main Instrument Panel",
-    "description": "Contains DISPLAY CONTROLLER (PFD / AUTO / MFD) reversion knob, DISPLAY BRIGHTNESS knobs (MFD 2 & PFD 2), and ADS / IRS sensor reversion pushbuttons."
+  "reversionary-right-knobs":{
+    "title": "Reversionary Panel",
+    "system": "Airplane General",
+    "description": "DISPLAYS Mode Knob\nLEFT: DU 3 right half displays DU 4 information. \nAUTO: automatic reversion between DU 3 and DU 4 in case of display failure. \nRIGHT: DU 4 left half displays DU 3 information.\n\nIRS BUTTON\nPUSH: reverts the IRS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated IRS source indication is displayed on the PFD after a reversion takes place.\n\nADS BUTTON \nPUSH: reverts the ADS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated ADS source indication is displayed on the PFD after a reversion takes place."
   },
   "flight-control-mode": {
     "title": "FLIGHT CONTROL MODE Panel (ELEVATOR / AILERON / RUDDER)",
