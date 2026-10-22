@@ -435,194 +435,194 @@
     "description": "The Master Warning (WARN button) is installed on the glareshield panel and its red light blinks when a warning CAS message (red messages) comes on the EICAS. A specific aural tone is triggered together with the master warning red light. The red light stops to blink and the aural tone to sound when the WARN button is pressed (message acknowledge) or when the failure condition no longer exists, but the warning CAS message on the EICAS stays as long as the failure condition exists."
   },
   "dcu1-baro-knob": {
-    "title": "Left Barometric Altimeter Knob (BARO / STD)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Sets the Captain barometric pressure reference (inHg or hPa). Pushing the center button toggles STD (29.92 inHg / 1013 hPa)."
+    "title": "BARO SET Knob",
+    "system": "Flight Instruments",
+    "description": "INNER:\n  - Rotating the knob: sets the barometric altimeter correction.\n  - Pushing the button: if there is a preselected barometric altitude value selected, activates the preselected value. Without having a preselected barometric altitude value displayed, push the button to set the barometric value to the standard values. Depending on the Baro Set Knob (IN/hPa), the standard value is 29.92 in or 1013 hPa.\nOUTER:\n  IN: Sets barometric correction format to inches of mercury.\n  hPa: Sets barometric correction format to hecto Pascal."
   },
   "dcu1-hsi-btn": {
-    "title": "Left HSI Format Pushbutton (HSI)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Toggles the Captain Primary Flight Display (PFD 1) Horizontal Situation Indicator (HSI) format between 360° Compass Rose and Expanded Arc views."
+    "title": "Horizontal Situation indicator (HSI) Button",
+    "system": "Flight Instruments",
+    "description": " Selects between full compass, arc or map mode for the on side PFD."
   },
   "dcu1-wx-btn": {
-    "title": "Left Weather Radar Overlay Pushbutton (WX)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Toggles the Weather Radar (WX) precipitation returns overlay on the Captain HSI (Arc mode)."
+    "title": "Weather Radar (WX) Button",
+    "system": "Flight Instruments",
+    "description": "Displays Weather Radar information on PFD (HSI in arc or map mode only)."
   },
   "dcu1-fms-btn": {
-    "title": "Left FMS Navigation Source Pushbutton (FMS)",
-    "system": "Display Controller Unit (DCU 1)",
+    "title": "FMS Button",
+    "system": "Flight Instruments",
     "description": "Selects the Flight Management System (FMS) as the primary navigation source displayed on PFD 1."
   },
   "dcu1-brg1-btn": {
-    "title": "Left Circle Bearing Pointer Pushbutton (BRG O)",
-    "system": "Display Controller Unit (DCU 1)",
+    "title": "Bearing Source (BRG O) Button",
+    "system": "Flight Instruments",
     "description": "Cycles the Circle (O) Bearing Pointer on PFD 1 through available navigation sources (VOR 1, ADF 1, FMS 1, or OFF)."
   },
   "dcu1-prev-btn": {
-    "title": "Left Navigation Preview Pushbutton (PREV)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Displays or hides the cyan Navigation Preview (PREV) course pointer and deviation indicator on PFD 1 for Vor/LOC transition from FMS."
+    "title": "Preview (PREV) Button",
+    "system": "Flight Instruments",
+    "description": " Selects the preview mode when the FMS is the primary navigation source. The course, and lateral and vertical deviation can be previewed.\n- Pressing the first time: enables the on-side VOR/LOC preview.\n- Pressing a second time: enables the opposite side VOR/LOC preview.\n- Pressing a third time: disables the preview mode.\n- The previewed navigation source automatically turns to the primary navigation source when captured by the light Director (FD) or by the Automatic Flight Control System (AFCS)."
   },
   "dcu1-nav-btn": {
-    "title": "Left Short-Range Navigation Source Pushbutton (NAV)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Selects short-range radio navigation (VOR/LOC 1 or VOR/LOC 2) as the active navigation source on PFD 1. Pressing repeatedly toggles between on-side and cross-side sensors."
+    "title": "Navigation Button (NAV)",
+    "system": "Flight Instruments",
+    "description": "Selects VOR or LOC as the primary navigation source for the on-side PFD and toggles between VOR/LOC1 and VOR/LOC2."
   },
   "dcu1-brg2-btn": {
-    "title": "Left Diamond Bearing Pointer Pushbutton (BRG ◇)",
-    "system": "Display Controller Unit (DCU 1)",
+    "title": "Bearing Source (BRG ◇)",
+    "system": "Flight Instruments",
     "description": "Cycles the Diamond (◇) Bearing Pointer on PFD 1 through available navigation sources (VOR 2, ADF 2, FMS 2, or OFF)."
   },
   "dcu1-fpr-btn": {
-    "title": "Left Flight Path Reference Pushbutton (FPR)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the Captain Primary Flight Display (PFD 1)."
+    "title": "Flight Path Reference Button (FPR)",
+    "system": "Flight Instruments",
+    "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the Primary Flight Display (PFD 1)."
   },
   "dcu1-mins-knob": {
-    "title": "Left Minimums Selector Knob (RA / BARO)",
-    "system": "Display Controller Unit (DCU 1)",
-    "description": "Selects Radio Altimeter (RA) or Barometric (BARO) decision height/altitude bug on PFD 1."
+    "title": "Left Minimums Controller",
+    "system": "Flight Instruments",
+    "description": "INNER:\n  - Selects decision height (DH), decision altitude or minimum descent altitude based on OUTER position of MINIMUMS Knob.\nOUTER:\n  RA: Sets radio altimeter minimums.\n  BARO: sets barometric minimums."
   },
   "fgp-fd1-btn": {
-    "title": "Left Flight Director (FD 1) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Toggles the Captain Flight Director command bars on PFD 1."
+    "title": "Flight Director (FD) Button",
+    "system": "Automatic Flight",
+    "description": "Turns ON and OFF the Flight Director presentation on PFD.\nIf any of the following item is active, it is not possible to turn off the FD presentation on the PFD:\n -AP\n -TO\n -GA\n -WSHR\n -APPR2, or\n -RNP AR < 0.3.\nNOTE: If AP is disengaged, to press FD button on any side,disengages the Flight Director modes."
   },
   "fgp-crs1-knob": {
-    "title": "Left Course (CRS 1) Selector Knob",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Sets the selected VOR/LOC course pointer for the Captain HSI. Pushing centers the course deviation needle."
+    "title": "Course (CRS) Button",
+    "system": "Automatic Flight",
+    "description": "Manually sets the desired course on CDI as follows:\n - CDI displaying FMS: sets preview course.\n - CDI displaying VOR/LOC: sets CDI course\nPressing this knob indicates the course to the station."
   },
   "fgp-at-btn": {
-    "title": "Autothrottle (A/T) Engage Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Arms or engages the Automatic Throttle system."
+    "title": "Autothrottle (A/T) Button",
+    "system": "Automatic Flight",
+    "description": "Engages or disengages the Autothrottle."
   },
   "fgp-spd-knob": {
-    "title": "Airspeed / Mach Selector Knob (FMS / MAN)",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Outer ring selects FMS-computed speed or Manual speed control. Inner knob sets target IAS/Mach; pushing toggles IAS/Mach mode."
+    "title": "SPEED Selector Knob",
+    "system": "Automatic Flight",
+    "description": "FMS: The FMS logic controls the selected airspeed readout.\nMAN:Selected airspeed readout is controlled manually.\n  - Pressing this knob alternates the speed presentation on PFD selected airspeed readout window between IAS and MACH."
   },
   "fgp-nav-btn": {
-    "title": "LNAV / Lateral Navigation (NAV) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Arms or engages lateral navigation mode (FMS LNAV or VOR/LOC capture)."
+    "title": "LNAV Button",
+    "system": "Automatic light",
+    "description": "According to the presentation selected for the CDI the LNAV Button engages:\n  - LOC: if the CDI is selected VOR/LOC (Green) and the source ILS frequency is tuned.\n  - LNAV: if the CDI is selected FMS (Magenta)."
   },
   "fgp-hdg-knob": {
-    "title": "Heading (HDG) Selector & Sync Knob",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Rotates to set the selected heading bug on the PFD/MFD. Pushing syncs the heading bug to the current aircraft heading."
+    "title": "HDG SEL Controller",
+    "system": "Automatic Flight",
+    "description": "- Manually selects the desired heading.\n - Pressing this controller synchronizes the heading select to the current heading."
   },
   "fgp-appr-btn": {
     "title": "Approach (APPR) Mode Button",
-    "system": "Flight Guidance Panel (AFCS)",
+    "system": "Automatic Flight",
     "description": "Arms lateral and vertical approach guidance (ILS LOC/GS or RNAV RNP/LPV approach)."
   },
   "fgp-bank-btn": {
-    "title": "Half Bank Limit (BANK) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Limits Flight Director / Autopilot roll bank angle to 17° in HDG mode."
+    "title": "BANK Button",
+    "system": "Automatic Flight",
+    "description": "Enables and disables the low bank limit arc function during turns performed with HDG and NAV modes. The low bank limit arc is a visual reference on PFD to help pilots to avoid steep banks.\nThe low bank limit arc is manually commanded to on or off, or automatically commanded by the AFCS. The logic used by the AFCS for bank limit transition is:\n  - Above 25000 ft the bank limit is 15°, and the white limit arc on the roll pointer of PFD is presented.\n  - Below 25000 ft the bank limit is 30°, and there is no white limit arc presented."
   },
   "fgp-ap-btn": {
-    "title": "Autopilot (AP) Engage Pushbutton",
-    "system": "Flight Guidance Panel (AFCS)",
+    "title": " AUTOPILOT Button",
+    "system": "Automatic Flight",
     "description": "Engages or disengages the Automatic Flight Control System Autopilot."
   },
   "fgp-src-btn": {
     "title": "Navigation Source (SRC) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Switches the active Flight Director / Autopilot master navigation side between Captain (Left) and First Officer (Right). Side white arrows indicate the active master side."
+    "system": "Automatic Flight",
+    "description": " Alternates between the left-hand or right-hand FMA modes as source for the autopilot. A green arrowhead on the FMA indicates the respective source selected."
   },
   "fgp-appr2-btn": {
-    "title": "Approach (APPR) Mode Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Arms or engages lateral and vertical approach guidance (ILS LOC/GS or RNAV RNP/LPV approach)."
+    "title": "Approach (APPR) Button",
+    "system": "Automatic Flight",
+    "description": " Arms, activates, or deactivates approach modes based on the navigation source displayed on the respective PFD. For example, the following lateral and vertical mode annunciations are displayed on the FMA after the APPR button is pressed:\n  - LOC and GS for the ILS approach mode.\n  - LNAV and GP for the VGP approach mode.\nThe Autopilot Approach Status Annunciator displays the engaged approach mode."
   },
   "fgp-alt-knob": {
-    "title": "Altitude Selector Knob (ALT SEL / PUSH FT-M)",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Sets the preselected altitude bug on the PFD (outer ring sets 1000 ft increments, inner knob sets 100 ft). Pushing toggles display units between feet and meters."
+    "title": "ALT SEL Controller",
+    "system": "Automatic Flight",
+    "description": " Selects desired altitude.\n  - Clockwise rotation: increases the altitude target.\n  - Counter clockwise rotation: decreases the altitude target.\n  - Pressing this controller displays the selected altitude in meters above the selected altitude readout window on the PFD. Also displays the actual airplane altitude in meters above the altitude rolling digits readout window on the PFD."
   },
   "fgp-alt-btn": {
-    "title": "Altitude Hold (ALT) Mode Button",
-    "system": "Flight Guidance Panel (AFCS)",
+    "title": "Altitude Hold (ALT) Button",
+    "system": "Automatic Flight",
     "description": "Engages Altitude Hold (ALT) mode, leveling the aircraft off and maintaining the current barometric altitude."
   },
   "fgp-vs-wheel": {
-    "title": "Pitch Wheel (DN / UP)",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Thumbwheel that adjusts the vertical speed (VS) target rate of climb/descent or the flight path angle (FPA) reference."
+    "title": "Thumb Wheel Selector (DN / UP)",
+    "system": "Automatic Flight",
+    "description": "Thumbwheel that adjusts the vertical speed (VS) target rate of climb/descent or the flight path angle (FPA) reference, whichever is selected."
   },
   "fgp-vs-btn": {
-    "title": "Vertical Speed (VS) Mode Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Engages or disengages Vertical Speed (VS) vertical flight director/autopilot mode."
+    "title": "Vertical Speed (VS) Button",
+    "system": "Automatic Flight",
+    "description": " Selects and deselects Vertical Speed (VS) mode."
   },
   "fgp-fpa-btn": {
     "title": "Flight Path Angle (FPA) Mode Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Engages or disengages Flight Path Angle (FPA) vertical flight director/autopilot mode."
+    "system": "Automatic Flight",
+    "description": " Selects and deselects Flight Path Angle (FPA) mode."
   },
   "fgp-fd2-btn": {
-    "title": "Right Flight Director (FD 2) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Toggles the First Officer Flight Director command bars on PFD 2."
+    "title": "Flight Director (FD) Button",
+    "system": "Automatic Flight",
+    "description": "Turns ON and OFF the Flight Director presentation on PFD.\nIf any of the following item is active, it is not possible to turn off the FD presentation on the PFD:\n -AP\n -TO\n -GA\n -WSHR\n -APPR2, or\n -RNP AR < 0.3.\nNOTE: If AP is disengaged, to press FD button on any side,disengages the Flight Director modes."
   },
-  "fgp-crs2-knob": {
-    "title": "Right Course (CRS 2) Selector Knob (PUSH DIR)",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Sets the selected VOR/LOC course pointer for the First Officer HSI. Pushing the knob (PUSH DIR) centers the course deviation needle directly to the station."
+  "fgp-crs2-knob":{
+    "title": "Course (CRS) Button",
+    "system": "Automatic Flight",
+    "description": "Manually sets the desired course on CDI as follows:\n - CDI displaying FMS: sets preview course.\n - CDI displaying VOR/LOC: sets CDI course\nPressing this knob indicates the course to the station."
   },
   "dcu2-mins-knob": {
-    "title": "Right Minimums Selector Knob (RA / BARO)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Selects Radio Altimeter (RA) or Barometric (BARO) minimums bug on PFD 2."
+    "title": "Left Minimums Controller",
+    "system": "Flight Instruments",
+    "description": "INNER:\n  - Selects decision height (DH), decision altitude or minimum descent altitude based on OUTER position of MINIMUMS Knob.\nOUTER:\n  RA: Sets radio altimeter minimums.\n  BARO: sets barometric minimums."
   },
   "dcu2-hsi-btn": {
-    "title": "Right HSI Format Pushbutton (HSI)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Toggles the First Officer Primary Flight Display (PFD 2) Horizontal Situation Indicator (HSI) format between 360° Compass Rose and Expanded Arc views."
+    "title": "Horizontal Situation indicator (HSI) Button",
+    "system": "Flight Instruments",
+    "description": " Selects between full compass, arc or map mode for the on side PFD."
   },
   "dcu2-wx-btn": {
-    "title": "Right Weather Radar Overlay Pushbutton (WX)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Toggles the Weather Radar (WX) precipitation returns overlay on the First Officer HSI (Arc mode)."
+    "title": "Weather Radar (WX) Button",
+    "system": "Flight Instruments",
+    "description": "Displays Weather Radar information on PFD (HSI in arc or map mode only)."
   },
   "dcu2-fms-btn": {
-    "title": "Right FMS Navigation Source Pushbutton (FMS)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Selects the Flight Management System (FMS) as the primary navigation source displayed on PFD 2."
+    "title": "FMS Button",
+    "system": "Flight Instruments",
+    "description": "Selects the Flight Management System (FMS) as the primary navigation source displayed on PFD 1."
   },
   "dcu2-brg1-btn": {
-    "title": "Right Circle Bearing Pointer Pushbutton (BRG O)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Cycles the Circle (O) Bearing Pointer on PFD 2 through available navigation sources (VOR 1, ADF 1, FMS 1, or OFF)."
+    "title": "Bearing Source (BRG O) Button",
+    "system": "Flight Instruments",
+    "description": "Cycles the Circle (O) Bearing Pointer on PFD 1 through available navigation sources (VOR 1, ADF 1, FMS 1, or OFF)."
   },
-  "dcu2-prev-btn": {
-    "title": "Right Navigation Preview Pushbutton (PREV)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Displays or hides the cyan Navigation Preview (PREV) course pointer and deviation indicator on PFD 2 for VOR/LOC transition from FMS."
+  "dcu2-prev-btn":  {
+    "title": "Preview (PREV) Button",
+    "system": "Flight Instruments",
+    "description": " Selects the preview mode when the FMS is the primary navigation source. The course, and lateral and vertical deviation can be previewed.\n- Pressing the first time: enables the on-side VOR/LOC preview.\n- Pressing a second time: enables the opposite side VOR/LOC preview.\n- Pressing a third time: disables the preview mode.\n- The previewed navigation source automatically turns to the primary navigation source when captured by the light Director (FD) or by the Automatic Flight Control System (AFCS)."
   },
   "dcu2-nav-btn": {
-    "title": "Right Short-Range Navigation Source Pushbutton (NAV)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Selects short-range radio navigation (VOR/LOC 2 or VOR/LOC 1) as the active navigation source on PFD 2. Pressing repeatedly toggles between on-side and cross-side sensors."
+    "title": "Navigation Button (NAV)",
+    "system": "Flight Instruments",
+    "description": "Selects VOR or LOC as the primary navigation source for the on-side PFD and toggles between VOR/LOC1 and VOR/LOC2."
   },
-  "dcu2-brg2-btn": {
-    "title": "Right Diamond Bearing Pointer Pushbutton (BRG ◇)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Cycles the Diamond (◇) Bearing Pointer on PFD 2 through available navigation sources (VOR 2, ADF 2, FMS 2, or OFF)."
+  "dcu2-brg2-btn":  {
+    "title": "Bearing Source (BRG ◇)",
+    "system": "Flight Instruments",
+    "description": "Cycles the Diamond (◇) Bearing Pointer on PFD 1 through available navigation sources (VOR 2, ADF 2, FMS 2, or OFF)."
   },
-  "dcu2-fpr-btn": {
-    "title": "Right Flight Path Reference Pushbutton (FPR)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the First Officer Primary Flight Display (PFD 2)."
+  "dcu2-fpr-btn":{
+    "title": "Flight Path Reference Button (FPR)",
+    "system": "Flight Instruments",
+    "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the Primary Flight Display (PFD 1)."
   },
-  "dcu2-baro-knob": {
-    "title": "Right Barometric Altimeter Knob (BARO / STD)",
-    "system": "Display Controller Unit (DCU 2)",
-    "description": "Sets the First Officer barometric pressure reference (inHg or hPa) or toggles STD."
+  "dcu2-baro-knob":{
+    "title": "BARO SET Knob",
+    "system": "Flight Instruments",
+    "description": "INNER:\n  - Rotating the knob: sets the barometric altimeter correction.\n  - Pushing the button: if there is a preselected barometric altitude value selected, activates the preselected value. Without having a preselected barometric altitude value displayed, push the button to set the barometric value to the standard values. Depending on the Baro Set Knob (IN/hPa), the standard value is 29.92 in or 1013 hPa.\nOUTER:\n  IN: Sets barometric correction format to inches of mercury.\n  hPa: Sets barometric correction format to hecto Pascal."
   },
   "clock-left-btn": {
     "title": "Captain GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button",
