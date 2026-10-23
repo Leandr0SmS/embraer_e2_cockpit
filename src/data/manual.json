@@ -665,9 +665,9 @@
     "description": "DISPLAYS Mode Knob\nLEFT: DU 3 right half displays DU 4 information. \nAUTO: automatic reversion between DU 3 and DU 4 in case of display failure. \nRIGHT: DU 4 left half displays DU 3 information.\n\nIRS BUTTON\nPUSH: reverts the IRS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated IRS source indication is displayed on the PFD after a reversion takes place.\n\nADS BUTTON \nPUSH: reverts the ADS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated ADS source indication is displayed on the PFD after a reversion takes place."
   },
   "flight-control-mode": {
-    "title": "FLIGHT CONTROL MODE Panel (ELEVATOR / AILERON / RUDDER)",
+    "title": "FLIGHT CONTROL MODE / STALL WARNIG Panel",
     "system": "Flight Controls",
-    "description": "Contains guarded mode switches for the Fly-By-Wire Elevator, Aileron, and Rudder actuators, allowing crew override or direct mode selection."
+    "description": "FLIGHT CONTROL MODE BUTTON (GUARDED)\n  In air, whenever the system conditions permit, reverts the flight control system either from Normal Mode to Direct Mode, orfrom Direct Mode to Normal Mode. The system supports up tofive transitions. After the fifth transition, only Direct Mode isavailable.\nNOTE: The Flight Control System can automatically revert to the direct mode due to system failure. In this case, the request to recover the normal mode is performed by pressing the Flight Control Mode Button."
   },
   "mcdu-left-keys": {
     "title": "Left MCDU Keypad & Function Buttons (MCDU 1)",
