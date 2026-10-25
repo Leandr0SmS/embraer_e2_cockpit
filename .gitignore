@@ -1,5 +1,6 @@
 # general
 todo.md
+AGENTS.md
 
 # Logs
 logs
@@ -39,4 +40,3 @@ __pycache__/
 *$py.class
 .venv/
 venv/
-
