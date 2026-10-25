@@ -670,34 +670,34 @@
     "description": "FLIGHT CONTROL MODE BUTTON (GUARDED)\n  In air, whenever the system conditions permit, reverts the flight control system either from Normal Mode to Direct Mode, orfrom Direct Mode to Normal Mode. The system supports up tofive transitions. After the fifth transition, only Direct Mode isavailable.\nNOTE: The Flight Control System can automatically revert to the direct mode due to system failure. In this case, the request to recover the normal mode is performed by pressing the Flight Control Mode Button."
   },
   "mcdu-left-keys": {
-    "title": "Left MCDU Keypad & Function Buttons (MCDU 1)",
+    "title": "MCDU 1 Controls",
     "system": "Flight Management System (FMS)",
     "description": "Alphanumeric keypad and mode keys (RTE, FPL, PERF, NAV, PROG, MENU, RADIO, DLK) for MCDU 1."
   },
   "mcdu-right-keys": {
-    "title": "Right MCDU Keypad & Function Buttons (MCDU 2)",
+    "title": "MCDU 1 Controls",
     "system": "Flight Management System (FMS)",
-    "description": "Alphanumeric keypad and mode keys (RTE, FPL, PERF, NAV, PROG, MENU, RADIO, DLK) for MCDU 2."
+    "description": "1 -LINE SELECT KEYS\n- Selects data from the scratchpad to a line or vice-versa.\n- Selects a page if the line shows an index display (arrow).\n2 - BRIGHTNESS CONTROL BUTTON\n- Controls display brightness.\n- A control bar is displayed in the scratchpad.\n3 - TUNING KNOB\n- Rotating this knob selects frequencies or other numeric values. \n4 - ALPHANUMERIC BUTTONS\n- Enter alphanumeric inputs.\n- Space key (SP) is used to insert a space.\n- A toggle plus or minus key inserts the corresponding signal. \n5 - PREV OR NEXT AND CLR OR DEL BUTTONS\n- Previous (PREV): changes the current page to the previous page.\n- Next (NEXT): changes the current page to the next page.\n- Clear (CLR): clears alphanumeric entries or messages in the scratchpad.\n- Delete (DEL): works together with line select buttons in order to delete waypoints and other items displayed. This button is inhibited when a message is displayed. \n6 - FUNCTION BUTTONS\n- Menu (MENU): displays the menu page.\n- Data link (DLK): displays ACARS main menu page.\n- Radio (RADIO): displays the radio page.\n- Circuit breaker (CB): displays the circuit breaker page.\n- Thrust Rating Selection (TRS): displays the engine thrust ratings for various flight phases.\n- Performance (PERF): displays the performance page (FMS function).\n- Navigation (NAV): displays the navigation page (FMS function).\n- Flight plan (FPL): displays the flight plan page (FMS function).\n- Progress (PROG): displays the progress page (FMS function).\n- Route (RTE): displays the route page (FMS function).\n7 - SCRATCHPAD\n- The working area, located on the bottom line of the display, where the pilot can enter data or verify data before line selecting the data into its proper position.\n- Data is retained on the scratchpad throughout all mode and page changes.\n- The scratchpad also provides advisory and alerting messages to be displayed."
   },
   "eng1-ign-knob": {
-    "title": "Engine 1 Ignition Selector Knob (OFF / AUTO / OVRD)",
-    "system": "Engine Start / Ignition Panel",
-    "description": "Controls Engine 1 igniters. AUTO: FADEC automatically controls ignition. OVRD: Continuous ignition on both igniters. OFF: Inhibits ignition for dry motoring."
+    "title": "Engine 1  IGNITION Selector",
+    "system": "Engine",
+    "description": "OFF: deactivates the ignition system. On ground, fuel flow is inhibited. FADEC disregards OFF position in flight.\nAUTO: FADEC automatically controls the ignition system.\nON: enables FADEC to continuously activate both exciters when the engine is running."
   },
   "eng2-ign-knob": {
-    "title": "Engine 2 Ignition Selector Knob (OFF / AUTO / OVRD)",
-    "system": "Engine Start / Ignition Panel",
-    "description": "Controls Engine 2 igniters (OFF / AUTO / OVRD)."
+    "title": "Engine 2  IGNITION Selector",
+    "system": "Engine",
+    "description": "OFF: deactivates the ignition system. On ground, fuel flow is inhibited. FADEC disregards OFF position in flight.\nAUTO: FADEC automatically controls the ignition system.\nON: enables FADEC to continuously activate both exciters when the engine is running."
   },
   "eng1-start-knob": {
-    "title": "Engine 1 Start / Stop Selector Knob (STOP / RUN / START)",
-    "system": "Engine Start / Ignition Panel",
-    "description": "Guarded rotary selector. RUN: Normal operating position. START: Momentary position initiating FADEC automatic start sequence. STOP: Shuts down Engine 1."
+    "title": "Engine 1 START/STOP Selector",
+    "system": "Engine",
+    "description": "Guarded rotary selector.\nSTOP: commands the FADEC to shut down the engine, provided the associated thrust lever is in the IDLE position.\nRUN: normal position for engine operation.\nSTART: (momentary action) initiates the engine start sequence."
   },
   "eng2-start-knob": {
-    "title": "Engine 2 Start / Stop Selector Knob (STOP / RUN / START)",
-    "system": "Engine Start / Ignition Panel",
-    "description": "Guarded rotary selector for Engine 2 automatic starting (START), normal operation (RUN), and shutdown (STOP)."
+    "title": "Engine 1 START/STOP Selector",
+    "system": "Engine",
+    "description": "Guarded rotary selector.\nSTOP: commands the FADEC to shut down the engine, provided the associated thrust lever is in the IDLE position.\nRUN: normal position for engine operation.\nSTART: (momentary action) initiates the engine start sequence."
   },
   "to-config-btn": {
     "title": "T/O CONFIG Check Button",
@@ -705,54 +705,54 @@
     "description": "Test button is provided to allow checking the takeoff configuration by simulating power levers in the advanced position. If the airplane is in takeoff configuration, the voice message 'TAKEOFF OK' is generated. If the airplane is not set to takeoff configuration, the aural warning referred to the associated takeoff configuration deviation is generated.\n\n The aural warning is activated whenever the airplane is on the ground, thrust is applied, and at least one of the following conditions is met:\n- Flaps are not in takeoff position ('NO TAKEOFF FLAPS').\n- Flaps position is not in agreement with the Flaps position selected in the FMS Takeoff page 2/2. ('NO TAKEOFF FLAPS').\n- The Emergency/Parking Brake is applied ('NO TAKEOFF BRAKES').\n- Pitch trim is out of green range ('NO TAKEOFF TRIM').\n- Any spoiler panel is deployed ('NO TAKEOFF SPOILER')."
   },
   "ccd-pedestal-left": {
-    "title": "Left Cursor Control Device (CCD 1 Touchpad & Keys)",
-    "system": "Control Pedestal / Avionics",
-    "description": "Touchpad, Enter keys, and display selection buttons allowing the Captain to move the cursor across PFD 1, MFD 1, and MCDU 1."
+    "title": "Cursor Control Device (CCD 1)",
+    "system": "Airplane General / Eletronic Display",
+    "description": "\n1 - TUNING CONTROLLER\n- Outer and Inner controllers select the value or mode in the data field enclosed by the cursor. \n2 - DISPLAY BUTTONS\n- LH CCD display button work as follows:\n- LH button access DU 1.\n- CTR button access DU 2.\n- RH button access DU 3.\n- RH CCD display button work as follows:\n- LH button access DU 2.\n- CTR button access DU 3.\n- RH button access DU 4.\n3 - TOUCH PAD\n- Used to move the CCD cursor. \n4 - ENTER BUTTONS\n- Used to select soft keys."
   },
   "ccd-pedestal-right": {
-    "title": "Right Cursor Control Device (CCD 2 Touchpad & Keys)",
-    "system": "Control Pedestal / Avionics",
-    "description": "Touchpad, Enter keys, and display selection buttons allowing the First Officer to move the cursor across MFD 2, PFD 2, and MCDU 2."
+    "title": "Cursor Control Device (CCD 2)",
+    "system": "Airplane General / Eletronic Display",
+    "description": "\n1 - TUNING CONTROLLER\n- Outer and Inner controllers select the value or mode in the data field enclosed by the cursor. \n2 - DISPLAY BUTTONS\n- LH CCD display button work as follows:\n- LH button access DU 1.\n- CTR button access DU 2.\n- RH button access DU 3.\n- RH CCD display button work as follows:\n- LH button access DU 2.\n- CTR button access DU 3.\n- RH button access DU 4.\n3 - TOUCH PAD\n- Used to move the CCD cursor. \n4 - ENTER BUTTONS\n- Used to select soft keys."
   },
   "speedbrake-lever": {
-    "title": "SPEED BRAKE Lever (CLOSE / OPEN)",
+    "title": "Speed Brake Lever ",
     "system": "Flight Controls",
-    "description": "Controls deployment of the wing multifunction spoilers as speedbrakes in flight."
+    "description": "Symmetrically deploys the Multifunction Spoilers.\nAll Multifunction Spoilers deploy at the same angle in response to the speed brake lever position."
   },
   "thrust-levers": {
-    "title": "Engine 1 & 2 Thrust Levers (MAX / TOGA / MCT / IDLE / REV)",
-    "system": "Powerplant Controls",
-    "description": "Forward thrust and thrust-reverser levers with TO/GA (Takeoff/Go-Around) buttons and A/T quick-disconnect switches."
+    "title": "Engine 1/2 Thrust Levers",
+    "system": "Engines",
+    "description": "1 - THRUST LEVER DETENTS\nMAX: Set the maximum thrust available for dual or single engine operation.\nTO/GA: IDLE: Set takeoff and go-around mode settings.\nIDLE: Set flight idle, approach idle, and ground idle thrust settings.\nMIN REV: set minimum reverse thrust.\nMAX REV: Provides maximum reverse thrust. The thrust lever must be pulled against a spring to achieve the MAX REV position. If the thrust lever is released, it goes back to MIN REV position.\nNOTE: Positioning the thrust lever between the thrust control quadrant detents selects intermediate thrust settings.\n2 - THRUST REVERSER TRIGGER\nPulling the thrust reverser trigger allows reverser activation on the ground and REV thrust commands from IDLE to MAX REV."
   },
   "eicas-full-btn": {
-    "title": "EICAS FULL Pushbutton",
-    "system": "Avionics / Displays",
-    "description": "Toggles full-screen EICAS engine and system indications on the Multi-Function Display when pressed."
+    "title": "EICAS FULL Button",
+    "system": "Airplane General",
+    "description": "PUSHED IN: EICAS full information presented.\nPUSHED OUT: enables the automatic EICAS de-clutter logic."
   },
   "rat-manual-deploy-lever": {
-    "title": "RAT MANUAL DEPLOY (Ram Air Turbine) Lever",
-    "system": "Electrical / Emergency Power",
+    "title": "RAT MANUAL DEPLOY (Ram Air Turbine) Handle",
+    "system": "Electrical",
     "description": "Pulling the RAT MANUAL DEPLOY lever manually deploys the Ram Air Turbine (RAT) to provide emergency electrical power."
   },
   "parking-brake": {
-    "title": "PARKING / EMERGENCY BRAKE Handle",
+    "title": "Emergency Parking Brake Handle",
     "system": "Landing Gear & Brakes",
-    "description": "Pulling and rotating applies hydraulic parking brake pressure; also provides proportional mechanical/hydraulic emergency brake application."
+    "description": "- Actuates the Emergency/Parking Brake.- The lever locks when pulled up to the fully actuated position.- To release the lever from its fully open position, press the top button."
   },
   "acp-left-panel": {
-    "title": "Left Audio Control Panel (ACP 1)",
+    "title": "Audio Control Panel (ACP 1)",
     "system": "Communications",
-    "description": "Captain Audio Control Panel: selects transmission buttons (VHF 1/2/3, HF, SAT, PA, INT) and reception volume knobs, oxygen mask/boom mic switch, and emergency audio backup."
+    "description": "1 - MICROPHONE SELECTOR BUTTONS\n- Related communication channel is enabled for transmission and reception.\n- When selected, a green bar illuminates inside the button.\n2 - AUDIO CONTROL BUTTONS\n- Related audio channel is enabled for reception.\n- Automatically activated when a transmission channel is selected.\n- More than one audio channel may be selected at the same time.\n- When selected, a green dot illuminates inside the button.\n3 - SATCOM CONTROL BUTTON\n- UNAVAILABLE.\n4 - PASSENGER ADDRESS CONTROL BUTTON\n- Enables PA announcements. It deactivates the microphone selector button and in this case no radio transmission occurs since there is no VHF/HF/SATCOM microphone selection.\n- When selected, a green bar illuminates on the transmission button and a green dot illuminates on the reception button.\n- If PTT (from Yoke, Glareshield or Hand Microphone) remains pressed for more than 2 min, after PA is selected, the communication is automatically deactivated.\n5 - SERVICES INTERPHONE CONTROL BUTTONS\n- EMER: enables communication with flight attendants during emergency situations (emergency mode). A triple HI/LO tone chime sounds through the PA system and illuminates a red light at ceiling of the flight attendant station. When selected, a green bar flashes on the button until the flight attendant picks up the call. Once the flight attendant picks up the call the green bar flashes faster. Pressing the button again, the light becomes steady and the communication with the flight attendant is enabled.\n- RAMP: enables communication with ground personnel. For an incoming call, the ramp annunciator flashes and remains steady on when active. A single HI/LO tone chimes.A microphone selector button can be selected while RAMP is active. In this case, the RAMP button remains illuminated. Communication through the ramp interphone remains active unless PTT or PA PTT is activated for radio transmission or passenger announcements and resumes when PTT or PA PTT is released.\n CAB: enables communication with flight attendants during normal situations (normal mode). A single HI/LO tone chime sounds through the PA system and illuminates a green light at ceiling of the flight attendant station. When selected, a green bar flashes on the button until the flight attendant picks up the call. Once the flight attendant picks up the call the green bar flashes faster. Pressing the button again, the light becomes steady and the communication with the flight attendant is enabled. A microphone selector button can be selected while CAB is active. In this case, the CAB button remains illuminated. Communication through the ramp interphone remains active unless PTT or PA PTT is activated for radio transmission or passenger announcements and resumes when PTT or PA PTT is released.\nNOTE:\n- The selection of RAMP and CAB channels at the same time is allowed.\n- One microphone channel combined with CAB or RAMP channel is possible.\n- While EMER is active, it is not possible to select CAB channel. The selection of EMER deselects CAB and transfers audio communication to the EMER channel.\n6 - MASTER VOLUME CONTROL KNOB\n- Allows adjustment of the most recently selected audio.\n7 - ID FILTER BUTTON\n- Activates a filter that eliminates voice on VOR and ADF audio so the identification can be heard.\n8 - AUDIO SELECTION BUTTONS\n- Enables the respective audio to be summed into the output on the headphone (HDPH), interphone (INPH) or cockpit speaker (SPKR).\n- When selected, a green dot illuminates inside the button.\n9 - ACP DISPLAY\n- Displays the selected transmission channel and digital volume information. \n10 - AUTO/MASK MICROPHONE SWITCH\n- AUTO (PUSH IN): allows audio communication via oxygen masks.\n- MASK (PUSH OUT): activates oxygen masks microphone when auto mode fails.\n- In order to enable hand or headset microphone booms after using oxygen mask microphone, close and reset the door of the oxygen mask stowage box. \n11 - BACKUP VOLUME CONTROL BUTTON/KNOB\n- NORM (PUSH IN): normal operation mode.\n- BKUP (PUSH OUT): restores VHF communication in case of digital audio system failure.\n- While in BKUP position (PUSH OUT), minimum volume is at the extreme counterclockwise position and the maximum volume is at the extreme clockwise position.\n- The VHF 1 is the radio available for left seat pilot ACP and VHF 2 is the radio available for the right seat pilot ACP. \n12 - SELCAL ANNUNCIATOR BUTTON\n- Flashes when an incoming call is displayed.\n- When pressed, it shows the code on the ACP display.\n- Remains steady when active for transmission."
   },
   "acp-right-panel": {
-    "title": "Right Audio Control Panel (ACP 2)",
+    "title": "Audio Control Panel (ACP 2)",
     "system": "Communications",
-    "description": "First Officer Audio Control Panel: selects transmission buttons (VHF 1/2/3, HF, SAT, PA, INT), reception volume knobs, mask/boom switch, and emergency audio backup."
+    "description": "1 - MICROPHONE SELECTOR BUTTONS\n- Related communication channel is enabled for transmission and reception.\n- When selected, a green bar illuminates inside the button.\n2 - AUDIO CONTROL BUTTONS\n- Related audio channel is enabled for reception.\n- Automatically activated when a transmission channel is selected.\n- More than one audio channel may be selected at the same time.\n- When selected, a green dot illuminates inside the button.\n3 - SATCOM CONTROL BUTTON\n- UNAVAILABLE.\n4 - PASSENGER ADDRESS CONTROL BUTTON\n- Enables PA announcements. It deactivates the microphone selector button and in this case no radio transmission occurs since there is no VHF/HF/SATCOM microphone selection.\n- When selected, a green bar illuminates on the transmission button and a green dot illuminates on the reception button.\n- If PTT (from Yoke, Glareshield or Hand Microphone) remains pressed for more than 2 min, after PA is selected, the communication is automatically deactivated.\n5 - SERVICES INTERPHONE CONTROL BUTTONS\n- EMER: enables communication with flight attendants during emergency situations (emergency mode). A triple HI/LO tone chime sounds through the PA system and illuminates a red light at ceiling of the flight attendant station. When selected, a green bar flashes on the button until the flight attendant picks up the call. Once the flight attendant picks up the call the green bar flashes faster. Pressing the button again, the light becomes steady and the communication with the flight attendant is enabled.\n- RAMP: enables communication with ground personnel. For an incoming call, the ramp annunciator flashes and remains steady on when active. A single HI/LO tone chimes.A microphone selector button can be selected while RAMP is active. In this case, the RAMP button remains illuminated. Communication through the ramp interphone remains active unless PTT or PA PTT is activated for radio transmission or passenger announcements and resumes when PTT or PA PTT is released.\n CAB: enables communication with flight attendants during normal situations (normal mode). A single HI/LO tone chime sounds through the PA system and illuminates a green light at ceiling of the flight attendant station. When selected, a green bar flashes on the button until the flight attendant picks up the call. Once the flight attendant picks up the call the green bar flashes faster. Pressing the button again, the light becomes steady and the communication with the flight attendant is enabled. A microphone selector button can be selected while CAB is active. In this case, the CAB button remains illuminated. Communication through the ramp interphone remains active unless PTT or PA PTT is activated for radio transmission or passenger announcements and resumes when PTT or PA PTT is released.\nNOTE:\n- The selection of RAMP and CAB channels at the same time is allowed.\n- One microphone channel combined with CAB or RAMP channel is possible.\n- While EMER is active, it is not possible to select CAB channel. The selection of EMER deselects CAB and transfers audio communication to the EMER channel.\n6 - MASTER VOLUME CONTROL KNOB\n- Allows adjustment of the most recently selected audio.\n7 - ID FILTER BUTTON\n- Activates a filter that eliminates voice on VOR and ADF audio so the identification can be heard.\n8 - AUDIO SELECTION BUTTONS\n- Enables the respective audio to be summed into the output on the headphone (HDPH), interphone (INPH) or cockpit speaker (SPKR).\n- When selected, a green dot illuminates inside the button.\n9 - ACP DISPLAY\n- Displays the selected transmission channel and digital volume information. \n10 - AUTO/MASK MICROPHONE SWITCH\n- AUTO (PUSH IN): allows audio communication via oxygen masks.\n- MASK (PUSH OUT): activates oxygen masks microphone when auto mode fails.\n- In order to enable hand or headset microphone booms after using oxygen mask microphone, close and reset the door of the oxygen mask stowage box. \n11 - BACKUP VOLUME CONTROL BUTTON/KNOB\n- NORM (PUSH IN): normal operation mode.\n- BKUP (PUSH OUT): restores VHF communication in case of digital audio system failure.\n- While in BKUP position (PUSH OUT), minimum volume is at the extreme counterclockwise position and the maximum volume is at the extreme clockwise position.\n- The VHF 1 is the radio available for left seat pilot ACP and VHF 2 is the radio available for the right seat pilot ACP. \n12 - SELCAL ANNUNCIATOR BUTTON\n- Flashes when an incoming call is displayed.\n- When pressed, it shows the code on the ACP display.\n- Remains steady when active for transmission."
   },
   "trim-panel": {
-    "title": "TRIM Panel (ROLL, YAW & PITCH Backup Trim & SYS 1/2 Cutout)",
+    "title": "TRIM Panel",
     "system": "Flight Controls",
-    "description": "Contains ROLL trim switch (LWD/RWD), YAW trim switch, PITCH BACKUP switch (UP/DN), and guarded PITCH TRIM SYS 1 / SYS 2 cutout pushbuttons."
+    "description": "1 - YAW TRIM KNOB\n- Actuates the yaw trim to left or right.\n- Manual trim commands are limited to 3 s.\nNOTE: The Yaw Trim function is inhibited while the airplane is onthe ground.\n2 - ROLL TRIM SWITCH\n- Actuates the roll trim to left or right.\n- Manual trim commands are limited to 3 s.\nNOTE: The Roll Trim function is inhibited while the airplane is on the ground or in flight with the AP engaged.\n3 - PITCH TRIM BACK-UP SWITCH\n- Actuates the pitch trim to up or down.\n- Manual trim commands are limited to 3 s.\n- Operation of the switch while the autopilot is engaged causes the autopilot to disengage. \n4 - PITCH TRIM SYS 1 CUTOUT BUTTON (GUARDED) PUSH IN: disables the HSCU channel 1 PUSH OUT: enables the HSCU channel 1. \n5 - PITCH TRIM SYS 2 CUTOUT BUTTON (GUARDED) PUSH IN: disables the HSCU channel 2 PUSH OUT: enables the HSCU channel 2. NOTE: After three consecutive disconnections, the respective HSCU channel becomes unavailable until the next FCC reset, or after maintenance intervention."
   },
   "cockpit-door-panel": {
     "title": "COCKPIT DOOR Control Panel (OPEN / INHIB / TEST)",
@@ -765,44 +765,44 @@
     "description": "Prints ACARS datalink messages, weather reports (METAR/TAF), ATIS, clearances, flight plans, and maintenance reports. Includes PAPER, SLEW, and TEST/ERROR controls."
   },
   "flap-lever": {
-    "title": "Flap Selector Lever (0 / 1 / 2 / 3 / 4 / 5 / FULL)",
+    "title": "Flap Selector Lever",
     "system": "Flight Controls",
-    "description": "Selects wing trailing-edge flap and leading-edge slat positions for takeoff, approach, and landing."
+    "description": "- Selects slat/flap position. The lever is unlatched by lifting the trigger below its head. The positions are as follows:\n0 - Slat = 0° / Flap = 0° / Detent/Stop\n1 - Slat = 11° / Flap = 7° / Detent\n2 - Slat = 17° / Flap = 13° / Detent\n3 - Slat = 20° / Flap = 20° / Detent\n4 - Slat = 25° / Flap = 25° / Detent/Stop\n5 - Slat = 25° / Flap = 25° / Detent\nFULL - Slat = 25° / Flap = 35° / Detent/Stop\n- Course detents indicate valid positions. Position 4 features a distinct stop mechanism to prevent inadvertent movement of the lever.\n- Intermediate positions are not enabled. If the lever is left at an intermediate position, slat/flap surfaces remain in the last valid position.\nNOTE: Although positions 4 and 5 are associated to the same slat/flap deflections, position 4 is used for takeoff and go around, while position 5 is used for landing."
   },
   "pa-btn-left": {
-    "title": "Captain PA (Passenger Address) Handset / Button",
+    "title": "PA (Passenger Address) PTT Button",
     "system": "Communications",
-    "description": "Captain Passenger Address handset socket and push-to-talk button located below the Parking / Emergency Brake handle for making cabin announcements."
+    "description": "Allows voice communications to passengers, regardless of any selection in the audio control panel. While selected, it deactivates the microphone selector button (audio control panel), and in this case no radio transmission occurs since there is no VHF/HF/SATCOM microphone selection.\n- When selected for more than 2 min, the communication is automatically deactivated."
   },
   "pa-btn-right": {
-    "title": "First Officer PA (Passenger Address) Handset / Button",
+    "title": "PA (Passenger Address) PTT Button",
     "system": "Communications",
-    "description": "First Officer Passenger Address handset socket and push-to-talk button located below the Flap Selector Lever."
+    "description": "Allows voice communications to passengers, regardless of any selection in the audio control panel. While selected, it deactivates the microphone selector button (audio control panel), and in this case no radio transmission occurs since there is no VHF/HF/SATCOM microphone selection.\n- When selected for more than 2 min, the communication is automatically deactivated."
   },
   "elevator-disc-handle": {
     "title": "ELEVATOR DISC (Elevator Disconnect) Handle",
     "system": "Flight Controls",
-    "description": "Pulling the T-handle mechanically disconnects the left and right elevator control systems in the event of a jammed elevator."
+    "description": "PULL: isolates the left seat and right seat control columns for pitch control."
   },
   "aileron-disc-handle": {
     "title": "AILERON DISC (Aileron Disconnect) Handle",
     "system": "Flight Controls",
-    "description": "Pulling the T-handle mechanically disconnects the left and right aileron control systems in the event of a jammed aileron."
+    "description": "PULL: isolates the left seat and right seat control wheels for roll control."
   },
   "lgwrn-gnd-prox-inhibits": {
-    "title": "LG WRN / GROUND PROX INHIBITS Panel (LG WRN / TERR / FLAP OVRD)",
-    "system": "Warning & Terrain Awareness (EGPWS)",
-    "description": "Contains guarded pushbuttons for Landing Gear Warning Inhibit (LG WRN INHB), Terrain Inhibit (TERR INHB), and Flap Override (FLAP OVRD)."
+    "title": "LG WRN / GROUND PROX INHIBITS Panel",
+    "system": "Warning",
+    "description": "GROUND PROXIMITY TERRAIN INHIBIT BUTTON\nWhen pushed in avoid unwanted terrain alerts in airports not covered by EGPWS database and deactivates:\n- Forward Looking Terrain Awareness Function\n- Terrain Clearance Floor Function\n- Terrain Awareness Display\n\nGROUND PROXIMITY GLIDESLOPE INHIBIT\nDeactivates aural and visual alerts of GPWS, which are enabled for excessive downward deviation from an ILS, a GLS (optional) or an LPV (optional) approach.\n- Momentary pushbutton annunciator used to manually cancel glideslope alerts.\n- Illuminates when pressed any time below 2000 ft radar altitude and will be automatically reset (light off) by climbing above 2000 ft radar altitude or descending below 30 ft.\n\nFLAP OVERRIDE SWITCH (GUARDED)\n- Inhibits triggering flap alerts in case of landings where flap configuration is different from normal landing flap configuration.\n- When pressed, GPWS calculations disregard the flap position\n\nLANDING GEAR WARNING INHIBITION BUTTON (GUARDED MOMENTARY ACTION)\nInhibits the LG aural warning. A white striped bar illuminates when pushed in and inhibition is possible."
   },
   "cabin-non-essential": {
-    "title": "CABIN NON ESSENTIAL Power Switch",
-    "system": "Electrical / Cabin Systems",
-    "description": "Guarded pushbutton that sheds non-essential cabin electrical power (galley, in-flight entertainment, cabin outlets) in case of cabin smoke or electrical overload."
+    "title": "CABIN NON ESSENTIAL Panel",
+    "system": "Electrical",
+    "description": "MASTER (GUARDED)\nPUSHED IN: turns on all non-essential systems.\nPUSHED OUT: turns off all non-essential systems. The button illuminates when pushed out."
   },
   "lower-pedestal-panel": {
-    "title": "Cockpit Voice Recorder / Maintenance Test Panel",
+    "title": "-------------",
     "system": "Control Pedestal",
-    "description": "Lower pedestal panel located directly below the CABIN NON ESSENTIAL switch."
+    "description": "------------"
   },
   "fgp-vnav-btn": {
     "title": "Vertical Navigation (VNAV) Button",
