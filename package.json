@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "check:svg": "node scripts/clean-svg.mjs --check",
+    "prebuild": "node scripts/clean-svg.mjs --check",
     "build": "vite build",
     "preview": "vite preview"
   },
