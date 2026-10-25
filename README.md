@@ -59,13 +59,14 @@ All control titles, system categories, and descriptions are stored in [`src/data
 ---
 
 ## Author
- 
+
 [Leandro Simões](https://github.com/Leandr0SmS)
 
 ## License
+
 [MIT License](https://github.com/Leandr0SmS/embraer_e2_cockpit/blob/main/LICENSE)
 
 ## Inspirations
 
-* [Embraer](https://embraer.com)
-* [FreeCodeCamp](https://www.freecodecamp.org/learn/)
+-[Embraer](https://embraer.com)
+-[FreeCodeCamp](https://www.freecodecamp.org/learn/)
