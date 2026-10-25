@@ -17833,8 +17833,8 @@
   <g id="fire-eng1-handle" class="clickable"><title>Engine 1 Fire Extinguisher Handle</title><path class="hotspot-rect" d="M 7571,9385 L 9067,9385 Q 9126,9385 9126,9428 L 9126,9604 Q 9126,9648 9067,9648 L 8471,9648 L 8471,10299 C 8471,10362 8404,10412 8319,10412 C 8234,10412 8164,10362 8164,10299 L 8164,9648 L 7571,9648 Q 7512,9648 7512,9604 L 7512,9428 Q 7512,9385 7571,9385 Z" /></g>
   <g id="fire-cargo-fwd-btn" class="clickable"><title>CARGO SMOKE FWD Button (Guarded)</title><rect class="hotspot-rect" x="9991" y="9218" width="393" height="288" rx="25" /></g>
   <g id="fire-cargo-aft-btn" class="clickable"><title>CARGO SMOKE AFT Button (Guarded)</title><rect class="hotspot-rect" x="11163" y="9218" width="393" height="288" rx="25" /></g>
-  <g id="fire-apu-extg-btn" class="clickable"><title> FIRE EXTINGUISHER APU Button (Guarded)</title><rect class="hotspot-rect" x="10052" y="9769" width="273" height="198" rx="25" /></g>
-  <g id="fire-apu-emer-btn" class="clickable"><title>APU EMER STOP Button (Guarded)</title><rect class="hotspot-rect" x="11163" y="9720" width="393" height="288" rx="25" /></g>
+  <g id="fire-test-btn" class="clickable"><title>Fire Extinguisher TEST Button</title><rect class="hotspot-rect" x="10052" y="9769" width="273" height="198" rx="25" /></g>
+  <g id="fire-apu-extg-btn" class="clickable"><title>FIRE EXTINGUISHER APU Button (Guarded)</title><rect class="hotspot-rect" x="11163" y="9720" width="393" height="288" rx="25" /></g>
   <g id="fire-eng2-handle" class="clickable"><title>Engine 2 Fire Extinguisher Handle</title><path class="hotspot-rect" d="M 12483,9385 L 13980,9385 Q 14039,9385 14039,9428 L 14039,9604 Q 14039,9648 13980,9648 L 13387,9648 L 13387,10299 C 13387,10362 13318,10412 13232,10412 C 13148,10412 13081,10362 13081,10299 L 13081,9648 L 12483,9648 Q 12425,9648 12425,9604 L 12425,9428 Q 12425,9385 12483,9385 Z" /></g>
   <g id="fuel-xfeed-knob" class="clickable"><title>Fuel XFEED Selector</title><rect class="hotspot-rect" x="8121" y="10947" width="394" height="326" rx="40" /></g>
   <g id="fuel-ac-pump1-btn" class="clickable"><title>Fuel AC PUMP 1 Knob</title><rect class="hotspot-rect" x="7478" y="11418" width="432" height="319" rx="30" /></g>
@@ -17845,7 +17845,7 @@
   <g id="pax-no-smk-sw" class="clickable"><title>STERILE Switch</title><rect class="hotspot-rect" x="7602" y="13322" width="261" height="226" rx="25" /></g>
   <g id="pax-fstn-belts-sw" class="clickable"><title>NO ELEC DEVICES Switch</title><rect class="hotspot-rect" x="8188" y="13322" width="260" height="226" rx="25" /></g>
   <g id="pax-cabin-lt-sw" class="clickable"><title>FSTN BELTS Switch</title><rect class="hotspot-rect" x="8774" y="13322" width="262" height="226" rx="25" /></g>
-  <g id="apu-fuel-shutoff-btn" class="clickable"><title>APU MASTER Selector</title><rect class="hotspot-rect" x="9786" y="10483" width="393" height="325" rx="25" /></g>
+  <g id="apu-fuel-shutoff-btn" class="clickable"><title>APU Fuel Shutoff Pushbutton</title><rect class="hotspot-rect" x="9786" y="10483" width="393" height="325" rx="25" /></g>
   <g id="apu-emer-stop-btn" class="clickable"><title>APU EMER STOP Button (Guarded)</title><rect class="hotspot-rect" x="10718" y="10551" width="393" height="288" rx="25" /></g>
   <g id="apu-master" class="clickable"><title>APU Master Selector Knob (OFF / ON / START)</title><rect class="hotspot-rect" x="11463" y="10518" width="324" height="243" rx="40" /></g>
   <g id="wiper-left-knob" class="clickable"><title>Windshield Wiper 1 (Captain) Knob (OFF / TIMER / LOW / HI)</title><rect class="hotspot-rect" x="9999" y="11259" width="433" height="319" rx="40" /></g>
@@ -17944,13 +17944,13 @@
   <g id="flood-storm-fo-knob" class="clickable"><title>First Officer FLOOD / STORM Light Knob (OFF / BRT)</title><rect class="hotspot-rect" x="18075" y="15710" width="220" height="220" rx="30" /></g>
   <g id="chart-light-fo-knob" class="clickable"><title>First Officer CHART Light Knob (OFF / BRT)</title><rect class="hotspot-rect" x="18395" y="15770" width="220" height="220" rx="30" /></g>
   <g id="ptt-fo-btn" class="clickable"><title>First Officer PTT / Boom Mic Jack</title><rect class="hotspot-rect" x="18695" y="15825" width="210" height="210" rx="30" /></g>
-  <g id="clock-left-btn" class="clickable"><title>Captain GPWS / GSPD INHB (Ground Proximity / Glideslope Inhibit) Button</title><rect class="hotspot-rect" x="2181" y="17282" width="1054" height="421" rx="25" /></g>
+  <g id="css-btn" class="clickable"><title>Cabin Surveillance System (CSS) Button</title><rect class="hotspot-rect" x="2181" y="17282" width="1054" height="421" rx="25" /></g>
   <g id="reversionary-left-knobs" class="clickable"><title>Captain Reversionary &amp; Display Brightness Panel (PFD / MFD / ADS / IRS)</title><rect class="hotspot-rect" x="2185" y="17816" width="1055" height="903" rx="25" /></g>
   <g id="autobrake-panel" class="clickable"><title>AUTOBRAKE Selector Knob (RTO / OFF / LO / MED / HI)</title><rect class="hotspot-rect" x="10040" y="17233" width="822" height="858" rx="30" /></g>
   <g id="ldg-gear-lever" class="clickable"><title>Landing Gear Control Lever (UP / OFF / DN)</title><rect class="hotspot-rect" x="10961" y="17387" width="360" height="537" rx="30" /></g>
-  <g id="eicas-full-panel" class="clickable"><title>EMER/PARKING BRAKE</title><rect class="hotspot-rect" x="10040" y="18230" width="627" height="706" rx="30" /></g>
+  <g id="emer-parking-brake-light" class="clickable"><title>EMER/PARKING BRAKE Light</title><rect class="hotspot-rect" x="10040" y="18230" width="627" height="706" rx="30" /></g>
   <g id="gear-ovrd-btn" class="clickable"><title>DN LCK REL (Downlock Release) Button &amp; NOSEWHEEL STEERING Switch</title><rect class="hotspot-rect" x="10730" y="18106" width="613" height="920" rx="25" /></g>
-  <g id="clock-right-btn" class="clickable"><title>ADS HEATER BUTTON</title><rect class="hotspot-rect" x="18139" y="17291" width="1054" height="421" rx="25" /></g>
+  <g id="ads-heater-btn" class="clickable"><title>ADS HEATER BUTTON</title><rect class="hotspot-rect" x="18139" y="17291" width="1054" height="421" rx="25" /></g>
   <g id="reversionary-right-knobs" class="clickable"><title>First Officer Reversionary &amp; Display Brightness Panel (PFD / MFD / ADS / IRS)</title><rect class="hotspot-rect" x="18139" y="17816" width="1054" height="903" rx="25" /></g>
   <g id="flight-control-mode" class="clickable"><title>FLIGHT CONTROL MODE Panel (ELEVATOR / AILERON / RUDDER)</title><rect class="hotspot-rect" x="9924" y="19325" width="1530" height="879" rx="25" /></g>
   <g id="mcdu-left-keys" class="clickable"><title>Left MCDU Keypad &amp; Function Buttons (MCDU 1)</title><rect class="hotspot-rect" x="8390" y="20398" width="1492" height="990" rx="25" /></g>
@@ -17964,19 +17964,19 @@
   <g id="ccd-pedestal-right" class="clickable"><title>Right Cursor Control Device (CCD 2 Touchpad &amp; Keys)</title><rect class="hotspot-rect" x="11897" y="21580" width="997" height="2025" rx="30" /></g>
   <g id="speedbrake-lever" class="clickable"><title>SPEED BRAKE Lever (CLOSE / OPEN)</title><rect class="hotspot-rect" x="9530" y="22332" width="610" height="1525" rx="30" /></g>
   <g id="thrust-levers" class="clickable"><title>Engine 1 &amp; 2 Thrust Levers (MAX / TOGA / MCT / IDLE / REV)</title><rect class="hotspot-rect" x="10168" y="21775" width="1040" height="2080" rx="30" /></g>
-  <g id="cockpit-door-panel" class="clickable"><title>EICAS FULL Pushbutton</title><rect class="hotspot-rect" x="11184" y="21563" width="577" height="672" rx="25" /></g>
-  <g id="alt-gear-lever" class="clickable"><title>RAT MANUAL DEPLOY (Ram Air Turbine) Lever</title><rect class="hotspot-rect" x="11189" y="22288" width="559" height="1569" rx="30" /></g>
+  <g id="eicas-full-btn" class="clickable"><title>EICAS FULL Pushbutton</title><rect class="hotspot-rect" x="11184" y="21563" width="577" height="672" rx="25" /></g>
+  <g id="rat-manual-deploy-lever" class="clickable"><title>RAT MANUAL DEPLOY (Ram Air Turbine) Lever</title><rect class="hotspot-rect" x="11189" y="22288" width="559" height="1569" rx="30" /></g>
   <g id="parking-brake" class="clickable"><title>PARKING / EMERGENCY BRAKE Handle</title><rect class="hotspot-rect" x="8246" y="23427" width="880" height="2436" rx="30" /></g>
-  <g id="pitch-trim-sw" class="clickable"><title>Left Audio Control Panel (ACP 1)</title><rect class="hotspot-rect" x="9145" y="23979" width="1508" height="884" rx="25" /></g>
-  <g id="yaw-trim-sw" class="clickable"><title>Right Audio Control Panel (ACP 2)</title><rect class="hotspot-rect" x="10721" y="23979" width="1508" height="884" rx="25" /></g>
-  <g id="acp-left-knobs" class="clickable"><title>TRIM Panel (ROLL, YAW &amp; PITCH Backup Trim &amp; SYS 1/2 Cutout)</title><rect class="hotspot-rect" x="9149" y="24896" width="1526" height="1284" rx="25" /></g>
-  <g id="wx-tcas-knobs" class="clickable"><title>COCKPIT DOOR Control Panel (OPEN / INHIB / TEST)</title><rect class="hotspot-rect" x="10703" y="24896" width="1526" height="657" rx="25" /></g>
+  <g id="acp-left-panel" class="clickable"><title>Left Audio Control Panel (ACP 1)</title><rect class="hotspot-rect" x="9145" y="23979" width="1508" height="884" rx="25" /></g>
+  <g id="acp-right-panel" class="clickable"><title>Right Audio Control Panel (ACP 2)</title><rect class="hotspot-rect" x="10721" y="23979" width="1508" height="884" rx="25" /></g>
+  <g id="trim-panel" class="clickable"><title>TRIM Panel (ROLL, YAW &amp; PITCH Backup Trim &amp; SYS 1/2 Cutout)</title><rect class="hotspot-rect" x="9149" y="24896" width="1526" height="1284" rx="25" /></g>
+  <g id="cockpit-door-panel" class="clickable"><title>COCKPIT DOOR Control Panel (OPEN / INHIB / TEST)</title><rect class="hotspot-rect" x="10703" y="24896" width="1526" height="657" rx="25" /></g>
   <g id="cockpit-printer" class="clickable"><title>Cockpit Thermal Printer</title><rect class="hotspot-rect" x="10698" y="25625" width="1537" height="2622" rx="25" /></g>
   <g id="flap-lever" class="clickable"><title>Flap Selector Lever (0 / 1 / 2 / 3 / 4 / 5 / FULL)</title><rect class="hotspot-rect" x="12365" y="24290" width="577" height="1587" rx="30" /></g>
   <g id="pa-btn-left" class="clickable"><title>Captain PA (Passenger Address) Handset / Button</title><rect class="hotspot-rect" x="8252" y="25914" width="872" height="400" rx="25" /></g>
   <g id="pa-btn-right" class="clickable"><title>First Officer PA (Passenger Address) Handset / Button</title><rect class="hotspot-rect" x="12249" y="25914" width="872" height="400" rx="25" /></g>
   <g id="elevator-disc-handle" class="clickable"><title>ELEVATOR DISC (Elevator Disconnect) Handle</title><rect class="hotspot-rect" x="8248" y="26387" width="738" height="500" rx="25" /></g>
-  <g id="rat-manual-deploy" class="clickable"><title>AILERON DISC (Aileron Disconnect) Handle</title><rect class="hotspot-rect" x="12388" y="26387" width="739" height="500" rx="25" /></g>
+  <g id="aileron-disc-handle" class="clickable"><title>AILERON DISC (Aileron Disconnect) Handle</title><rect class="hotspot-rect" x="12388" y="26387" width="739" height="500" rx="25" /></g>
   <g id="lower-pedestal-panel" class="clickable"><title>Cockpit Voice Recorder / Maintenance Test Panel</title><rect class="hotspot-rect" x="9145" y="27609" width="1526" height="657" rx="25" /></g>
   <g id="lgwrn-gnd-prox-inhibits" class="clickable"><title>LG WRN / GROUND PROX INHIBITS Panel (LG WRN / TERR / FLAP OVRD)</title><rect class="hotspot-rect" x="9149" y="26221" width="1526" height="657" rx="25" /></g>
   <g id="cabin-non-essential" class="clickable"><title>CABIN NON ESSENTIAL Power Switch</title><rect class="hotspot-rect" x="9149" y="26916" width="1526" height="661" rx="25" /></g>

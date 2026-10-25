@@ -144,12 +144,12 @@
     "system": "Fire Protection",
     "description": "ILLUMINATED: Red striped bar indicates fire detection in the respective cargo compartment AFT.\nPUSH: discharges the high and then the low-rate cargo extinguisher bottles of the associated cargo compartment when the red striped bar is illuminated.\nMANUAL: Pressing the AFT button, when it is not illuminated, arms the associated extinguisher bottle and illuminates the button in red."
   },
-  "fire-apu-extg-btn": {
+  "fire-test-btn": {
     "title": "Fire Extinguisher TEST Button",
     "system": "Fire Protection",
     "description": "PRESS: Initiates the test of cargo smoke, EBAY smoke, engine and APU fire detection systems. If the fire extinguisher TEST button is pressed for more than 10 seconds, the APU automatically shuts-down.\nCAUTION:PRESSING THE FIRE DETECTION TEST BUTTON FOR MORE THAN 10 SECONDS SHUTS DOWN THE APU."
   },
-  "fire-apu-emer-btn": {
+  "fire-apu-extg-btn": {
     "title": "FIRE EXTINGUISHER APU Button (Guarded)",
     "system": "Fire Protection",
     "description": "PUSH: Closes the APU fuel shutoff valve and discharges the APU fire extinguisher bottle."
@@ -175,14 +175,14 @@
     "description": "OFF: Deactivates the AC fuel pump 2.\nAUTO: Automatically operates the AC fuel pump 2.\nON: Activates the AC fuel pump 2."
   },
   "fuel-dc-pump-btn": {
-    "title": "FUEL TRANSFER Knob",
+    "title": "FUEL DC PUMP Knob",
     "system": "Fuel",
     "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
   },
   "pax-emer-lt-knob": {
     "title": "EMER LT Selector",
     "system": "Airplane General",
-    "description": "OFF: Deactivates the AC fuel pumps in central tank and fuel transferring.\nAUTO: automatically operates the AC fuel pumps, transferring fuel from central tank to wing tanks.\nON: activates the AC fuel pumps in central tank, transferring fuel from central tank to wing tanks."
+    "description": "OFF: Turns off emergency lights and prevents battery discharge.\nARM: Automatically illuminates emergency lights if normal electrical power is lost.\nON: Manually illuminates emergency interior and exterior lights."
   },
   "pax-sterile-btn": {
     "title": "ATTND CALL Button",
@@ -205,9 +205,9 @@
     "description": "Turns on and off the FASTEN BELTS signs."
   },
   "apu-fuel-shutoff-btn": {
-    "title": "APU MASTER Selector",
+    "title": "APU Fuel Shutoff Pushbutton",
     "system": "Auxiliary Power Unit",
-    "description": "OFF: Initiates normal shutdown of APU.\nON: Normal position when the APU is running.\nSTART: (momentary action) initiates the start cycle of APU. When released, the switch moves to the ON position."
+    "description": "Guarded pushbutton that commands the APU fuel shutoff valve to close, isolating fuel supply to the APU."
   },
   "apu-emer-stop-btn": {
     "title": "APU EMER STOP Button (Guarded)",
@@ -215,9 +215,9 @@
     "description": "PUSH IN: closes the shutoff valve at fuel line that feeds the APU, shutting down the APU with no cooldown period. A white striped bar illuminates on the lower half of the button.\nPUSH OUT: normal position, with the fuel shutoff valve open.\nNOTE: When an APU fire is detected, a red striped bar illuminates on the upper half of the button."
   },
   "apu-master": {
-    "title": " FUEL DC PUMP Knob",
+    "title": "APU Master Selector Knob (OFF / ON / START)",
     "system": "Auxiliary Power Unit",
-    "description": "OFF: Deactivates the fuel DC pump.\nAUTO: Automatically operates the fuel DC pump according to the logic of the system.\nON: Activates the fuel DC pump."
+    "description": "OFF: Initiates normal shutdown of APU.\nON: Normal position when the APU is running.\nSTART: (momentary action) initiates the start cycle of APU. When released, the switch moves to the ON position."
   },
   "wiper-left-knob": {
     "title": " WINDSHIELD WIPER 1 Knob",
@@ -569,7 +569,7 @@
     "system": "Automatic Flight",
     "description": "Turns ON and OFF the Flight Director presentation on PFD.\nIf any of the following item is active, it is not possible to turn off the FD presentation on the PFD:\n -AP\n -TO\n -GA\n -WSHR\n -APPR2, or\n -RNP AR < 0.3.\nNOTE: If AP is disengaged, to press FD button on any side,disengages the Flight Director modes."
   },
-  "fgp-crs2-knob":{
+  "fgp-crs2-knob": {
     "title": "Course (CRS) Button",
     "system": "Automatic Flight",
     "description": "Manually sets the desired course on CDI as follows:\n - CDI displaying FMS: sets preview course.\n - CDI displaying VOR/LOC: sets CDI course\nPressing this knob indicates the course to the station."
@@ -599,7 +599,7 @@
     "system": "Flight Instruments",
     "description": "Cycles the Circle (O) Bearing Pointer on PFD 1 through available navigation sources (VOR 1, ADF 1, FMS 1, or OFF)."
   },
-  "dcu2-prev-btn":  {
+  "dcu2-prev-btn": {
     "title": "Preview (PREV) Button",
     "system": "Flight Instruments",
     "description": " Selects the preview mode when the FMS is the primary navigation source. The course, and lateral and vertical deviation can be previewed.\n- Pressing the first time: enables the on-side VOR/LOC preview.\n- Pressing a second time: enables the opposite side VOR/LOC preview.\n- Pressing a third time: disables the preview mode.\n- The previewed navigation source automatically turns to the primary navigation source when captured by the light Director (FD) or by the Automatic Flight Control System (AFCS)."
@@ -609,22 +609,22 @@
     "system": "Flight Instruments",
     "description": "Selects VOR or LOC as the primary navigation source for the on-side PFD and toggles between VOR/LOC1 and VOR/LOC2."
   },
-  "dcu2-brg2-btn":  {
+  "dcu2-brg2-btn": {
     "title": "Bearing Source (BRG ◇)",
     "system": "Flight Instruments",
     "description": "Cycles the Diamond (◇) Bearing Pointer on PFD 1 through available navigation sources (VOR 2, ADF 2, FMS 2, or OFF)."
   },
-  "dcu2-fpr-btn":{
+  "dcu2-fpr-btn": {
     "title": "Flight Path Reference Button (FPR)",
     "system": "Flight Instruments",
     "description": "Toggles the Flight Path Reference (FPR) line and Flight Path Vector (FPV) symbol on the Primary Flight Display (PFD 1)."
   },
-  "dcu2-baro-knob":{
+  "dcu2-baro-knob": {
     "title": "BARO SET Knob",
     "system": "Flight Instruments",
     "description": "INNER:\n  - Rotating the knob: sets the barometric altimeter correction.\n  - Pushing the button: if there is a preselected barometric altitude value selected, activates the preselected value. Without having a preselected barometric altitude value displayed, push the button to set the barometric value to the standard values. Depending on the Baro Set Knob (IN/hPa), the standard value is 29.92 in or 1013 hPa.\nOUTER:\n  IN: Sets barometric correction format to inches of mercury.\n  hPa: Sets barometric correction format to hecto Pascal."
   },
-  "clock-left-btn": {
+  "css-btn": {
     "title": "Cabin Surveillance System (CSS) Button",
     "system": "Cabin Surveillance",
     "description": "PUSH IN: Normal position.\nPUSH OUT: Disables the CSS system by removing the power. A white striped bar illuminates on the button."
@@ -640,26 +640,26 @@
     "description": " AUTOBRAKE SELECTOR KNOB (ROTARY ACTION)\n- RTO: selects RTO deceleration mode.\n- OFF: deactivates the autobrake.\n- LO: selects the low deceleration rate.\n- MED: selects the medium deceleration rate.\n- HI: selects the high deceleration rate."
   },
   "ldg-gear-lever": {
-    "title": "ELT",
-    "system": "Airplane General",
-    "description": "ARM: ELT is armed"
+    "title": "Landing Gear Control Lever (UP / OFF / DN)",
+    "system": "Landing Gear & Brakes",
+    "description": "UP: Commands landing gear retraction and door closure.\nOFF: Depressurizes the landing gear hydraulic lines.\nDN: Commands landing gear extension and down-locking."
   },
-  "eicas-full-panel": {
+  "emer-parking-brake-light": {
     "title": "EMER/PARKING BRAKE Light",
     "system": "Landing Gear & Brakes",
     "description": " ON: the indicator illuminates when the a minimum pressure is identified.\nThe indicator does not provide advice to prevent locked wheel and skid conditions."
   },
   "gear-ovrd-btn": {
-    "title": "Landing Gear Control Lever (UP/DN)",
+    "title": "DN LCK REL (Downlock Release) Button & NOSEWHEEL STEERING Switch",
     "system": "Landing Gear & Brakes",
-    "description": "UP: Retracts the landing gear.\nDOWN: Extends the landing gear.\n\nDN LOCK REL: Downlock Release Button (Momentary Action) Manually releases the LG lever lock."
+    "description": "DN LOCK REL: Downlock Release Button (Momentary Action). Mechanically overrides the landing gear lever lock to allow gear retraction in emergency conditions.\n\nSTEERING: Disengages nosewheel steering system."
   },
-  "clock-right-btn": {
+  "ads-heater-btn": {
     "title": "ADS HEATER BUTTON",
     "system": "Ice and Rain Protection",
     "description": "PUSH IN: Activates the ADS probes heater. A striped bar illuminates in the button.\nPUSH OUT: The ADS probes heater operates in AUTO mode."
   },
-  "reversionary-right-knobs":{
+  "reversionary-right-knobs": {
     "title": "Reversionary Panel",
     "system": "Airplane General",
     "description": "DISPLAYS Mode Knob\nLEFT: DU 3 right half displays DU 4 information. \nAUTO: automatic reversion between DU 3 and DU 4 in case of display failure. \nRIGHT: DU 4 left half displays DU 3 information.\n\nIRS BUTTON\nPUSH: reverts the IRS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated IRS source indication is displayed on the PFD after a reversion takes place.\n\nADS BUTTON \nPUSH: reverts the ADS source. When the reversion is selected, a white stripped bar illuminates the button.\nNOTE: Associated ADS source indication is displayed on the PFD after a reversion takes place."
@@ -724,12 +724,12 @@
     "system": "Powerplant Controls",
     "description": "Forward thrust and thrust-reverser levers with TO/GA (Takeoff/Go-Around) buttons and A/T quick-disconnect switches."
   },
-  "cockpit-door-panel": {
+  "eicas-full-btn": {
     "title": "EICAS FULL Pushbutton",
     "system": "Avionics / Displays",
     "description": "Toggles full-screen EICAS engine and system indications on the Multi-Function Display when pressed."
   },
-  "alt-gear-lever": {
+  "rat-manual-deploy-lever": {
     "title": "RAT MANUAL DEPLOY (Ram Air Turbine) Lever",
     "system": "Electrical / Emergency Power",
     "description": "Pulling the RAT MANUAL DEPLOY lever manually deploys the Ram Air Turbine (RAT) to provide emergency electrical power."
@@ -739,22 +739,22 @@
     "system": "Landing Gear & Brakes",
     "description": "Pulling and rotating applies hydraulic parking brake pressure; also provides proportional mechanical/hydraulic emergency brake application."
   },
-  "pitch-trim-sw": {
+  "acp-left-panel": {
     "title": "Left Audio Control Panel (ACP 1)",
     "system": "Communications",
     "description": "Captain Audio Control Panel: selects transmission buttons (VHF 1/2/3, HF, SAT, PA, INT) and reception volume knobs, oxygen mask/boom mic switch, and emergency audio backup."
   },
-  "yaw-trim-sw": {
+  "acp-right-panel": {
     "title": "Right Audio Control Panel (ACP 2)",
     "system": "Communications",
     "description": "First Officer Audio Control Panel: selects transmission buttons (VHF 1/2/3, HF, SAT, PA, INT), reception volume knobs, mask/boom switch, and emergency audio backup."
   },
-  "acp-left-knobs": {
+  "trim-panel": {
     "title": "TRIM Panel (ROLL, YAW & PITCH Backup Trim & SYS 1/2 Cutout)",
     "system": "Flight Controls",
     "description": "Contains ROLL trim switch (LWD/RWD), YAW trim switch, PITCH BACKUP switch (UP/DN), and guarded PITCH TRIM SYS 1 / SYS 2 cutout pushbuttons."
   },
-  "wx-tcas-knobs": {
+  "cockpit-door-panel": {
     "title": "COCKPIT DOOR Control Panel (OPEN / INHIB / TEST)",
     "system": "Cabin & Security",
     "description": "Controls electronic locking/unlocking and access inhibition of the reinforced cockpit door. Includes OPEN, INHIB, and TEST pushbuttons/indicators."
@@ -784,7 +784,7 @@
     "system": "Flight Controls",
     "description": "Pulling the T-handle mechanically disconnects the left and right elevator control systems in the event of a jammed elevator."
   },
-  "rat-manual-deploy": {
+  "aileron-disc-handle": {
     "title": "AILERON DISC (Aileron Disconnect) Handle",
     "system": "Flight Controls",
     "description": "Pulling the T-handle mechanically disconnects the left and right aileron control systems in the event of a jammed aileron."
@@ -840,11 +840,6 @@
     "description": "Adjusts the display backlighting brightness of the Captain's Multi-Function Display (MFD 1) from DIM to BRT."
   },
   "compass-light-fo-knob": {
-    "title": "COMPASS / Glareshield Light Knob (DIM / BRT)",
-    "system": "Glareshield Lighting Panel (First Officer)",
-    "description": "Controls the magnetic compass light and supplemental glareshield integral illumination from DIM to maximum brightness (BRT)."
-  },
-  "glareshield-light-fo-knob": {
     "title": "COMPASS / Glareshield Light Knob (DIM / BRT)",
     "system": "Glareshield Lighting Panel (First Officer)",
     "description": "Controls the magnetic compass light and supplemental glareshield integral illumination from DIM to maximum brightness (BRT)."
