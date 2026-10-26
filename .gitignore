@@ -2,6 +2,9 @@
 todo.md
 AGENTS.md
 
+# Scripts
+svg-tools.mjs
+
 # Logs
 logs
 *.log
@@ -34,7 +37,6 @@ dist-ssr
 !.env.example
 
 # Python cache & local helper scripts
-scripts/
 __pycache__/
 *.py[cod]
 *$py.class
