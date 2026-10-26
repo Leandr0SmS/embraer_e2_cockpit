@@ -4,10 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "check:svg": "node scripts/clean-svg.mjs --check",
+  "prebuild": "node scripts/clean-svg.mjs --check",
+  "build": "vite build",
+  "preview": "vite preview"
+},
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
