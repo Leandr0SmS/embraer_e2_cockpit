@@ -806,67 +806,67 @@
   },
   "fgp-vnav-btn": {
     "title": "Vertical Navigation (VNAV) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Engages or arms FMS Vertical Navigation (VNAV) profile guidance, following pre-programmed vertical waypoints, altitude constraints, and speeds."
+    "system": "Automatic Flight / Flight Guidance Control System (FGCS)",
+    "description": "Selects and deselects the VNAV mode (FMS vertical navigation)."
   },
   "fgp-flch-btn": {
     "title": "Flight Level Change (FLCH) Button",
-    "system": "Flight Guidance Panel (AFCS)",
-    "description": "Engages Flight Level Change (FLCH) mode. The AFCS commands pitch to maintain the selected airspeed while throttles deliver climb or idle descent thrust."
+    "system": "Automatic Flight / Flight Guidance Control System (FGCS)",
+    "description": "Selects and deselects the Flight Level Change mode (FLCH)."
   },
   "ptt-capt-btn": {
-    "title": "Captain PTT / Boom Mic Jack",
-    "system": "Glareshield Lighting & Communications Panel (Captain)",
-    "description": "Auxiliary jack and push-to-talk (PTT) interface on the captain's glareshield panel for connecting the boom microphone or headset."
+    "title": "Glareshield PTT Buton",
+    "system": "Communications",
+    "description": "Allows VHF transmissions and voice communications to passengers."
   },
   "chart-light-capt-knob": {
-    "title": "Captain CHART Light Knob (OFF / BRT)",
-    "system": "Glareshield Lighting Panel (Captain)",
-    "description": "Controls illumination of the captain's chart holder / clip light. Rotating clockwise from OFF smoothly increases brightness to maximum (BRT)."
+    "title": "CHART Light Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Turns on and off and regulates the brightness of associated chart holder lighting."
   },
   "flood-storm-capt-knob": {
-    "title": "Captain FLOOD / STORM Light Knob (OFF / BRT)",
-    "system": "Glareshield Lighting Panel (Captain)",
-    "description": "Controls the captain's side glareshield floodlight and storm lighting. Rotating clockwise from OFF increases illumination to maximum brightness (BRT)."
+    "title": "FLOOD / STORM Light Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Turns on and off and regulates the brightness of the flood/storm lighting."
   },
   "pfd-light-capt-knob": {
-    "title": "Captain PFD Brightness Control Knob (DIM / BRT)",
-    "system": "Glareshield Lighting Panel (Captain)",
-    "description": "Adjusts the display backlighting brightness of the Captain's Primary Flight Display (PFD 1) from DIM to BRT."
+    "title": "PFD Brightness Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Regulates the brightness of the associated display lighting.\nNOTE:\n- The PFD controller regulates the brightness of the DU 1"
   },
   "mfd-light-capt-knob": {
-    "title": "Captain MFD Brightness Control Knob (DIM / BRT)",
-    "system": "Glareshield Lighting Panel (Captain)",
-    "description": "Adjusts the display backlighting brightness of the Captain's Multi-Function Display (MFD 1) from DIM to BRT."
+    "title": "MFD Brightness Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Regulates the brightness of the associated display lighting.\nNOTE:\n- The MFD controller regulates the brightness of the DU 2"
   },
   "compass-light-fo-knob": {
-    "title": "COMPASS / Glareshield Light Knob (DIM / BRT)",
-    "system": "Glareshield Lighting Panel (First Officer)",
-    "description": "Controls the magnetic compass light and supplemental glareshield integral illumination from DIM to maximum brightness (BRT)."
+    "title": "COMPASS Light Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Regulates the brightness of the compass lighting."
   },
   "mfd-light-fo-knob": {
-    "title": "First Officer MFD Brightness Control Knob (DIM / BRT)",
-    "system": "Glareshield Lighting Panel (First Officer)",
-    "description": "Adjusts the display backlighting brightness of the First Officer's Multi-Function Display (MFD 2 / EICAS) from DIM to BRT."
+    "title": "MFD Brightness Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Regulates the brightness of the associated display lighting.\nNOTE:\n- The MFD controller regulates the brightness of the DU 3"
   },
   "pfd-light-fo-knob": {
-    "title": "First Officer PFD Brightness Control Knob (DIM / BRT)",
-    "system": "Glareshield Lighting Panel (First Officer)",
-    "description": "Adjusts the display backlighting brightness of the First Officer's Primary Flight Display (PFD 2) from DIM to BRT."
+    "title": "PFD Brightness Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Regulates the brightness of the associated display lighting.\nNOTE:\n- The PFD controller regulates the brightness of the DU 4."
   },
   "flood-storm-fo-knob": {
-    "title": "First Officer FLOOD / STORM Light Knob (OFF / BRT)",
-    "system": "Glareshield Lighting Panel (First Officer)",
-    "description": "Controls the First Officer's side glareshield floodlight and storm lighting. Rotating clockwise from OFF increases illumination to maximum brightness (BRT)."
+    "title": "FLOOD / STORM Light Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Turns on and off and regulates the brightness of the flood/storm lighting."
   },
   "chart-light-fo-knob": {
-    "title": "First Officer CHART Light Knob (OFF / BRT)",
-    "system": "Glareshield Lighting Panel (First Officer)",
-    "description": "Controls illumination of the First Officer's chart holder / clip light. Rotating clockwise from OFF smoothly increases brightness to maximum (BRT)."
+    "title": "CHART Light Controller",
+    "system": "Airplane General / Glareshield Lighting Panel",
+    "description": "Turns on and off and regulates the brightness of associated chart holder lighting."
   },
   "ptt-fo-btn": {
-    "title": "First Officer PTT / Boom Mic Jack",
-    "system": "Glareshield Lighting & Communications Panel (First Officer)",
-    "description": "Auxiliary jack and push-to-talk (PTT) interface on the First Officer's glareshield panel for connecting the boom microphone or headset."
+    "title": "Glareshield PTT Buton",
+    "system": "Communications",
+    "description": "Allows VHF transmissions and voice communications to passengers."
   }
 }
