@@ -619,6 +619,17 @@ body {
   border-color: rgba(241, 196, 15, 0.5);
 }
 
+.flow-pill.follow-pill {
+  background: rgba(15, 17, 20, 0.75);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.flow-pill.follow-pill.active {
+  background: rgba(97, 218, 251, 0.18);
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.5);
+}
+
 .flow-exit-btn {
   background: rgba(231, 76, 60, 0.18);
   color: #fca5a5;
@@ -744,6 +755,12 @@ body {
 
 .flow-ctrl-btn.primary-next:hover:not(:disabled) {
   background: #1d4ed8;
+}
+
+.flow-ctrl-btn.follow-active {
+  background: rgba(97, 218, 251, 0.18);
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.5);
 }
 
 .flow-ctrl-btn.icon-only {

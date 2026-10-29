@@ -20,6 +20,8 @@ export default function FlowTopBar({
   onChangeRole,
   flowMode = 'step',
   onChangeMode,
+  followStep = true,
+  onToggleFollowStep,
 }) {
   const activeFlow = flows.find((f) => f.id === activeFlowId) ?? null;
 
@@ -99,6 +101,23 @@ export default function FlowTopBar({
               Entire Flow
             </button>
           </div>
+
+          {/* Auto-Center / Follow Active Step Toggle */}
+          {onToggleFollowStep && (
+            <button
+              type="button"
+              className={followStep ? 'flow-pill follow-pill active' : 'flow-pill follow-pill'}
+              onClick={onToggleFollowStep}
+              aria-pressed={followStep}
+              title={
+                followStep
+                  ? 'Follow Step is ON — Camera automatically centers the active step'
+                  : 'Follow Step is OFF — Camera stays where you place it'
+              }
+            >
+              ⌖ Follow: {followStep ? 'ON' : 'OFF'}
+            </button>
+          )}
 
           {/* Exit Flow Mode */}
           <button

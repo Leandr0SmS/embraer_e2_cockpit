@@ -69,6 +69,7 @@ export default function App() {
   const [flowRole, setFlowRole] = useState('ALL');
   const [flowMode, setFlowMode] = useState('step'); // 'step' | 'full'
   const [activeStepIndex, setActiveStepIndex] = useState(0);
+  const [followStep, setFollowStep] = useState(true);
   const [stepFocusTrigger, setStepFocusTrigger] = useState(0);
 
   // Parse hotspot center coordinates from painel_svg.svg once
@@ -186,11 +187,19 @@ export default function App() {
       return undefined;
     }
 
+    if (!followStep) {
+      return undefined;
+    }
+
     const rafId = window.requestAnimationFrame(() => {
       centerActiveStep();
     });
     return () => window.cancelAnimationFrame(rafId);
-  }, [activeFlowId, flowRole, activeStepIndex, stepFocusTrigger, centerActiveStep]);
+  }, [activeFlowId, flowRole, activeStepIndex, followStep, stepFocusTrigger, centerActiveStep]);
+
+  const handleToggleFollowStep = useCallback(() => {
+    setFollowStep((prev) => !prev);
+  }, []);
 
   const handleInspectHotspot = useCallback((hotspotId) => {
     const systemData = manualData[hotspotId];
@@ -288,6 +297,8 @@ export default function App() {
         onChangeRole={handleChangeRole}
         flowMode={flowMode}
         onChangeMode={handleChangeMode}
+        followStep={followStep}
+        onToggleFollowStep={handleToggleFollowStep}
       />
 
       <TransformWrapper
@@ -327,6 +338,8 @@ export default function App() {
           steps={filteredSteps}
           activeStepIndex={activeStepIndex}
           flowMode={flowMode}
+          followStep={followStep}
+          onToggleFollowStep={handleToggleFollowStep}
           onPrev={handlePrevStep}
           onNext={handleNextStep}
           onRestart={handleRestartFlow}

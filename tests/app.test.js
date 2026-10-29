@@ -39,7 +39,7 @@ describe('App.jsx & Modal.jsx structure', () => {
     expect(modalSrc).toContain('data.description');
   });
 
-  it('integrates Cockpit Flows components (FlowTopBar, FlowOverlaySvg, FlowBottomDock), bounded pan limits, and active step auto-centering', () => {
+  it('integrates Cockpit Flows components (FlowTopBar, FlowOverlaySvg, FlowBottomDock), bounded pan limits, and Follow Step toggle', () => {
     expect(appSrc).toContain('FlowTopBar');
     expect(appSrc).toContain('FlowOverlaySvg');
     expect(appSrc).toContain('FlowBottomDock');
@@ -48,6 +48,8 @@ describe('App.jsx & Modal.jsx structure', () => {
     expect(appSrc).toContain('limitToBounds={false}');
     expect(appSrc).toContain('clampPanPosition');
     expect(appSrc).toContain('centerActiveStep');
+    expect(appSrc).toContain('const [followStep, setFollowStep] = useState(true)');
+    expect(appSrc).toContain('onToggleFollowStep={handleToggleFollowStep}');
     expect(appSrc).toContain('onTransformed={handleTransformed}');
   });
 });

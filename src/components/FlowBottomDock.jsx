@@ -16,6 +16,8 @@ export default function FlowBottomDock({
   steps = [],
   activeStepIndex = 0,
   flowMode = 'step',
+  followStep = true,
+  onToggleFollowStep,
   onPrev,
   onNext,
   onRestart,
@@ -99,6 +101,22 @@ export default function FlowBottomDock({
           >
             {flowMode === 'step' ? 'Show All' : 'Step-by-Step'}
           </button>
+
+          {onToggleFollowStep && (
+            <button
+              type="button"
+              className={followStep ? 'flow-ctrl-btn follow-active' : 'flow-ctrl-btn'}
+              onClick={onToggleFollowStep}
+              aria-pressed={followStep}
+              title={
+                followStep
+                  ? 'Follow Step is ON — Camera centers each active step'
+                  : 'Follow Step is OFF — Manual camera positioning'
+              }
+            >
+              ⌖ Follow
+            </button>
+          )}
 
           {!collapsed && (
             <button
