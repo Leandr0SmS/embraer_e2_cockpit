@@ -2,6 +2,7 @@ import { useState, memo } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import Modal from './components/Modal';
 import manualData from './data/manual.json';
+import pkg from '../package.json';
 import painelSvgRaw from '../painel_svg.svg?raw';
 import './App.css';
 
@@ -77,6 +78,22 @@ export default function App() {
 
       {/* System Details Modal */}
       {activeSystem && <Modal data={activeSystem} onClose={closeModal} />}
+
+      {/* App Footer */}
+      <footer className="app-footer">
+        <span>
+          Developed by{' '}
+          <a
+            href="https://github.com/Leandr0SmS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Leandro Simões
+          </a>
+        </span>
+        <span className="footer-divider">•</span>
+        <span className="footer-version">Release v{pkg.version}</span>
+      </footer>
     </div>
   );
 }

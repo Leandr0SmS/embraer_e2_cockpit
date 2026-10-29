@@ -300,3 +300,121 @@ body {
     font-size: 0.8rem;
   }
 }
+
+/* App Footer */
+.app-footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.4em 1.3em;
+  background: rgba(24, 26, 30, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 0.1em solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #9ca3af;
+  font-size: 0.6rem;
+  white-space: nowrap;
+  z-index: 500;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.app-footer a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 600;
+  pointer-events: auto;
+  transition: color 0.15s ease;
+}
+
+.app-footer a:hover {
+  color: #9be7ff;
+  text-decoration: underline;
+}
+
+.footer-divider {
+  color: #4b5563;
+}
+
+.footer-version {
+  color: #d1d5db;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.6rem;
+}
+
+@media (max-width: 480px) {
+  .app-footer {
+    bottom: 6px;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    gap: 6px;
+  }
+
+  .footer-version {
+    font-size: 0.68rem;
+  }
+}
+
+/* App Footer */
+.app-footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background: rgba(24, 26, 30, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: #9ca3af;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  z-index: 500;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.app-footer a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 600;
+  pointer-events: auto;
+  transition: color 0.15s ease;
+}
+
+.app-footer a:hover {
+  color: #9be7ff;
+  text-decoration: underline;
+}
+
+.footer-divider {
+  color: #4b5563;
+}
+
+.footer-version {
+  color: #d1d5db;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.74rem;
+}
+
+@media (max-width: 480px) {
+  .app-footer {
+    bottom: 6px;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    gap: 6px;
+  }
+
+  .footer-version {
+    font-size: 0.68rem;
+  }
+}
