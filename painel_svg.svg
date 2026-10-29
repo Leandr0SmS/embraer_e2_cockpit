@@ -17980,5 +17980,15 @@
   <g id="lower-pedestal-panel" class="clickable"><title>Cockpit Voice Recorder / Maintenance Test Panel</title><rect class="hotspot-rect" x="9145" y="27609" width="1526" height="657" rx="25" /></g>
   <g id="lgwrn-gnd-prox-inhibits" class="clickable"><title>LG WRN / GROUND PROX INHIBITS Panel (LG WRN / TERR / FLAP OVRD)</title><rect class="hotspot-rect" x="9149" y="26221" width="1526" height="657" rx="25" /></g>
   <g id="cabin-non-essential" class="clickable"><title>CABIN NON ESSENTIAL Power Switch</title><rect class="hotspot-rect" x="9149" y="26916" width="1526" height="661" rx="25" /></g>
+  <g id="maintenance-logbook" class="clickable"><title>Aircraft Maintenance Logbook (Maintenance Status)</title><rect class="hotspot-rect" x="700" y="24400" width="1350" height="1200" rx="35" /></g>
+  <g id="oxygen_mask_capt" class="clickable"><title>Captain Oxygen Mask &amp; Regulator</title><rect class="hotspot-rect" x="1100" y="23050" width="1350" height="1100" rx="35" /></g>
+  <g id="nose_wheel_stearing" class="clickable"><title>Nosewheel Steering Handwheel (Tiller)</title><rect class="hotspot-rect" x="1500" y="21700" width="1500" height="1100" rx="35" /></g>
+  <g id="efb_capt" class="clickable"><title>Captain Electronic Flight Bag (EFB)</title><rect class="hotspot-rect" x="2300" y="19600" width="1600" height="1850" rx="35" /></g>
+  <g id="windowns_capt" class="clickable"><title>Captain Direct Vision Sliding Window</title><rect class="hotspot-rect" x="1400" y="12800" width="2200" height="1900" rx="35" /></g>
+  <g id="pitch_trim_nose_wheel_stearing_disconect_capt" class="clickable"><title>Captain Control Wheel — Pitch Trim &amp; AP / Nosewheel Steering Disconnect</title><rect class="hotspot-rect" x="4440" y="19650" width="1200" height="1100" rx="35" /></g>
+  <g id="pith_trim_fo" class="clickable"><title>First Officer Control Wheel — Pitch Trim &amp; AP / Nosewheel Steering Disconnect</title><rect class="hotspot-rect" x="15800" y="19650" width="1200" height="1100" rx="35" /></g>
+  <g id="efb_fo" class="clickable"><title>First Officer Electronic Flight Bag (EFB)</title><rect class="hotspot-rect" x="17500" y="19600" width="1600" height="1850" rx="35" /></g>
+  <g id="oxygen_mask_fo" class="clickable"><title>First Officer Oxygen Mask &amp; Regulator</title><rect class="hotspot-rect" x="18900" y="22200" width="1450" height="1150" rx="35" /></g>
+  <g id="windown_fo" class="clickable"><title>First Officer Direct Vision Sliding Window</title><rect class="hotspot-rect" x="17800" y="12800" width="2200" height="1900" rx="35" /></g>
  </g>
 </svg>

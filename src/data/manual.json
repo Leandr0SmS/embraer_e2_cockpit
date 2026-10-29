@@ -868,5 +868,55 @@
     "title": "Glareshield PTT Buton",
     "system": "Communications",
     "description": "Allows VHF transmissions and voice communications to passengers."
+  },
+  "maintenance-logbook": {
+    "title": "Aircraft Maintenance Logbook (Maintenance Status)",
+    "system": "Flight Deck Documentation & Dispatch",
+    "description": "The Aircraft Maintenance Logbook (Technical Log) is stowed on the left side console near the Captain's station. During the Internal Safety Inspection, both the Left Seat Pilot (LSP) and Right Seat Pilot (RSP) review the logbook to verify the airplane's maintenance status, check for open or deferred maintenance items (MEL/CDL), confirm airworthiness release signatures, and verify scheduled inspection and fluid uplift records prior to flight."
+  },
+  "oxygen_mask_capt": {
+    "title": "Captain Quick-Donning Oxygen Mask & Regulator",
+    "system": "Oxygen System / Crew Oxygen",
+    "description": "Stowed in the left lateral console box with a blink-type flow indicator and 100% / N (Normal) diluter-demand regulator. Pushing and holding the TEST/RESET lever verifies regulator flow (blinker turns yellow and extinguishes) and microphone audio; ensure the N/100% selector is set to 100%."
+  },
+  "nose_wheel_stearing": {
+    "title": "Nosewheel Steering Handwheel (Tiller)",
+    "system": "Landing Gear & Brakes / Nosewheel Steering",
+    "description": "Electronically controlled steer-by-wire handwheel located on the Captain's left side console. Pressing down and rotating the tiller commands up to ±76° of nosewheel steering angle during taxi and ground maneuvers."
+  },
+  "efb_capt": {
+    "title": "Captain Electronic Flight Bag (EFB)",
+    "system": "Flight Deck Documentation & Avionics",
+    "description": "Mounted on the left side console for the Left Seat Pilot (LSP). Used to review Operational Bulletins, aeronautical charts, aircraft manuals (AOM/AFM/QRH/MEL), and to compute and crosscheck takeoff/landing performance and loadsheet weight-and-balance data."
+  },
+  "windowns_capt": {
+    "title": "Captain Direct Vision (Sliding) Window",
+    "system": "Airplane General / Windows & Doors",
+    "description": "Left cockpit sliding window equipped with a locking lever and red unlocked-indication pin. Verified closed and locked (locking lever fully forward and red indicator pin retracted) before pushback and engine start."
+  },
+  "pitch_trim_nose_wheel_stearing_disconect_capt": {
+    "title": "Captain Control Wheel — Pitch Trim & AP / Steering Disconnect",
+    "system": "Flight Controls / Automatic Flight / Steering",
+    "description": "Located on the Captain's control wheel (yoke):\n- PITCH TRIM Switch: Twin rocker switches actuated simultaneously to command normal pitch trim up or down.\n- AP / TRIM / STEER Disengage Button: Pressing disengages the autopilot, interrupts pitch trim actuation, or disengages nosewheel steering (illuminating STEER OFF on EICAS during pushback)."
+  },
+  "pith_trim_fo": {
+    "title": "First Officer Control Wheel — Pitch Trim & AP / Steering Disconnect",
+    "system": "Flight Controls / Automatic Flight / Steering",
+    "description": "Located on the First Officer's control wheel (yoke):\n- PITCH TRIM Switch: Twin rocker switches actuated simultaneously to command normal pitch trim up or down (checked during the Before Start scan).\n- AP / TRIM / STEER Disengage Button: Pressing disengages the autopilot, interrupts pitch trim actuation, or disengages nosewheel steering."
+  },
+  "efb_fo": {
+    "title": "First Officer Electronic Flight Bag (EFB)",
+    "system": "Flight Deck Documentation & Avionics",
+    "description": "Mounted on the right side console for the Right Seat Pilot (RSP). Used to verify Airplane Manuals & Documents on board, review Operational Bulletins, display terminal/route charts, and independently compute and crosscheck takeoff/landing performance and loadsheet data."
+  },
+  "oxygen_mask_fo": {
+    "title": "First Officer Quick-Donning Oxygen Mask & Regulator",
+    "system": "Oxygen System / Crew Oxygen",
+    "description": "Stowed in the right lateral console box with a blink-type flow indicator and 100% / N (Normal) diluter-demand regulator. Pushing and holding the TEST/RESET lever verifies regulator flow (blinker turns yellow and extinguishes) and microphone audio; ensure the N/100% selector is set to 100%."
+  },
+  "windown_fo": {
+    "title": "First Officer Direct Vision (Sliding) Window",
+    "system": "Airplane General / Windows & Doors",
+    "description": "Right cockpit sliding window equipped with a locking lever and red unlocked-indication pin. Verified closed and locked (locking lever fully forward and red indicator pin retracted) before pushback and engine start."
   }
 }
