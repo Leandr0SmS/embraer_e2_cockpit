@@ -48,18 +48,20 @@ describe('index.html & Vite production CSP', () => {
     expect(existsSync(faviconFile)).toBe(true);
   });
 
-  it('injects a strict Content-Security-Policy meta tag during production builds', () => {
+  it('injects a strict Content-Security-Policy meta tag during production builds (with GA4 hash)', () => {
     const cspPlugin = viteConfig.plugins.find((p) => p && p.name === 'inject-csp');
     expect(cspPlugin).toBeDefined();
     expect(cspPlugin.apply).toBe('build');
 
-    const tags = cspPlugin.transformIndexHtml();
+    const tags = cspPlugin.transformIndexHtml(indexHtml);
     expect(tags).toHaveLength(1);
     expect(tags[0].tag).toBe('meta');
     expect(tags[0].attrs['http-equiv']).toBe('Content-Security-Policy');
-    expect(tags[0].attrs.content).toContain("script-src 'self'");
+    expect(tags[0].attrs.content).toContain("script-src 'self' https://www.googletagmanager.com 'sha256-");
+    expect(tags[0].attrs.content).not.toMatch(/script-src[^;]*'unsafe-inline'/);
     expect(tags[0].attrs.content).toContain("object-src 'none'");
     expect(tags[0].attrs.content).toContain("img-src 'self' data:");
+    expect(tags[0].attrs.content).toContain('https://*.google-analytics.com');
   });
 });
 
