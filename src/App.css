@@ -360,61 +360,91 @@ body {
   }
 }
 
-/* App Footer */
-.app-footer {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 14px;
-  background: rgba(24, 26, 30, 0.8);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
+.footer-info-btn {
+  background: transparent;
+  border: none;
   color: #9ca3af;
-  font-size: 0.78rem;
-  white-space: nowrap;
-  z-index: 500;
-  pointer-events: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.app-footer a {
-  color: #61dafb;
-  text-decoration: none;
-  font-weight: 600;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
   pointer-events: auto;
+  padding: 0;
+  text-decoration: underline;
   transition: color 0.15s ease;
 }
 
-.app-footer a:hover {
-  color: #9be7ff;
-  text-decoration: underline;
+.footer-info-btn:hover {
+  color: #ffffff;
 }
 
-.footer-divider {
-  color: #4b5563;
+/* Initial Welcome & Disclaimer Modal */
+.welcome-modal {
+  max-width: 540px;
 }
 
-.footer-version {
+.welcome-intro {
+  line-height: 1.55;
   color: #d1d5db;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.74rem;
+  font-size: 0.94rem;
+  margin-bottom: 12px;
 }
 
-@media (max-width: 480px) {
-  .app-footer {
-    bottom: 6px;
-    padding: 4px 10px;
-    font-size: 0.7rem;
-    gap: 6px;
-  }
+.welcome-list {
+  padding-left: 20px;
+  margin-bottom: 16px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
 
-  .footer-version {
-    font-size: 0.68rem;
-  }
+.welcome-list li {
+  margin-bottom: 6px;
+}
+
+.disclaimer-box {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #fde68a;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.disclaimer-title {
+  font-weight: 700;
+  color: #fbbf24;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.disclaimer-box p {
+  margin-bottom: 8px;
+}
+
+.disclaimer-box p:last-child {
+  margin-bottom: 0;
+}
+
+.accept-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.accept-btn:hover {
+  background: #1d4ed8;
+}
+
+.accept-btn:active {
+  transform: scale(0.98);
 }

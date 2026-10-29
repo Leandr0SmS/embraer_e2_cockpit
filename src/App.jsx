@@ -38,6 +38,7 @@ const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
 
 export default function App() {
   const [activeSystem, setActiveSystem] = useState(null);
+  const [showDisclaimer, setShowDisclaimer] = useState(true);
 
   // Event delegation: listens to clicks on any element with class="clickable" inside the SVG
   const handleSvgClick = (e) => {
@@ -59,6 +60,10 @@ export default function App() {
     setActiveSystem(null);
   };
 
+  const closeDisclaimer = () => {
+    setShowDisclaimer(false);
+  };
+
   return (
     <div className="app-container">
       <TransformWrapper
@@ -76,6 +81,81 @@ export default function App() {
         </TransformComponent>
       </TransformWrapper>
 
+      {/* Initial Welcome & Disclaimer Modal */}
+      {showDisclaimer && (
+        <div className="modal-overlay" onClick={closeDisclaimer}>
+          <div
+            className="modal-content welcome-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="modal-header">
+              <div className="modal-header-text">
+                <span className="modal-badge">Interactive Study Aid</span>
+                <h2>Embraer E2 Cockpit Panel</h2>
+              </div>
+              <button
+                type="button"
+                className="modal-close-icon"
+                onClick={closeDisclaimer}
+                aria-label="Close dialog"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div className="modal-body">
+              <p className="welcome-intro">
+                Welcome to the interactive <strong>Embraer E-Jets E2</strong>{' '}
+                cockpit study guide. Explore the Overhead Panel, Glareshield,
+                Main Instrument Panel, and Control Pedestal:
+              </p>
+
+              <ul className="welcome-list">
+                <li>
+                  <strong>Pan &amp; Zoom:</strong> Scroll or pinch to zoom in on
+                  any panel, and drag to move around the flight deck.
+                </li>
+                <li>
+                  <strong>Inspect Controls:</strong> Click any highlighted
+                  switch, button, knob, lever, or display to read its system
+                  overview and function.
+                </li>
+              </ul>
+
+              <div className="disclaimer-box">
+                <div className="disclaimer-title">
+                  ⚠️ Disclaimer — For Informational Use Only
+                </div>
+                <p>
+                  This application is an independent educational reference tool
+                  and is <strong>not</strong> an official publication. System
+                  descriptions may be simplified and can vary by aircraft
+                  configuration, serial number, or avionics load.
+                </p>
+                <p>
+                  <strong>
+                    Do not use for real-world flight operations. Always consult
+                    the official, current approved Airplane Flight Manual (AFM),
+                    Aircraft Operating Manual (AOM), QRH, and your operator&apos;s
+                    manuals for actual airplane operation.
+                  </strong>
+                </p>
+              </div>
+            </div>
+
+            <div className="modal-actions">
+              <button
+                type="button"
+                className="accept-btn"
+                onClick={closeDisclaimer}
+              >
+                I Understand — Enter Cockpit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* System Details Modal */}
       {activeSystem && <Modal data={activeSystem} onClose={closeModal} />}
 
@@ -84,7 +164,7 @@ export default function App() {
         <span>
           Developed by{' '}
           <a
-            href="https://github.com/Leandr0SmS"
+            href="https://leandrosms.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -93,6 +173,14 @@ export default function App() {
         </span>
         <span className="footer-divider">•</span>
         <span className="footer-version">Release v{pkg.version}</span>
+        <span className="footer-divider">•</span>
+        <button
+          type="button"
+          className="footer-info-btn"
+          onClick={() => setShowDisclaimer(true)}
+        >
+          Disclaimer
+        </button>
       </footer>
     </div>
   );
