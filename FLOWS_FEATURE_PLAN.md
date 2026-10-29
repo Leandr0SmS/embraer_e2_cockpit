@@ -342,7 +342,7 @@ git commit -m "Feat(flows): Add progressive FlowBottomDock checklist component (
 
 ---
 
-### [ ] Step 5 — Main App Integration, Keyboard Shortcuts, Responsive CSS & Final Tests
+### [x] Step 5 — Main App Integration, Keyboard Shortcuts, Responsive CSS & Final Tests (COMPLETED)
 **Goal**: Wire `FlowTopBar`, `FlowOverlaySvg`, and `FlowBottomDock` into `src/App.jsx` and `src/App.css`, add keyboard navigation (`ArrowRight` / `Space` for next step, `ArrowLeft` for previous step), and update tests.
 
 **Implementation Details for Next Agent/Developer**:

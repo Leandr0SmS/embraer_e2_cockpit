@@ -1,12 +1,17 @@
-import { useState, memo } from 'react';
+import { useState, useMemo, useEffect, useCallback, memo } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import Modal from './components/Modal';
+import FlowTopBar, { filterFlowStepsByRole } from './components/FlowTopBar';
+import FlowOverlaySvg from './components/FlowOverlaySvg';
+import FlowBottomDock, { getVisibleFlowSteps } from './components/FlowBottomDock';
+import { extractHotspotCenters } from './utils/hotspotCenters';
 import manualData from './data/manual.json';
+import flowsData from './data/flows.json';
 import pkg from '../package.json';
 import painelSvgRaw from '../painel_svg.svg?raw';
 import './App.css';
 
-// Memoized so opening/closing the modal does not re-parse the inline SVG
+// Memoized so opening/closing the modal or stepping through flows does not re-parse the inline SVG
 const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
   // Sync title dynamically on hover so tooltip always strictly matches manual.json
   const handleSvgMouseOver = (e) => {
@@ -40,6 +45,103 @@ export default function App() {
   const [activeSystem, setActiveSystem] = useState(null);
   const [showDisclaimer, setShowDisclaimer] = useState(true);
 
+  // Cockpit Flows state
+  const [activeFlowId, setActiveFlowId] = useState(null);
+  const [flowRole, setFlowRole] = useState('ALL');
+  const [flowMode, setFlowMode] = useState('step'); // 'step' | 'full'
+  const [activeStepIndex, setActiveStepIndex] = useState(0);
+
+  // Parse hotspot center coordinates from painel_svg.svg once
+  const hotspotCenters = useMemo(() => extractHotspotCenters(painelSvgRaw), []);
+
+  const activeFlow = useMemo(
+    () => flowsData.flows.find((f) => f.id === activeFlowId) ?? null,
+    [activeFlowId]
+  );
+
+  const filteredSteps = useMemo(
+    () => filterFlowStepsByRole(activeFlow, flowRole),
+    [activeFlow, flowRole]
+  );
+
+  const visibleSteps = useMemo(
+    () => getVisibleFlowSteps(filteredSteps, flowMode, activeStepIndex),
+    [filteredSteps, flowMode, activeStepIndex]
+  );
+
+  const handleSelectFlow = useCallback((flowId) => {
+    setActiveFlowId(flowId);
+    setFlowRole('ALL');
+    setActiveStepIndex(0);
+  }, []);
+
+  const handleChangeRole = useCallback((role) => {
+    setFlowRole(role);
+    setActiveStepIndex(0);
+  }, []);
+
+  const handleChangeMode = useCallback((mode) => {
+    setFlowMode(mode);
+  }, []);
+
+  const handleNextStep = useCallback(() => {
+    setActiveStepIndex((prev) =>
+      filteredSteps.length > 0 ? Math.min(prev + 1, filteredSteps.length - 1) : 0
+    );
+  }, [filteredSteps.length]);
+
+  const handlePrevStep = useCallback(() => {
+    setActiveStepIndex((prev) => Math.max(prev - 1, 0));
+  }, []);
+
+  const handleRestartFlow = useCallback(() => {
+    setActiveStepIndex(0);
+  }, []);
+
+  const handleSelectStep = useCallback(
+    (index) => {
+      if (flowMode === 'step' && index === activeStepIndex && index < filteredSteps.length - 1) {
+        // Clicking the pulsing active badge in Step-by-Step mode advances to the next arrow
+        setActiveStepIndex(index + 1);
+      } else {
+        setActiveStepIndex(index);
+      }
+    },
+    [flowMode, activeStepIndex, filteredSteps.length]
+  );
+
+  const handleInspectHotspot = useCallback((hotspotId) => {
+    const systemData = manualData[hotspotId];
+    if (systemData) {
+      setActiveSystem(systemData);
+    }
+  }, []);
+
+  // Keyboard navigation (Right/Left arrows) when a Cockpit Flow is active
+  useEffect(() => {
+    if (!activeFlow || activeSystem || showDisclaimer) return undefined;
+
+    const handleKeyDown = (e) => {
+      const tag = e.target?.tagName;
+      if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        if (flowMode === 'step') {
+          handleNextStep();
+        }
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        if (flowMode === 'step') {
+          handlePrevStep();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activeFlow, activeSystem, showDisclaimer, flowMode, handleNextStep, handlePrevStep]);
+
   // Event delegation: listens to clicks on any element with class="clickable" inside the SVG
   const handleSvgClick = (e) => {
     const clickedTarget = e.target.closest('.clickable');
@@ -65,7 +167,18 @@ export default function App() {
   };
 
   return (
-    <div className="app-container">
+    <div className={activeFlow ? 'app-container flow-active' : 'app-container'}>
+      {/* Upper Cockpit Flows Menu */}
+      <FlowTopBar
+        flows={flowsData.flows}
+        activeFlowId={activeFlowId}
+        onSelectFlow={handleSelectFlow}
+        flowRole={flowRole}
+        onChangeRole={handleChangeRole}
+        flowMode={flowMode}
+        onChangeMode={handleChangeMode}
+      />
+
       <TransformWrapper
         initialScale={1}
         minScale={0.5}
@@ -77,9 +190,35 @@ export default function App() {
           wrapperStyle={{ width: '100vw', height: '100vh' }}
           contentStyle={{ width: '100vw', height: '100vh' }}
         >
-          <InlineCockpitSvg onSvgClick={handleSvgClick} />
+          <div className="cockpit-stage">
+            <InlineCockpitSvg onSvgClick={handleSvgClick} />
+            {activeFlow && (
+              <FlowOverlaySvg
+                steps={visibleSteps}
+                centersMap={hotspotCenters}
+                activeStepIndex={activeStepIndex}
+                onSelectStep={handleSelectStep}
+              />
+            )}
+          </div>
         </TransformComponent>
       </TransformWrapper>
+
+      {/* Progressive Bottom Checklist Dock for Active Cockpit Flow */}
+      {activeFlow && (
+        <FlowBottomDock
+          flow={activeFlow}
+          steps={filteredSteps}
+          activeStepIndex={activeStepIndex}
+          flowMode={flowMode}
+          onPrev={handlePrevStep}
+          onNext={handleNextStep}
+          onRestart={handleRestartFlow}
+          onChangeMode={handleChangeMode}
+          onSelectStep={(idx) => setActiveStepIndex(idx)}
+          onInspectHotspot={handleInspectHotspot}
+        />
+      )}
 
       {/* Initial Welcome & Disclaimer Modal */}
       {showDisclaimer && (
@@ -119,6 +258,11 @@ export default function App() {
                   <strong>Inspect Controls:</strong> Click any highlighted
                   switch, button, knob, lever, or display to read its system
                   overview and function.
+                </li>
+                <li>
+                  <strong>Cockpit Flows:</strong> Use the top <em>Flows</em> menu
+                  to step through all 11 standard procedures with animated
+                  scan-flow arrows and a progressive checklist dock.
                 </li>
               </ul>
 

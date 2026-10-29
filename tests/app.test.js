@@ -38,6 +38,14 @@ describe('App.jsx & Modal.jsx structure', () => {
     expect(modalSrc).toContain('data.title');
     expect(modalSrc).toContain('data.description');
   });
+
+  it('integrates Cockpit Flows components (FlowTopBar, FlowOverlaySvg, FlowBottomDock) and hotspot center extraction', () => {
+    expect(appSrc).toContain('FlowTopBar');
+    expect(appSrc).toContain('FlowOverlaySvg');
+    expect(appSrc).toContain('FlowBottomDock');
+    expect(appSrc).toContain('extractHotspotCenters(painelSvgRaw)');
+    expect(appSrc).toContain('cockpit-stage');
+  });
 });
 
 describe('index.html & Vite production CSP', () => {
