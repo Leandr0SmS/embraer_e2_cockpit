@@ -2,7 +2,7 @@
   "flows": [
     {
       "id": "internal-safety-inspection",
-      "title": "INTERNAL SAFETY INSPECTION",
+      "title": "Internal Safety Inspection",
       "roles": ["LSP", "RSP"],
       "steps": [
         { "role": "LSP", "step": 1, "hotspotId": "mfd-left", "dx": -450, "dy": -350, "item": "Maintenance Status", "action": "CHECK" },

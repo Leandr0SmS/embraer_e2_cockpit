@@ -11,6 +11,23 @@ import pkg from '../package.json';
 import painelSvgRaw from '../painel_svg.svg?raw';
 import './App.css';
 
+// Clamps pan coordinates so at least 35% of the viewport always keeps the cockpit visible
+// while allowing generous panning in all 4 directions (even at 1x scale) to clear the flow docks.
+export function clampPanPosition(positionX, positionY, scale, viewportWidth, viewportHeight) {
+  const keepX = Math.min(viewportWidth * 0.35, viewportWidth * scale * 0.7);
+  const keepY = Math.min(viewportHeight * 0.35, viewportHeight * scale * 0.7);
+
+  const minX = keepX - viewportWidth * scale;
+  const maxX = viewportWidth - keepX;
+  const minY = keepY - viewportHeight * scale;
+  const maxY = viewportHeight - keepY;
+
+  return {
+    x: Math.max(minX, Math.min(maxX, positionX)),
+    y: Math.max(minY, Math.min(maxY, positionY)),
+  };
+}
+
 // Memoized so opening/closing the modal or stepping through flows does not re-parse the inline SVG
 const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
   // Sync title dynamically on hover so tooltip always strictly matches manual.json
@@ -166,6 +183,35 @@ export default function App() {
     setShowDisclaimer(false);
   };
 
+  // Keep the cockpit panel within soft boundaries so the user can never pan it completely off-screen
+  const handleTransformed = useCallback((ref, state) => {
+    const wrapper = ref?.instance?.wrapperComponent;
+    if (!wrapper) return;
+    const width = wrapper.offsetWidth || window.innerWidth;
+    const height = wrapper.offsetHeight || window.innerHeight;
+    if (!width || !height) return;
+
+    const { x, y } = clampPanPosition(
+      state.positionX,
+      state.positionY,
+      state.scale,
+      width,
+      height
+    );
+
+    if (Math.abs(x - state.positionX) > 0.5 || Math.abs(y - state.positionY) > 0.5) {
+      const dx = x - state.positionX;
+      const dy = y - state.positionY;
+      ref.instance.transformState.positionX = x;
+      ref.instance.transformState.positionY = y;
+      if (ref.instance.startCoords) {
+        ref.instance.startCoords.x -= dx;
+        ref.instance.startCoords.y -= dy;
+      }
+      ref.instance.applyTransformation();
+    }
+  }, []);
+
   return (
     <div className={activeFlow ? 'app-container flow-active' : 'app-container'}>
       {/* Upper Cockpit Flows Menu */}
@@ -184,6 +230,10 @@ export default function App() {
         minScale={0.5}
         maxScale={12}
         centerOnInit={true}
+        limitToBounds={false}
+        centerZoomedOut={false}
+        panning={{ velocityDisabled: true }}
+        onTransformed={handleTransformed}
         wheel={{ step: 0.15 }}
       >
         <TransformComponent

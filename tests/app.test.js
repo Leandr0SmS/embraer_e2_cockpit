@@ -39,12 +39,15 @@ describe('App.jsx & Modal.jsx structure', () => {
     expect(modalSrc).toContain('data.description');
   });
 
-  it('integrates Cockpit Flows components (FlowTopBar, FlowOverlaySvg, FlowBottomDock) and hotspot center extraction', () => {
+  it('integrates Cockpit Flows components (FlowTopBar, FlowOverlaySvg, FlowBottomDock) and bounded pan limits', () => {
     expect(appSrc).toContain('FlowTopBar');
     expect(appSrc).toContain('FlowOverlaySvg');
     expect(appSrc).toContain('FlowBottomDock');
     expect(appSrc).toContain('extractHotspotCenters(painelSvgRaw)');
     expect(appSrc).toContain('cockpit-stage');
+    expect(appSrc).toContain('limitToBounds={false}');
+    expect(appSrc).toContain('clampPanPosition');
+    expect(appSrc).toContain('onTransformed={handleTransformed}');
   });
 });
 

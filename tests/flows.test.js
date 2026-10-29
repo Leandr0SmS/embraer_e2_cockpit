@@ -13,7 +13,7 @@ const centers = extractHotspotCenters(svg);
 const { flows } = flowsData;
 
 const EXPECTED_FLOW_TITLES = [
-  'INTERNAL SAFETY INSPECTION',
+  'Internal Safety Inspection',
   'Power up',
   'Before Start (to the line)',
   'Before Start (Below the line)',
