@@ -21,7 +21,7 @@
         { "role": "RSP", "step": 13, "hotspotId": "speedbrake-lever", "item": "SPEEDBRAKE Lever", "action": "CLOSE" },
         { "role": "RSP", "step": 14, "hotspotId": "rat-manual-deploy-lever", "item": "RAT MANUAL DEPLOY Lever", "action": "STOW" },
         { "role": "RSP", "step": 15, "hotspotId": "flap-lever", "item": "SLAT/FLAP Lever", "action": "VERIFY POS" },
-        { "role": "RSP", "step": 16, "hotspotId": "mcdu-right-keys", "dx": 5500, "dy": 1200, "item": "CIRCUIT BREAKERS Panels", "action": "CHECK" }
+        { "role": "RSP", "step": 16, "hotspotId": "cb_panel_fo", "item": "CIRCUIT BREAKERS Panels", "action": "CHECK" }
       ]
     },
     {

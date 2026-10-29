@@ -918,5 +918,15 @@
     "title": "First Officer Direct Vision (Sliding) Window",
     "system": "Airplane General / Windows & Doors",
     "description": "Right cockpit sliding window equipped with a locking lever and red unlocked-indication pin. Verified closed and locked (locking lever fully forward and red indicator pin retracted) before pushback and engine start."
+  },
+  "cb_panel_capt": {
+    "title": "Captain Circuit Breakers Panel (Left Console)",
+    "system": "Electrical — Circuit Breakers",
+    "description": "Thermal circuit breaker panel located on the inner wall of the Captain's left side console, immediately to the right (inboard) of the Captain's oxygen mask box. Protects primary and essential AC/DC flight deck feeders not managed as virtual Electronic Circuit Breakers (ECBs). Verify all circuit breakers are pushed in (closed) unless tagged in accordance with the MEL."
+  },
+  "cb_panel_fo": {
+    "title": "First Officer Circuit Breakers Panel (Right Console)",
+    "system": "Electrical — Circuit Breakers",
+    "description": "Thermal circuit breaker panel located on the inner wall of the First Officer's right side console, immediately to the left (inboard) of the First Officer's oxygen mask box. Checked during Step 16 of the Internal Safety Inspection (CIRCUIT BREAKERS Panels — CHECK) to verify all thermal circuit breakers are pushed in (closed)."
   }
 }

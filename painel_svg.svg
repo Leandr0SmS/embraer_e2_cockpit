@@ -17990,5 +17990,7 @@
   <g id="efb_fo" class="clickable"><title>First Officer Electronic Flight Bag (EFB)</title><rect class="hotspot-rect" x="17500" y="19600" width="1600" height="1850" rx="35" /></g>
   <g id="oxygen_mask_fo" class="clickable"><title>First Officer Oxygen Mask &amp; Regulator</title><rect class="hotspot-rect" x="18900" y="22200" width="1450" height="1150" rx="35" /></g>
   <g id="windown_fo" class="clickable"><title>First Officer Direct Vision Sliding Window</title><rect class="hotspot-rect" x="17800" y="12800" width="2200" height="1900" rx="35" /></g>
+  <g id="cb_panel_capt" class="clickable"><title>Captain Circuit Breakers Panel (Left Console)</title><rect class="hotspot-rect" x="2550" y="23050" width="1350" height="1100" rx="35" /></g>
+  <g id="cb_panel_fo" class="clickable"><title>First Officer Circuit Breakers Panel (Right Console)</title><rect class="hotspot-rect" x="17400" y="22200" width="1400" height="1150" rx="35" /></g>
  </g>
 </svg>

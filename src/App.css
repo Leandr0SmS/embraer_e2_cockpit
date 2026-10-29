@@ -112,7 +112,9 @@ body {
 #pith_trim_fo:not(:hover) .hotspot-rect,
 #efb_fo:not(:hover) .hotspot-rect,
 #oxygen_mask_fo:not(:hover) .hotspot-rect,
-#windown_fo:not(:hover) .hotspot-rect {
+#windown_fo:not(:hover) .hotspot-rect,
+#cb_panel_capt:not(:hover) .hotspot-rect,
+#cb_panel_fo:not(:hover) .hotspot-rect {
   fill: transparent;
   stroke: transparent;
 }
