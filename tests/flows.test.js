@@ -5,6 +5,7 @@ import flowsData from '../src/data/flows.json';
 import manual from '../src/data/manual.json';
 import { extractHotspotCenters, resolveStepPoint } from '../src/utils/hotspotCenters.js';
 import { shortenSegment, buildFlowGeometry, BADGE_RADIUS } from '../src/components/FlowOverlaySvg.jsx';
+import { filterFlowStepsByRole } from '../src/components/FlowTopBar.jsx';
 
 const svg = readFileSync(new URL('../painel_svg.svg', import.meta.url), 'utf8');
 const centers = extractHotspotCenters(svg);
@@ -109,5 +110,23 @@ describe('FlowOverlaySvg geometry helpers', () => {
     const latestArrows = arrows.filter((a) => a.isLatest);
     expect(latestArrows).toHaveLength(1);
     expect(latestArrows[0].toIndex).toBe(3);
+  });
+});
+
+describe('FlowTopBar role filtering', () => {
+  it('returns all steps when roleFilter is ALL or not in flow.roles', () => {
+    const powerUp = flows.find((f) => f.id === 'power-up');
+    expect(filterFlowStepsByRole(powerUp, 'ALL')).toHaveLength(19);
+    expect(filterFlowStepsByRole(powerUp, 'PM')).toHaveLength(19);
+  });
+
+  it('filters steps accurately by LSP or RSP role', () => {
+    const powerUp = flows.find((f) => f.id === 'power-up');
+    const lspSteps = filterFlowStepsByRole(powerUp, 'LSP');
+    const rspSteps = filterFlowStepsByRole(powerUp, 'RSP');
+    expect(lspSteps).toHaveLength(2);
+    expect(lspSteps.every((s) => s.role === 'LSP')).toBe(true);
+    expect(rspSteps).toHaveLength(17);
+    expect(rspSteps.every((s) => s.role === 'RSP')).toBe(true);
   });
 });

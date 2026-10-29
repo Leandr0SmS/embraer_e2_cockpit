@@ -292,7 +292,7 @@ git commit -m "Feat(flows): Add SVG arrow and numbered badge overlay component (
 
 ---
 
-### [ ] Step 3 — Upper Flow Selector Menu (`src/components/FlowTopBar.jsx`)
+### [x] Step 3 — Upper Flow Selector Menu (`src/components/FlowTopBar.jsx`) (COMPLETED)
 **Goal**: Add the top floating navigation bar where the user chooses any of the 11 flows, filters by crew role, and toggles between **Step-by-Step** and **Full Flow** modes.
 
 **Implementation Details for Next Agent/Developer**:
