@@ -102,6 +102,21 @@ body {
   stroke-width: 28px;
 }
 
+/* Side-console, window, and yoke hotspots outside the drawn panel stay invisible until hovered */
+#maintenance-logbook:not(:hover) .hotspot-rect,
+#oxygen_mask_capt:not(:hover) .hotspot-rect,
+#nose_wheel_stearing:not(:hover) .hotspot-rect,
+#efb_capt:not(:hover) .hotspot-rect,
+#windowns_capt:not(:hover) .hotspot-rect,
+#pitch_trim_nose_wheel_stearing_disconect_capt:not(:hover) .hotspot-rect,
+#pith_trim_fo:not(:hover) .hotspot-rect,
+#efb_fo:not(:hover) .hotspot-rect,
+#oxygen_mask_fo:not(:hover) .hotspot-rect,
+#windown_fo:not(:hover) .hotspot-rect {
+  fill: transparent;
+  stroke: transparent;
+}
+
 .clickable:hover {
   opacity: 0.9;
 }
