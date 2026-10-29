@@ -755,9 +755,9 @@
     "description": "1 - YAW TRIM KNOB\n- Actuates the yaw trim to left or right.\n- Manual trim commands are limited to 3 s.\nNOTE: The Yaw Trim function is inhibited while the airplane is onthe ground.\n2 - ROLL TRIM SWITCH\n- Actuates the roll trim to left or right.\n- Manual trim commands are limited to 3 s.\nNOTE: The Roll Trim function is inhibited while the airplane is on the ground or in flight with the AP engaged.\n3 - PITCH TRIM BACK-UP SWITCH\n- Actuates the pitch trim to up or down.\n- Manual trim commands are limited to 3 s.\n- Operation of the switch while the autopilot is engaged causes the autopilot to disengage. \n4 - PITCH TRIM SYS 1 CUTOUT BUTTON (GUARDED) PUSH IN: disables the HSCU channel 1 PUSH OUT: enables the HSCU channel 1. \n5 - PITCH TRIM SYS 2 CUTOUT BUTTON (GUARDED) PUSH IN: disables the HSCU channel 2 PUSH OUT: enables the HSCU channel 2. NOTE: After three consecutive disconnections, the respective HSCU channel becomes unavailable until the next FCC reset, or after maintenance intervention."
   },
   "cockpit-door-panel": {
-    "title": "COCKPIT DOOR Control Panel (OPEN / INHIB / TEST)",
-    "system": "Cabin & Security",
-    "description": "Controls electronic locking/unlocking and access inhibition of the reinforced cockpit door. Includes OPEN, INHIB, and TEST pushbuttons/indicators."
+    "title": "COCKPIT DOOR Control Panel",
+    "system": "Airplane General / REINFORCED COCKPIT DOOR",
+    "description": "1 - TEST BUTTON\n- Continually tests the DING-DONG alarm while the test button is pressed, regardless of audio selection. \n\n2 - UNLOCKED INDICATION\n- Turns on when door is unlocked.\n- Starts flashing when the emergency entry button on the passenger cabin control panel is pressed.\n- Turns off when the INHIB button is pressed.\n\n3 - INHIB BUTTON PUSHED IN:\n- turns the amber stripped bar on, and\n- inhibits the emergency entry button, located on the passenger cabin control panel, command for 500 s. If  the INHIB BUTTON is not pressed up to 30 s after the emergency entry button, located on the passenger cabin control panel, is pressed the cockpit door opens. \n\n4 - LOCK BUTTON (GUARDED)\n- Controls the reinforced cockpit door lock.\n- Deactivates the inhibition control.\n- Resets the DING-DONG alarm and the emergency entry command."
   },
   "cockpit-printer": {
     "title": "Cockpit Thermal Printer",
