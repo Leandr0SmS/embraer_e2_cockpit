@@ -32,7 +32,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 52px 16px 36px;
-  transition: padding 0.2s ease;
 }
 
 .svg-wrapper svg {
@@ -51,7 +50,6 @@ body {
   padding: 52px 16px 36px;
   pointer-events: none;
   z-index: 5;
-  transition: padding 0.2s ease;
 }
 
 /* When a Cockpit Flow is active, reserve top & bottom viewport space for FlowTopBar and FlowBottomDock */

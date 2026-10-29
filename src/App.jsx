@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useCallback, memo } from 'react';
+import { useState, useMemo, useEffect, useCallback, useRef, memo } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import Modal from './components/Modal';
 import FlowTopBar, { filterFlowStepsByRole } from './components/FlowTopBar';
@@ -11,11 +11,12 @@ import pkg from '../package.json';
 import painelSvgRaw from '../painel_svg.svg?raw';
 import './App.css';
 
-// Clamps pan coordinates so at least 35% of the viewport always keeps the cockpit visible
-// while allowing generous panning in all 4 directions (even at 1x scale) to clear the flow docks.
+// Clamps pan coordinates so at least 25% of the viewport always keeps the cockpit visible
+// while allowing any step badge (even at the top of the Overhead or bottom of the Pedestal)
+// to be centered in the screen.
 export function clampPanPosition(positionX, positionY, scale, viewportWidth, viewportHeight) {
-  const keepX = Math.min(viewportWidth * 0.35, viewportWidth * scale * 0.7);
-  const keepY = Math.min(viewportHeight * 0.35, viewportHeight * scale * 0.7);
+  const keepX = Math.min(viewportWidth * 0.25, viewportWidth * scale * 0.6);
+  const keepY = Math.min(viewportHeight * 0.25, viewportHeight * scale * 0.6);
 
   const minX = keepX - viewportWidth * scale;
   const maxX = viewportWidth - keepX;
@@ -61,12 +62,14 @@ const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
 export default function App() {
   const [activeSystem, setActiveSystem] = useState(null);
   const [showDisclaimer, setShowDisclaimer] = useState(true);
+  const transformRef = useRef(null);
 
   // Cockpit Flows state
   const [activeFlowId, setActiveFlowId] = useState(null);
   const [flowRole, setFlowRole] = useState('ALL');
   const [flowMode, setFlowMode] = useState('step'); // 'step' | 'full'
   const [activeStepIndex, setActiveStepIndex] = useState(0);
+  const [stepFocusTrigger, setStepFocusTrigger] = useState(0);
 
   // Parse hotspot center coordinates from painel_svg.svg once
   const hotspotCenters = useMemo(() => extractHotspotCenters(painelSvgRaw), []);
@@ -123,9 +126,71 @@ export default function App() {
       } else {
         setActiveStepIndex(index);
       }
+      setStepFocusTrigger((prev) => prev + 1);
     },
     [flowMode, activeStepIndex, filteredSteps.length]
   );
+
+  // Automatically center the active flow step badge in the unobstructed viewport area
+  const centerActiveStep = useCallback(() => {
+    const api = transformRef.current;
+    const wrapper = api?.instance?.wrapperComponent;
+    const content = api?.instance?.contentComponent;
+    if (!api || !wrapper || !content) return;
+
+    const badgeEl = content.querySelector('.flow-badge.active');
+    if (!badgeEl) return;
+
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const contentRect = content.getBoundingClientRect();
+    const badgeRect = badgeEl.getBoundingClientRect();
+    if (!wrapperRect.width || !wrapperRect.height) return;
+
+    const currentScale = api.instance.transformState.scale || 1;
+    const badgeCenterX = badgeRect.left + badgeRect.width / 2;
+    const badgeCenterY = badgeRect.top + badgeRect.height / 2;
+
+    // Unscaled coordinates of the active badge inside contentComponent
+    const localX = (badgeCenterX - contentRect.left) / currentScale;
+    const localY = (badgeCenterY - contentRect.top) / currentScale;
+
+    // Center between the bottom of FlowTopBar and the top of FlowBottomDock
+    const topBarRect = document.querySelector('.flow-top-bar')?.getBoundingClientRect();
+    const bottomDockRect = document.querySelector('.flow-bottom-dock')?.getBoundingClientRect();
+    const safeTop = topBarRect ? Math.max(wrapperRect.top, topBarRect.bottom) : wrapperRect.top;
+    const safeBottom = bottomDockRect
+      ? Math.min(wrapperRect.bottom, bottomDockRect.top)
+      : wrapperRect.bottom;
+
+    const targetViewportX = wrapperRect.width / 2;
+    const targetViewportY = (safeTop + safeBottom) / 2 - wrapperRect.top;
+
+    const targetScale = Math.max(currentScale, 1);
+    const rawX = targetViewportX - localX * targetScale;
+    const rawY = targetViewportY - localY * targetScale;
+
+    const { x, y } = clampPanPosition(
+      rawX,
+      rawY,
+      targetScale,
+      wrapperRect.width,
+      wrapperRect.height
+    );
+
+    api.setTransform(x, y, targetScale, 260, 'easeOut');
+  }, []);
+
+  useEffect(() => {
+    if (!activeFlowId) {
+      transformRef.current?.resetTransform(240);
+      return undefined;
+    }
+
+    const rafId = window.requestAnimationFrame(() => {
+      centerActiveStep();
+    });
+    return () => window.cancelAnimationFrame(rafId);
+  }, [activeFlowId, flowRole, activeStepIndex, stepFocusTrigger, centerActiveStep]);
 
   const handleInspectHotspot = useCallback((hotspotId) => {
     const systemData = manualData[hotspotId];
@@ -226,6 +291,7 @@ export default function App() {
       />
 
       <TransformWrapper
+        ref={transformRef}
         initialScale={1}
         minScale={0.5}
         maxScale={12}
@@ -265,7 +331,10 @@ export default function App() {
           onNext={handleNextStep}
           onRestart={handleRestartFlow}
           onChangeMode={handleChangeMode}
-          onSelectStep={(idx) => setActiveStepIndex(idx)}
+          onSelectStep={(idx) => {
+            setActiveStepIndex(idx);
+            setStepFocusTrigger((prev) => prev + 1);
+          }}
           onInspectHotspot={handleInspectHotspot}
         />
       )}
