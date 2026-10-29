@@ -2,13 +2,29 @@
 
 An interactive web application for studying the **Embraer E-Jets E2** cockpit panels (Overhead, Glareshield, Main Instrument Panel, and Control Pedestal). Built with **React**, **Vite**, and **react-zoom-pan-pinch**.
 
+> [!WARNING]
+> **⚠️ Disclaimer — For Informational Use Only**
+>
+> This application is an independent educational reference tool and is **not** an official publication. System descriptions may be simplified and can vary by aircraft configuration, serial number, or avionics load.
+>
+> **Do not use for real-world flight operations. Always consult the official, current approved Airplane Flight Manual (AFM), Aircraft Operating Manual (AOM), QRH, and your operator's manuals for actual airplane operation.**
+
+---
+
+## How to Use
+
+Welcome to the interactive **Embraer E-Jets E2** cockpit study guide. Explore the Overhead Panel, Glareshield, Main Instrument Panel, and Control Pedestal:
+
+- **Pan & Zoom:** Scroll or pinch to zoom in on any panel, and drag to move around the flight deck.
+- **Inspect Controls:** Click any highlighted switch, button, knob, lever, or display to read its system overview and function.
+
 ---
 
 ## Features
 
 - **High-Resolution Vector Cockpit Panel**: Full SVG cockpit layout (`painel_svg.svg`) with crisp rendering at any zoom level (up to `12x` zoom).
 - **Smooth Pan & Zoom**: Mouse wheel zoom, pinch-to-zoom, and click-and-drag panning across all cockpit zones.
-- **142+ Interactive Controls**: Clickable hotspots over switches, guarded buttons, rotary selectors, fire handles, displays, MCDUs, and flight controls.
+- **153+ Interactive Controls**: Clickable hotspots over switches, guarded buttons, rotary selectors, fire handles, displays, MCDUs, and flight controls.
 - **Instant System Reference Modal**: Clicking any highlighted control displays its **Panel / System Category**, **Title**, and **Operational Description** from `src/data/manual.json`.
 
 ---
@@ -68,5 +84,5 @@ All control titles, system categories, and descriptions are stored in [`src/data
 
 ## Inspirations
 
--[Embraer](https://embraer.com)
--[FreeCodeCamp](https://www.freecodecamp.org/learn/)
+- [Embraer](https://embraer.com)
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/)
