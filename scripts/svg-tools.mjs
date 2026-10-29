@@ -169,6 +169,16 @@ export function cleanSvg(svg) {
   }
 
   const normalized = svg.replace(/\r\n/g, '\n');
+  if (
+    !normalized.includes('BoundingBox') &&
+    !normalized.includes('TextShapeIndex') &&
+    !normalized.includes('com.sun.star') &&
+    !normalized.includes('EmbeddedBulletChars') &&
+    !normalized.includes('ooo:')
+  ) {
+    return normalized;
+  }
+
   let drawing = normalized.slice(0, markerIdx);
   const hotspots = normalized.slice(markerIdx);
 
