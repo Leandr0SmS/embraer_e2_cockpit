@@ -74,27 +74,38 @@ export function findActiveContent(svg) {
 }
 
 /**
+ * Compacts SVG path data whitespace without altering geometry.
+ */
+function compactPathData(pathData) {
+  return pathData
+    .trim()
+    .replace(/\s*,\s*/g, ',')
+    .replace(/\s*([a-zA-Z])\s*/g, '$1')
+    .replace(/\s+/g, ' ');
+}
+
+/**
  * Extracts all hotspot IDs from the interactive-hotspots group.
  */
 export function hotspotIds(svg) {
   const markerIdx = svg.indexOf(HOTSPOT_MARKER);
-  if (markerIdx === -1) return [];
-  const hotspotsSection = svg.slice(markerIdx);
-  const matches = [...hotspotsSection.matchAll(/<g\s+id="([^"]+)"\s+class="clickable"/g)];
+  const target = markerIdx === -1 ? svg : svg.slice(markerIdx);
+  const matches = [...target.matchAll(/<g\s+id="([^"]+)"\s+class="clickable"/g)];
   return matches.map((m) => m[1]);
 }
 
 /**
- * Extracts drawing primitives (paths, embedded images, and non-bounding-box rects)
- * for structural equality comparison.
+ * Extracts rendered drawing primitives (paths, embedded images, and non-bounding-box rects
+ * outside <defs>) for structural equality comparison.
  */
 export function drawingPrimitives(svg) {
   const primitives = [];
+  // Strip <defs>...</defs> blocks so non-rendered clipPaths and bullet templates are excluded
+  const withoutDefs = svg.replace(/<defs\b[^>]*>[\s\S]*?<\/defs>/gi, '');
 
-  // Match all <path ...>, <image ...>, and <rect ...> elements
   const regex = /<(path|image|rect)\b([^>]*)\/?>/gi;
   let match;
-  while ((match = regex.exec(svg)) !== null) {
+  while ((match = regex.exec(withoutDefs)) !== null) {
     const tag = match[1].toLowerCase();
     const attrs = match[2];
 
@@ -105,7 +116,7 @@ export function drawingPrimitives(svg) {
 
     if (tag === 'path') {
       const dMatch = attrs.match(/\bd="([^"]+)"/i);
-      const d = dMatch ? dMatch[1].replace(/\s+/g, ' ').trim() : '';
+      const d = dMatch ? compactPathData(dMatch[1]) : '';
       primitives.push({ type: 'path', d });
     } else if (tag === 'image') {
       const hrefMatch = attrs.match(/(?:xlink:)?href="([^"]+)"/i);
@@ -129,6 +140,26 @@ export function drawingPrimitives(svg) {
 }
 
 /**
+ * Unwraps <g> elements that have no attributes left, preserving <g ...> elements with attributes.
+ */
+function unwrapBareGroups(svgFragment) {
+  const keepStack = [];
+  return svgFragment.replace(/<\/?g\b[^>]*>/gi, (tag) => {
+    if (tag.startsWith('</')) {
+      const keep = keepStack.pop();
+      return keep ? tag : '';
+    }
+    const isSelfClosing = tag.endsWith('/>');
+    const isBare = /^<g\s*\/?>$/i.test(tag);
+    if (isSelfClosing) {
+      return isBare ? '' : tag;
+    }
+    keepStack.push(!isBare);
+    return isBare ? '' : tag;
+  });
+}
+
+/**
  * Strips LibreOffice / OpenOffice bloat from an SVG string, preserving drawing and hotspots.
  */
 export function cleanSvg(svg) {
@@ -137,12 +168,7 @@ export function cleanSvg(svg) {
     throw new Error(`interactive-hotspots group missing: could not find ${HOTSPOT_MARKER}`);
   }
 
-  // If already clean (like painel_svg.svg), normalize line endings and return
   const normalized = svg.replace(/\r\n/g, '\n');
-  if (!normalized.includes('BoundingBox') && !normalized.includes('TextShapeIndex') && !normalized.includes('com.sun.star')) {
-    return normalized;
-  }
-
   let drawing = normalized.slice(0, markerIdx);
   const hotspots = normalized.slice(markerIdx);
 
@@ -159,29 +185,28 @@ export function cleanSvg(svg) {
   // Remove BoundingBox rects
   drawing = drawing.replace(/<rect class="BoundingBox"[^>]*\/>/gi, '');
 
-  // Remove LibreOffice namespace declarations
+  // Remove LibreOffice namespace declarations and attributes
   drawing = drawing.replace(/\s*xmlns:ooo="[^"]*"/gi, '');
   drawing = drawing.replace(/\s*xmlns:presentation="[^"]*"/gi, '');
   drawing = drawing.replace(/\s*ooo:[a-z0-9-]+="[^"]*"/gi, '');
 
-  // Remove LibreOffice classes and wrapper elements
-  drawing = drawing.replace(/\s*class="(?:com\.sun\.star\.[^"]+|Slide|Page|Graphic|Master_Slide|Background|BackgroundObjects)"/gi, '');
+  // Remove LibreOffice classes
+  drawing = drawing.replace(
+    /\s*class="(?:com\.sun\.star\.[^"]+|ClipPathGroup|SlideGroup|Slide|Page|Graphic|Master_Slide|Background|BackgroundObjects)"/gi,
+    '',
+  );
 
-  // Remove auto-generated id attributes on elements without specific semantic meaning (e.g. id="id3", container-id1)
+  // Remove auto-generated id attributes
   drawing = drawing.replace(/\s*id="container-id\d+"/gi, '');
   drawing = drawing.replace(/\s*id="id[0-9]+"/gi, '');
 
-  // Compact path data whitespace
-  drawing = drawing.replace(/\bd="([^"]+)"/g, (match, pathData) => {
-    const compacted = pathData
-      .trim()
-      .replace(/\s*,\s*/g, ',')
-      .replace(/\s*([a-zA-Z])\s*/g, '$1')
-      .replace(/\s+/g, ' ');
-    return `d="${compacted}"`;
-  });
+  // Unwrap bare <g>...</g> tags that have no attributes left
+  drawing = unwrapBareGroups(drawing);
 
-  // Clean empty or whitespace-only lines
+  // Compact path data whitespace
+  drawing = drawing.replace(/\bd="([^"]+)"/g, (_, pathData) => `d="${compactPathData(pathData)}"`);
+
+  // Clean empty or whitespace-only lines and drop indentation
   const lines = drawing
     .split('\n')
     .map((l) => l.trim())
@@ -189,4 +214,3 @@ export function cleanSvg(svg) {
 
   return lines.join('\n') + '\n' + hotspots;
 }
-

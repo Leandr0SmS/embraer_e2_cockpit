@@ -47,4 +47,36 @@ describe('hotspots <-> manual.json', () => {
     const missing = groups.filter(([, , body]) => !/class="hotspot-rect"/.test(body)).map(([, id]) => id);
     expect(missing).toEqual([]);
   });
+
+  it('every hotspot group contains a non-empty <title> tooltip', () => {
+    const groups = [...hotspotSection.matchAll(/<g\s+id="([^"]+)"\s+class="clickable">([\s\S]*?)<\/g>/g)];
+    const missingTitle = groups
+      .filter(([, , body]) => {
+        const m = body.match(/<title>([\s\S]*?)<\/title>/);
+        return !m || m[1].trim() === '';
+      })
+      .map(([, id]) => id);
+    expect(missingTitle).toEqual([]);
+  });
+
+  it('every .hotspot-rect has valid geometry (positive width/height or non-empty path d)', () => {
+    const groups = [...hotspotSection.matchAll(/<g\s+id="([^"]+)"\s+class="clickable">([\s\S]*?)<\/g>/g)];
+    const invalid = groups
+      .filter(([, , body]) => {
+        const rectMatch = body.match(/<rect\s+class="hotspot-rect"[^>]*>/);
+        if (rectMatch) {
+          const w = Number(rectMatch[0].match(/\bwidth="([^"]+)"/)?.[1]);
+          const h = Number(rectMatch[0].match(/\bheight="([^"]+)"/)?.[1]);
+          return !(w > 0 && h > 0);
+        }
+        const pathMatch = body.match(/<path\s+class="hotspot-rect"[^>]*>/);
+        if (pathMatch) {
+          const d = pathMatch[0].match(/\bd="([^"]+)"/)?.[1]?.trim();
+          return !d;
+        }
+        return true;
+      })
+      .map(([, id]) => id);
+    expect(invalid).toEqual([]);
+  });
 });

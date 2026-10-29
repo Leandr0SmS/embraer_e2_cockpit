@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "check:svg": "node scripts/clean-svg.mjs --check",
-  "prebuild": "node scripts/clean-svg.mjs --check",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:svg": "node scripts/clean-svg.mjs --check",
+    "prebuild": "node scripts/clean-svg.mjs --check",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
   }
 }
