@@ -268,7 +268,7 @@ git commit -m "Feat(flows): Add 11 cockpit flows dataset, hotspot center extract
 
 ---
 
-### [ ] Step 2 — SVG Vector Arrow & Numbered Badge Overlay (`src/components/FlowOverlaySvg.jsx`)
+### [x] Step 2 — SVG Vector Arrow & Numbered Badge Overlay (`src/components/FlowOverlaySvg.jsx`) (COMPLETED)
 **Goal**: Render the numbered circles (`①`, `②`, `③`...) and directional arrows (`→`) inside the cockpit `TransformComponent` using an inline `<svg viewBox="400 8700 20600 20100">`.
 
 **Implementation Details for Next Agent/Developer**:

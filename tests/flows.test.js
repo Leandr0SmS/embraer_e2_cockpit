@@ -1,9 +1,10 @@
-// Data integrity & coordinate resolution tests for Cockpit Flows (src/data/flows.json & src/utils/hotspotCenters.js)
+// Data integrity & coordinate resolution tests for Cockpit Flows (src/data/flows.json, src/utils/hotspotCenters.js, src/components/FlowOverlaySvg.jsx)
 import { readFileSync } from 'node:fs';
 import { describe, it, expect } from 'vitest';
 import flowsData from '../src/data/flows.json';
 import manual from '../src/data/manual.json';
 import { extractHotspotCenters, resolveStepPoint } from '../src/utils/hotspotCenters.js';
+import { shortenSegment, buildFlowGeometry, BADGE_RADIUS } from '../src/components/FlowOverlaySvg.jsx';
 
 const svg = readFileSync(new URL('../painel_svg.svg', import.meta.url), 'utf8');
 const centers = extractHotspotCenters(svg);
@@ -79,3 +80,34 @@ describe('flows.json & hotspotCenters.js', () => {
   });
 });
 
+describe('FlowOverlaySvg geometry helpers', () => {
+  it('shortens arrow segments so start and end points sit outside BADGE_RADIUS', () => {
+    const p1 = { x: 1000, y: 1000 };
+    const p2 = { x: 2000, y: 1000 };
+    const seg = shortenSegment(p1, p2);
+    expect(seg).not.toBeNull();
+    expect(seg.x1).toBeGreaterThan(p1.x + BADGE_RADIUS);
+    expect(seg.x2).toBeLessThan(p2.x - BADGE_RADIUS);
+    expect(seg.y1).toBe(1000);
+    expect(seg.y2).toBe(1000);
+  });
+
+  it('returns null when two points are identical', () => {
+    expect(shortenSegment({ x: 500, y: 500 }, { x: 500, y: 500 })).toBeNull();
+  });
+
+  it('builds role-grouped arrow sequences and marks the active step & latest arrow', () => {
+    const powerUpFlow = flows.find((f) => f.id === 'power-up');
+    const { nodes, arrows } = buildFlowGeometry(powerUpFlow.steps, centers, 3);
+
+    expect(nodes).toHaveLength(powerUpFlow.steps.length);
+    // 2 LSP steps (1 arrow) + 17 RSP steps (16 arrows) = 17 arrows total
+    expect(arrows).toHaveLength(17);
+
+    // Active step index 3 should be marked active and its incoming arrow marked isLatest
+    expect(nodes[3].isActive).toBe(true);
+    const latestArrows = arrows.filter((a) => a.isLatest);
+    expect(latestArrows).toHaveLength(1);
+    expect(latestArrows[0].toIndex).toBe(3);
+  });
+});
