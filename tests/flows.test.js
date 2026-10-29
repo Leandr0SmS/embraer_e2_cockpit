@@ -6,6 +6,7 @@ import manual from '../src/data/manual.json';
 import { extractHotspotCenters, resolveStepPoint } from '../src/utils/hotspotCenters.js';
 import { shortenSegment, buildFlowGeometry, BADGE_RADIUS } from '../src/components/FlowOverlaySvg.jsx';
 import { filterFlowStepsByRole } from '../src/components/FlowTopBar.jsx';
+import { getVisibleFlowSteps } from '../src/components/FlowBottomDock.jsx';
 
 const svg = readFileSync(new URL('../painel_svg.svg', import.meta.url), 'utf8');
 const centers = extractHotspotCenters(svg);
@@ -128,5 +129,19 @@ describe('FlowTopBar role filtering', () => {
     expect(lspSteps.every((s) => s.role === 'LSP')).toBe(true);
     expect(rspSteps).toHaveLength(17);
     expect(rspSteps.every((s) => s.role === 'RSP')).toBe(true);
+  });
+});
+
+describe('FlowBottomDock progressive step visibility', () => {
+  const shutdownSteps = flows.find((f) => f.id === 'shutdown').steps;
+
+  it('progressively reveals steps 0..activeStepIndex in step mode', () => {
+    expect(getVisibleFlowSteps(shutdownSteps, 'step', 0)).toHaveLength(1);
+    expect(getVisibleFlowSteps(shutdownSteps, 'step', 2)).toHaveLength(3);
+    expect(getVisibleFlowSteps(shutdownSteps, 'step', 99)).toHaveLength(shutdownSteps.length);
+  });
+
+  it('reveals all steps immediately in full mode', () => {
+    expect(getVisibleFlowSteps(shutdownSteps, 'full', 0)).toHaveLength(shutdownSteps.length);
   });
 });

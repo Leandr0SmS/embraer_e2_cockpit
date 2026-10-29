@@ -317,7 +317,7 @@ git commit -m "Feat(flows): Add upper FlowTopBar menu for selecting flows, roles
 
 ---
 
-### [ ] Step 4 — Progressive Bottom Action List (`src/components/FlowBottomDock.jsx`)
+### [x] Step 4 — Progressive Bottom Action List (`src/components/FlowBottomDock.jsx`) (COMPLETED)
 **Goal**: Display the docked bottom checklist panel that progressively appends each action row (`① Item .......... ACTION`) as each arrow appears in Step-by-Step mode, or shows all rows in Full Flow mode.
 
 **Implementation Details for Next Agent/Developer**:
