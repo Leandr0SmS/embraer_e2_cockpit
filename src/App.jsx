@@ -165,7 +165,7 @@ export default function App() {
     const targetViewportX = wrapperRect.width / 2;
     const targetViewportY = (safeTop + safeBottom) / 2 - wrapperRect.top;
 
-    const targetScale = Math.max(currentScale, 1);
+    const targetScale = currentScale;
     const rawX = targetViewportX - localX * targetScale;
     const rawY = targetViewportY - localY * targetScale;
 
