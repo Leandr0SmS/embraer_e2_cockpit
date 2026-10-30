@@ -7,7 +7,7 @@
       "steps": [
         { "role": "LSP", "step": 1, "hotspotId": "maintenance-logbook", "dx": -260, "dy": 0, "item": "Maintenance Status", "action": "CHECK" },
         { "role": "RSP", "step": 1, "hotspotId": "maintenance-logbook", "dx": 260, "dy": 0, "item": "Maintenance Status", "action": "CHECK" },
-        { "role": "RSP", "step": 2, "hotspotId": "ckpt-dome-sw", "dx": -900, "dy": -3800, "item": "Cockpit Emer Equip", "action": "CHECK" },
+        { "role": "RSP", "step": 2, "hotspotId": "maintenance-logbook", "dx": 0, "dy": 260, "item": "Cockpit Emer Equip", "action": "CHECK" },
         { "role": "RSP", "step": 3, "hotspotId": "elec-tru-ess-knob", "item": "ELECTRIC Panel", "action": "SET" },
         { "role": "RSP", "step": 4, "hotspotId": "fuel-xfeed-knob", "item": "FUEL Panel", "action": "CHECK" },
         { "role": "RSP", "step": 5, "hotspotId": "pax-no-smk-sw", "item": "PASSENGER SIGNS Panel", "action": "CHECK" },

@@ -34,20 +34,20 @@
     "system": "Flight Management System (FMS)",
     "description": "The MCDU allows radio tuning, PFD radio display setup, manual TRS, engine takeoff set, avionics display setup and test, performance initialization, flight planning, access to electronics CBs, and others."
   },
-  "dvdr-test-btn": {
-    "title": "DVDR Test Button",
-    "system": "Flight Instruments/COMM/NAV/FMS",
-    "description": "Simultaneously tests all CVR and FDR functions on both DVDR."
-  },
   "dvdr-erase-btn": {
     "title": "CVR Erase Button",
     "system": "Flight Instruments/COMM/NAV/FMS",
     "description": " Erases the recorded audio information, provided that the airplane is on the ground and Emergency/Parking Brake is applied."
   },
-  "elt-switch": {
-    "title": "ELT Selector Switch (ARM / ON)",
-    "system": "ELT",
-    "description": "Controls the Emergency Locator Transmitter.\nARM: Automatically transmits on impact.\nON: Manually activates emergency transmission."
+  "dvdr-test-btn": {
+    "title": "DVDR Test Button",
+    "system": "Flight Instruments/COMM/NAV/FMS",
+    "description": "Simultaneously tests all CVR and FDR functions on both DVDR."
+  },
+  "dvdr-headphone-jack": {
+    "title": "HEADPHONE Jack",
+    "system": "Flight Instruments/COMM/NAV/FMS",
+    "description": "Monitors tone transmission during test or during playback of voice audio."
   },
   "elec-idg1-knob": {
     "title": "IDG 1 Selector Knob",
@@ -639,20 +639,20 @@
     "system": "Landing Gear & Brakes",
     "description": " AUTOBRAKE SELECTOR KNOB (ROTARY ACTION)\n- RTO: selects RTO deceleration mode.\n- OFF: deactivates the autobrake.\n- LO: selects the low deceleration rate.\n- MED: selects the medium deceleration rate.\n- HI: selects the high deceleration rate."
   },
-  "ldg-gear-lever": {
-    "title": "Landing Gear Control Lever (UP / OFF / DN)",
-    "system": "Landing Gear & Brakes",
-    "description": "UP: Commands landing gear retraction and door closure.\nOFF: Depressurizes the landing gear hydraulic lines.\nDN: Commands landing gear extension and down-locking."
+  "elt-switch": {
+    "title": "ELT Selector Switch (ARM / ON)",
+    "system": "ELT",
+    "description": "Controls the Emergency Locator Transmitter.\nARM: Automatically transmits on impact.\nON: Manually activates emergency transmission."
   },
   "emer-parking-brake-light": {
     "title": "EMER/PARKING BRAKE Light",
     "system": "Landing Gear & Brakes",
     "description": " ON: the indicator illuminates when the a minimum pressure is identified.\nThe indicator does not provide advice to prevent locked wheel and skid conditions."
   },
-  "gear-ovrd-btn": {
-    "title": "DN LCK REL (Downlock Release) Button & NOSEWHEEL STEERING Switch",
+  "ldg-gear-lever": {
+    "title": "Landing Gear Control Lever",
     "system": "Landing Gear & Brakes",
-    "description": "DN LOCK REL: Downlock Release Button (Momentary Action). Mechanically overrides the landing gear lever lock to allow gear retraction in emergency conditions.\n\nSTEERING: Disengages nosewheel steering system."
+    "description": "1 - LANDING GEAR LEVER\nUP: Commands landing gear retraction and door closure.\nOFF: Depressurizes the landing gear hydraulic lines.\nDN: Commands landing gear extension and down-locking.\n\n2 - DOWNLOCK RELEASE BUTTON (MOMENTARY ACTION)\n- Manually releases the LG lever lock."
   },
   "ads-heater-btn": {
     "title": "ADS HEATER BUTTON",
