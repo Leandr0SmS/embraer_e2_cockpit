@@ -695,7 +695,7 @@
     "description": "Guarded rotary selector.\nSTOP: commands the FADEC to shut down the engine, provided the associated thrust lever is in the IDLE position.\nRUN: normal position for engine operation.\nSTART: (momentary action) initiates the engine start sequence."
   },
   "eng2-start-knob": {
-    "title": "Engine 1 START/STOP Selector",
+    "title": "Engine 2 START/STOP Selector",
     "system": "Engine",
     "description": "Guarded rotary selector.\nSTOP: commands the FADEC to shut down the engine, provided the associated thrust lever is in the IDLE position.\nRUN: normal position for engine operation.\nSTART: (momentary action) initiates the engine start sequence."
   },

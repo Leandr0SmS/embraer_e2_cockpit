@@ -17955,10 +17955,10 @@
   <g id="flight-control-mode" class="clickable"><title>FLIGHT CONTROL MODE Panel (ELEVATOR / AILERON / RUDDER)</title><rect class="hotspot-rect" x="9924" y="19325" width="1530" height="879" rx="25" /></g>
   <g id="mcdu-left-keys" class="clickable"><title>Left MCDU Keypad &amp; Function Buttons (MCDU 1)</title><rect class="hotspot-rect" x="8390" y="20398" width="1492" height="990" rx="25" /></g>
   <g id="mcdu-right-keys" class="clickable"><title>Right MCDU Keypad &amp; Function Buttons (MCDU 2)</title><rect class="hotspot-rect" x="11487" y="20398" width="1492" height="990" rx="25" /></g>
-  <g id="eng1-ign-knob" class="clickable"><title>Engine 1 Ignition Selector Knob (OFF / AUTO / OVRD)</title><rect class="hotspot-rect" x="10190" y="20470" width="262" height="226" rx="40" /></g>
-  <g id="eng2-ign-knob" class="clickable"><title>Engine 2 Ignition Selector Knob (OFF / AUTO / OVRD)</title><rect class="hotspot-rect" x="10925" y="20470" width="262" height="226" rx="40" /></g>
-  <g id="eng1-start-knob" class="clickable"><title>Engine 1 Start / Stop Selector Knob (STOP / RUN / START)</title><rect class="hotspot-rect" x="10190" y="21053" width="266" height="271" rx="40" /></g>
-  <g id="eng2-start-knob" class="clickable"><title>Engine 2 Start / Stop Selector Knob (STOP / RUN / START)</title><rect class="hotspot-rect" x="10921" y="21053" width="271" height="271" rx="40" /></g>
+  <g id="eng1-start-knob" class="clickable"><title>Engine 1 Start / Stop Selector Knob (STOP / RUN / START)</title><rect class="hotspot-rect" x="10190" y="20470" width="262" height="226" rx="40" /></g>
+  <g id="eng2-start-knob" class="clickable"><title>Engine 2 Start / Stop Selector Knob (STOP / RUN / START)</title><rect class="hotspot-rect" x="10925" y="20470" width="262" height="226" rx="40" /></g>
+  <g id="eng1-ign-knob" class="clickable"><title>Engine 1 Ignition Selector Knob (OFF / AUTO / OVRD)</title><rect class="hotspot-rect" x="10190" y="21053" width="266" height="271" rx="40" /></g>
+  <g id="eng2-ign-knob" class="clickable"><title>Engine 2 Ignition Selector Knob (OFF / AUTO / OVRD)</title><rect class="hotspot-rect" x="10921" y="21053" width="271" height="271" rx="40" /></g>
   <g id="to-config-btn" class="clickable"><title>T/O CONFIG (Takeoff Configuration Test) Pushbutton</title><rect class="hotspot-rect" x="10369" y="21461" width="631" height="296" rx="25" /></g>
   <g id="ccd-pedestal-left" class="clickable"><title>Left Cursor Control Device (CCD 1 Touchpad &amp; Keys)</title><rect class="hotspot-rect" x="8475" y="21580" width="997" height="2025" rx="30" /></g>
   <g id="ccd-pedestal-right" class="clickable"><title>Right Cursor Control Device (CCD 2 Touchpad &amp; Keys)</title><rect class="hotspot-rect" x="11897" y="21580" width="997" height="2025" rx="30" /></g>
