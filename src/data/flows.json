@@ -310,57 +310,86 @@
           "role": "LSP",
           "step": 1,
           "hotspotId": "efb_capt",
-          "item": "Operational Bulletins",
-          "action": "Review"
+          "item": "Airfield Data",
+          "dx": -350,
+          "dy": -350,
+          "action": "Obtain"
         },
         {
           "role": "LSP",
           "step": 2,
+          "hotspotId": "efb_capt",
+          "item": "Takeoff Data Perf",
+          "dx": 350,
+          "dy": -350,
+          "action": "Compute/Crosscheck"
+        },
+        {
+          "role": "LSP",
+          "step": 3,
+          "hotspotId": "efb_capt",
+          "item": "Nav charts",
+          "dx": 350,
+          "dy": 350,
+          "action": "Set"
+        },
+        {
+          "role": "LSP",
+          "step": 4,
+          "hotspotId": "efb_capt",
+          "dx": -350,
+          "dy": 350,
+          "item": "OB/FOLs",
+          "action": "Review"
+        },
+        {
+          "role": "LSP",
+          "step": 5,
           "hotspotId": "oxygen_mask_capt",
           "item": "Oxy Masks & Regul.",
           "action": "Check/100%"
         },
         {
           "role": "LSP",
-          "step": 3,
+          "step": 6,
           "hotspotId": "flood-storm-capt-knob",
           "item": "Glareshield Lights ctrl panel",
           "action": "As Required"
         },
         {
           "role": "LSP",
-          "step": 4,
+          "step": 7,
           "hotspotId": "dcu1-hsi-btn",
           "item": "Display Ctrl panel",
           "action": "SET"
         },
         {
           "role": "LSP",
-          "step": 5,
+          "step": 8,
           "hotspotId": "reversionary-left-knobs",
           "item": "Reversionary panel",
           "action": "SET"
         },
         {
           "role": "LSP",
-          "step": 6,
+          "step": 9,
           "hotspotId": "pfd-left",
           "item": "Flight Instruments",
           "action": "SET and X-Check"
         },
         {
           "role": "LSP",
-          "step": 7,
+          "step": 10,
           "hotspotId": "mfd-left",
           "dx": -400,
           "dy": 300,
-          "item": "Systems Status Page",
+          "item": "Systems STATUS Page",
           "action": "Check",
           "note": "After that, leave it on the synoptic flight controls."
         },
         {
           "role": "LSP",
-          "step": 8,
+          "step": 11,
           "hotspotId": "mfd-left",
           "dx": 400,
           "dy": -300,
@@ -369,14 +398,14 @@
         },
         {
           "role": "LSP",
-          "step": 9,
+          "step": 12,
           "hotspotId": "autobrake-panel",
           "item": "Autobrake Selector",
           "action": "RTO"
         },
         {
           "role": "LSP",
-          "step": 10,
+          "step": 13,
           "hotspotId": "flight-control-mode",
           "dx": -300,
           "dy": 0,
@@ -385,7 +414,7 @@
         },
         {
           "role": "LSP",
-          "step": 11,
+          "step": 14,
           "hotspotId": "flight-control-mode",
           "dx": 300,
           "dy": 0,
@@ -394,7 +423,7 @@
         },
         {
           "role": "LSP",
-          "step": 12,
+          "step": 15,
           "hotspotId": "eng1-ign-knob",
           "dx": 360,
           "dy": 0,
@@ -403,35 +432,35 @@
         },
         {
           "role": "LSP",
-          "step": 13,
+          "step": 16,
           "hotspotId": "eicas-full-btn",
           "item": "EICAS Full Button",
           "action": "Check"
         },
         {
           "role": "LSP",
-          "step": 14,
+          "step": 17,
           "hotspotId": "speedbrake-lever",
           "item": "Speedbrake Lever",
           "action": "Closed"
         },
         {
           "role": "LSP",
-          "step": 15,
+          "step": 18,
           "hotspotId": "thrust-levers",
           "item": "Thrust Levers",
           "action": "Idle"
         },
         {
           "role": "LSP",
-          "step": 16,
+          "step": 19,
           "hotspotId": "acp-left-panel",
           "item": "Audio Control Panel",
           "action": "as Required"
         },
         {
           "role": "LSP",
-          "step": 17,
+          "step": 20,
           "hotspotId": "trim-panel",
           "dx": -300,
           "dy": 0,
@@ -441,7 +470,7 @@
         },
         {
           "role": "LSP",
-          "step": 18,
+          "step": 21,
           "hotspotId": "mcdu-left-screen",
           "item": "MCDU",
           "action": "SET and X-Check"
