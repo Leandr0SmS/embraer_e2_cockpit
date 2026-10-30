@@ -17816,15 +17816,15 @@
   <g id="dvdr-headphone-jack" class="clickable"><title>HEADPHONE Jack</title><rect class="hotspot-rect" x="6340" y="9185" width="257" height="190" rx="25" /></g>
   <g id="elec-idg1-knob" class="clickable"><title>IDG 1 Selector Knob</title><rect class="hotspot-rect" x="5224" y="10011" width="393" height="327" rx="40" /></g>
   <g id="elec-idg2-knob" class="clickable"><title>IDG 2 Selector Knob</title><rect class="hotspot-rect" x="6105" y="10011" width="394" height="327" rx="40" /></g>
-  <g id="elec-apu-gen-btn" class="clickable"><title>APU GEN Button</title><rect class="hotspot-rect" x="4918" y="10774" width="361" height="265" rx="25" /></g>
-  <g id="elec-gpu-btn" class="clickable"><title>Ground Power Unit (GPU) Button</title><rect class="hotspot-rect" x="5666" y="10842" width="393" height="288" rx="25" /></g>
-  <g id="elec-ac-bus-ties-knob" class="clickable"><title>AC BUS TIES Selector Knob</title><rect class="hotspot-rect" x="6447" y="10774" width="358" height="265" rx="40" /></g>
+  <g id="elec-gpu-btn" class="clickable"><title>Ground Power Unit (GPU) Button</title><rect class="hotspot-rect" x="4918" y="10774" width="361" height="265" rx="25" /></g>
+  <g id="elec-ac-bus-ties-knob" class="clickable"><title>AC BUS TIES Selector Knob</title><rect class="hotspot-rect" x="5666" y="10842" width="393" height="288" rx="25" /></g>
+  <g id="elec-apu-gen-btn" class="clickable"><title>APU GEN Button</title><rect class="hotspot-rect" x="6447" y="10774" width="358" height="265" rx="40" /></g>
   <g id="elec-tru1-knob" class="clickable"><title>TRU 1 Selector Switch</title><rect class="hotspot-rect" x="5003" y="11305" width="329" height="285" rx="40" /></g>
   <g id="elec-tru-ess-knob" class="clickable"><title>TRU ESS Selector Switch</title><rect class="hotspot-rect" x="5698" y="11305" width="327" height="285" rx="40" /></g>
   <g id="elec-tru2-knob" class="clickable"><title>TRU 2 SelectorSwitch</title><rect class="hotspot-rect" x="6393" y="11305" width="327" height="285" rx="40" /></g>
   <g id="elec-batt1-knob" class="clickable"><title>BATT 1 Knob</title><rect class="hotspot-rect" x="4971" y="12082" width="393" height="325" rx="40" /></g>
-  <g id="elec-batt2-knob" class="clickable"><title>BATT 2 Knob</title><rect class="hotspot-rect" x="5698" y="12063" width="327" height="283" rx="40" /></g>
-  <g id="elec-dc-bus-ties-knob" class="clickable"><title>DC Bus Ties Selector Knob</title><rect class="hotspot-rect" x="6358" y="12082" width="393" height="325" rx="40" /></g>
+  <g id="elec-dc-bus-ties-knob" class="clickable"><title>DC Bus Ties Selector Knob</title><rect class="hotspot-rect" x="5698" y="12063" width="327" height="283" rx="40" /></g>
+  <g id="elec-batt2-knob" class="clickable"><title>BATT 2 Knob</title><rect class="hotspot-rect" x="6358" y="12082" width="393" height="325" rx="40" /></g>
   <g id="ckpt-ovhd-lt-knob" class="clickable"><title>OVHD PNL Controller</title><rect class="hotspot-rect" x="4985" y="12811" width="341" height="224" rx="40" /></g>
   <g id="ckpt-main-lt-knob" class="clickable"><title>MAIN PNL Controller</title><rect class="hotspot-rect" x="5690" y="12811" width="342" height="224" rx="40" /></g>
   <g id="ckpt-ped-lt-knob" class="clickable"><title>PEDESTAL Controller</title><rect class="hotspot-rect" x="6394" y="12811" width="341" height="224" rx="40" /></g>
@@ -17839,15 +17839,15 @@
   <g id="fuel-xfeed-knob" class="clickable"><title>Fuel XFEED Selector</title><rect class="hotspot-rect" x="8121" y="10947" width="394" height="326" rx="40" /></g>
   <g id="fuel-ac-pump1-btn" class="clickable"><title>Fuel AC PUMP 1 Knob</title><rect class="hotspot-rect" x="7478" y="11418" width="432" height="319" rx="30" /></g>
   <g id="fuel-ac-pump2-btn" class="clickable"><title>Fuel AC PUMP 2 Knob</title><rect class="hotspot-rect" x="8726" y="11418" width="435" height="319" rx="30" /></g>
-  <g id="fuel-dc-pump-btn" class="clickable"><title> FUEL DC PUMP Knob</title><rect class="hotspot-rect" x="8100" y="12086" width="436" height="319" rx="30" /></g>
+  <g id="fuel-transfer-knob" class="clickable"><title>Fuel Transfer Selector Knob</title><rect class="hotspot-rect" x="8100" y="12086" width="436" height="319" rx="30" /></g>
   <g id="pax-emer-lt-knob" class="clickable"><title>EMER LT Selector</title><rect class="hotspot-rect" x="7661" y="12833" width="395" height="326" rx="40" /></g>
   <g id="pax-sterile-btn" class="clickable"><title>ATTND CALL Button</title><rect class="hotspot-rect" x="8622" y="12846" width="273" height="199" rx="25" /></g>
   <g id="pax-no-smk-sw" class="clickable"><title>STERILE Switch</title><rect class="hotspot-rect" x="7602" y="13322" width="261" height="226" rx="25" /></g>
   <g id="pax-fstn-belts-sw" class="clickable"><title>NO ELEC DEVICES Switch</title><rect class="hotspot-rect" x="8188" y="13322" width="260" height="226" rx="25" /></g>
   <g id="pax-cabin-lt-sw" class="clickable"><title>FSTN BELTS Switch</title><rect class="hotspot-rect" x="8774" y="13322" width="262" height="226" rx="25" /></g>
-  <g id="apu-fuel-shutoff-btn" class="clickable"><title>APU Fuel Shutoff Pushbutton</title><rect class="hotspot-rect" x="9786" y="10483" width="393" height="325" rx="25" /></g>
+  <g id="apu-master" class="clickable"><title>APU Master Selector Knob (OFF / ON / START)</title><rect class="hotspot-rect" x="9786" y="10483" width="393" height="325" rx="25" /></g>
   <g id="apu-emer-stop-btn" class="clickable"><title>APU EMER STOP Button (Guarded)</title><rect class="hotspot-rect" x="10718" y="10551" width="393" height="288" rx="25" /></g>
-  <g id="apu-master" class="clickable"><title>APU Master Selector Knob (OFF / ON / START)</title><rect class="hotspot-rect" x="11463" y="10518" width="324" height="243" rx="40" /></g>
+  <g id="fuel-dc-pump-btn" class="clickable"><title>FUEL DC PUMP Knob</title><rect class="hotspot-rect" x="11463" y="10518" width="324" height="243" rx="40" /></g>
   <g id="wiper-left-knob" class="clickable"><title>Windshield Wiper 1 (Captain) Knob (OFF / TIMER / LOW / HI)</title><rect class="hotspot-rect" x="9999" y="11259" width="433" height="319" rx="40" /></g>
   <g id="wiper-right-knob" class="clickable"><title>Windshield Wiper 2 (First Officer) Knob (OFF / TIMER / LOW / HI)</title><rect class="hotspot-rect" x="11107" y="11259" width="433" height="319" rx="40" /></g>
   <g id="ext-nav-sw" class="clickable"><title>NAV Lights Switch (OFF / ON)</title><rect class="hotspot-rect" x="9986" y="12053" width="260" height="223" rx="25" /></g>

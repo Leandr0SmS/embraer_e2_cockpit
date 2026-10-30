@@ -204,10 +204,10 @@
     "system": "Airplane General",
     "description": "Turns on and off the FASTEN BELTS signs."
   },
-  "apu-fuel-shutoff-btn": {
-    "title": "APU Fuel Shutoff Pushbutton",
-    "system": "Auxiliary Power Unit",
-    "description": "Guarded pushbutton that commands the APU fuel shutoff valve to close, isolating fuel supply to the APU."
+  "fuel-transfer-knob": {
+    "title": "Fuel Transfer Knob",
+    "system": "Fuel",
+    "description": "OFF: deactivates the AC fuel pumps in central tank and fuel transferring. \n\nAUTO: automatically operates the AC fuel pumps, transferring fuel from central tank to wing tanks.\n\nON: activates the AC fuel pumps in central tank, transferring fuel from central tank to wing tanks."
   },
   "apu-emer-stop-btn": {
     "title": "APU EMER STOP Button (Guarded)",
