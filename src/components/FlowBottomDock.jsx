@@ -50,7 +50,73 @@ export default function FlowBottomDock({
       }`}
       aria-label="Cockpit Flow Actions List"
     >
-      {/* Dock Header with Flow Progress & Step Controls */}
+      {/* Progressive Checklist Body (placed above controls so the control bar stays fixed at the bottom) */}
+      {!collapsed && (
+        <div className="flow-dock-body">
+          <ol className="flow-dock-list">
+            {visibleSteps.map((step, index) => {
+              const isGreen = step.role === 'LSP' || step.role === 'PF';
+              const isActive = index === activeStepIndex;
+              const prevStep = index > 0 ? visibleSteps[index - 1] : null;
+              const showSectionDivider =
+                step.section && (!prevStep || prevStep.section !== step.section);
+
+              return (
+                <li key={`${step.role}-${step.step}-${index}`} className="flow-dock-item-wrapper">
+                  {showSectionDivider && (
+                    <div className="flow-section-divider">{step.section}</div>
+                  )}
+
+                  <div
+                    ref={isActive ? activeRowRef : null}
+                    className={`flow-dock-row ${isGreen ? 'role-green' : 'role-yellow'} ${
+                      isActive ? 'active' : ''
+                    }`}
+                    onClick={() => {
+                      if (onSelectStep) onSelectStep(index, step);
+                    }}
+                  >
+                    <span className="flow-row-badge-group">
+                      {step.asterisk && (
+                        <span className="flow-row-asterisk" title="Cold Airplane / First Flight of Day">
+                          ★
+                        </span>
+                      )}
+                      <span className={`flow-row-circle ${isGreen ? 'green' : 'yellow'}`}>
+                        {step.step}
+                      </span>
+                      <span className="flow-row-role-tag">{step.role}</span>
+                    </span>
+
+                    <span className="flow-row-item">{step.item}</span>
+                    <span className="flow-row-dots" aria-hidden="true" />
+                    <span className="flow-row-action">{step.action}</span>
+
+                    {step.hotspotId && onInspectHotspot && (
+                      <button
+                        type="button"
+                        className="flow-row-info-btn"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onInspectHotspot(step.hotspotId);
+                        }}
+                        title={`View system manual for ${step.item}`}
+                        aria-label={`View system manual for ${step.item}`}
+                      >
+                        ℹ️
+                      </button>
+                    )}
+
+                    {step.note && <div className="flow-row-note">{step.note}</div>}
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      )}
+
+      {/* Dock Bottom Control Bar (pinned at the bottom so buttons never shift as steps grow) */}
       <div className="flow-dock-header">
         <div className="flow-dock-title-group">
           <span className="flow-dock-phase">{flow.title}</span>
@@ -141,73 +207,6 @@ export default function FlowBottomDock({
           </button>
         </div>
       </div>
-
-      {/* Progressive Checklist Body */}
-      {!collapsed && (
-        <div className="flow-dock-body">
-          <ol className="flow-dock-list">
-            {visibleSteps.map((step, index) => {
-              const isGreen = step.role === 'LSP' || step.role === 'PF';
-              const isActive = index === activeStepIndex;
-              const prevStep = index > 0 ? visibleSteps[index - 1] : null;
-              const showSectionDivider =
-                step.section && (!prevStep || prevStep.section !== step.section);
-
-              return (
-                <li key={`${step.role}-${step.step}-${index}`} className="flow-dock-item-wrapper">
-                  {showSectionDivider && (
-                    <div className="flow-section-divider">{step.section}</div>
-                  )}
-
-                  <div
-                    ref={isActive ? activeRowRef : null}
-                    className={`flow-dock-row ${isGreen ? 'role-green' : 'role-yellow'} ${
-                      isActive ? 'active' : ''
-                    }`}
-                    onClick={() => {
-                      if (onSelectStep) onSelectStep(index, step);
-                    }}
-                  >
-                    <span className="flow-row-badge-group">
-                      {step.asterisk && (
-                        <span className="flow-row-asterisk" title="Cold Airplane / First Flight of Day">
-                          ★
-                        </span>
-                      )}
-                      <span className={`flow-row-circle ${isGreen ? 'green' : 'yellow'}`}>
-                        {step.step}
-                      </span>
-                      <span className="flow-row-role-tag">{step.role}</span>
-                    </span>
-
-                    <span className="flow-row-item">{step.item}</span>
-                    <span className="flow-row-dots" aria-hidden="true" />
-                    <span className="flow-row-action">{step.action}</span>
-
-                    {step.hotspotId && onInspectHotspot && (
-                      <button
-                        type="button"
-                        className="flow-row-info-btn"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onInspectHotspot(step.hotspotId);
-                        }}
-                        title={`View system manual for ${step.item}`}
-                        aria-label={`View system manual for ${step.item}`}
-                      >
-                        ℹ️
-                      </button>
-                    )}
-
-                    {step.note && <div className="flow-row-note">{step.note}</div>}
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
-        </div>
-      )}
     </section>
   );
 }
-
