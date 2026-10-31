@@ -480,7 +480,7 @@
           "step": 1,
           "hotspotId": "efb_fo",
           "dx": 0,
-          "dy": -260,
+          "dy": 0,
           "item": "Airplane Manuals & Docs",
           "action": "On Board"
         },
@@ -488,14 +488,41 @@
           "role": "RSP",
           "step": 2,
           "hotspotId": "efb_fo",
-          "dx": 0,
-          "dy": 260,
-          "item": "Operational Bulletins",
-          "action": "Review"
+          "item": "Airfield Data",
+          "dx": -350,
+          "dy": -350,
+          "action": "Obtain"
         },
         {
           "role": "RSP",
           "step": 3,
+          "hotspotId": "efb_fo",
+          "item": "Takeoff Data Perf",
+          "dx": 350,
+          "dy": -350,
+          "action": "Compute/Crosscheck"
+        },
+        {
+          "role": "RSP",
+          "step": 4,
+          "hotspotId": "efb_fo",
+          "item": "Nav charts",
+          "dx": 350,
+          "dy": 350,
+          "action": "Set"
+        },
+        {
+          "role": "RSP",
+          "step": 5,
+          "hotspotId": "efb_fo",
+          "dx": -350,
+          "dy": 350,
+          "item": "OB/FOLs",
+          "action": "Review"
+        },
+        {
+          "role": "RSP",
+          "step": 6,
           "hotspotId": "dvdr-erase-btn",
           "dx": -900,
           "dy": 0,
@@ -504,84 +531,84 @@
         },
         {
           "role": "RSP",
-          "step": 4,
+          "step": 7,
           "hotspotId": "elec-tru-ess-knob",
           "item": "Electric Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 5,
+          "step": 8,
           "hotspotId": "ckpt-main-lt-knob",
           "item": "Cockpit Lights Panel",
           "action": "As Required"
         },
         {
           "role": "RSP",
-          "step": 6,
+          "step": 9,
           "hotspotId": "fire-eng1-handle",
           "item": "Eng. 1 Fire Exting. Handle",
           "action": "Stowed"
         },
         {
           "role": "RSP",
-          "step": 7,
+          "step": 10,
           "hotspotId": "fuel-xfeed-knob",
           "item": "Fuel Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 8,
+          "step": 11,
           "hotspotId": "pax-no-smk-sw",
           "item": "Passenger Signs Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 9,
+          "step": 12,
           "hotspotId": "fire-test-btn",
           "item": "Fire Extinguisher Panel",
           "action": "Check"
         },
         {
           "role": "RSP",
-          "step": 10,
+          "step": 13,
           "hotspotId": "apu-master",
           "item": "APU Control Panel",
           "action": "As Required"
         },
         {
           "role": "RSP",
-          "step": 11,
+          "step": 14,
           "hotspotId": "ext-bcn-sw",
           "item": "External Lights Panel",
           "action": "As Required"
         },
         {
           "role": "RSP",
-          "step": 12,
+          "step": 15,
           "hotspotId": "fire-eng2-handle",
           "item": "Eng 2 Fire Exting. Handle",
           "action": "Stowed"
         },
         {
           "role": "RSP",
-          "step": 13,
+          "step": 16,
           "hotspotId": "hyd-ptu-knob",
           "item": "Hydraulic Panel",
           "action": "Check"
         },
         {
           "role": "RSP",
-          "step": 14,
+          "step": 17,
           "hotspotId": "press-mode-knob",
           "item": "Pressurization Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 15,
+          "step": 18,
           "hotspotId": "ice-wshld1-btn",
           "dx": 440,
           "dy": 0,
@@ -590,63 +617,63 @@
         },
         {
           "role": "RSP",
-          "step": 16,
+          "step": 19,
           "hotspotId": "ice-mode-knob",
           "item": "Ice Detection Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 17,
+          "step": 20,
           "hotspotId": "pneu-xbleed-btn",
           "item": "Air Cond/Pneumatic Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 18,
+          "step": 21,
           "hotspotId": "oxy-mask-knob",
           "item": "Passenger Oxygen Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 19,
+          "step": 22,
           "hotspotId": "oxygen_mask_fo",
           "item": "Oxygen Masks & Regul.",
           "action": "Check/100%"
         },
         {
           "role": "RSP",
-          "step": 20,
+          "step": 23,
           "hotspotId": "flood-storm-fo-knob",
           "item": "Glareshield Lights Ctrl Panel",
           "action": "As Required"
         },
         {
           "role": "RSP",
-          "step": 21,
+          "step": 24,
           "hotspotId": "dcu2-hsi-btn",
           "item": "Display Ctrl Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 22,
+          "step": 25,
           "hotspotId": "reversionary-right-knobs",
           "item": "Reversionary Panel",
           "action": "SET"
         },
         {
           "role": "RSP",
-          "step": 23,
+          "step": 26,
           "hotspotId": "pfd-right",
           "item": "Flight Instruments",
           "action": "SET and X-Check"
         },
         {
           "role": "RSP",
-          "step": 24,
+          "step": 27,
           "hotspotId": "mfd-right",
           "dx": 300,
           "dy": 0,
@@ -655,7 +682,7 @@
         },
         {
           "role": "RSP",
-          "step": 25,
+          "step": 28,
           "hotspotId": "mfd-left",
           "dx": 700,
           "dy": 0,
@@ -664,14 +691,14 @@
         },
         {
           "role": "RSP",
-          "step": 26,
+          "step": 29,
           "hotspotId": "acp-right-panel",
           "item": "Audio Control Panel",
           "action": "As Required"
         },
         {
           "role": "RSP",
-          "step": 27,
+          "step": 30,
           "hotspotId": "pith_trim_fo",
           "item": "Trim Panel",
           "action": "Check",
@@ -679,14 +706,14 @@
         },
         {
           "role": "RSP",
-          "step": 28,
+          "step": 31,
           "hotspotId": "lgwrn-gnd-prox-inhibits",
           "item": "LG WRN/Groung Prox Inhibits Panel",
           "action": "Check"
         },
         {
           "role": "RSP",
-          "step": 29,
+          "step": 32,
           "hotspotId": "elevator-disc-handle",
           "dx": 2000,
           "dy": 0,
@@ -695,7 +722,7 @@
         },
         {
           "role": "RSP",
-          "step": 30,
+          "step": 33,
           "hotspotId": "aileron-disc-handle",
           "dx": 700,
           "dy": 900,
@@ -704,7 +731,7 @@
         },
         {
           "role": "RSP",
-          "step": 31,
+          "step": 34,
           "hotspotId": "mcdu-right-screen",
           "item": "MCDU",
           "action": "SET and X-Check"
