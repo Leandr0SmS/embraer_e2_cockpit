@@ -435,7 +435,7 @@ export default function App() {
       {/* App Footer */}
       <footer className="app-footer">
         <span>
-          Developed by{' '}
+          <span className="footer-dev-text">Developed by </span>
           <a
             href="https://leandrosms.com"
             target="_blank"
