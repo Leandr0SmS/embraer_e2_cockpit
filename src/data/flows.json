@@ -523,9 +523,9 @@
         {
           "role": "RSP",
           "step": 6,
-          "hotspotId": "dvdr-erase-btn",
-          "dx": -900,
-          "dy": 0,
+          "hotspotId": "oxygen_mask_fo",
+          "dx": -300,
+          "dy": 3000,
           "item": "Jump Seat Oxy Mask, Reg and Audio",
           "action": "Check"
         },
