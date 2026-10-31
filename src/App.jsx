@@ -4,6 +4,7 @@ import Modal from './components/Modal';
 import FlowTopBar, { filterFlowStepsByRole } from './components/FlowTopBar';
 import FlowOverlaySvg from './components/FlowOverlaySvg';
 import FlowBottomDock, { getVisibleFlowSteps } from './components/FlowBottomDock';
+import FlashcardsView from './components/FlashcardsView';
 import { extractHotspotCenters } from './utils/hotspotCenters';
 import manualData from './data/manual.json';
 import flowsData from './data/flows.json';
@@ -45,6 +46,7 @@ const InlineCockpitSvg = memo(function InlineCockpitSvg({ onSvgClick }) {
 });
 
 export default function App() {
+  const [activeView, setActiveView] = useState('cockpit'); // 'cockpit' | 'flashcards'
   const [activeSystem, setActiveSystem] = useState(null);
   const [showDisclaimer, setShowDisclaimer] = useState(true);
   const transformRef = useRef(null);
@@ -271,6 +273,14 @@ export default function App() {
     }
   }, []);
 
+  if (activeView === 'flashcards') {
+    return (
+      <div className="app-container flashcards-mode">
+        <FlashcardsView onExit={() => setActiveView('cockpit')} />
+      </div>
+    );
+  }
+
   return (
     <div className={activeFlow ? 'app-container flow-active' : 'app-container'}>
       {/* Upper Cockpit Flows Menu */}
@@ -284,6 +294,8 @@ export default function App() {
         onChangeMode={handleChangeMode}
         followStep={followStep}
         onToggleFollowStep={handleToggleFollowStep}
+        activeView={activeView}
+        onSelectView={setActiveView}
       />
 
       <TransformWrapper

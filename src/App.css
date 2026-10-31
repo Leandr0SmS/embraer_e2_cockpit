@@ -1831,3 +1831,80 @@ body {
 .summary-btn.btn-exit-summary:hover {
   color: #ffffff;
 }
+
+/* Primary Study Mode Switcher (Cockpit & Flows vs Flashcards) */
+.flow-view-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(15, 17, 20, 0.85);
+  padding: 3px;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.view-pill {
+  font-weight: 600;
+  color: #9ca3af;
+  border: 1px solid transparent;
+}
+
+.view-pill:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.view-pill.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
+
+.view-pill-icon {
+  font-size: 0.85rem;
+}
+
+.flow-nav-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  margin: 0 2px;
+}
+
+.app-container.flashcards-mode {
+  background: #0d0f12;
+  overflow: hidden;
+}
+
+.exit-btn-short {
+  display: none;
+}
+
+.exit-btn-full {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .flow-view-switcher {
+    padding: 2px;
+    gap: 3px;
+  }
+
+  .view-pill {
+    font-size: 0.7rem;
+    padding: 3px 7px;
+  }
+
+  .flow-nav-divider {
+    display: none;
+  }
+
+  .exit-btn-full {
+    display: none;
+  }
+
+  .exit-btn-short {
+    display: inline;
+  }
+}

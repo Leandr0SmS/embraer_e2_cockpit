@@ -69,7 +69,8 @@ export default function FlashcardDeckBar({
               title="Return to Cockpit & Flows"
               aria-label="Exit Flashcards Study Mode"
             >
-              ✕ Exit
+              <span className="exit-btn-full">🛩️ Cockpit &amp; Flows</span>
+              <span className="exit-btn-short">🛩️ Cockpit</span>
             </button>
           )}
         </div>

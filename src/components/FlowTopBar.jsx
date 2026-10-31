@@ -22,11 +22,50 @@ export default function FlowTopBar({
   onChangeMode,
   followStep = true,
   onToggleFollowStep,
+  activeView = 'cockpit',
+  onSelectView,
+  onOpenFlashcards,
 }) {
   const activeFlow = flows.find((f) => f.id === activeFlowId) ?? null;
 
+  const handleOpenFlashcards = () => {
+    if (onSelectView) {
+      onSelectView('flashcards');
+    } else if (onOpenFlashcards) {
+      onOpenFlashcards();
+    }
+  };
+
   return (
     <header className="flow-top-bar" aria-label="Cockpit Flows Menu">
+      {/* Primary Study Mode Switcher: Cockpit & Flows vs Flashcards */}
+      <div className="flow-view-switcher" role="tablist" aria-label="Mode Selection">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={activeView === 'cockpit'}
+          className={`flow-pill view-pill ${activeView === 'cockpit' ? 'active' : ''}`}
+          onClick={() => onSelectView?.('cockpit')}
+          title="Interactive Cockpit Panels & Procedural Flows"
+        >
+          <span className="view-pill-icon">🛩️</span> Cockpit &amp; Flows
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={activeView === 'flashcards'}
+          className={`flow-pill view-pill flashcard-nav-pill ${
+            activeView === 'flashcards' ? 'active' : ''
+          }`}
+          onClick={handleOpenFlashcards}
+          title="Study Limitations and Memory Items Flashcards"
+        >
+          <span className="view-pill-icon">🗂️</span> Flashcards
+        </button>
+      </div>
+
+      <div className="flow-nav-divider" aria-hidden="true" />
+
       <div className="flow-selector-group">
         <label htmlFor="cockpit-flow-select" className="flow-selector-label">
           Flows
