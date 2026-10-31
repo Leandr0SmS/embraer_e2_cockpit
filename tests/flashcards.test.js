@@ -146,4 +146,29 @@ describe('FlashcardCard component and 3D CSS styling', () => {
     expect(cssSrc).toContain('swipe-badge-know');
     expect(cssSrc).toContain('swipe-badge-review');
   });
+
+  it('FlashcardsView and FlashcardDeckBar include deck switching, keyboard shortcuts, and control dock', async () => {
+    const fs = await import('node:fs');
+    const viewSrc = fs.readFileSync(new URL('../src/components/FlashcardsView.jsx', import.meta.url), 'utf8');
+    const deckBarSrc = fs.readFileSync(new URL('../src/components/FlashcardDeckBar.jsx', import.meta.url), 'utf8');
+
+    // Deck bar features
+    expect(deckBarSrc).toContain('flashcard-deck-pill');
+    expect(deckBarSrc).toContain('Limitations');
+    expect(deckBarSrc).toContain('Memory Items');
+    expect(deckBarSrc).toContain('flashcard-progress-track');
+    expect(deckBarSrc).toContain('flashcard-progress-fill');
+    expect(deckBarSrc).toContain('Shuffle');
+
+    // View features & shortcuts
+    expect(viewSrc).toContain("e.key === ' ' || e.key === 'Enter'");
+    expect(viewSrc).toContain("e.key === 'ArrowRight'");
+    expect(viewSrc).toContain("e.key === 'ArrowLeft'");
+    expect(viewSrc).toContain("e.key.toLowerCase() === 'p'");
+    expect(viewSrc).toContain('handleFlip');
+    expect(viewSrc).toContain('handleRate');
+    expect(viewSrc).toContain('handlePass');
+    expect(viewSrc).toContain('flashcards-bottom-dock');
+    expect(viewSrc).toContain('deck-complete-card');
+  });
 });
