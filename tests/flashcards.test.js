@@ -121,3 +121,29 @@ describe('filterMissedCards', () => {
     expect(missed[0].question).toBe('Q2');
   });
 });
+
+describe('FlashcardCard component and 3D CSS styling', () => {
+  it('FlashcardCard.jsx structure includes 3D perspective, swipe badges, and gesture handlers', async () => {
+    const fs = await import('node:fs');
+    const cardSrc = fs.readFileSync(new URL('../src/components/FlashcardCard.jsx', import.meta.url), 'utf8');
+    const cssSrc = fs.readFileSync(new URL('../src/App.css', import.meta.url), 'utf8');
+
+    expect(cardSrc).toContain('flashcard-stage');
+    expect(cardSrc).toContain('flashcard-card');
+    expect(cardSrc).toContain('flashcard-inner');
+    expect(cardSrc).toContain('swipe-badge-know');
+    expect(cardSrc).toContain('swipe-badge-review');
+    expect(cardSrc).toContain('onPointerDown');
+    expect(cardSrc).toContain('onPointerMove');
+    expect(cardSrc).toContain('onPointerUp');
+    expect(cardSrc).toContain('calculateSwipeProgress');
+
+    // 3D CSS checks
+    expect(cssSrc).toContain('perspective: 1200px');
+    expect(cssSrc).toContain('transform-style: preserve-3d');
+    expect(cssSrc).toContain('backface-visibility: hidden');
+    expect(cssSrc).toContain('transform: rotateY(180deg)');
+    expect(cssSrc).toContain('swipe-badge-know');
+    expect(cssSrc).toContain('swipe-badge-review');
+  });
+});
