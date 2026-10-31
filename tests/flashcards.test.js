@@ -192,3 +192,27 @@ describe('FlashcardCard component and 3D CSS styling', () => {
     expect(cssSrc).toContain('.summary-score-badge');
   });
 });
+
+describe('Top navigation mode switcher & deck bar return', () => {
+  it('FlowTopBar.jsx renders primary view switcher pills for Cockpit and Flashcards', async () => {
+    const fs = await import('node:fs');
+    const ftbSrc = fs.readFileSync(new URL('../src/components/FlowTopBar.jsx', import.meta.url), 'utf8');
+
+    expect(ftbSrc).toContain('flow-view-switcher');
+    expect(ftbSrc).toContain('view-pill');
+    expect(ftbSrc).toContain('Cockpit &amp; Flows');
+    expect(ftbSrc).toContain('Flashcards');
+    expect(ftbSrc).toContain('onSelectView');
+    expect(ftbSrc).toContain('onOpenFlashcards');
+  });
+
+  it('FlashcardDeckBar.jsx includes return button to Cockpit & Flows', async () => {
+    const fs = await import('node:fs');
+    const barSrc = fs.readFileSync(new URL('../src/components/FlashcardDeckBar.jsx', import.meta.url), 'utf8');
+
+    expect(barSrc).toContain('exit-btn-full');
+    expect(barSrc).toContain('exit-btn-short');
+    expect(barSrc).toContain('Cockpit &amp; Flows');
+    expect(barSrc).toContain('Cockpit');
+  });
+});

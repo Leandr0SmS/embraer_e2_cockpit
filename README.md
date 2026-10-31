@@ -32,6 +32,12 @@ Welcome to the interactive **Embraer E-Jets E2** cockpit study guide. Explore th
   - Filter by crew role (**All**, Green **LSP / PF Actions**, or Yellow **RSP / PM Actions**).
   - Choose **Step-by-Step** mode to reveal each numbered badge, scan-flow arrow, and bottom checklist item one step at a time (`Next Arrow ▶`, keyboard `ArrowRight`/`ArrowLeft`, or clicking the pulsing active badge on the panel), or switch to **Entire Flow** mode to see the complete procedure at once.
   - Toggle **`⌖ Follow`** (enabled by default) to automatically pan the camera to center each active step badge in the viewport, or turn it off for manual camera positioning.
+- **Flashcards Study Mode:** Click the top **🗂️ Flashcards** button to practice essential knowledge with NotebookLM-style interactive cards:
+  - **Two Built-in Decks:** **Aircraft Limitations** (62 cards) and **Memory Items** (15 critical recalls).
+  - **3D Card Flip:** Click any card or press `Space`/`Enter` to reveal the answer.
+  - **Swipe & Drag Gestures:** Drag or swipe right to mark as **Known/Mastered** (green badge), or swipe left to mark for **Review** (amber badge).
+  - **Bottom Action Dock & Shortcuts:** `Review (←)`, `Reveal Answer (Space)`, `I Know This (→)`, and `Pass (P)`.
+  - **Smart Missed Cards Review:** After finishing a deck, click **"Review Missed Cards"** to immediately drill only the questions you missed.
 
 ---
 

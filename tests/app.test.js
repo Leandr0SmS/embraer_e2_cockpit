@@ -52,6 +52,14 @@ describe('App.jsx & Modal.jsx structure', () => {
     expect(appSrc).toContain('onToggleFollowStep={handleToggleFollowStep}');
     expect(appSrc).toContain('onTransformed={handleTransformed}');
   });
+
+  it('integrates Flashcards Study Mode with activeView switcher and conditional unmounting of cockpit stage', () => {
+    expect(appSrc).toContain("const [activeView, setActiveView] = useState('cockpit')");
+    expect(appSrc).toContain("activeView === 'flashcards'");
+    expect(appSrc).toContain("<FlashcardsView onExit={() => setActiveView('cockpit')} />");
+    expect(appSrc).toContain('activeView={activeView}');
+    expect(appSrc).toContain('onSelectView={setActiveView}');
+  });
 });
 
 describe('index.html & Vite production CSP', () => {
