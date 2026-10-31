@@ -48,7 +48,7 @@ export default function FlashcardDeckBar({
             title={isShuffled ? 'Shuffle is ON — Cards are randomized' : 'Shuffle is OFF — Sequential order'}
             aria-label="Toggle card shuffle"
           >
-            🔀 Shuffle
+            Shuffle
           </button>
 
           <button
@@ -69,8 +69,8 @@ export default function FlashcardDeckBar({
               title="Return to Cockpit & Flows"
               aria-label="Exit Flashcards Study Mode"
             >
-              <span className="exit-btn-full">🛩️ Cockpit &amp; Flows</span>
-              <span className="exit-btn-short">🛩️ Cockpit</span>
+              <span className="exit-btn-full">Cockpit &amp; Flows</span>
+              <span className="exit-btn-short">Cockpit</span>
             </button>
           )}
         </div>

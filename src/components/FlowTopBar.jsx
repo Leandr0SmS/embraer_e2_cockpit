@@ -48,7 +48,7 @@ export default function FlowTopBar({
           onClick={() => onSelectView?.('cockpit')}
           title="Interactive Cockpit Panels & Procedural Flows"
         >
-          <span className="view-pill-icon">🛩️</span> Cockpit &amp; Flows
+          Cockpit &amp; Flows
         </button>
         <button
           type="button"
@@ -60,7 +60,7 @@ export default function FlowTopBar({
           onClick={handleOpenFlashcards}
           title="Study Limitations and Memory Items Flashcards"
         >
-          <span className="view-pill-icon">🗂️</span> Flashcards
+          Flashcards
         </button>
       </div>
 

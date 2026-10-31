@@ -172,7 +172,7 @@ export default function FlashcardCard({
 
             <footer className="flashcard-face-footer">
               <span className="flashcard-hint-text">
-                <span className="hint-icon">👆</span> Tap or click to reveal answer
+                Tap or click to reveal answer
               </span>
             </footer>
           </div>
@@ -192,7 +192,7 @@ export default function FlashcardCard({
 
             <footer className="flashcard-face-footer">
               <span className="flashcard-hint-text">
-                <span className="hint-icon">👆</span> Tap to flip back • Drag or rate below
+                Tap to flip back • Drag or rate below
               </span>
             </footer>
           </div>
