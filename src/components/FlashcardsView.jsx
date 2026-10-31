@@ -225,7 +225,8 @@ export default function FlashcardsView({ onExit }) {
             onClick={() => handleRate('review')}
             title="Mark for review (ArrowLeft / Drag Left)"
           >
-            <span className="btn-icon">↺</span> Review
+            <span className="btn-icon">↺</span>
+            <span className="fc-btn-label">Review</span>
             <span className="kbd-shortcut">←</span>
           </button>
 
@@ -235,7 +236,13 @@ export default function FlashcardsView({ onExit }) {
             onClick={handleFlip}
             title="Flip card between question and answer (Space / Enter)"
           >
-            <span className="btn-icon">⇄</span> {isFlipped ? 'Show Question' : 'Reveal Answer'}
+            <span className="btn-icon">⇄</span>
+            <span className="fc-btn-label-full">
+              {isFlipped ? 'Show Question' : 'Reveal Answer'}
+            </span>
+            <span className="fc-btn-label-short">
+              {isFlipped ? 'Question' : 'Flip'}
+            </span>
             <span className="kbd-shortcut">Space</span>
           </button>
 
@@ -245,7 +252,9 @@ export default function FlashcardsView({ onExit }) {
             onClick={() => handleRate('know')}
             title="Mark as known / mastered (ArrowRight / Drag Right)"
           >
-            <span className="btn-icon">✓</span> I Know This
+            <span className="btn-icon">✓</span>
+            <span className="fc-btn-label-full">I Know This</span>
+            <span className="fc-btn-label-short">Know</span>
             <span className="kbd-shortcut">→</span>
           </button>
 
@@ -255,7 +264,8 @@ export default function FlashcardsView({ onExit }) {
             onClick={handlePass}
             title="Pass to next card without rating (P / ArrowDown)"
           >
-            Pass <span className="kbd-shortcut">P</span>
+            <span className="fc-btn-label">Pass</span>
+            <span className="kbd-shortcut">P</span>
           </button>
         </footer>
       )}
