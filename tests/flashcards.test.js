@@ -169,6 +169,26 @@ describe('FlashcardCard component and 3D CSS styling', () => {
     expect(viewSrc).toContain('handleRate');
     expect(viewSrc).toContain('handlePass');
     expect(viewSrc).toContain('flashcards-bottom-dock');
-    expect(viewSrc).toContain('deck-complete-card');
+    expect(viewSrc).toContain('FlashcardSummary');
+  });
+
+  it('FlashcardSummary displays score metrics, celebration badge, and re-study options', async () => {
+    const fs = await import('node:fs');
+    const summarySrc = fs.readFileSync(new URL('../src/components/FlashcardSummary.jsx', import.meta.url), 'utf8');
+    const cssSrc = fs.readFileSync(new URL('../src/App.css', import.meta.url), 'utf8');
+
+    expect(summarySrc).toContain('flashcard-summary-card');
+    expect(summarySrc).toContain('summary-score-badge');
+    expect(summarySrc).toContain('summary-score-number');
+    expect(summarySrc).toContain('btn-review-missed');
+    expect(summarySrc).toContain('btn-restart');
+    expect(summarySrc).toContain('btn-switch');
+    expect(summarySrc).toContain('onReviewMissed');
+    expect(summarySrc).toContain('onRestartFull');
+
+    // CSS styling checks
+    expect(cssSrc).toContain('.flashcard-summary-card');
+    expect(cssSrc).toContain('.btn-review-missed');
+    expect(cssSrc).toContain('.summary-score-badge');
   });
 });

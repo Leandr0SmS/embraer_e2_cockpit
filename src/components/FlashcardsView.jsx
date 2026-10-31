@@ -1,9 +1,10 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import FlashcardCard from './FlashcardCard';
 import FlashcardDeckBar from './FlashcardDeckBar';
+import FlashcardSummary from './FlashcardSummary';
 import limitationsData from '../data/flashcards-limitations.json';
 import memoryData from '../data/flashcards-memory.json';
-import { shuffleDeck, calculateDeckStats } from '../utils/flashcardEngine';
+import { shuffleDeck, calculateDeckStats, filterMissedCards } from '../utils/flashcardEngine';
 
 const DECKS = {
   limitations: {
@@ -22,6 +23,8 @@ const DECKS = {
  * Main container for Flashcards Study Mode:
  * - Manages active deck selection, shuffling, and progression
  * - Coordinates 3D card flips, ratings ('know', 'review', 'pass')
+ * - Supports targeted "Review Missed Cards" mode
+ * - Deck summary upon completion with accuracy breakdown
  * - Keyboard navigation (Space, ArrowLeft, ArrowRight, P)
  * - Dock controls for desktop and mobile accessibility
  */
@@ -32,8 +35,16 @@ export default function FlashcardsView({ onExit }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [results, setResults] = useState({});
 
-  // Active base deck cards
-  const rawCards = useMemo(() => DECKS[activeDeckId]?.cards ?? [], [activeDeckId]);
+  // When true, user is studying a filtered queue of missed cards from previous run
+  const [customDeck, setCustomDeck] = useState(null);
+
+  // Active base deck cards (custom deck takes precedence if active)
+  const rawCards = useMemo(() => {
+    if (customDeck && customDeck.length > 0) {
+      return customDeck;
+    }
+    return DECKS[activeDeckId]?.cards ?? [];
+  }, [activeDeckId, customDeck]);
 
   // Shuffled or sequential active deck
   const activeDeck = useMemo(() => {
@@ -42,7 +53,8 @@ export default function FlashcardsView({ onExit }) {
 
   const totalCards = activeDeck.length;
   const currentCard = activeDeck[currentIndex] ?? null;
-  const isComplete = currentIndex >= totalCards;
+  const isComplete = totalCards > 0 && currentIndex >= totalCards;
+  const isReviewMode = customDeck !== null;
 
   const stats = useMemo(() => {
     return calculateDeckStats(totalCards, results);
@@ -51,6 +63,7 @@ export default function FlashcardsView({ onExit }) {
   // Switch between Limitations and Memory Items decks
   const handleSelectDeck = useCallback((deckId) => {
     setActiveDeckId(deckId);
+    setCustomDeck(null);
     setCurrentIndex(0);
     setIsFlipped(false);
     setResults({});
@@ -64,12 +77,30 @@ export default function FlashcardsView({ onExit }) {
     setResults({});
   }, []);
 
-  // Restart current deck
+  // Restart current full deck
   const handleRestart = useCallback(() => {
+    setCustomDeck(null);
     setCurrentIndex(0);
     setIsFlipped(false);
     setResults({});
   }, []);
+
+  // Start a focused review session with only the cards marked as 'review'
+  const handleReviewMissed = useCallback(() => {
+    const missed = filterMissedCards(activeDeck, results);
+    if (missed.length > 0) {
+      setCustomDeck(missed);
+      setCurrentIndex(0);
+      setIsFlipped(false);
+      setResults({});
+    }
+  }, [activeDeck, results]);
+
+  // Quick switch to the opposite deck
+  const handleSwitchDeck = useCallback(() => {
+    const nextDeckId = activeDeckId === 'limitations' ? 'memory' : 'limitations';
+    handleSelectDeck(nextDeckId);
+  }, [activeDeckId, handleSelectDeck]);
 
   // Flip card
   const handleFlip = useCallback(() => {
@@ -142,6 +173,10 @@ export default function FlashcardsView({ onExit }) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [handleFlip, handleRate, handlePass, handlePrev]);
 
+  const deckTitle = isReviewMode
+    ? `${DECKS[activeDeckId]?.name} (Missed Cards)`
+    : DECKS[activeDeckId]?.name;
+
   return (
     <div className="flashcards-container" aria-label="Flashcards Study Experience">
       {/* Top Deck Navigation Bar */}
@@ -161,7 +196,7 @@ export default function FlashcardsView({ onExit }) {
         {!isComplete && currentCard ? (
           <FlashcardCard
             card={currentCard}
-            deckName={DECKS[activeDeckId]?.name}
+            deckName={deckTitle}
             cardIndex={currentIndex}
             totalCards={totalCards}
             isFlipped={isFlipped}
@@ -169,34 +204,15 @@ export default function FlashcardsView({ onExit }) {
             onSwipe={handleRate}
           />
         ) : (
-          <div className="deck-complete-card">
-            <div className="deck-complete-icon">🎉</div>
-            <h2 className="deck-complete-title">Deck Completed!</h2>
-            <p className="deck-complete-subtitle">
-              You reviewed all {totalCards} cards in this deck.
-            </p>
-            <div className="deck-complete-stats">
-              <div className="stat-box">
-                <span className="stat-val mastered">{stats.mastered}</span>
-                <span className="stat-lbl">Mastered</span>
-              </div>
-              <div className="stat-box">
-                <span className="stat-val review">{stats.needsReview}</span>
-                <span className="stat-lbl">Needs Review</span>
-              </div>
-              <div className="stat-box">
-                <span className="stat-val accuracy">{stats.accuracy}%</span>
-                <span className="stat-lbl">Accuracy</span>
-              </div>
-            </div>
-            <button
-              type="button"
-              className="deck-complete-restart-btn"
-              onClick={handleRestart}
-            >
-              Study Again (↺)
-            </button>
-          </div>
+          <FlashcardSummary
+            deckName={DECKS[activeDeckId]?.name}
+            stats={stats}
+            isReviewMode={isReviewMode}
+            onReviewMissed={handleReviewMissed}
+            onRestartFull={handleRestart}
+            onSwitchDeck={handleSwitchDeck}
+            onExit={onExit}
+          />
         )}
       </main>
 
