@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What are the memory items for SMOKE / FIRE / FUMES?",
+    "answer": "Crew Oxy Masks - DON, 100%\nCrew Communication - ESTABLISH"
+  },
+  {
+    "question": "What are the memory items for SMOKE EVACUATION?",
+    "answer": "Crew Oxy Masks - DON, 100%\nCrew Communication - ESTABLISH\nDUMP Button - PUSH IN"
+  },
+  {
+    "question": "What are the memory items for CARGO COMPARTMENT FIRE?",
+    "answer": "Associated Cargo Smoke Button - PUSH"
+  },
+  {
+    "question": "What are the memory items for EMERGENCY DESCENT?",
+    "answer": "FSTN BELTS Switch - ON\nAltitude - 10000 ft OR MEA\nThrust Levers - IDLE\nSPEEDBRAKE Lever - FULL OPEN\nAirspeed - MAX/ APPROPRIATE\nTransponder - 7700"
+  },
+  {
+    "question": "What are the memory items for JAMMED CONTROL COLUMN (PITCH)?",
+    "answer": "ELEVATOR DISCONNECT Handle - PULL"
+  },
+  {
+    "question": "What are the memory items for JAMMED CONTROL WHEEL (ROLL)?",
+    "answer": "AILERON DISCONNECT Handle - PULL"
+  },
+  {
+    "question": "What are the memory items when GEAR LEVER CAN NOT BE MOVED UP?",
+    "answer": "If climb performance is required to clear obstacles:\nDN LOCK REL Button - PRESS and HOLD\nLANDING GEAR Lever - UP\nDN LOCK REL Button - RELEASE"
+  },
+  {
+    "question": "What are the memory items for ENGINE ABNORMAL START?",
+    "answer": "Affected engine:\nSTART/STOP Selector - STOP"
+  },
+  {
+    "question": "What are the memory items for DUAL ENGINE FAILURE?",
+    "answer": "Airspeed - MIN 270 KIAS\nRAT MANUAL DEPLOY Lever - PULL"
+  },
+  {
+    "question": "What are the memory items for ENGINE SEVERE DAMAGE OR SEPARATION?",
+    "answer": "Autothrottle - DISENGAGE\nAffected Engine:\nThrust Lever - IDLE\nSTART/STOP Selector - STOP\nFIRE EXTINGUISHER Handle - PULL"
+  },
+  {
+    "question": "What are the memory items for CABIN ALTITUDE HI?",
+    "answer": "Crew Oxy Masks - DON, 100%\nCrew Communication - ESTABLISH\nAltitude - 10000 ft or MEA\nThrust Levers - IDLE\nSPEEDBRAKE Lever - FULL OPEN\nAirspeed - MAX / APPROPRIATE\nTransponder - 7700"
+  },
+  {
+    "question": "What are the memory items for ENG 1 (2) FIRE?",
+    "answer": "Autothrottle - DISENGAGE\nAffected Engine:\nThrust Lever - IDLE\nSTART/STOP Selector - STOP\nFIRE EXTINGUISHER Handle - PULL"
+  },
+  {
+    "question": "What are the memory items for APU FIRE?",
+    "answer": "APU EMER STOP Button - PUSH IN"
+  },
+  {
+    "question": "What are the memory items for CRG FWD (AFT) SMOKE?",
+    "answer": "Associated Cargo Smoke Button - PUSH"
+  },
+  {
+    "question": "What are the memory items for BATT 1 (2) OVERTEMP?",
+    "answer": "Associated BATT Knob - OFF"
+  }
+]
