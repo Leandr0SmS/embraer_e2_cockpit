@@ -49,6 +49,13 @@
           "item": "FUEL Panel",
           "action": "CHECK"
         },
+                {
+          "role": "RSP",
+          "step": 4,
+          "hotspotId": "fuel-dc-pump-btn",
+          "item": "FUEL DC PUMP Knob",
+          "action": "ON"
+        },
         {
           "role": "RSP",
           "step": 5,
