@@ -40,7 +40,7 @@ export default function FlowTopBar({
             onSelectFlow(val ? val : null);
           }}
         >
-          <option value="">Select Cockpit Flow (Off)</option>
+          <option value="">Select Cockpit Flow</option>
           {flows.map((flow, idx) => (
             <option key={flow.id} value={flow.id}>
               {idx + 1}. {flow.title}
