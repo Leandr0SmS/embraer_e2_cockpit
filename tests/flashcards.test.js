@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import memoryCards from '../src/data/flashcards-memory.json';
 import limitationCards from '../src/data/flashcards-limitations.json';
+import limitationCards109 from '../src/data/flashcards-limitations-109.json';
 import {
   shuffleDeck,
   calculateSwipeProgress,
@@ -23,6 +24,13 @@ describe('flashcards data integrity', () => {
     const val = validateDeck(limitationCards);
     expect(val.isValid).toBe(true);
     expect(val.count).toBe(62);
+    expect(val.errors).toEqual([]);
+  });
+
+  it('flashcards-limitations-109.json contains valid flashcards', () => {
+    const val = validateDeck(limitationCards109);
+    expect(val.isValid).toBe(true);
+    expect(val.count).toBe(109);
     expect(val.errors).toEqual([]);
   });
 

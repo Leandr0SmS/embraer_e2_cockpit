@@ -1,0 +1,438 @@
+[
+  {
+    "question": "What is the Maximum Ramp Weight (MRW) of the Embraer E195-E2?",
+    "answer": "62,700 kg"
+  },
+  {
+    "question": "What is the Maximum Takeoff Weight (MTOW) of the Embraer E195-E2?",
+    "answer": "62,500 kg"
+  },
+  {
+    "question": "What is the Maximum Landing Weight (MLW) of the Embraer E195-E2?",
+    "answer": "54,000 kg"
+  },
+  {
+    "question": "What is the Maximum Zero Fuel Weight (MZFW) of the Embraer E195-E2?",
+    "answer": "51,850 kg"
+  },
+  {
+    "question": "What is the Maximum Operating Ceiling for the Embraer E195-E2?",
+    "answer": "FL410"
+  },
+  {
+    "question": "What pressure altitude range defines the standard Takeoff, Landing & Ground Start Envelope for the Embraer E195-E2?",
+    "answer": "-1,870 ft to 14,000 ft pressure altitude"
+  },
+  {
+    "question": "Above what pressure altitude must special performance procedures be referenced for takeoff, landing, and ground start operations?",
+    "answer": "9,200 ft pressure altitude"
+  },
+  {
+    "question": "What is the minimum Total Air Temperature (TAT) allowed in flight?",
+    "answer": "-54°C"
+  },
+  {
+    "question": "What is the minimum Static Air Temperature (SAT) at FL410?",
+    "answer": "-70°C"
+  },
+  {
+    "question": "What is the Maximum Ground Operating Temperature limit?",
+    "answer": "54°C / ISA + 39°C"
+  },
+  {
+    "question": "What action is mandatory before takeoff if the airplane lands in ambient temperatures below -45°C?",
+    "answer": "A documented maintenance inspection must be performed."
+  },
+  {
+    "question": "What is the limitation regarding cold soaked fuel frost on the upper wing surface prior to takeoff?",
+    "answer": "The wing upper surface must be completely free of frost, ice, snow, or slush."
+  },
+  {
+    "question": "What is the Maximum Landing Gear Retraction Speed ($V_{LO\\text{ Retraction}}$)?",
+    "answer": "220 KIAS"
+  },
+  {
+    "question": "What is the Maximum Landing Gear Extension Speed ($V_{LO\\text{ Extension}}$)?",
+    "answer": "250 KIAS"
+  },
+  {
+    "question": "What is the Maximum Landing Gear Extended Speed ($V_{LE}$)?",
+    "answer": "265 KIAS"
+  },
+  {
+    "question": "What are the maneuvering flight load factor limits in the clean configuration (Flaps Up)?",
+    "answer": "+2.5 g to -1.0 g"
+  },
+  {
+    "question": "What are the maneuvering flight load factor limits with Flaps Down (Flaps 1 through FULL)?",
+    "answer": "+2.0 g to 0.0 g"
+  },
+  {
+    "question": "What is the Maneuvering Speed ($V_A$) at or below 15,000 ft?",
+    "answer": "265 KIAS"
+  },
+  {
+    "question": "How does Maneuvering Speed ($V_A$) vary between 15,000 ft altitude and FL290?",
+    "answer": "It varies linearly from 265 KIAS to 320 KIAS."
+  },
+  {
+    "question": "What is the Maneuvering Speed ($V_A$) limit above FL290?",
+    "answer": "$M_{MO}$ 0.82M"
+  },
+  {
+    "question": "What is the maximum altitude for flap extension?",
+    "answer": "20,000 ft pressure altitude"
+  },
+  {
+    "question": "What is the Flaps 1 Maximum Extended Speed ($V_{FE}$)?",
+    "answer": "230 KIAS"
+  },
+  {
+    "question": "What is the Flaps 2 Maximum Extended Speed ($V_{FE}$)?",
+    "answer": "215 KIAS"
+  },
+  {
+    "question": "What is the Flaps 3 Maximum Extended Speed ($V_{FE}$)?",
+    "answer": "200 KIAS"
+  },
+  {
+    "question": "What is the Flaps 4 Maximum Extended Speed ($V_{FE}$)?",
+    "answer": "180 KIAS"
+  },
+  {
+    "question": "What is the Flaps 5 Maximum Extended Speed ($V_{FE}$)?",
+    "answer": "180 KIAS"
+  },
+  {
+    "question": "What is the Flaps FULL Maximum Extended Speed ($V_{FE}$)?",
+    "answer": "165 KIAS"
+  },
+  {
+    "question": "What is the Maximum Operating Speed ($V_{MO}$) below 8,000 ft?",
+    "answer": "300 KIAS"
+  },
+  {
+    "question": "What is the Maximum Operating Speed ($V_{MO}$) from 8,000 ft to 10,000 ft?",
+    "answer": "Linear variation from 300 KIAS to 320 KIAS"
+  },
+  {
+    "question": "What is the Maximum Operating Speed ($V_{MO}$) between 10,000 ft and FL290?",
+    "answer": "320 KIAS"
+  },
+  {
+    "question": "What is the Maximum Operating Mach Number ($M_{MO}$) above FL290?",
+    "answer": "0.82 M"
+  },
+  {
+    "question": "What is the recommended maximum takeoff crosswind component for a dry runway (RWYCC 6)?",
+    "answer": "45 kt (gusts included)"
+  },
+  {
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 5 (Frost, Wet $\\le 3\\text{ mm}$, Slush $\\le 3\\text{ mm}$, Dry/Wet Snow $\\le 3\\text{ mm}$)?",
+    "answer": "38 kt (gusts included)"
+  },
+  {
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 4 (Compacted Snow at $\\le -15^\\circ\\text{C}$)?",
+    "answer": "30 kt (gusts included)"
+  },
+  {
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 3 (Slippery Wet, Dry/Wet Snow over Compacted Snow)?",
+    "answer": "20 kt (gusts included)"
+  },
+  {
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 2 (Water/Slush $> 3\\text{ mm}$)?",
+    "answer": "15 kt (gusts included)"
+  },
+  {
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 1 (Ice)?",
+    "answer": "10 kt (gusts included)"
+  },
+  {
+    "question": "What is the Maximum Tire Ground Speed limit?",
+    "answer": "225 mph (195 kt ground speed)"
+  },
+  {
+    "question": "What is the minimum flight crew requirement for the Embraer E195-E2?",
+    "answer": "2 pilots"
+  },
+  {
+    "question": "What are the certified runway slope limits?",
+    "answer": "-2% to +2%"
+  },
+  {
+    "question": "What runway surface types are approved for operation?",
+    "answer": "Paved runways only"
+  },
+  {
+    "question": "Under what condition is towbarless towing permitted?",
+    "answer": "It is strictly prohibited unless performed in accordance with Aircraft Maintenance Manual (AMM) procedures."
+  },
+  {
+    "question": "What is the maximum tailwind component for takeoff and landing?",
+    "answer": "15 kt (Demonstrated capability)"
+  },
+  {
+    "question": "Which engine model powers the Embraer E195-E2?",
+    "answer": "Pratt & Whitney PW1921G turbofan engine"
+  },
+  {
+    "question": "What are the maximum engine rotor speed limits ($N_1$ and $N_2$)?",
+    "answer": "$N_1 = 100\\%$, $N_2 = 100\\%$"
+  },
+  {
+    "question": "What is the Interstage Turbine Temperature (ITT) limit for Ground/Inflight Start, Takeoff, and Go-Around?",
+    "answer": "1,054°C"
+  },
+  {
+    "question": "What is the time limit for operating at the takeoff ITT limit of 1,054°C during All Engines Operating (AEO) versus One Engine Inoperative (OEI)?",
+    "answer": "5 minutes for AEO; 10 minutes for OEI"
+  },
+  {
+    "question": "What is the ITT limit for Maximum Continuous Thrust?",
+    "answer": "1,017°C"
+  },
+  {
+    "question": "What is the minimum engine oil pressure limit?",
+    "answer": "50 psig"
+  },
+  {
+    "question": "What is the maximum engine oil pressure limit under normal operating oil temperatures?",
+    "answer": "175 psig"
+  },
+  {
+    "question": "What is the maximum engine oil pressure limit when the oil temperature is below 49°C?",
+    "answer": "235 psig"
+  },
+  {
+    "question": "What is the minimum oil temperature required for engine idle?",
+    "answer": "-40°C"
+  },
+  {
+    "question": "What is the minimum oil temperature required before applying takeoff power?",
+    "answer": "24°C (and the ENG 1 (2) WARM UP message must not be displayed on EICAS)"
+  },
+  {
+    "question": "What is the Maximum Continuous engine oil temperature limit?",
+    "answer": "163°C"
+  },
+  {
+    "question": "What is the Maximum Transient engine oil temperature limit, and for how long is it permissible?",
+    "answer": "174°C, permissible for up to 20 minutes"
+  },
+  {
+    "question": "What is the maximum continuous starter duty time for the engines?",
+    "answer": "4 minutes continuous operation"
+  },
+  {
+    "question": "What cool-down period is required after a full 4-minute engine starter duty cycle?",
+    "answer": "30 minutes"
+  },
+  {
+    "question": "How many consecutive engine starter attempts are permitted without a cooling period between attempts?",
+    "answer": "A maximum of 3 starter attempts"
+  },
+  {
+    "question": "What is the engine operational restriction during takeoffs when crosswind components exceed 30 kt?",
+    "answer": "Engine $N_1$ is limited to a maximum of 60% while ground speed is below 20 kt."
+  },
+  {
+    "question": "What is the Maximum Engine Takeoff Crosswind limit (gusts included)?",
+    "answer": "36 kt"
+  },
+  {
+    "question": "What is the Maximum Engine Landing Crosswind limit (gusts included)?",
+    "answer": "35 kt"
+  },
+  {
+    "question": "What engine $N_1$ restriction applies during takeoffs with tailwind components exceeding 13 kt?",
+    "answer": "Engine $N_1$ is limited to a maximum of 60% while ground speed is below 20 kt."
+  },
+  {
+    "question": "At what airspeed during landing must thrust reversers be reduced from MAX REV to MIN REV?",
+    "answer": "At or above 60 KIAS (and stowed prior to complete stop)"
+  },
+  {
+    "question": "Under what operational conditions is maintaining full reverse thrust down to a complete stop permitted?",
+    "answer": "Only during Rejected Takeoff (RTO) or emergency landings."
+  },
+  {
+    "question": "Under what runway surface conditions is Reduced Thrust (Assumed Temperature Method) strictly prohibited?",
+    "answer": "On runways contaminated with standing water, slush, snow, or ice (and on wet runways unless wet performance accountability is applied)."
+  },
+  {
+    "question": "What is the policy regarding powerback operations using thrust reversers?",
+    "answer": "Powerback operations are strictly prohibited."
+  },
+  {
+    "question": "Which APU model is installed on the Embraer E195-E2?",
+    "answer": "Pratt & Whitney APS 2600E"
+  },
+  {
+    "question": "What is the Maximum APU Start Altitude?",
+    "answer": "39,000 ft"
+  },
+  {
+    "question": "What is the Maximum APU Electrical Generation Altitude?",
+    "answer": "39,000 ft"
+  },
+  {
+    "question": "What is the Maximum APU Bleed Air Extraction Altitude?",
+    "answer": "15,000 ft"
+  },
+  {
+    "question": "What is the Maximum APU Rotor Speed?",
+    "answer": "108%"
+  },
+  {
+    "question": "What is the Maximum APU Starting EGT?",
+    "answer": "1,032°C"
+  },
+  {
+    "question": "For APU operations up to ISA + 35°C, what cool-down cooling periods are required between starter attempts?",
+    "answer": "60 seconds OFF after 1st and 2nd attempts; 5 minutes OFF after 3rd attempt."
+  },
+  {
+    "question": "For APU operations above ISA + 35°C up to ISA + 39°C, what cool-down cooling periods are required between starter attempts?",
+    "answer": "60 seconds OFF after 1st attempt; 5 minutes OFF after 2nd attempt."
+  },
+  {
+    "question": "What is the maximum usable fuel capacity of each wing tank (Left/Right)?",
+    "answer": "2,730 liters (2,190 kg based on adopted density of 0.803 kg/l)"
+  },
+  {
+    "question": "What is the maximum usable fuel capacity of the center tank?",
+    "answer": "11,600 liters (9,310 kg based on adopted density of 0.803 kg/l)"
+  },
+  {
+    "question": "By how much must usable fuel quantity be reduced if a main ejector pump is inoperative?",
+    "answer": "130 kg"
+  },
+  {
+    "question": "What is the maximum permitted fuel imbalance between the left and right wing tanks?",
+    "answer": "360 kg"
+  },
+  {
+    "question": "What is the minimum fuel tank temperature limit?",
+    "answer": "-37°C"
+  },
+  {
+    "question": "During which flight phases must the Fuel Crossfeed Selector Knob be selected OFF?",
+    "answer": "Takeoff and landing"
+  },
+  {
+    "question": "What is the Maximum Cabin Differential Overpressure limit?",
+    "answer": "8.8 psi"
+  },
+  {
+    "question": "What is the Maximum Differential Pressure allowed for takeoff and landing?",
+    "answer": "0.2 psi"
+  },
+  {
+    "question": "What environmental criteria define atmospheric icing conditions?",
+    "answer": "OAT (ground/takeoff) or TAT (flight) $\\le 10^\\circ\\text{C}$ with visible moisture present (clouds, fog vis $\\le 1\\text{ mile}$, rain, snow, sleet, ice crystals) or operating on contaminated ground surfaces."
+  },
+  {
+    "question": "On the ground, when OAT is $\\le 3^\\circ\\text{C}$ with visible moisture, what periodic engine run-up requirement must be performed?",
+    "answer": "Periodic engine run-ups at intervals no greater than 30 minutes (and a static run-up if ground idle time reaches 30 minutes before takeoff)."
+  },
+  {
+    "question": "What is the maximum airspeed for windshield wiper operation?",
+    "answer": "253 KIAS"
+  },
+  {
+    "question": "What is the maximum altitude for windshield wiper operation?",
+    "answer": "14,000 ft pressure altitude"
+  },
+  {
+    "question": "What is the minimum Autopilot engagement height after takeoff?",
+    "answer": "200 ft AGL"
+  },
+  {
+    "question": "What is the minimum Autopilot use height during cruise and descent?",
+    "answer": "1,000 ft AGL"
+  },
+  {
+    "question": "What is the minimum Autopilot use height during ILS, GLS, or LPV approaches?",
+    "answer": "80 ft AGL"
+  },
+  {
+    "question": "What is the minimum Autopilot use height during Non-Precision Approaches?",
+    "answer": "190 ft AGL"
+  },
+  {
+    "question": "What is the maximum height loss allowed for coupled go-around maneuvers?",
+    "answer": "Up to 100 ft"
+  },
+  {
+    "question": "What selection must flight crews make when operating in magnetic polar cut-out regions?",
+    "answer": "Select True Heading (magnetic heading and track data are unavailable)."
+  },
+  {
+    "question": "What is the maximum latitude permitted for stationary IRS alignment?",
+    "answer": "78.25° Northern and Southern latitudes"
+  },
+  {
+    "question": "Are Integrated Navigation (INAV) and Synthetic Vision System (SVS) approved as primary flight information for navigation?",
+    "answer": "No; INAV and SVS are situational awareness aids only."
+  },
+  {
+    "question": "Is SATCOM voice communication approved for ATC communications?",
+    "answer": "No, SATCOM voice communication is not approved for ATC communications."
+  },
+  {
+    "question": "To what types of checklists is the Electronic Checklist (ECL) restricted?",
+    "answer": "Normal checklists only"
+  },
+  {
+    "question": "Under what circumstances are altitude deviations authorized regarding TCAS?",
+    "answer": "Only to comply with TCAS Resolution Advisories (RAs)."
+  },
+  {
+    "question": "What flap configuration is mandatory for CAT II ILS approaches?",
+    "answer": "Flaps 5 mandatory"
+  },
+  {
+    "question": "Are manual Flight Director (FD) CAT II ILS approaches permitted?",
+    "answer": "No, manual Flight Director CAT II ILS approaches are strictly prohibited."
+  },
+  {
+    "question": "What is the maximum approved airport altitude for Autoland operations?",
+    "answer": "7,249 ft pressure altitude"
+  },
+  {
+    "question": "What glideslope angle range is certified for Autoland operations?",
+    "answer": "Minimum 2.5° to Maximum 3.5°"
+  },
+  {
+    "question": "What flap setting is mandatory for Autoland operations?",
+    "answer": "Flaps 5 mandatory"
+  },
+  {
+    "question": "What are the maximum headwind, tailwind, and crosswind limits for Autoland operations?",
+    "answer": "Headwind 25 kt, Tailwind 15 kt, Crosswind 15 kt"
+  },
+  {
+    "question": "What are the runway slope limits for Autoland operations?",
+    "answer": "-1.0% to +1.0%"
+  },
+  {
+    "question": "What discrepancy threshold between published chart tracks and FMS coded routes prohibits using a coded procedure?",
+    "answer": "Differences exceeding 3°"
+  },
+  {
+    "question": "Which specific approach types are prohibited from using FMS as the primary navigation source?",
+    "answer": "ILS, LOC, LOC-BC, LDA, SDF, Visual, and Radar approaches (does not apply to RNAV Visual or FMS Visual)."
+  },
+  {
+    "question": "How does an ADS sideslip compensation failure (ADS 1 (2, 3) SLIPCOMP FAIL) impact RVSM compliance?",
+    "answer": "The affected ADS becomes non-compliant for RVSM operations."
+  },
+  {
+    "question": "Under what condition is FANS 2-CPDLC operation prohibited?",
+    "answer": "With one MCDU inoperative."
+  },
+  {
+    "question": "Under what conditions must the Runway Overrun Awareness & Alerting System (ROAAS) be inhibited?",
+    "answer": "When landing on RWYCC 1 with OAT $> 10^\\circ\\text{C}$, landing on RWYCC 1 above 10,000 ft pressure altitude, database runway length is shorter than actual LDA, or during steep approaches."
+  }
+]

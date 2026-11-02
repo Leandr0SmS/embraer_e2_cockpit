@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect, useCallback } from 'react';
 import FlashcardCard from './FlashcardCard';
 import FlashcardDeckBar from './FlashcardDeckBar';
 import FlashcardSummary from './FlashcardSummary';
-import limitationsData from '../data/flashcards-limitations.json';
+import limitationsData from '../data/flashcards-limitations-109.json';
 import memoryData from '../data/flashcards-memory.json';
 import { shuffleDeck, calculateDeckStats, filterMissedCards } from '../utils/flashcardEngine';
 
@@ -34,6 +34,11 @@ export default function FlashcardsView({ onExit }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [results, setResults] = useState({});
+
+  const deckCounts = useMemo(() => ({
+    limitations: DECKS.limitations.cards.length,
+    memory: DECKS.memory.cards.length,
+  }), []);
 
   // When true, user is studying a filtered queue of missed cards from previous run
   const [customDeck, setCustomDeck] = useState(null);
@@ -189,6 +194,7 @@ export default function FlashcardsView({ onExit }) {
         onRestart={handleRestart}
         onExit={onExit}
         currentIndex={currentIndex}
+        deckCounts={deckCounts}
       />
 
       {/* Main Study Arena */}

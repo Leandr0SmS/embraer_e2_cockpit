@@ -13,6 +13,7 @@ export default function FlashcardDeckBar({
   onRestart,
   onExit,
   currentIndex = 0,
+  deckCounts = { limitations: 109, memory: 15 },
 }) {
   return (
     <header className="flashcard-deck-bar" aria-label="Flashcards Navigation and Controls">
@@ -26,7 +27,7 @@ export default function FlashcardDeckBar({
             className={`flashcard-deck-pill ${activeDeckId === 'limitations' ? 'active' : ''}`}
             onClick={() => onSelectDeck('limitations')}
           >
-            Limitations <span className="deck-count-badge">62</span>
+            Limitations <span className="deck-count-badge">{deckCounts?.limitations ?? 109}</span>
           </button>
           <button
             type="button"
@@ -35,7 +36,7 @@ export default function FlashcardDeckBar({
             className={`flashcard-deck-pill ${activeDeckId === 'memory' ? 'active' : ''}`}
             onClick={() => onSelectDeck('memory')}
           >
-            Memory Items <span className="deck-count-badge">15</span>
+            Memory Items <span className="deck-count-badge">{deckCounts?.memory ?? 15}</span>
           </button>
         </div>
 
