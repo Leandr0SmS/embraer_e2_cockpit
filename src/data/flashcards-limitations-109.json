@@ -48,15 +48,15 @@
     "answer": "The wing upper surface must be completely free of frost, ice, snow, or slush."
   },
   {
-    "question": "What is the Maximum Landing Gear Retraction Speed ($V_{LO\\text{ Retraction}}$)?",
+    "question": "What is the Maximum Landing Gear Retraction Speed (VLO Retraction)?",
     "answer": "220 KIAS"
   },
   {
-    "question": "What is the Maximum Landing Gear Extension Speed ($V_{LO\\text{ Extension}}$)?",
+    "question": "What is the Maximum Landing Gear Extension Speed (VLO Extension)?",
     "answer": "250 KIAS"
   },
   {
-    "question": "What is the Maximum Landing Gear Extended Speed ($V_{LE}$)?",
+    "question": "What is the Maximum Landing Gear Extended Speed (VLE)?",
     "answer": "265 KIAS"
   },
   {
@@ -68,59 +68,59 @@
     "answer": "+2.0 g to 0.0 g"
   },
   {
-    "question": "What is the Maneuvering Speed ($V_A$) at or below 15,000 ft?",
+    "question": "What is the Maneuvering Speed (VA) at or below 15,000 ft?",
     "answer": "265 KIAS"
   },
   {
-    "question": "How does Maneuvering Speed ($V_A$) vary between 15,000 ft altitude and FL290?",
+    "question": "How does Maneuvering Speed (VA) vary between 15,000 ft altitude and FL290?",
     "answer": "It varies linearly from 265 KIAS to 320 KIAS."
   },
   {
-    "question": "What is the Maneuvering Speed ($V_A$) limit above FL290?",
-    "answer": "$M_{MO}$ 0.82M"
+    "question": "What is the Maneuvering Speed (VA) limit above FL290?",
+    "answer": "MMO 0.82M"
   },
   {
     "question": "What is the maximum altitude for flap extension?",
     "answer": "20,000 ft pressure altitude"
   },
   {
-    "question": "What is the Flaps 1 Maximum Extended Speed ($V_{FE}$)?",
+    "question": "What is the Flaps 1 Maximum Extended Speed (VFE)?",
     "answer": "230 KIAS"
   },
   {
-    "question": "What is the Flaps 2 Maximum Extended Speed ($V_{FE}$)?",
+    "question": "What is the Flaps 2 Maximum Extended Speed (VFE)?",
     "answer": "215 KIAS"
   },
   {
-    "question": "What is the Flaps 3 Maximum Extended Speed ($V_{FE}$)?",
+    "question": "What is the Flaps 3 Maximum Extended Speed (VFE)?",
     "answer": "200 KIAS"
   },
   {
-    "question": "What is the Flaps 4 Maximum Extended Speed ($V_{FE}$)?",
+    "question": "What is the Flaps 4 Maximum Extended Speed (VFE)?",
     "answer": "180 KIAS"
   },
   {
-    "question": "What is the Flaps 5 Maximum Extended Speed ($V_{FE}$)?",
+    "question": "What is the Flaps 5 Maximum Extended Speed (VFE)?",
     "answer": "180 KIAS"
   },
   {
-    "question": "What is the Flaps FULL Maximum Extended Speed ($V_{FE}$)?",
+    "question": "What is the Flaps FULL Maximum Extended Speed (VFE)?",
     "answer": "165 KIAS"
   },
   {
-    "question": "What is the Maximum Operating Speed ($V_{MO}$) below 8,000 ft?",
+    "question": "What is the Maximum Operating Speed (VMO) below 8,000 ft?",
     "answer": "300 KIAS"
   },
   {
-    "question": "What is the Maximum Operating Speed ($V_{MO}$) from 8,000 ft to 10,000 ft?",
+    "question": "What is the Maximum Operating Speed (VMO) from 8,000 ft to 10,000 ft?",
     "answer": "Linear variation from 300 KIAS to 320 KIAS"
   },
   {
-    "question": "What is the Maximum Operating Speed ($V_{MO}$) between 10,000 ft and FL290?",
+    "question": "What is the Maximum Operating Speed (VMO) between 10,000 ft and FL290?",
     "answer": "320 KIAS"
   },
   {
-    "question": "What is the Maximum Operating Mach Number ($M_{MO}$) above FL290?",
+    "question": "What is the Maximum Operating Mach Number (MMO) above FL290?",
     "answer": "0.82 M"
   },
   {
@@ -128,11 +128,11 @@
     "answer": "45 kt (gusts included)"
   },
   {
-    "question": "What is the recommended maximum takeoff crosswind for RWYCC 5 (Frost, Wet $\\le 3\\text{ mm}$, Slush $\\le 3\\text{ mm}$, Dry/Wet Snow $\\le 3\\text{ mm}$)?",
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 5 (Frost, Wet <= 3 mm, Slush <= 3 mm, Dry/Wet Snow <= 3 mm)?",
     "answer": "38 kt (gusts included)"
   },
   {
-    "question": "What is the recommended maximum takeoff crosswind for RWYCC 4 (Compacted Snow at $\\le -15^\\circ\\text{C}$)?",
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 4 (Compacted Snow at <= -15°C)?",
     "answer": "30 kt (gusts included)"
   },
   {
@@ -140,7 +140,7 @@
     "answer": "20 kt (gusts included)"
   },
   {
-    "question": "What is the recommended maximum takeoff crosswind for RWYCC 2 (Water/Slush $> 3\\text{ mm}$)?",
+    "question": "What is the recommended maximum takeoff crosswind for RWYCC 2 (Water/Slush > 3 mm)?",
     "answer": "15 kt (gusts included)"
   },
   {
@@ -176,8 +176,8 @@
     "answer": "Pratt & Whitney PW1921G turbofan engine"
   },
   {
-    "question": "What are the maximum engine rotor speed limits ($N_1$ and $N_2$)?",
-    "answer": "$N_1 = 100\\%$, $N_2 = 100\\%$"
+    "question": "What are the maximum engine rotor speed limits (N1 and N2)?",
+    "answer": "N1 = 100%, N2 = 100%"
   },
   {
     "question": "What is the Interstage Turbine Temperature (ITT) limit for Ground/Inflight Start, Takeoff, and Go-Around?",
@@ -233,7 +233,7 @@
   },
   {
     "question": "What is the engine operational restriction during takeoffs when crosswind components exceed 30 kt?",
-    "answer": "Engine $N_1$ is limited to a maximum of 60% while ground speed is below 20 kt."
+    "answer": "Engine N1 is limited to a maximum of 60% while ground speed is below 20 kt."
   },
   {
     "question": "What is the Maximum Engine Takeoff Crosswind limit (gusts included)?",
@@ -244,8 +244,8 @@
     "answer": "35 kt"
   },
   {
-    "question": "What engine $N_1$ restriction applies during takeoffs with tailwind components exceeding 13 kt?",
-    "answer": "Engine $N_1$ is limited to a maximum of 60% while ground speed is below 20 kt."
+    "question": "What engine N1 restriction applies during takeoffs with tailwind components exceeding 13 kt?",
+    "answer": "Engine N1 is limited to a maximum of 60% while ground speed is below 20 kt."
   },
   {
     "question": "At what airspeed during landing must thrust reversers be reduced from MAX REV to MIN REV?",
@@ -329,10 +329,10 @@
   },
   {
     "question": "What environmental criteria define atmospheric icing conditions?",
-    "answer": "OAT (ground/takeoff) or TAT (flight) $\\le 10^\\circ\\text{C}$ with visible moisture present (clouds, fog vis $\\le 1\\text{ mile}$, rain, snow, sleet, ice crystals) or operating on contaminated ground surfaces."
+    "answer": "OAT (ground/takeoff) or TAT (flight) <= 10°C with visible moisture present (clouds, fog vis <= 1 mile, rain, snow, sleet, ice crystals) or operating on contaminated ground surfaces."
   },
   {
-    "question": "On the ground, when OAT is $\\le 3^\\circ\\text{C}$ with visible moisture, what periodic engine run-up requirement must be performed?",
+    "question": "On the ground, when OAT is <= 3°C with visible moisture, what periodic engine run-up requirement must be performed?",
     "answer": "Periodic engine run-ups at intervals no greater than 30 minutes (and a static run-up if ground idle time reaches 30 minutes before takeoff)."
   },
   {
@@ -433,6 +433,6 @@
   },
   {
     "question": "Under what conditions must the Runway Overrun Awareness & Alerting System (ROAAS) be inhibited?",
-    "answer": "When landing on RWYCC 1 with OAT $> 10^\\circ\\text{C}$, landing on RWYCC 1 above 10,000 ft pressure altitude, database runway length is shorter than actual LDA, or during steep approaches."
+    "answer": "When landing on RWYCC 1 with OAT > 10°C, landing on RWYCC 1 above 10,000 ft pressure altitude, database runway length is shorter than actual LDA, or during steep approaches."
   }
 ]

@@ -10,30 +10,30 @@ What is the minimum Static Air Temperature (SAT) at FL410?,-70°C
 What is the Maximum Ground Operating Temperature limit?,54°C / ISA + 39°C
 What action is mandatory before takeoff if the airplane lands in ambient temperatures below -45°C?,A documented maintenance inspection must be performed.
 What is the limitation regarding cold soaked fuel frost on the upper wing surface prior to takeoff?,"The wing upper surface must be completely free of frost, ice, snow, or slush."
-What is the Maximum Landing Gear Retraction Speed ($V_{LO\text{ Retraction}}$)?,220 KIAS
-What is the Maximum Landing Gear Extension Speed ($V_{LO\text{ Extension}}$)?,250 KIAS
-What is the Maximum Landing Gear Extended Speed ($V_{LE}$)?,265 KIAS
+What is the Maximum Landing Gear Retraction Speed (VLO Retraction)?,220 KIAS
+What is the Maximum Landing Gear Extension Speed (VLO Extension)?,250 KIAS
+What is the Maximum Landing Gear Extended Speed (VLE)?,265 KIAS
 What are the maneuvering flight load factor limits in the clean configuration (Flaps Up)?,+2.5 g to -1.0 g
 What are the maneuvering flight load factor limits with Flaps Down (Flaps 1 through FULL)?,+2.0 g to 0.0 g
-"What is the Maneuvering Speed ($V_A$) at or below 15,000 ft?",265 KIAS
-"How does Maneuvering Speed ($V_A$) vary between 15,000 ft altitude and FL290?",It varies linearly from 265 KIAS to 320 KIAS.
-What is the Maneuvering Speed ($V_A$) limit above FL290?,$M_{MO}$ 0.82M
+"What is the Maneuvering Speed (VA) at or below 15,000 ft?",265 KIAS
+"How does Maneuvering Speed (VA) vary between 15,000 ft altitude and FL290?",It varies linearly from 265 KIAS to 320 KIAS.
+What is the Maneuvering Speed (VA) limit above FL290?,MMO 0.82M
 What is the maximum altitude for flap extension?,"20,000 ft pressure altitude"
-What is the Flaps 1 Maximum Extended Speed ($V_{FE}$)?,230 KIAS
-What is the Flaps 2 Maximum Extended Speed ($V_{FE}$)?,215 KIAS
-What is the Flaps 3 Maximum Extended Speed ($V_{FE}$)?,200 KIAS
-What is the Flaps 4 Maximum Extended Speed ($V_{FE}$)?,180 KIAS
-What is the Flaps 5 Maximum Extended Speed ($V_{FE}$)?,180 KIAS
-What is the Flaps FULL Maximum Extended Speed ($V_{FE}$)?,165 KIAS
-"What is the Maximum Operating Speed ($V_{MO}$) below 8,000 ft?",300 KIAS
-"What is the Maximum Operating Speed ($V_{MO}$) from 8,000 ft to 10,000 ft?",Linear variation from 300 KIAS to 320 KIAS
-"What is the Maximum Operating Speed ($V_{MO}$) between 10,000 ft and FL290?",320 KIAS
-What is the Maximum Operating Mach Number ($M_{MO}$) above FL290?,0.82 M
+What is the Flaps 1 Maximum Extended Speed (VFE)?,230 KIAS
+What is the Flaps 2 Maximum Extended Speed (VFE)?,215 KIAS
+What is the Flaps 3 Maximum Extended Speed (VFE)?,200 KIAS
+What is the Flaps 4 Maximum Extended Speed (VFE)?,180 KIAS
+What is the Flaps 5 Maximum Extended Speed (VFE)?,180 KIAS
+What is the Flaps FULL Maximum Extended Speed (VFE)?,165 KIAS
+"What is the Maximum Operating Speed (VMO) below 8,000 ft?",300 KIAS
+"What is the Maximum Operating Speed (VMO) from 8,000 ft to 10,000 ft?",Linear variation from 300 KIAS to 320 KIAS
+"What is the Maximum Operating Speed (VMO) between 10,000 ft and FL290?",320 KIAS
+What is the Maximum Operating Mach Number (MMO) above FL290?,0.82 M
 What is the recommended maximum takeoff crosswind component for a dry runway (RWYCC 6)?,45 kt (gusts included)
-"What is the recommended maximum takeoff crosswind for RWYCC 5 (Frost, Wet $\le 3\text{ mm}$, Slush $\le 3\text{ mm}$, Dry/Wet Snow $\le 3\text{ mm}$)?",38 kt (gusts included)
-What is the recommended maximum takeoff crosswind for RWYCC 4 (Compacted Snow at $\le -15^\circ\text{C}$)?,30 kt (gusts included)
+"What is the recommended maximum takeoff crosswind for RWYCC 5 (Frost, Wet <= 3 mm, Slush <= 3 mm, Dry/Wet Snow <= 3 mm)?",38 kt (gusts included)
+What is the recommended maximum takeoff crosswind for RWYCC 4 (Compacted Snow at <= -15°C)?,30 kt (gusts included)
 "What is the recommended maximum takeoff crosswind for RWYCC 3 (Slippery Wet, Dry/Wet Snow over Compacted Snow)?",20 kt (gusts included)
-What is the recommended maximum takeoff crosswind for RWYCC 2 (Water/Slush $> 3\text{ mm}$)?,15 kt (gusts included)
+What is the recommended maximum takeoff crosswind for RWYCC 2 (Water/Slush > 3 mm)?,15 kt (gusts included)
 What is the recommended maximum takeoff crosswind for RWYCC 1 (Ice)?,10 kt (gusts included)
 What is the Maximum Tire Ground Speed limit?,225 mph (195 kt ground speed)
 What is the minimum flight crew requirement for the Embraer E195-E2?,2 pilots
@@ -42,7 +42,7 @@ What runway surface types are approved for operation?,Paved runways only
 Under what condition is towbarless towing permitted?,It is strictly prohibited unless performed in accordance with Aircraft Maintenance Manual (AMM) procedures.
 What is the maximum tailwind component for takeoff and landing?,15 kt (Demonstrated capability)
 Which engine model powers the Embraer E195-E2?,Pratt & Whitney PW1921G turbofan engine
-What are the maximum engine rotor speed limits ($N_1$ and $N_2$)?,"$N_1 = 100\%$, $N_2 = 100\%$"
+What are the maximum engine rotor speed limits (N1 and N2)?,"N1 = 100%, N2 = 100%"
 "What is the Interstage Turbine Temperature (ITT) limit for Ground/Inflight Start, Takeoff, and Go-Around?","1,054°C"
 "What is the time limit for operating at the takeoff ITT limit of 1,054°C during All Engines Operating (AEO) versus One Engine Inoperative (OEI)?",5 minutes for AEO; 10 minutes for OEI
 What is the ITT limit for Maximum Continuous Thrust?,"1,017°C"
@@ -56,10 +56,10 @@ What is the Maximum Continuous engine oil temperature limit?,163°C
 What is the maximum continuous starter duty time for the engines?,4 minutes continuous operation
 What cool-down period is required after a full 4-minute engine starter duty cycle?,30 minutes
 How many consecutive engine starter attempts are permitted without a cooling period between attempts?,A maximum of 3 starter attempts
-What is the engine operational restriction during takeoffs when crosswind components exceed 30 kt?,Engine $N_1$ is limited to a maximum of 60% while ground speed is below 20 kt.
+What is the engine operational restriction during takeoffs when crosswind components exceed 30 kt?,Engine N1 is limited to a maximum of 60% while ground speed is below 20 kt.
 What is the Maximum Engine Takeoff Crosswind limit (gusts included)?,36 kt
 What is the Maximum Engine Landing Crosswind limit (gusts included)?,35 kt
-What engine $N_1$ restriction applies during takeoffs with tailwind components exceeding 13 kt?,Engine $N_1$ is limited to a maximum of 60% while ground speed is below 20 kt.
+What engine N1 restriction applies during takeoffs with tailwind components exceeding 13 kt?,Engine N1 is limited to a maximum of 60% while ground speed is below 20 kt.
 At what airspeed during landing must thrust reversers be reduced from MAX REV to MIN REV?,At or above 60 KIAS (and stowed prior to complete stop)
 Under what operational conditions is maintaining full reverse thrust down to a complete stop permitted?,Only during Rejected Takeoff (RTO) or emergency landings.
 Under what runway surface conditions is Reduced Thrust (Assumed Temperature Method) strictly prohibited?,"On runways contaminated with standing water, slush, snow, or ice (and on wet runways unless wet performance accountability is applied)."
@@ -80,8 +80,8 @@ What is the minimum fuel tank temperature limit?,-37°C
 During which flight phases must the Fuel Crossfeed Selector Knob be selected OFF?,Takeoff and landing
 What is the Maximum Cabin Differential Overpressure limit?,8.8 psi
 What is the Maximum Differential Pressure allowed for takeoff and landing?,0.2 psi
-What environmental criteria define atmospheric icing conditions?,"OAT (ground/takeoff) or TAT (flight) $\le 10^\circ\text{C}$ with visible moisture present (clouds, fog vis $\le 1\text{ mile}$, rain, snow, sleet, ice crystals) or operating on contaminated ground surfaces."
-"On the ground, when OAT is $\le 3^\circ\text{C}$ with visible moisture, what periodic engine run-up requirement must be performed?",Periodic engine run-ups at intervals no greater than 30 minutes (and a static run-up if ground idle time reaches 30 minutes before takeoff).
+What environmental criteria define atmospheric icing conditions?,"OAT (ground/takeoff) or TAT (flight) <= 10°C with visible moisture present (clouds, fog vis <= 1 mile, rain, snow, sleet, ice crystals) or operating on contaminated ground surfaces."
+"On the ground, when OAT is <= 3°C with visible moisture, what periodic engine run-up requirement must be performed?",Periodic engine run-ups at intervals no greater than 30 minutes (and a static run-up if ground idle time reaches 30 minutes before takeoff).
 What is the maximum airspeed for windshield wiper operation?,253 KIAS
 What is the maximum altitude for windshield wiper operation?,"14,000 ft pressure altitude"
 What is the minimum Autopilot engagement height after takeoff?,200 ft AGL
@@ -106,4 +106,4 @@ What discrepancy threshold between published chart tracks and FMS coded routes p
 Which specific approach types are prohibited from using FMS as the primary navigation source?,"ILS, LOC, LOC-BC, LDA, SDF, Visual, and Radar approaches (does not apply to RNAV Visual or FMS Visual)."
 "How does an ADS sideslip compensation failure (ADS 1 (2, 3) SLIPCOMP FAIL) impact RVSM compliance?",The affected ADS becomes non-compliant for RVSM operations.
 Under what condition is FANS 2-CPDLC operation prohibited?,With one MCDU inoperative.
-Under what conditions must the Runway Overrun Awareness & Alerting System (ROAAS) be inhibited?,"When landing on RWYCC 1 with OAT $> 10^\circ\text{C}$, landing on RWYCC 1 above 10,000 ft pressure altitude, database runway length is shorter than actual LDA, or during steep approaches."
+Under what conditions must the Runway Overrun Awareness & Alerting System (ROAAS) be inhibited?,"When landing on RWYCC 1 with OAT > 10°C, landing on RWYCC 1 above 10,000 ft pressure altitude, database runway length is shorter than actual LDA, or during steep approaches."

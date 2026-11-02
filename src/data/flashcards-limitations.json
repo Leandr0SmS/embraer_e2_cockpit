@@ -32,15 +32,15 @@
     "answer": "The wing upper surface must be completely free of frost or ice."
   },
   {
-    "question": "What is the maximum operating gear retraction speed ($V_{LO}$ Retraction)?",
+    "question": "What is the maximum operating gear retraction speed (V_{LO} Retraction)?",
     "answer": "220 KIAS"
   },
   {
-    "question": "What is the maximum operating gear extension speed ($V_{LO}$ Extension)?",
+    "question": "What is the maximum operating gear extension speed (V_{LO} Extension)?",
     "answer": "250 KIAS"
   },
   {
-    "question": "What is the landing gear extended speed limit ($V_{LE}$)?",
+    "question": "What is the landing gear extended speed limit (VLE)?",
     "answer": "265 KIAS"
   },
   {
@@ -52,8 +52,8 @@
     "answer": "+2.0 g / 0.0 g"
   },
   {
-    "question": "What is the maneuvering speed ($V_A$) at altitudes above FL290?",
-    "answer": "$M_{MO}$ 0.82 M"
+    "question": "What is the maneuvering speed (VA) at altitudes above FL290?",
+    "answer": "MMO 0.82 M"
   },
   {
     "question": "What is the maximum allowable altitude for operating with flaps extended?",
@@ -68,7 +68,7 @@
     "answer": "165 KIAS"
   },
   {
-    "question": "What is the maximum operating speed ($V_{MO}$) below 8,000 ft?",
+    "question": "What is the maximum operating speed (VMO) below 8,000 ft?",
     "answer": "300 KIAS"
   },
   {
@@ -181,11 +181,11 @@
   },
   {
     "question": "What N1 power restriction applies during takeoffs with a crosswind greater than 30 kt?",
-    "answer": "$N_1$ is limited to 60% when ground speed is below 20 kt."
+    "answer": "N1 is limited to 60% when ground speed is below 20 kt."
   },
   {
     "question": "What N1 power restriction applies during takeoffs with a tailwind greater than 13 kt?",
-    "answer": "$N_1$ is limited to 60% when ground speed is below 20 kt."
+    "answer": "N1 is limited to 60% when ground speed is below 20 kt."
   },
   {
     "question": "Under what runway surface conditions is the use of Reduced Takeoff Thrust (Assumed Temp) strictly prohibited?",
@@ -205,11 +205,11 @@
   },
   {
     "question": "How are icing conditions defined in terms of temperature and environmental factors?",
-    "answer": "OAT (ground/takeoff) or TAT (in-flight) $\\le$ 10°C with visible moisture (fog $\\le$ 1 SM, clouds, rain, snow, sleet, ice crystals) or ramp/taxiway contamination."
+    "answer": "OAT (ground/takeoff) or TAT (in-flight) <= 10°C with visible moisture (fog <= 1 SM, clouds, rain, snow, sleet, ice crystals) or ramp/taxiway contamination."
   },
   {
-    "question": "What periodic ground engine run-up requirement applies when ground OAT is $\\le$ 3°C in visible moisture?",
-    "answer": "Periodic engine run-ups must be performed at intervals of $\\le$ 30 minutes."
+    "question": "What periodic ground engine run-up requirement applies when ground OAT is <= 3°C in visible moisture?",
+    "answer": "Periodic engine run-ups must be performed at intervals of <= 30 minutes."
   },
   {
     "question": "What are the maximum operational airspeed and altitude limits for windshield wipers?",
