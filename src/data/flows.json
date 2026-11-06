@@ -934,7 +934,7 @@
           "dy": 0,
           "item": "EICAS",
           "action": "CHECK",
-          "note": "After that, request RSP to set Flaps"
+          "note": "After that, request RSP to 'Set Flaps x, Flight controls Check'"
         },
         {
           "role": "LSP",
@@ -958,7 +958,7 @@
           "hotspotId": "nose_wheel_stearing",
           "item": "NOSE WHEEL STEERING Handle",
           "action": "PRESS",
-          "note": "After that, Verify that the msg STEER OFF extinguishes on Eicas. Finally set MFD on MAP"
+          "note": "After that, Verify that the msg STEER OFF extinguishes on Eicas. Request APU as required"
         },
         {
           "role": "RSP",
@@ -1016,7 +1016,7 @@
           "dy": 0,
           "item": "EICAS",
           "action": "CHECK",
-          "note": "NOTE: When the airplane is lined up and ready for takeoff, the PF"
+          "note": "NOTE: When the airplane is lined up and ready for takeoff, the PF arms the AT"
         },
         {
           "role": "RSP",
@@ -1046,7 +1046,8 @@
           "dx": 350,
           "dy": 0,
           "item": "EICAS",
-          "action": "CHECK"
+          "action": "CHECK",
+          "note": "NOTE: When the airplane is lined up and ready for takeoff, the PF arms the AT"
         },
         {
           "role": "RSP",
