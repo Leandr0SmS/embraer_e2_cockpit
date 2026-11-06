@@ -33,7 +33,8 @@
           "dx": 0,
           "dy": 260,
           "item": "Cockpit Emer Equip",
-          "action": "CHECK"
+          "action": "CHECK",
+          "note": "Flashlight, LifeVest, Axe, PBR, Ropes, Extinguisher, Gloves"
         },
         {
           "role": "RSP",
@@ -145,6 +146,13 @@
           "hotspotId": "cb_panel_fo",
           "item": "CIRCUIT BREAKERS Panels",
           "action": "CHECK"
+        },
+                {
+          "role": "RSP",
+          "step": 16,
+          "hotspotId": "cb_panel_capt",
+          "item": "CIRCUIT BREAKERS Panels",
+          "action": "CHECK"
         }
       ]
     },
@@ -161,7 +169,8 @@
           "step": 1,
           "hotspotId": "efb_capt",
           "item": "Electronic Flight Bag",
-          "action": "SET"
+          "action": "SET",
+          "note": "Battery level, Version, databases, Cae, pilot app"
         },
         {
           "role": "LSP",
@@ -182,7 +191,8 @@
           "step": 2,
           "hotspotId": "elec-batt2-knob",
           "item": "BATT 2 Knob",
-          "action": "AUTO"
+          "action": "AUTO",
+          "note": "CAUTION: VERIFY THAT ONLY DISPLAYS 1 AND 4 ARE AVAILABLE."
         },
         {
           "role": "RSP",
@@ -191,7 +201,8 @@
           "dx": -380,
           "dy": 250,
           "item": "Batteries Voltage",
-          "action": "CHECK"
+          "action": "CHECK",
+          "note": "CAUTION: EACH BATTERY VOLTAGE MUST BE AT LEAST 22 VOLTS."
         },
         {
           "role": "RSP",
@@ -215,7 +226,8 @@
           "asterisk": true,
           "hotspotId": "fire-test-btn",
           "item": "FIRE EXTINGUISHER Panel",
-          "action": "CHECK"
+          "action": "CHECK",
+          "note": "Verify 6 lights on overhead panel, 8 EICAS Messages, 6 “Lights” On Glareshield Panel + EICAS (Engine ITT indication)."
         },
         {
           "role": "RSP",
@@ -230,7 +242,8 @@
           "asterisk": true,
           "hotspotId": "dvdr-test-btn",
           "item": "DVDR CONTROL Panel",
-          "action": "CHECK"
+          "action": "CHECK",
+          "note": "Press and hold TEST Button for three seconds and verify no fail messages displayed on EICAS."
         },
         {
           "role": "RSP",
@@ -279,7 +292,8 @@
           "step": 14,
           "hotspotId": "efb_fo",
           "item": "Electronic Flight Bag",
-          "action": "SET"
+          "action": "SET",
+          "note": "Battery level, Version, databases, Cae, pilot app"
         },
         {
           "role": "RSP",
