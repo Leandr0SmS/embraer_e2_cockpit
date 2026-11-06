@@ -487,7 +487,7 @@
           "dy": 0,
           "item": "Trim Panel",
           "action": "Check",
-          "note": "Check Back up Switch only on the first flight."
+          "note": "Verify that PITCH (Captain and the BACKUP SW) trimswitches are operating properly both ways."
         },
         {
           "role": "LSP",
@@ -843,11 +843,13 @@
           "section": "AFTER PUSHBACK AND STARTUP CLEARANCE",
           "hotspotId": "pitch_trim_nose_wheel_stearing_disconect_capt",
           "item": "Steering DISENGAGE Switch",
-          "action": "PRESS"
+          "action": "PRESS",
+          "note": "Verify the STEER OFF message displayed on the EICAS."
         },
         {
           "role": "RSP",
           "step": 1,
+          "section": "RSP FLOW",
           "hotspotId": "mfd-left",
           "dx": 350,
           "dy": 200,
