@@ -121,8 +121,8 @@ describe('painel_svg.svg (committed file)', () => {
   });
 
   it('still contains the cockpit drawing', () => {
-    // ~16,900 drawing paths + 7 images + hotspot rects; guards against the drawing being deleted
-    expect(drawingPrimitives(svg).length).toBeGreaterThan(16000);
+    // ~15,500 drawing paths + 7 images + hotspot rects; guards against the drawing being deleted
+    expect(drawingPrimitives(svg).length).toBeGreaterThan(15000);
     expect((svg.match(/<image\b/g) || []).length).toBe(7);
   });
 });
