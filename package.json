@@ -10,7 +10,8 @@
     "check:svg": "node scripts/clean-svg.mjs --check",
     "prebuild": "node scripts/clean-svg.mjs --check",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "mcp": "node scripts/mcp-server.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
