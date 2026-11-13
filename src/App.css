@@ -1019,6 +1019,24 @@ body {
   }
 }
 
+/* Large landscape screens (desktop, iPad landscape): dock the checklist on the
+   right side so the cockpit panel keeps the full vertical view. */
+@media (min-width: 1000px) and (orientation: landscape) {
+  .flow-bottom-dock,
+  .flow-bottom-dock.expanded-height {
+    left: auto;
+    right: 12px;
+    bottom: 36px;
+    transform: none;
+    width: clamp(320px, 28vw, 420px);
+    max-height: calc(100vh - 36px - 84px);
+  }
+
+  .flow-bottom-dock.collapsed {
+    max-height: none;
+  }
+}
+
 /* ==========================================================================
    Flashcards Study Mode — 3D Card & Drag Gestures (FlashcardCard)
    ========================================================================== */

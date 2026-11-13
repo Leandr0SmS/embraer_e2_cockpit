@@ -142,15 +142,20 @@ export default function App() {
     const localX = (badgeCenterX - contentRect.left) / currentScale;
     const localY = (badgeCenterY - contentRect.top) / currentScale;
 
-    // Center between the bottom of FlowTopBar and the top of FlowBottomDock
+    // Center inside the free viewport area: below FlowTopBar and away from FlowBottomDock.
+    // On large landscape screens the dock sits on the right side instead of the bottom.
     const topBarRect = document.querySelector('.flow-top-bar')?.getBoundingClientRect();
-    const bottomDockRect = document.querySelector('.flow-bottom-dock')?.getBoundingClientRect();
+    const dockRect = document.querySelector('.flow-bottom-dock')?.getBoundingClientRect();
+    const dockOnRightSide =
+      !!dockRect && dockRect.left > wrapperRect.left + wrapperRect.width / 2;
     const safeTop = topBarRect ? Math.max(wrapperRect.top, topBarRect.bottom) : wrapperRect.top;
-    const safeBottom = bottomDockRect
-      ? Math.min(wrapperRect.bottom, bottomDockRect.top)
-      : wrapperRect.bottom;
+    const safeBottom =
+      dockRect && !dockOnRightSide ? Math.min(wrapperRect.bottom, dockRect.top) : wrapperRect.bottom;
+    const safeLeft = wrapperRect.left;
+    const safeRight =
+      dockRect && dockOnRightSide ? Math.min(wrapperRect.right, dockRect.left) : wrapperRect.right;
 
-    const targetViewportX = wrapperRect.width / 2;
+    const targetViewportX = (safeLeft + safeRight) / 2 - wrapperRect.left;
     const targetViewportY = (safeTop + safeBottom) / 2 - wrapperRect.top;
 
     const targetScale = currentScale;
