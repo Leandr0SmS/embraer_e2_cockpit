@@ -1120,9 +1120,7 @@ body {
   }
 
   .flow-row-info-btn {
-    padding: 1px 4px;
-    font-size: 0.66rem;
-    flex-shrink: 0;
+    display: none;
   }
 
   .flow-row-note {
