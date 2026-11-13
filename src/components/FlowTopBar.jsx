@@ -48,7 +48,8 @@ export default function FlowTopBar({
           onClick={() => onSelectView?.('cockpit')}
           title="Interactive Cockpit Panels & Procedural Flows"
         >
-          Cockpit &amp; Flows
+          <span className="flow-label-full">Cockpit &amp; Flows</span>
+          <span className="flow-label-short">Cockpit</span>
         </button>
         <button
           type="button"
@@ -60,7 +61,8 @@ export default function FlowTopBar({
           onClick={handleOpenFlashcards}
           title="Study Limitations and Memory Items Flashcards"
         >
-          Flashcards
+          <span className="flow-label-full">Flashcards</span>
+          <span className="flow-label-short">Cards</span>
         </button>
       </div>
 
@@ -115,7 +117,8 @@ export default function FlowTopBar({
                   onClick={() => onChangeRole(role)}
                 >
                   <span className="role-dot" />
-                  {role} Actions
+                  {role}
+                  <span className="flow-label-full"> Actions</span>
                 </button>
               );
             })}
@@ -129,7 +132,8 @@ export default function FlowTopBar({
               onClick={() => onChangeMode('step')}
               title="Click step-by-step to follow each arrow and build the action list"
             >
-              Step-by-Step
+              <span className="flow-label-full">Step-by-Step</span>
+              <span className="flow-label-short">Step</span>
             </button>
             <button
               type="button"
@@ -137,7 +141,8 @@ export default function FlowTopBar({
               onClick={() => onChangeMode('full')}
               title="Show the entire flow and full action list at once"
             >
-              Entire Flow
+              <span className="flow-label-full">Entire Flow</span>
+              <span className="flow-label-short">All</span>
             </button>
           </div>
 
@@ -154,7 +159,7 @@ export default function FlowTopBar({
                   : 'Follow Step is OFF — Camera stays where you place it'
               }
             >
-              ⌖ Follow: {followStep ? 'ON' : 'OFF'}
+              ⌖<span className="flow-label-full"> Follow: {followStep ? 'ON' : 'OFF'}</span>
             </button>
           )}
 
@@ -166,7 +171,7 @@ export default function FlowTopBar({
             aria-label="Exit Flow Mode"
             title="Exit Flow Mode"
           >
-            &times; Exit
+            &times;<span className="flow-label-full"> Exit</span>
           </button>
         </>
       )}

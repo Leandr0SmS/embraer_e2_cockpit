@@ -982,11 +982,41 @@ body {
   line-height: 1.35;
 }
 
+.flow-label-short {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  .flow-label-full {
+    display: none;
+  }
+
+  .flow-label-short {
+    display: inline;
+  }
+
   .flow-top-bar {
     top: 6px;
-    padding: 5px 8px;
-    gap: 5px;
+    width: calc(100vw - 12px);
+    max-width: calc(100vw - 12px);
+    padding: 4px 6px;
+    gap: 4px;
+    border-radius: 8px;
+  }
+
+  .flow-nav-divider {
+    display: none;
+  }
+
+  .flow-view-switcher {
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .flow-selector-group {
+    order: 2;
+    flex: 1 1 100px;
+    min-width: 0;
   }
 
   .flow-selector-label {
@@ -994,28 +1024,146 @@ body {
   }
 
   .flow-select {
-    font-size: 0.76rem;
-    padding: 4px 7px;
-    max-width: 185px;
+    width: 100%;
+    max-width: none;
+    font-size: 0.72rem;
+    padding: 3px 6px;
   }
 
-  .flow-pill {
-    font-size: 0.7rem;
+  .flow-exit-btn {
+    order: 3;
+    flex-shrink: 0;
+    font-size: 0.72rem;
     padding: 3px 7px;
   }
 
-  .flow-bottom-dock {
-    bottom: 30px;
-    max-height: 175px;
+  .flow-role-group {
+    order: 4;
+    padding: 2px;
+    gap: 2px;
   }
 
-  .flow-dock-phase {
-    font-size: 0.78rem;
+  .flow-mode-group {
+    order: 5;
+    padding: 2px;
+    gap: 2px;
+  }
+
+  .flow-pill {
+    font-size: 0.68rem;
+    padding: 3px 6px;
+    gap: 3px;
+  }
+
+  .flow-pill .role-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .flow-pill.follow-pill {
+    order: 6;
+    padding: 3px 6px;
+  }
+
+  .flow-bottom-dock {
+    bottom: 26px;
+    width: calc(100vw - 12px);
+    max-width: calc(100vw - 12px);
+    max-height: 138px;
+    border-radius: 8px;
+  }
+
+  .flow-bottom-dock.expanded-height {
+    max-height: 40vh;
+  }
+
+  .flow-dock-body {
+    padding: 4px 6px 5px;
+  }
+
+  .flow-dock-list {
+    gap: 3px;
   }
 
   .flow-dock-row {
-    font-size: 0.74rem;
-    padding: 4px 6px;
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    gap: 4px;
+  }
+
+  .flow-row-circle {
+    width: 17px;
+    height: 17px;
+    font-size: 0.65rem;
+  }
+
+  .flow-row-role-tag {
+    font-size: 0.6rem;
+    min-width: 18px;
+  }
+
+  .flow-row-item {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .flow-row-dots {
+    display: none;
+  }
+
+  .flow-row-action {
+    font-size: 0.68rem;
+    flex-shrink: 0;
+  }
+
+  .flow-row-info-btn {
+    padding: 1px 4px;
+    font-size: 0.66rem;
+    flex-shrink: 0;
+  }
+
+  .flow-row-note {
+    padding-left: 22px;
+    font-size: 0.66rem;
+  }
+
+  .flow-dock-header {
+    padding: 4px 8px;
+    gap: 4px;
+    flex-wrap: nowrap;
+  }
+
+  .flow-dock-title-group {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 4px;
+  }
+
+  .flow-dock-phase {
+    font-size: 0.7rem;
+  }
+
+  .flow-dock-counter {
+    font-size: 0.64rem;
+    padding: 1px 5px;
+  }
+
+  .flow-dock-controls {
+    flex-shrink: 0;
+    gap: 3px;
+    flex-wrap: nowrap;
+  }
+
+  .flow-ctrl-btn {
+    padding: 3px 6px;
+    font-size: 0.68rem;
+  }
+
+  .flow-ctrl-btn.icon-only {
+    padding: 3px 5px;
   }
 }
 

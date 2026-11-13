@@ -121,9 +121,16 @@ export default function FlowBottomDock({
         <div className="flow-dock-title-group">
           <span className="flow-dock-phase">{flow.title}</span>
           <span className="flow-dock-counter">
-            {flowMode === 'step'
-              ? `Step ${Math.min(activeStepIndex + 1, totalSteps)} of ${totalSteps}`
-              : `All ${totalSteps} Actions`}
+            <span className="flow-label-full">
+              {flowMode === 'step'
+                ? `Step ${Math.min(activeStepIndex + 1, totalSteps)} of ${totalSteps}`
+                : `All ${totalSteps} Actions`}
+            </span>
+            <span className="flow-label-short">
+              {flowMode === 'step'
+                ? `${Math.min(activeStepIndex + 1, totalSteps)}/${totalSteps}`
+                : `${totalSteps}`}
+            </span>
           </span>
         </div>
 
@@ -137,7 +144,7 @@ export default function FlowBottomDock({
                 disabled={isAtStart}
                 title="Previous Step (Left Arrow)"
               >
-                &#9664; Prev
+                &#9664;<span className="flow-label-full"> Prev</span>
               </button>
               <button
                 type="button"
@@ -146,7 +153,12 @@ export default function FlowBottomDock({
                 disabled={isAtEnd}
                 title="Next Step — Draw next arrow and add action to list (Right Arrow / Space)"
               >
-                {isAtEnd ? '✓ Flow Complete' : 'Next Arrow \u25B6'}
+                <span className="flow-label-full">
+                  {isAtEnd ? '✓ Flow Complete' : 'Next Arrow \u25B6'}
+                </span>
+                <span className="flow-label-short">
+                  {isAtEnd ? '✓' : 'Next \u25B6'}
+                </span>
               </button>
               <button
                 type="button"
@@ -165,7 +177,12 @@ export default function FlowBottomDock({
             className="flow-ctrl-btn"
             onClick={() => onChangeMode(flowMode === 'step' ? 'full' : 'step')}
           >
-            {flowMode === 'step' ? 'Show All' : 'Step-by-Step'}
+            <span className="flow-label-full">
+              {flowMode === 'step' ? 'Show All' : 'Step-by-Step'}
+            </span>
+            <span className="flow-label-short">
+              {flowMode === 'step' ? 'All' : 'Step'}
+            </span>
           </button>
 
           {onToggleFollowStep && (
@@ -180,7 +197,7 @@ export default function FlowBottomDock({
                   : 'Follow Step is OFF — Manual camera positioning'
               }
             >
-              ⌖ Follow
+              ⌖<span className="flow-label-full"> Follow</span>
             </button>
           )}
 
